@@ -1,0 +1,70 @@
+.main-tokenomics {
+  padding-top: 113px;
+  padding-bottom: 137px;
+
+  .head-title {
+    text-align: center;
+    margin-bottom: 70px;
+
+    .title {
+      color: #021C33;
+      font-size: 48px;
+      text-transform: capitalize;
+      font-family: righteous, cursive;
+      line-height: 56px;
+    }
+  }
+
+  .single-information-wrap {
+    margin-bottom: 30px;
+    text-align: left;
+
+    h2 {
+      font-size: 18px;
+      line-height: 32px;
+      font-weight: 600;
+      color: #34495B;
+      text-transform: capitalize;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 32px;
+      color: #34495B;
+    }
+  }
+}
+
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+  .main-tokenomics {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .head-title {
+      text-align: center;
+      margin-bottom: 40px;
+
+      .title {
+        color: #021C33;
+        font-size: 26px;
+        text-transform: capitalize;
+        font-family: righteous, cursive;
+        line-height: 32px;
+      }
+    }
+
+    .single-information-wrap {
+      margin-bottom: 30px;
+      text-align: center;
+      padding: 10px;
+    }
+  }
+}

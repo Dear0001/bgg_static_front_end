@@ -1,0 +1,28 @@
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 10px 50px;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+  border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  cursor: pointer;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #000000;
+  border-color: #000000;
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: #000000 !important;
+    border-color: #000000 !important;
+    box-shadow: none !important;
+  }
+}

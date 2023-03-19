@@ -1,0 +1,111 @@
+.main-teams {
+  $color_1: #021C33;
+  $color_2: #ffffff;
+  $background-color_1: #00b6f1;
+  $background-color_2: #bd081c;
+  $background-color_3: #3b5998;
+  $background-color_4: #df4a32;
+  $background-color_5: #1ab7ea;
+  $background-color_6: #cd486b;
+  padding-top: 125px;
+  padding-bottom: 104px;
+
+  a {
+    text-decoration: none;
+    outline: none;
+
+    &:hover {
+      text-decoration: none;
+      outline: none;
+    }
+
+    &:focus {
+      text-decoration: none;
+      outline: none;
+    }
+
+    &:active {
+      text-decoration: none;
+      outline: none;
+    }
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .site-heading {
+    h2 {
+      line-height: 56px;
+      color: #021c33;
+      font-size: 48px;
+      text-transform: lowercase;
+      position: relative;
+      font-family: righteous, cursive;
+    }
+
+    margin-bottom: 60px;
+  }
+
+  .team-area {
+    .single-item {
+      margin-bottom: 30px;
+    }
+  }
+
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+  .main-teams {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .site-heading {
+      h2 {
+        font-family: righteous, cursive;
+        font-size: 26px;
+        line-height: 32px;
+      }
+
+      margin-bottom: 30px;
+    }
+
+    .team-area {
+      .single-item {
+        margin-bottom: 20px;
+      }
+
+      .info {
+        background: #ffffff none repeat scroll 0 0;
+        padding: 40px 20px 20px;
+        position: relative;
+        text-align: center;
+        z-index: 9;
+
+        h4 {
+          margin-bottom: 5px;
+          font-size: 24px;
+          line-height: 32px;
+          text-transform: capitalize;
+          font-family: righteous, cursive;
+        }
+
+        span {
+          text-transform: uppercase;
+          font-size: 16px;
+          line-height: 32px;
+        }
+      }
+    }
+
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "website-structure",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "watch": "gulp watch",
+    "clean": "gulp clean"
+  },
+  "liveSassCompile.settings.includeItems": [
+    "**",
+    "*"
+  ],
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0",
+    "gulp-watch": "^5.0.1"
+  },
+  "dependencies": {
+    "del": "^6.0.0",
+    "jquery-plugin-c-share": "^1.2.0"
+  },
+  "description": "1. Install package\r    yarn install \r 2. Run project\r    yarn watch",
+  "author": ""
+}

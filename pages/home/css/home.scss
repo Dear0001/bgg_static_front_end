@@ -1,0 +1,55 @@
+body{
+  background: #fff;
+  main {
+    overflow: hidden;
+  }
+}
+[data-aos] {
+  body[data-aos-easing="new-easing"] &,
+  &[data-aos][data-aos-easing="new-easing"] {
+    transition-timing-function: cubic-bezier(.175,.885,.32,1.05);
+  }
+}
+[data-aos="fade"] {
+  opacity: 0;
+  &.aos-animate {
+    opacity: 1;
+  }
+}
+
+[data-aos="home-fade-up"] {
+  opacity: 0;
+  transform: translate3d(0, 70px, 0px);
+  transition-property: transform, opacity;
+
+  &.aos-animate {
+    transform: translate3d(0, 0px, 0);
+    opacity: 1;
+  }
+}
+
+[data-aos="home-fade-right"] {
+  opacity: 0;
+  transform: translate3d(-30px, 0, 0);
+  transition-property: transform, opacity;
+
+  &.aos-animate {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+[data-aos="home-about-move-up"] {
+  transform: translate3d(0, 200px, 0);
+  transition-property: transform, opacity;
+  opacity: 0;
+
+  &.aos-animate {
+    transform: translate3d(0, 0px, 0);
+    opacity: 1;
+  }
+}
+
+.about-wrapper{
+  width: 90%;
+} 

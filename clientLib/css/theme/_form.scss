@@ -1,0 +1,12 @@
+.form-control {
+  font-size: 14px;
+  border-radius: 0;
+  padding: 20px;
+  &:focus {
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    outline: 0;
+    box-shadow: none;
+  }
+}
