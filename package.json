@@ -22,5 +22,13 @@
     "jquery-plugin-c-share": "^1.2.0"
   },
   "description": "1. Install package\r    yarn install \r 2. Run project\r    yarn watch",
-  "author": ""
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/sotsirymony/bgg_static_front_end.git"
+  },
+  "bugs": {
+    "url": "https://gitlab.com/sotsirymony/bgg_static_front_end/issues"
+  },
+  "homepage": "https://gitlab.com/sotsirymony/bgg_static_front_end#readme"
 }
