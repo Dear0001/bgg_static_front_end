@@ -13,8 +13,7 @@
     "sass": "^1.60.0"
   },
   "scripts": {
-    "start": "http-server -o -c-1 -i index.html",
-    "watch-css": "node-sass --watch --recursive --output-style compressed --source-map true --source-map-contents true --follow --include-path ./ ./ -o ./"
+    "start": "http-server -o -c-1 -i index.html"
   },
   "keywords": [],
   "author": "",
