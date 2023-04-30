@@ -1,0 +1,29 @@
+.nav_bar_component{
+    background-color: gray;
+    .group_items{
+        
+        text-align: right;
+        margin-right: 10%;
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            .item{
+                    display: inline-block; /* step 1 */
+                    width: 100px; /* step 4 */
+                    margin-right: -4px; /* step 5 */
+                    li{  
+                        a{ 
+                            color:white;
+                        }
+                    }
+                }
+        
+            }
+        }
+
+}
+
+   
+
+

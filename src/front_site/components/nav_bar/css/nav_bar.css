@@ -1,0 +1,20 @@
+.nav_bar_component {
+  background-color: gray;
+}
+.nav_bar_component .group_items {
+  text-align: right;
+  margin-right: 10%;
+}
+.nav_bar_component .group_items ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.nav_bar_component .group_items ul .item {
+  display: inline-block; /* step 1 */
+  width: 100px; /* step 4 */
+  margin-right: -4px; /* step 5 */
+}
+.nav_bar_component .group_items ul .item li a {
+  color: white;
+}/*# sourceMappingURL=nav_bar.css.map */
