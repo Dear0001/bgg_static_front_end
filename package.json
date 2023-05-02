@@ -13,7 +13,7 @@
     "sass": "^1.60.0"
   },
   "scripts": {
-    "start": "http-server -o -c-1 -i index.html"
+    "start": "index.html"
   },
   "keywords": [],
   "author": "",
