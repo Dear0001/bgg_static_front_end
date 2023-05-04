@@ -1,27 +1,18 @@
 .nav_bar_component{
     background-color: #93B874;
-    .group_items{
-        
-        text-align: right;
-        margin-right: 10%;
-        ul{
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            .item{
-                    display: inline-block; /* step 1 */
-                    width: 100px; /* step 4 */
-                    margin-right: -4px; /* step 5 */
-                    li{  
-                        a{ 
-                            color:white;
-                        }
-                    }
+    .nav_wrapper{
+        .group_items{
+            /* Extra large devices (large laptops and desktops, 1200px and up) */
+            @media only screen and (min-width: 1200px) {
+                .nav-item{
+                    border: 1px solid rgb(160, 158, 158);
+                    border-top: unset;
+                    border-bottom:unset;
                 }
-        
             }
         }
 
+    }
 }
 
    

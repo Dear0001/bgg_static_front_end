@@ -1,20 +1,13 @@
 .nav_bar_component {
   background-color: #93B874;
 }
-.nav_bar_component .group_items {
-  text-align: right;
-  margin-right: 10%;
+.nav_bar_component .nav_wrapper .group_items {
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
 }
-.nav_bar_component .group_items ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-.nav_bar_component .group_items ul .item {
-  display: inline-block; /* step 1 */
-  width: 100px; /* step 4 */
-  margin-right: -4px; /* step 5 */
-}
-.nav_bar_component .group_items ul .item li a {
-  color: white;
+@media only screen and (min-width: 1200px) {
+  .nav_bar_component .nav_wrapper .group_items .nav-item {
+    border: 1px solid rgb(160, 158, 158);
+    border-top: unset;
+    border-bottom: unset;
+  }
 }/*# sourceMappingURL=nav_bar.css.map */
