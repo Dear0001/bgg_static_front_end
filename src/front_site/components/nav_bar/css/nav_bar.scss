@@ -5,9 +5,40 @@
             /* Extra large devices (large laptops and desktops, 1200px and up) */
             @media only screen and (min-width: 1200px) {
                 .nav-item{
-                    border: 1px solid rgb(160, 158, 158);
+                    border: 1px solid rgb(139, 136, 136);
                     border-top: unset;
                     border-bottom:unset;
+                }
+            }
+            @media (max-width: 992px) {
+                .navbar-collapse {
+                    position: fixed;
+                    top: 40px;
+                    left: 0;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    padding-bottom: 15px;
+                    color:white;
+                    background-color: rgb(0 0 0 / 35%);
+                    width: 75%;
+                    height: 100%;
+                    a{
+                        color:white;
+                    }
+                }
+            
+                .navbar-collapse.collapsing {
+                    left: -75%;
+                    transition: height 0s ease;
+                }
+            
+                .navbar-collapse.show {
+                    left: 0;
+                    transition: left 300ms ease-in-out;
+                }
+            
+                .navbar-toggler.collapsed ~ .navbar-collapse {
+                    transition: left 500ms ease-in-out;
                 }
             }
         }

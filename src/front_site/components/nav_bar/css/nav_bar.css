@@ -6,8 +6,36 @@
 }
 @media only screen and (min-width: 1200px) {
   .nav_bar_component .nav_wrapper .group_items .nav-item {
-    border: 1px solid rgb(160, 158, 158);
+    border: 1px solid rgb(139, 136, 136);
     border-top: unset;
     border-bottom: unset;
+  }
+}
+@media (max-width: 992px) {
+  .nav_bar_component .nav_wrapper .group_items .navbar-collapse {
+    position: fixed;
+    top: 40px;
+    left: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.35);
+    width: 75%;
+    height: 100%;
+  }
+  .nav_bar_component .nav_wrapper .group_items .navbar-collapse a {
+    color: white;
+  }
+  .nav_bar_component .nav_wrapper .group_items .navbar-collapse.collapsing {
+    left: -75%;
+    transition: height 0s ease;
+  }
+  .nav_bar_component .nav_wrapper .group_items .navbar-collapse.show {
+    left: 0;
+    transition: left 300ms ease-in-out;
+  }
+  .nav_bar_component .nav_wrapper .group_items .navbar-toggler.collapsed ~ .navbar-collapse {
+    transition: left 500ms ease-in-out;
   }
 }/*# sourceMappingURL=nav_bar.css.map */
