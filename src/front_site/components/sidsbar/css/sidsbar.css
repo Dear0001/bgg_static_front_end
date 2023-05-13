@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sidbars {
+  width: 300px;
+  height: 400px;
+  padding: 5px;
+  /* background-color: red; */
+}
+
+.element {
+  margin-top: 5px;
+  display: flex;
+  width: 400px;
+  height: 50px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 3px solid silver;
+  /* background: rebeccapurple; */
+}
+
+.element .left {
+  width: 20%;
+  height: 100%;
+  background: green;
+  font-size: 30px;
+  color: white;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.element .right {
+  width: 70%;
+  height: 100%;
+  /* background-color: aqua;  */
+  margin-left: 5%;
+  display: flex;
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=sidsbar.css.map */
