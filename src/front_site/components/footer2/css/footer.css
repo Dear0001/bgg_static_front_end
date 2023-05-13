@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.footer {
+  width: 100%;
+  margin-top: 50px;
+  height: 300px;
+  background-color: rgb(127, 99, 6);
+}
+
+.element {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  display: flex;
+}
+
+.element .right {
+  width: 34%;
+  height: 100%;
+  background-color: yellowgreen;
+}
+
+.right .title {
+  width: 250px;
+  height: 60px;
+  margin: auto;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  margin-top: 10px;
+  /* background-color: burlywood; */
+}
+
+.right .search {
+  width: 250px;
+  margin: auto;
+  margin-top: 10px;
+  display: flex;
+  /* background-color: rgb(0, 255, 13); */
+}
+
+.right .box-icon {
+  width: 250px;
+  margin: auto;
+  height: 50px;
+  margin-top: 10px;
+  display: flex;
+  /* background-color: red; */
+}
+
+.box-icon .icon {
+  width: 40px;
+  margin-left: 2px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.box-icon .icon i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: white;
+  margin-top: 7px;
+}
+
+.box-icon .icon i:hover {
+  color: rgb(200, 191, 191);
+  transform: scale(0.9);
+  cursor: pointer;
+}
+
+.btn i {
+  width: 30px;
+  height: 10px;
+}
+
+.btn {
+  margin-left: 5px;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  background-color: rgb(142, 156, 158);
+  color: white;
+  cursor: pointer;
+}
+
+.search .txt {
+  text-align: center;
+  width: 100%;
+  height: 35px;
+  border-radius: 10px;
+}
+
+.element .center {
+  width: 30%;
+  height: 100%;
+  margin-left: 2px;
+  background-color: yellowgreen;
+}
+
+.element .center .box {
+  width: 400px;
+  height: 300px;
+  display: flex;
+}
+
+.box .box-right {
+  width: 50%;
+  height: 50%;
+  margin-top: 70px;
+}
+
+.box .box-right a {
+  text-decoration: none;
+  color: azure;
+  display: flex;
+  font-size: 23px;
+  margin-left: 30px;
+}
+
+.box .box-right a:hover {
+  color: rgb(242, 240, 240);
+  cursor: pointer;
+}
+
+.box .box-left {
+  width: 50%;
+  height: 50%;
+  margin-top: 70px;
+}
+
+.box .box-left a {
+  text-decoration: none;
+  color: azure;
+  display: flex;
+  font-size: 23px;
+  margin-left: 30px;
+  /* margin-top: 20px; */
+}
+
+.box .box-left a:hover {
+  cursor: pointer;
+}
+
+.element .left {
+  width: 35%;
+  height: 100%;
+  margin-left: 3px;
+  background-color: yellowgreen;
+}
+
+.element .left .title {
+  width: 300px;
+  margin-top: 30px;
+  display: flex;
+  height: 50px;
+}
+
+.element .left .title .right {
+  width: 40px;
+  height: 100%;
+  /* background-color: rgb(127, 99, 6); */
+}
+
+.element .left .title .right i {
+  font-size: 30px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.element .left .title .left {
+  width: 250px;
+  bottom: 100%;
+}
+
+.element .left .text {
+  width: 200px;
+  height: 50px;
+  color: azure;
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.element .left .search .txt1 {
+  font-size: 20px;
+  margin-left: 10px;
+  height: 34px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.element .left .search .txt2 {
+  font-size: 20px;
+  margin-left: 10px;
+  height: 34px;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 10px;
+  background-color: black;
+}
+
+.element .left .tital-footer {
+  width: 250px;
+  height: 70px;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 18px;
+  color: azure;
+}/*# sourceMappingURL=footer.css.map */
