@@ -1,25 +1,29 @@
-let subMenu = document.getElementById("subMenu");
+// let subMenu = document.getElementById("subMenu");
 
-  function toggleMenu(){
-    subMenu.classList.toggle("open-menu");  
-  }
+// function toggleMenu() {
+//   subMenu.classList.toggle("open-menu");
+// }
+var timeOutValue = 8400; // SET TIMEOUT (IN MILISECONDS).
+var setTimeToHide_ID, myItem;
 
-  //dropdown login-info
-  let loginMenu = document.getElementById("loginMenu");
-  function handleOnmouseOver(){
-    loginMenu.classList.toggle("open-login");
-  
-  }
-  function handleOnmouseOut(){
-    loginMenu.classList.toggle("close-login");
-  }
-  
-//dropdown help-info
-let helpMenu = document.getElementById("helpMenu");
-function handleOnmouseOverHelp(){
-  helpMenu.classList.toggle("open-help");
+function showmenu(obj) {
+  if (myItem) myItem.style.display = "none";
 
+  myItem = document.getElementById(obj);
+  myItem.style.display = "block";
 }
-function handleOnmouseOutHelp(){
-  helpMenu.classList.toggle("close-help");
+// SET TIME TO HIDE MENU LIST.
+function setTimeToHide() {
+  setTimeToHide_ID = window.setTimeout(HideMenu, timeOutValue);
+}
+
+function HideMenu() {
+  if (myItem) myItem.style.display = "none";
+} // HIDE THE MENU LIST AFTER A SPECIFIED TIME.
+
+function ReSetTimer() {
+  if (setTimeToHide_ID) {
+    window.clearTimeout(setTimeToHide_ID);
+    setTimeToHide_ID = 0;
+  }
 }
