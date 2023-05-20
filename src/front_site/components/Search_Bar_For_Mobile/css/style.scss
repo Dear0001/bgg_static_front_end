@@ -19,7 +19,7 @@
                     input[type=text]{
                         border:0;
                         padding:0;
-                        width:0;
+                        width:100px;
                         height: 60px;
                         transition: all 0.5 ease;
                     }
@@ -47,12 +47,21 @@
                             transform: translate(-50%,-50%);
                             cursor: pointer;
                             font-size: 35px;
+                           
                         }
-                      
+                        .fa-close{
+                            display: none;
+                        }
                     }
-                    .icon .active{
-                        background-color: deepskyblue;
+                    .icon.active{
+                        background-color: yellow;
                         transition: all 0.3s ease;
+                        .fa-search{
+                            display: none;
+                        }
+                        .fa-close{
+                            display: revert;
+                        }
                     }
                 }
             }

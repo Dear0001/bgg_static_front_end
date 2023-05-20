@@ -23,7 +23,8 @@
                 <div class="box">
                     <div class="search-area">
                         <input type="text" placeholder="Input text...">
-                        <div class="icon"><i class="fa fa-search"></i></div>
+                        <!-- <div class="icon"><i class="fa fa-search"></i></div> -->
+                        <div class="icon"><i class="fa fa-search"></i><i class="fa fa-close"></i></div>
                     </div>
                 </div>
             </div>
@@ -35,6 +36,7 @@
 <!-- script for jquery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 <script>
+    // jquery with css
     $(".fa").click(function(){
         $(".icon").toggleClass("active");
         $("input[type=text]").toggleClass("active");
