@@ -18,304 +18,12 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-12" id="col">
-          <!-- start navbar component here -->
-          <div class="nav_bar_component">
-            <!--hover menu when responsive-->
-            <div class="block_image">
-              <!-- <img src="image/more.png" onclick="toggleMenu()" /> -->
-              <img src="image/more.png" onclick="showmenu('subMenu');" 
-              onmouseout="setTimeToHide()"/>
-            </div>
-
-            <div class="group_items1">
-              <!-- start navbar -->
-              <div class="logo">
-                <img src="image/wikihow_logo.png" alt="wikiHow-logo" />
-              </div>
-
-              <div class="search_bar">
-                <form action="">
-                  <input
-                    type="search"
-                    role="textbox"
-                    id="nan_search"
-                    name="search"
-                    tabindex="0"
-                    required
-                    aria-label="Search here"
-                    placeholder="to do anything..."
-                    x-webkit-speech
-                  />
-                  <button>
-                    <i
-                      class="fa fa-search"
-                      aria-hiiden="true"
-                      id="search-icon"
-                    ></i>
-                  </button>
-                </form>
-              </div>
-            </div>
-
-            <div class="category" >
-              <!-- NavBar Pro -->
-              <li id="nav_pro_li" onmouseover="showmenu('toggleMenu');" 
-              onmouseout="setTimeToHide()">
-                <a href="">
-                  <div class="nav_icon_pro">
-                    <img src="image/more.png" />
-                  </div>
-                  <div class="text_pro">
-                    <label class="label">PRO</label>
-                  </div>
-                </a>
-              </li>
-            </div>
-
-            <div class="group_items2">
-              <ul>
-                <li id="random">
-                  <a href="">
-                    <div class="nav_icon">
-                      <i
-                        class="fa fa-random"
-                        aria-hidden="true"
-                        id="random"
-                      ></i>
-                    </div>
-                    <div class="text" id="text">RANDOM</div>
-                  </a>
-                </li>
-                <!-- <li onmouseover="handleOnmouseOver()" onmouseout="handleOnmouseOut()"> -->
-                <li onmouseover="showmenu('loginMenu');" 
-                onmouseout="setTimeToHide()">
-                  <a href="">
-                    <div class="nav_icon">
-                      <i class="fa fa-user" aria-hidden="true"></i>
-                    </div>
-                    <div class="text">LOG IN</div>
-                  </a>
-                </li>
-                <li onmouseover="showmenu('exploreMenu');" 
-                onmouseout="setTimeToHide()"> 
-                  <a href="">
-                    <div class="nav_icon">
-                      <i class="fa fa-podcast" aria-hidden="true"></i>
-                    </div>
-                    <div class="text">EXPLORE</div>
-                  </a>
-                </li>
-                <!-- <li onmouseover="handleOnmouseOverHelp(this)" onmouseout="handleOnmouseOutHelp()"> -->
-                <li onmouseover="showmenu('helpMenu');" 
-                onmouseout="setTimeToHide()">
-                  <a href="">
-                    <div class="nav_icon">
-                      <i class="fa fa-info-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="text">HELP US</div>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="guides">
-                <!-- NavBar Pro -->
-                <li>
-                  <a href="">
-                    <label class="label">Guides</label>
-                  </a>
-                </li>
-              </div>
-              <!-- responsive logo for ipad-->
-            <div class="logo-respon">
-              <img src="image/wikihow_logo.png" alt="wikiHow-logo" id="logo"/>
-            </div>
-
-            <!-- responsive search bar for ipad and phone-->
-            <div class="respon-search">
-              <form class="wrap-search">
-                  <input type="search" id="search-ip" name="search" required autofocus placeholder="to do anything..." x-webkit-speech>
-                  <i class="fa fa-search" aria-hiiden="true"></i>
-              </form>
-            </div>
-            <!-- responsive search bar for phone-->
-            <div class="phone-search">
-              <form class="wrap-search2">
-                <input type="search" id="search-ph" name="search" required autofocus x-webkit-speech>
-                <i class="fa fa-search" aria-hiiden="true"></i>
-            </form>
-            </div>
-
-            <!-- for responsive ipad  and phone-->
-            <div class="random-ipad">
-              <i class="fa fa-random" aria-hidden="true" class="rd"></i>
-            </div>
-          </div>
-
-          <!--dropdown login-->
-        <div class="login_menu_wrap" id="loginMenu" onmouseover="ReSetTimer()" 
-        onmouseout="setTimeToHide()" 
-        style="display:none;">
-          <div class="sub_login">
-            <span>Log in</span>
-            <div class="login_info" id="fb-icon">
-              <i class="fa fa-facebook-official" aria-hidden="true"></i>
-              <h3>Facebook</h3>
-            </div>
-            <div class="login_info" id="google-icon">
-              <i class="fa fa-google" aria-hidden="true"></i>
-              <h3>Goggle</h3>
-            </div>
-            <div class="login_info" id="wiki-icon">
-              <i class="fa fa-user" aria-hidden="true"></i>
-              <h3>wikiHow Account</h3>
-            </div>
-            <p>No account yet? <a href="#">Create an account</a></p>
-          </div>
-        </div>
-        <!--dropdown help us-->
-        <div class="help_menu_wrap" id="helpMenu" onmouseover="ReSetTimer()" 
-        onmouseout="setTimeToHide()" 
-        style="display:none;">
-          <div class="sub_help">
-            <a href="#" active>Supports wikiHow</a>
-            <a href="#">Community Dashbord</a>
-            <a href="#">Write an Article</a>
-            <a href="#">Requests a Article</a>
-            <a href="#">More ideas...</a>
-          </div>
-        </div>
-
-        <!--dropdown toggle menu using event onclick-->
-        <div class="toggle_menu_wrap" id="toggleMenu" onmouseover="ReSetTimer()" 
-        onmouseout="setTimeToHide()" 
-        style="display:none;">
-          <div class="sub-toggle">
-            <a href="">Course</a>
-            <a href="">Gruides</a>
-            <a href="">Tech Help Pro</a>
-            <a href="">Expert Video</a>
-            <a href="">About wikiHow Pro</a>
-            <a href="">Coupons</a>
-            <a href="">Quizess</a>
-          </div>
-          <hr>
-          <div class="sub-toggle">
-            <a href="">Upgrade</a>
-            <a href="">Sign In</a>
-          </div>
-        </div>
-
-        <!--dropdown explore-->
-        <div class="container" id="exploreMenu" onmouseover="ReSetTimer()" 
-        onmouseout="setTimeToHide()" 
-        style="display:none;">
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4" id="col-items">
-            <div class="col"><h4>Coupons</h4></div>
-            <div class="col"><h4>Tech Help Pro</h4></div>
-            <div class="col"><h4>Random Article</h4></div>
-            <div class="col"><h4>About Us</h4></div>
-          </div>
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4" id="col-items">
-            <div class="col"><h4>Quizzes</h4></div>
-            <div class="col"><h4>Contribute</h4></div>
-            <div class="col"><h4>Train Your Brain</h4></div>
-            <div class="col"><h4> Game Improve Your English</h4></div>
-          </div>
-          <hr>
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4" id="col-items">
-            <div class="col"><h4>Pupular Categories</h4></div>
-          </div>
-           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4" id="cate-items" id="big-items">
-            <div class="col">Arts and Entertainment</div>
-            <div class="col">Computers and Electronics</div>
-            <div class="col">Health</div>
-            <div class="col">Relationships</div>
-          </div>
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4" id="list-items">
-            <div class="col">Column</div>
-            <div class="col">Column</div>
-            <div class="col">Column</div>
-            <div class="col">Column</div>
-          </div>
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4" id="list-items">
-            <div class="col">Column</div>
-            <div class="col">Column</div>
-            <div class="col">Column</div>
-            <div class="col">Column</div>
-          </div>
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4" id="list-items">
-            <div class="col">Column</div>
-            <div class="col">Column</div>
-            <div class="col">Column</div>
-            <div class="col">Column</div>
-          </div>
-          <!-- <div class="col">Column</div> -->
-           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4" id="cate-items" id="big-items">
-            <div class="col">Hobbies and Crafts</div>
-            <div class="col">Education & Communication</div>
-            <div class="col">Personal Care and Style</div>
-            <div class="col">Youth</></div>
-          </div>
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4" id="list-items">
-            <div class="col">Column</div>
-            <div class="col">Column</div>
-            <div class="col">Column</div>
-            <div class="col">Column</div>
-          </div>
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4" id="list-items">
-            <div class="col">Column</div>
-            <div class="col">Column</div>
-            <div class="col">Column</div>
-            <div class="col">Column</div>
-          </div>
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4" id="list-items">
-            <div class="col">Column</div>
-            <div class="col">Column</div>
-            <div class="col">Column</div>
-            <div class="col">Column</div>
-          </div>
-          <hr>
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4" id="col-items">
-            <div class="col"><h4>All Categories</h4></div>
-          </div>
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4" id="big-items">
-            <div class="col"> Arts and Entertainment</div>
-            <div class="col">Finance and Business</div>
-            <div class="col">Home and Garden</div>
-            <div class="col">Relationship Quizzes</div>
-          </div>
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4" id="big-items">
-            <div class="col">Cars & Other</div>
-            <div class="col">VehiclesFood and Entertaining</div>
-            <div class="col">Personal Care and Style</div>
-            <div class="col">Sports and Fitness</div>
-          </div>
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4" id="big-items">
-            <div class="col">Computers and Electronics</div>
-            <div class="col">Health</div>
-            <div class="col">Pets and Animals</div>
-            <div class="col">Travel</div>
-          </div>
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4" id="big-items">
-            <div class="col">Education & Communication</div>
-            <div class="col">Hobbies and Crafts</div>
-            <div class="col">Philosophy and Religion</div>
-            <div class="col">Work World</div>
-          </div>
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4" id="big-items">
-            <div class="col">Family Life</div>
-            <div class="col">Holidays and Traditions</div>
-            <div class="col">Relationships</div>
-            <div class="col">Youth</div>
-          </div>
-        </div>
-          <!--dropdown toggle menu-->
-          <div class="sub_menu_wrap" id="subMenu" onclick="ReSetTimer()" 
-          onmouseout="setTimeToHide()" 
-          style="display:none;">
+    <div class="content">
+      <div class="navbar-wrap">
+        <!--hover menu when responsive-->
+        <div class="repon_toggle-menu" onclick="toggleMenu()">
+          <img src="image/more.png" />
+          <div class="sub_menu_wrap" id="subMenu">
             <div class="sub_menu">
               <div class="toggle_info">
                 <i class="fa fa-home" aria-hidden="true"></i>
@@ -376,7 +84,307 @@
               </div>
             </div>
           </div>
-          
+        </div>
+
+        <div class="conponent">
+          <!-- block one -->
+          <div class="items-group1">
+            <div class="logo">
+              <img src="image/wikihow_logo.png" />
+            </div>
+            <div class="search-wrap">
+              <form action="">
+                <input
+                  type="text"
+                  id="nav_search"
+                  autofocus
+                  required
+                  aria-label="Search here"
+                  placeholder="to do anything..."
+                  x-webkit-speech
+                />
+                <button>
+                  <i
+                    class="fa fa-search"
+                    aria-hiiden="true"
+                    id="search-icon"
+                  ></i>
+                </button>
+              </form>
+            </div>
+          </div>
+          <!-- block-two -->
+          <ul class="items-group2">
+            <li id="randon-nav-li" class="nav-item">
+              <div class="icon">
+                <i class="fa fa-random" aria-hidden="true" id="random"></i>
+              </div>
+              <a href="#">RANDOM</a>
+            </li>
+            <li
+              id="login-nav-li"
+              class="nav-item"
+              onmouseover="showmenu('loginMenu');"
+              onmouseout="setTimeToHide()"
+            >
+              <div class="icon">
+                <i class="fa fa-user" aria-hidden="true" id="random"></i>
+              </div>
+              <a href="#">LOG IN</a>
+            </li>
+            <li id="explore-nav-li" class="nav-item" onmouseover="showmenu('exploreMenu');" 
+            onmouseout="setTimeToHide()">
+              <div class="icon">
+                <i class="fa fa-podcast" aria-hidden="true" id="random"></i>
+              </div>
+              <a href="#">EXPLORE</a>
+            </li>
+            <li
+              id="help-nav-li"
+              class="nav-item"
+              onmouseover="showmenu('helpMenu');"
+              onmouseout="setTimeToHide()"
+            >
+              <div class="icon">
+                <i class="fa fa-info-circle" aria-hidden="true" id="random"></i>
+              </div>
+              <a href="#">HELP US</a>
+            </li>
+            <!-- block pro -->
+            <li
+              id="nav-pro"
+              class="nav-item-li"
+              onmouseover="showmenu('toggleMenu');"
+              onmouseout="setTimeToHide()"
+            >
+              <div class="icon-pro">
+                <img src="image/more.png" />
+              </div>
+              <a href="#">
+                <label for="pro">PRO</label>
+              </a>
+            </li>
+
+            <!--dropdown toggle menu using event onclick-->
+            <div
+              class="toggle_menu_wrap"
+              id="toggleMenu"
+              onmouseover="ReSetTimer()"
+              onmouseout="setTimeToHide()"
+              style="display: none"
+            >
+              <div class="sub-toggle">
+                <a href="">Course</a>
+                <a href="">Gruides</a>
+                <a href="">Tech Help Pro</a>
+                <a href="">Expert Video</a>
+                <a href="">About wikiHow Pro</a>
+                <a href="">Coupons</a>
+                <a href="">Quizess</a>
+              </div>
+              <hr />
+              <div class="sub-toggle">
+                <a href="">Upgrade</a>
+                <a href="">Sign In</a>
+              </div>
+            </div>
+
+            <!--dropdown help us-->
+            <div
+              class="help_menu_wrap"
+              id="helpMenu"
+              onmouseover="ReSetTimer()"
+              onmouseout="setTimeToHide()"
+              style="display: none"
+            >
+              <div class="sub_help">
+                <a href="#" active>Supports wikiHow</a>
+                <a href="#">Community Dashbord</a>
+                <a href="#">Write an Article</a>
+                <a href="#">Requests a Article</a>
+                <a href="#">More ideas...</a>
+              </div>
+            </div>
+            <!--dropdown login-->
+            <div
+              class="login_menu_wrap"
+              id="loginMenu"
+              onmouseover="ReSetTimer()"
+              onmouseout="setTimeToHide()"
+              style="display: none"
+            >
+              <div class="sub_login">
+                <span>Log in</span>
+                <div class="login_info" id="fb-icon">
+                  <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                  <h3>Facebook</h3>
+                </div>
+                <div class="login_info" id="google-icon">
+                  <i class="fa fa-google" aria-hidden="true"></i>
+                  <h3>Goggle</h3>
+                </div>
+                <div class="login_info" id="wiki-icon">
+                  <i class="fa fa-user" aria-hidden="true"></i>
+                  <h3>wikiHow Account</h3>
+                </div>
+                <p>No account yet? <a href="#">Create an account</a></p>
+              </div>
+            </div>
+          </ul>
+          <!-- dropdown explore -->
+          <div class="menu explore-menu" id="exploreMenu" onmouseover="ReSetTimer()"
+          onmouseout="setTimeToHide()"
+          style="display: none">
+            <div class="explore_menu_line">
+              <a href="#" class="menuitem">Coupons</a>
+              <a href="#" class="menuitem">Tech Help Pro</a>
+              <a href="#" class="menuitem">Random Article</a>
+              <a href="#" class="menuitem">About Us</a>
+            </div>
+            <div class="explore_menu_line">
+              <a href="#" class="menuitem">Quizzes</a>
+              <a href="#" class="menuitem">Contribute</a>
+              <a href="#" class="menuitem">Train Your Brain Game</a>
+              <a href="#" class="menuitem">Improve Your English</a>
+            </div>
+            <hr />
+            <div class="explore_menu_line section_name_line">
+              <a href="#" class="menuitem">Popular Categories</a>
+            </div>
+            <div class="explore_menu_line little-menu">
+              <div class="menuitem">
+                <a href="#" class="menu_item_sub">Arts and Entertainment</a>
+                <a href="#" class="menu_item_sub component">Artwork</a>
+                <a href="#" class="menu_item_sub component">Artwork</a>
+                <a href="#" class="menu_item_sub component">Artwork</a>
+              </div>
+              <div class="menuitem">
+                <a href="#" class="menu_item_sub">Computers and Electronics</a>
+                <a href="#" class="menu_item_sub component">Artwork</a>
+                <a href="#" class="menu_item_sub component">Artwork</a>
+                <a href="#" class="menu_item_sub component">Artwork</a>
+              </div>
+              <div class="menuitem">
+                <a href="#" class="menu_item_sub">Health</a>
+                <a href="#" class="menu_item_sub component">Artwork</a>
+                <a href="#" class="menu_item_sub component">Artwork</a>
+                <a href="#" class="menu_item_sub component">Artwork</a>
+              </div>
+              <div class="menuitem">
+                <a href="#" class="menu_item_sub">Relationships</a>
+                <a href="#" class="menu_item_sub component">Artwork</a>
+                <a href="#" class="menu_item_sub component">Artwork</a>
+                <a href="#" class="menu_item_sub component">Artwork</a>
+              </div>
+            </div>
+            <div class="explore_menu_line little-menu">
+              <div class="menuitem">
+                <a href="#" class="menu_item_sub">Hobbies and Crafts</a>
+                <a href="#" class="menu_item_sub component">Crafts</a>
+                <a href="#" class="menu_item_sub component">Drawing</a>
+                <a href="#" class="menu_item_sub component">Games</a>
+              </div>
+              <div class="menuitem">
+                <a href="#" class="menu_item_sub">Education & Communication</a>
+                <a href="#" class="menu_item_sub component">Communication Skills</a>
+                <a href="#" class="menu_item_sub component">Personal Development</a>
+                <a href="#" class="menu_item_sub component">Studying</a>
+              </div>
+              <div class="menuitem">
+                <a href="#" class="menu_item_sub">Personal Care and Style</a>
+                <a href="#" class="menu_item_sub component">Fashion</a>
+                <a href="#" class="menu_item_sub component">Hair Care</a>
+                <a href="#" class="menu_item_sub component">Personal Hygiene</a>
+              </div>
+              <div class="menuitem">
+                <a href="#" class="menu_item_sub"> Youth</a>
+                <a href="#" class="menu_item_sub component">Personal Care</a>
+                <a href="#" class="menu_item_sub component">School Stuff</a>
+                <a href="#" class="menu_item_sub component">Dating</a>
+              </div>
+            </div>
+            <hr />
+            <div class="explore_menu_line section_name_line">
+              <a href="#" class="menuitem">All Categories</a>
+            </div>
+            <div class="explore_menu_line section_name_line">
+              <a href="#" class="menuitem top_cat">Arts and Entertainment</a>
+              <a href="#" class="menuitem top_cat">Finance and Business</a>
+              <a href="#" class="menuitem top_cat">Home and Garden</a>
+              <a href="#" class="menuitem top_cat">Relationship Quizzes</a>
+            </div>
+            <div class="explore_menu_line section_name_line">
+              <a href="#" class="menuitem top_cat">Cars & Other Vehicles</a>
+              <a href="#" class="menuitem top_cat">Food and Entertaining</a>
+              <a href="#" class="menuitem top_cat">Personal Care and Style</a>
+              <a href="#" class="menuitem top_cat">Sports and Fitness</a>
+            </div>
+            <div class="explore_menu_line section_name_line">
+              <a href="#" class="menuitem top_cat">Computers and Electronics</a>
+              <a href="#" class="menuitem top_cat">Health</a>
+              <a href="#" class="menuitem top_cat">Pets and Animals</a>
+              <a href="#" class="menuitem top_cat">Travel</a>
+            </div>
+            <div class="explore_menu_line section_name_line">
+              <a href="#" class="menuitem top_cat">Education & Communication</a>
+              <a href="#" class="menuitem top_cat">Hobbies and Crafts</a>
+              <a href="#" class="menuitem top_cat">Philosophy and Religion</a>
+              <a href="#" class="menuitem top_cat">Work World</a>
+            </div>
+            <div class="explore_menu_line section_name_line">
+              <a href="#" class="menuitem top_cat">Family Life</a>
+              <a href="#" class="menuitem top_cat">Holidays and Traditionst</a>
+              <a href="#" class="menuitem top_cat">Relationships</a>
+              <a href="#" class="menuitem top_cat">Youth</a>
+            </div>
+          </div>
+        </div>
+        <!-- responsive guide -->
+        <div class="guides">
+          <!-- NavBar Pro -->
+          <li>
+            <a href="">
+              <label class="label">Guides</label>
+            </a>
+          </li>
+        </div>
+
+        <!-- responsive logo for both-->
+        <div class="logo-respon">
+          <img src="image/wikihow_logo.png" alt="wikiHow-logo" id="logo" />
+        </div>
+        <!-- responsive search bar for ipad-->
+        <div class="search-ipad">
+          <form class="wrap-search">
+            <input
+              type="text"
+              id="search-ip"
+              name="search"
+              required
+              autofocus
+              placeholder="to do anything..."
+              x-webkit-speech
+            />
+            <i class="fa fa-search" aria-hiiden="true"></i>
+          </form>
+        </div>
+        <div class="phone-search">
+          <form class="wrap-search2">
+            <input
+              type="search"
+              id="search-ph"
+              name="search"
+              required
+              autofocus
+              x-webkit-speech
+            />
+            <i class="fa fa-search" aria-hiiden="true"></i>
+          </form>
+        </div>
+
+        <!-- for responsive ipad  and phone-->
+        <div class="random-both">
+          <i class="fa fa-random" aria-hidden="true" class="rd"></i>
         </div>
       </div>
     </div>
