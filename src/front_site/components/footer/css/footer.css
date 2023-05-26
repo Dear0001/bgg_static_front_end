@@ -1,3 +1,41 @@
-.component_footer {
+.cmp_footer {
   background-color: #93B874;
+}
+.cmp_footer .logo_wrapper img {
+  width: 200px;
+  height: auto;
+}
+.cmp_footer .search-container-ipad {
+  position: relative;
+}
+.cmp_footer .search-container-ipad form {
+  background-color: unset;
+}
+.cmp_footer .search-container-ipad input[type=text] {
+  padding: 12px;
+  margin-top: 8px;
+  font-size: 16px;
+  border: 2px solid #93B874;
+  background-color: white;
+  border-radius: 8px;
+  width: 100%;
+}
+.cmp_footer .search-container-ipad input:focus {
+  color: white;
+  outline: none;
+}
+.cmp_footer .search-container-ipad ::-moz-placeholder {
+  font-size: 1.25rem;
+  color: gray;
+}
+.cmp_footer .search-container-ipad ::placeholder {
+  font-size: 1.25rem;
+  color: gray;
+}
+.cmp_footer .search-container-ipad i {
+  position: absolute;
+  left: 380px;
+  font-size: 20px;
+  top: 23px;
+  color: gray;
 }/*# sourceMappingURL=footer.css.map */
