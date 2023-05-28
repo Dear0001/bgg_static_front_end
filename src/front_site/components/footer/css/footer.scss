@@ -1,3 +1,41 @@
-.component_footer{
+.cmp_footer{
     background-color:#93B874;
+    .logo_wrapper{
+        img{
+            width:200px;
+            height: auto;
+        }
+        
+    }
+    .search-container-ipad{
+        position: relative;
+        form{
+            background-color: unset;
+        }
+        input[type=text]{
+            padding: 12px;
+            margin-top: 8px;
+            font-size: 16px;
+            border: 2px solid #93B874;
+            background-color:white;
+            border-radius: 8px;
+            width: 100%;
+           
+        }
+        input:focus{
+            color:white;
+            outline: none;
+        }
+        ::placeholder{
+            font-size: 1.25rem;
+            color:gray;
+        }
+        i{
+            position: absolute;
+            left: 380px;
+            font-size: 20px;
+            top: 23px;
+            color: gray;
+        }
+    }
 }

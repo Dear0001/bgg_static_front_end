@@ -1,51 +1,291 @@
-.nav_bar_component{
-    background-color: #93B874;
-    .nav_wrapper{
-        .group_items{
-            /* Extra large devices (large laptops and desktops, 1200px and up) */
-            @media only screen and (min-width: 1200px) {
-                .nav-item{
-                    border: 1px solid rgb(139, 136, 136);
-                    border-top: unset;
-                    border-bottom:unset;
-                }
-            }
-            @media (max-width: 992px) {
-                .navbar-collapse {
-                    position: fixed;
-                    top: 40px;
-                    left: 0;
-                    padding-left: 15px;
-                    padding-right: 15px;
-                    padding-bottom: 15px;
-                    color:white;
-                    background-color: rgb(0 0 0 / 35%);
-                    width: 75%;
-                    height: 100%;
-                    a{
-                        color:white;
+.nav_bar_component {
+    background-color: #93b874;
+
+    //navbar for mobile
+    @media (max-width: 991px) {
+        .nav-desktop {
+            display: none !important;
+        }
+        .nav-mobile {
+            display: revert !important;
+        }
+        .nav_wrapper {
+
+            //group_items for mobile
+            .group_items {
+                
+                #group_items_mobile{
+                     /* Extra large devices (large laptops and desktops, 1200px and up) */
+                @media only screen and (min-width: 1200px) {
+                    .nav-item {
+                        //border: 1px solid rgb(139, 136, 136);
+                        border-top: unset;
+                        border-bottom: unset;
                     }
                 }
-            
-                .navbar-collapse.collapsing {
-                    left: -75%;
-                    transition: height 0s ease;
+                //all style relate dropdown support only mobile and ipad
+                @media (max-width: 992px) {
+                    //put no dropdown icon
+                    .dropdown-toggle::after {
+                        position: absolute;
+                        left: 141px;
+                        top: 24px;
+                    }
+
+                    .dropdown:hover {
+                        background-color: unset;
+                        background-color: #5C5C5C;
+                    }
+
+                    //module dropdown formatter style
+                    .dropdown-menu {
+                        left: -94px;
+                        border-radius: unset;
+                        border:unset !important;
+                        --bs-dropdown-bg:#5C5C5C !important ;
+                        width:229px;
+                        .dropdown-item {
+                            border:unset !important;
+                            width:100%;
+                            background-color: #5C5C5C;
+                            color: white;
+                            font-weight: bold;
+                            margin-left: 22px;
+                            font-size: 20px;
+                        }
+
+                        .dropdown-item:hover {
+                            color: white !important;
+                            font-size:24px !important;
+                        }
+                    }
+
+                    .icon-title-wrapper {
+                        display: flex;
+                        .icon {
+                            padding:5px;
+                            i {
+                                font-size: 24px;
+                            }
+                        }
+
+                        h5 {
+                            padding:9px;
+                            font-size: 20px;
+                            text-transform: uppercase;
+                        }
+                    }
                 }
-            
-                .navbar-collapse.show {
-                    left: 0;
-                    transition: left 300ms ease-in-out;
+                //support icon while mobile collapse style
+                @media (max-width: 992px) {
+                    .navbar-collapse {
+                        position: fixed;
+                        top: 40px;
+                        left: 0;
+                        padding-left: 15px;
+                        padding-right: 15px;
+                        padding-bottom: 15px;
+                        color: white;
+                        background-color: #5C5C5C;
+                        width: 75%;
+                        height: 100%;
+
+                        a {
+                            color: white;
+                        }
+                    }
+
+                    .navbar-collapse.collapsing {
+                        left: -75%;
+                        transition: height 0s ease;
+                    }
+
+                    .navbar-collapse.show {
+                        left: 0;
+                        transition: left 300ms ease-in-out;
+                    }
+
+                    .navbar-toggler.collapsed~ .navbar-collapse {
+                        transition: left 500ms ease-in-out;
+                    }
                 }
-            
-                .navbar-toggler.collapsed ~ .navbar-collapse {
-                    transition: left 500ms ease-in-out;
+
+                }
+               
+            }
+        }
+    }
+    //navbar for desktop
+    @media (min-width: 992px) {
+        .nav-mobile {
+            display: none !important;
+        }
+    }
+    .nav_wrapper {
+        .logo-wrapper {
+            //logo image for desktop
+            @media (min-width: 992px) {
+                img {
+                    width: 200px;
+                    height: auto;
+                }
+            }
+            //for ipad
+            @media (min-width: 768px) And (max-width:992px) {
+                img {
+                    width: 173px;
+                    height: auto;
+                }
+            }
+            //for mobile
+            @media (max-width: 768px) {
+                img {
+                    width: 100px;
+                    height: auto;
+                }
+            }
+           
+        }
+
+        .category_wrapper {
+
+            //margin-bottom: 60px;
+            img {
+                width: 130px;
+                height: auto;
+            }
+        }
+
+        //category put background-color unset
+        .bg-unset {
+            background-color: unset !important;
+        }
+
+        //dropdown of category
+        .dropdown-of-category {
+            left: -22px !important;
+        }
+
+        .search-bar-wrapper {
+            //close search-bar-desktop while mobile and ipad
+            @media (max-width: 992px) {
+                .search-container-desk-top {
+                    display: none !important;
+                }
+            }
+
+            .search-container-desk-top {
+                form {
+                    background-color: unset;
+                }
+
+                input[type="text"] {
+                    padding: 6px;
+                    margin-top: 8px;
+                    font-size: 17px;
+                    border-top: unset;
+                    border-left: unset;
+                    border-right: unset;
+                    border-bottom: 2px solid white;
+                    background-color: unset;
+                    width: 300px;
+                }
+
+                input:focus {
+                    color: white;
+                    outline: none;
+                }
+
+                ::placeholder {
+                    font-size: 28px;
+                    color: white;
+                }
+
+                button {
+                    padding: 10px 30px;
+                    margin-top: 8px;
+                    margin-right: 16px;
+                    background-color: #adc996;
+                    font-size: 17px;
+                    border: unset;
+                    border-radius: 7px;
+                    cursor: pointer;
+
+                    .fa-search {
+                        font-size: 30px;
+                        color: white;
+                    }
                 }
             }
         }
 
+        .group_items {
+            /* Extra large devices (large laptops and desktops, 1200px and up) */
+            @media only screen and (min-width: 1200px) {
+                .nav-item {
+                    //border: 1px solid rgb(139, 136, 136);
+                    border-top: unset;
+                    border-bottom: unset;
+                }
+            }
+
+            //all style relate dropdown support only desktp
+            @media (min-width: 992px) {
+
+                //put dropdown as hover
+                .dropdown:hover>.dropdown-menu {
+                    display: block;
+                    color: #4e634e !important;
+                }
+
+                //put no dropdown icon
+                .dropdown-toggle::after {
+                    display: none !important;
+                }
+
+                .dropdown:hover {
+                    background-color: hsl(120, 6%, 49%);
+                }
+
+                //module dropdown formatter style
+                .dropdown-menu {
+                    left: -94px;
+                    border-radius: unset;
+                    border: 1px solid green;
+
+                    .dropdown-item {
+                        color: green;
+                        font-weight: bold;
+                    }
+
+                    .dropdown-item:hover {
+                        background-color: #93b874;
+                        color: white !important;
+                    }
+                }
+                
+                .icon-title-wrapper {
+                    padding-left: 2px;
+                    padding-right: 2px;
+
+                    .icon {
+                        padding-top: 15px;
+                        text-align: center;
+                        padding-bottom: 10px;
+
+                        i {
+                            font-size: 24px;
+                        }
+                    }
+
+                    h5 {
+                        font-size: 12px;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+
+            //support icon while mobile collapse style
+        }
     }
 }
-
-   
-
-
