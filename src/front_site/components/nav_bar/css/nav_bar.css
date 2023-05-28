@@ -8,34 +8,34 @@
   .nav_bar_component .nav-mobile {
     display: revert !important;
   }
-  .nav_bar_component .nav_wrapper .group_items {
+  .nav_bar_component .nav_wrapper .group_items #group_items_mobile {
     /* Extra large devices (large laptops and desktops, 1200px and up) */
   }
 }
 @media only screen and (max-width: 991px) and (min-width: 1200px) {
-  .nav_bar_component .nav_wrapper .group_items .nav-item {
+  .nav_bar_component .nav_wrapper .group_items #group_items_mobile .nav-item {
     border-top: unset;
     border-bottom: unset;
   }
 }
 @media (max-width: 991px) and (max-width: 992px) {
-  .nav_bar_component .nav_wrapper .group_items .dropdown-toggle::after {
+  .nav_bar_component .nav_wrapper .group_items #group_items_mobile .dropdown-toggle::after {
     position: absolute;
     left: 141px;
     top: 24px;
   }
-  .nav_bar_component .nav_wrapper .group_items .dropdown:hover {
+  .nav_bar_component .nav_wrapper .group_items #group_items_mobile .dropdown:hover {
     background-color: unset;
     background-color: #5C5C5C;
   }
-  .nav_bar_component .nav_wrapper .group_items .dropdown-menu {
+  .nav_bar_component .nav_wrapper .group_items #group_items_mobile .dropdown-menu {
     left: -94px;
     border-radius: unset;
     border: unset !important;
     --bs-dropdown-bg:#5C5C5C !important ;
     width: 229px;
   }
-  .nav_bar_component .nav_wrapper .group_items .dropdown-menu .dropdown-item {
+  .nav_bar_component .nav_wrapper .group_items #group_items_mobile .dropdown-menu .dropdown-item {
     border: unset !important;
     width: 100%;
     background-color: #5C5C5C;
@@ -44,27 +44,27 @@
     margin-left: 22px;
     font-size: 20px;
   }
-  .nav_bar_component .nav_wrapper .group_items .dropdown-menu .dropdown-item:hover {
+  .nav_bar_component .nav_wrapper .group_items #group_items_mobile .dropdown-menu .dropdown-item:hover {
     color: white !important;
     font-size: 24px !important;
   }
-  .nav_bar_component .nav_wrapper .group_items .icon-title-wrapper {
+  .nav_bar_component .nav_wrapper .group_items #group_items_mobile .icon-title-wrapper {
     display: flex;
   }
-  .nav_bar_component .nav_wrapper .group_items .icon-title-wrapper .icon {
+  .nav_bar_component .nav_wrapper .group_items #group_items_mobile .icon-title-wrapper .icon {
     padding: 5px;
   }
-  .nav_bar_component .nav_wrapper .group_items .icon-title-wrapper .icon i {
+  .nav_bar_component .nav_wrapper .group_items #group_items_mobile .icon-title-wrapper .icon i {
     font-size: 24px;
   }
-  .nav_bar_component .nav_wrapper .group_items .icon-title-wrapper h5 {
+  .nav_bar_component .nav_wrapper .group_items #group_items_mobile .icon-title-wrapper h5 {
     padding: 9px;
     font-size: 20px;
     text-transform: uppercase;
   }
 }
 @media (max-width: 991px) and (max-width: 992px) {
-  .nav_bar_component .nav_wrapper .group_items .navbar-collapse {
+  .nav_bar_component .nav_wrapper .group_items #group_items_mobile .navbar-collapse {
     position: fixed;
     top: 40px;
     left: 0;
@@ -76,18 +76,18 @@
     width: 75%;
     height: 100%;
   }
-  .nav_bar_component .nav_wrapper .group_items .navbar-collapse a {
+  .nav_bar_component .nav_wrapper .group_items #group_items_mobile .navbar-collapse a {
     color: white;
   }
-  .nav_bar_component .nav_wrapper .group_items .navbar-collapse.collapsing {
+  .nav_bar_component .nav_wrapper .group_items #group_items_mobile .navbar-collapse.collapsing {
     left: -75%;
     transition: height 0s ease;
   }
-  .nav_bar_component .nav_wrapper .group_items .navbar-collapse.show {
+  .nav_bar_component .nav_wrapper .group_items #group_items_mobile .navbar-collapse.show {
     left: 0;
     transition: left 300ms ease-in-out;
   }
-  .nav_bar_component .nav_wrapper .group_items .navbar-toggler.collapsed ~ .navbar-collapse {
+  .nav_bar_component .nav_wrapper .group_items #group_items_mobile .navbar-toggler.collapsed ~ .navbar-collapse {
     transition: left 500ms ease-in-out;
   }
 }

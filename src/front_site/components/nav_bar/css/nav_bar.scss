@@ -13,8 +13,9 @@
 
             //group_items for mobile
             .group_items {
-
-                /* Extra large devices (large laptops and desktops, 1200px and up) */
+                
+                #group_items_mobile{
+                     /* Extra large devices (large laptops and desktops, 1200px and up) */
                 @media only screen and (min-width: 1200px) {
                     .nav-item {
                         //border: 1px solid rgb(139, 136, 136);
@@ -104,10 +105,13 @@
                         transition: left 300ms ease-in-out;
                     }
 
-                    .navbar-toggler.collapsed~.navbar-collapse {
+                    .navbar-toggler.collapsed~ .navbar-collapse {
                         transition: left 500ms ease-in-out;
                     }
                 }
+
+                }
+               
             }
         }
     }
