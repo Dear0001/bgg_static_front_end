@@ -10,7 +10,7 @@
 .nav_bar_component .dropdown-of-category {
   left: -22px !important;
 }
-.nav_bar_component .border-right-color {
+.nav_bar_component .border-right-dark {
   border-right: 1px solid #89ac6c;
 }
 @media (max-width: 991px) {
@@ -246,6 +246,55 @@
 .nav_bar_component .nav_wrapper .group_items .sub_login #wiki-icon h3 {
   margin-right: 30px;
 }
+.nav_bar_component .nav_wrapper .group_items .explore-menu {
+  box-sizing: border-box;
+  max-width: 1050px;
+  padding: 20px;
+  border: 1px solid #91af79;
+  background-color: transparent !important;
+  position: absolute;
+  top: 72px;
+  overflow-y: scroll;
+}
+.nav_bar_component .nav_wrapper .group_items .explore-menu .explore_menu_line {
+  margin-right: 50px;
+  display: flex;
+  width: 1000px;
+  color: #669933;
+  margin: 0 auto;
+}
+.nav_bar_component .nav_wrapper .group_items .explore-menu .explore_menu_line .menuitem {
+  width: 250px;
+  line-height: 25px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.nav_bar_component .nav_wrapper .group_items .explore-menu .explore_menu_line .top_cat {
+  font-size: 1.1rem;
+  font-weight: 300;
+  padding-left: 10px;
+  line-height: 23px;
+}
+.nav_bar_component .nav_wrapper .group_items .explore-menu .explore_menu_line a {
+  display: block;
+  width: 250px;
+  color: #669933;
+  text-decoration: none;
+}
+.nav_bar_component .nav_wrapper .group_items .explore-menu .explore_menu_line .menu_item_sub {
+  font-size: 1rem;
+  font-weight: 300;
+}
+.nav_bar_component .nav_wrapper .group_items .explore-menu .explore_menu_line .component {
+  font-size: 0.9rem;
+  font-weight: 300;
+  padding-left: 15px;
+}
+.nav_bar_component .nav_wrapper .group_items .explore-menu .explore_menu_line a:active,
+.nav_bar_component .nav_wrapper .group_items .explore-menu .explore_menu_line a:hover {
+  background-color: #307530;
+  color: #fff;
+}
 @media only screen and (min-width: 1200px) {
   .nav_bar_component .nav_wrapper .group_items .nav-item {
     border-top: unset;
@@ -312,7 +361,10 @@
   left: -86px !important;
 }
 .nav_bar_component .nav_wrapper .group_items .dropdown-explore .dropdown-menu {
-  left: -84px !important;
+  border: unset !important;
+  top: 16px;
+  background-color: unset;
+  left: -831px !important;
 }
 .nav_bar_component .nav_wrapper .group_items .dropdown-login .dropdown-menu {
   top: 81px;

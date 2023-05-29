@@ -13,11 +13,10 @@
         left: -22px !important;
     }
     //border right color
-    .border-right-color{
+    .border-right-dark{
         border-right:1px solid #89ac6c;
     }
     //end global custom used
-
     //navbar for mobile
     @media (max-width: 991px) {
         .nav-desktop {
@@ -299,6 +298,57 @@
                   }
                 }
               }
+            .explore-menu {
+                box-sizing: border-box;
+                max-width: 1050px;
+                padding: 20px;
+                border: 1px solid #91af79;
+                background-color: transparent !important;
+                position: absolute;
+                top: 72px;
+                overflow-y: scroll;
+                .explore_menu_line {
+                  margin-right: 50px;
+                  display: flex;
+                  width: 1000px;
+                  color: #669933;
+                  margin: 0 auto;
+                  .menuitem {
+                    width: 250px;
+                    line-height: 25px;
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                  }
+                  .top_cat {
+                    font-size: 1.1rem;
+                    font-weight: 300;
+                    padding-left: 10px;
+                    line-height: 23px;
+                  }
+        
+                  a {
+                    display: block;
+                    width: 250px;
+                    color: #669933;
+                    text-decoration: none;
+                  }
+                  .menu_item_sub {
+                    font-size: 1rem;
+                    font-weight: 300;
+                  }
+                  .component {
+                    font-size: 0.9rem;
+                    font-weight: 300;
+                    padding-left: 15px;
+                  }
+        
+                  a:active,
+                  a:hover {
+                    background-color: #307530;
+                    color: #fff;
+                  }
+                }
+              }
             /* Extra large devices (large laptops and desktops, 1200px and up) */
             @media only screen and (min-width: 1200px) {
                 .nav-item {
@@ -381,7 +431,7 @@
                 }
             }
             //support icon while mobile collapse style
-            //specify each dropdown position each item navigations
+            //specify each dropdown position each item dropdown
             .dropdown-categories{
                 .dropdown-menu {
                     border:1px solid white !important;
@@ -400,9 +450,11 @@
             }
             .dropdown-explore{
                 .dropdown-menu {
-                    left:-84px !important;
+                    border:unset !important;
+                    top: 16px;
+                    background-color: unset;
+                    left:-831px !important;
                 }
-
             }
             .dropdown-login{
                 .dropdown-menu {
@@ -416,9 +468,6 @@
                 .dropdown-menu {
                     left:-80px !important;
                 }
-
-            }
-            .dropdown-explore{
 
             }
            
