@@ -9,8 +9,11 @@
                 .search-area{
                     position: relative;
                     input[type=text]{
-                        border:0;
-                        padding:0;
+                        padding: 5px;
+                        font-size: 16px;
+                        border: 2px solid #93B874;
+                        background-color:white;
+                        border-radius: 8px;
                         width:100px;
                         height: 60px;
                         position:absolute;
@@ -26,14 +29,17 @@
                         font-weight: 700px;
                         letter-spacing: 2px;
                     }
+                    ::placeholder{
+                        font-size: 18px;
+                        color:gray;
+                    }
                     .icon{
-                        background-color: deepskyblue;
                         position: absolute;
                         width:60px;
                         height:60px;
                         top:0;
                         right:0;
-                        color:#fff;
+                        color:gray;
                         transition: all 0.5s 0.3 ease;
                         i{
                             position: absolute;
@@ -49,8 +55,8 @@
                         }
                     }
                     .icon.active{
-                        background-color: yellow;
                         transition: all 0.3s ease;
+                        color:gray;
                         .fa-search{
                             display: none;
                         }

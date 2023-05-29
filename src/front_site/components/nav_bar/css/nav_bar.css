@@ -108,6 +108,76 @@
     display: none !important;
   }
 }
+@media (min-width: 768px) {
+  .nav_bar_component .search-mobile-wrapper {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .nav_bar_component .search-mobile-wrapper .search-container-mobile .wrapper .box {
+    height: 60px;
+  }
+  .nav_bar_component .search-mobile-wrapper .search-container-mobile .wrapper .box .search-area input[type=text] {
+    padding: 5px;
+    font-size: 16px;
+    border: 2px solid #93B874;
+    background-color: white;
+    border-radius: 8px;
+    width: 120px;
+    height: 30px;
+    position: absolute;
+    top: 24px;
+    right: 0;
+    transition: all 0.5s;
+  }
+  .nav_bar_component .search-mobile-wrapper .search-container-mobile .wrapper .box .search-area input[type=text].active {
+    position: absolute;
+    width: 100%;
+    padding: 0 35px;
+    color: #000;
+    font-weight: 700px;
+    letter-spacing: 2px;
+    z-index: 1px;
+  }
+  .nav_bar_component .search-mobile-wrapper .search-container-mobile .wrapper .box .search-area ::-moz-placeholder {
+    font-size: 12px;
+    color: gray;
+  }
+  .nav_bar_component .search-mobile-wrapper .search-container-mobile .wrapper .box .search-area ::placeholder {
+    font-size: 12px;
+    color: gray;
+  }
+  .nav_bar_component .search-mobile-wrapper .search-container-mobile .wrapper .box .search-area .icon {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 5px;
+    right: -11px;
+    color: gray;
+    transition: all 0.5s 0.3 ease;
+  }
+  .nav_bar_component .search-mobile-wrapper .search-container-mobile .wrapper .box .search-area .icon i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-6%, -11%);
+    cursor: pointer;
+    font-size: 12px;
+  }
+  .nav_bar_component .search-mobile-wrapper .search-container-mobile .wrapper .box .search-area .icon .fa-close {
+    display: none;
+  }
+  .nav_bar_component .search-mobile-wrapper .search-container-mobile .wrapper .box .search-area .icon.active {
+    transition: all 0.3s ease;
+    color: gray;
+  }
+  .nav_bar_component .search-mobile-wrapper .search-container-mobile .wrapper .box .search-area .icon.active .fa-search {
+    display: none;
+  }
+  .nav_bar_component .search-mobile-wrapper .search-container-mobile .wrapper .box .search-area .icon.active .fa-close {
+    display: revert;
+  }
+}
 @media (min-width: 992px) {
   .nav_bar_component .nav_wrapper .logo-wrapper img {
     width: 200px;

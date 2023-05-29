@@ -137,6 +137,91 @@
             display: none !important;
         }
     }
+    //close moible search for ipade and desktop
+    @media(min-width: 768px) {
+        .search-mobile-wrapper{
+            display: none;
+        }
+    }
+    //search bar block style for mobile
+    @media(max-width: 768px) {
+        .search-mobile-wrapper{
+            .search-container-mobile{
+                .wrapper{
+                    .box{
+                        height: 60px;
+                        .search-area{
+                            //position: relative;
+                            input[type=text]{
+                                padding: 5px;
+                                font-size: 16px;
+                                border: 2px solid #93B874;
+                                background-color:white;
+                                border-radius: 8px;
+                                width:120px;
+                                height: 30px;
+                                position:absolute;
+                                top:24px;
+                                right:0;
+                                -webkit-transition: all .5s;
+                                -moz-transition: all .5s;
+                                transition: all .5s;
+                            }
+                            input[type=text].active{
+                                position:absolute;
+                                width: 100%;
+                                padding:0 35px;
+                                color:#000;
+                                font-weight: 700px;
+                                letter-spacing: 2px;
+                                z-index: 1px;
+                            }
+                            ::placeholder{
+                                font-size: 12px;
+                                color:gray;
+                            }
+                            .icon{
+                                position: absolute;
+                                width:60px;
+                                height:60px;
+                                // top:0;
+                                // right:0;
+                                top: 5px;
+                                right: -11px;
+                                color:gray;
+                                transition: all 0.5s 0.3 ease;
+                                i{
+                                    position: absolute;
+                                    top:50%;
+                                    left:50%;
+                                    //transform: translate(-50%,-50%);
+                                    transform:translate(-6%, -11%);
+                                    cursor: pointer;
+                                   // font-size: 35px;
+                                   font-size: 12px;
+                                   
+                                }
+                                .fa-close{
+                                    display: none;
+                                }
+                            }
+                            .icon.active{
+                                transition: all 0.3s ease;
+                                color:gray;
+                                .fa-search{
+                                    display: none;
+                                }
+                                .fa-close{
+                                    display: revert;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
     .nav_wrapper {
         .logo-wrapper {
             //logo image for desktop
