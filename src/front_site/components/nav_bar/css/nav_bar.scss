@@ -12,9 +12,66 @@
     .dropdown-of-category {
         left: -22px !important;
     }
+  
     //border right color
     .border-right-dark{
         border-right:1px solid #89ac6c;
+    }
+    //margin bottom 10px
+    .mg-bt-10{
+        margin-bottom:10px;
+    }
+    //margin-botton{
+    @media (max-width: 768px) {
+        .mt-20{
+            margin-bottom: 50px;
+        }
+    }
+     //padding 2px{
+        @media (max-width: 768px) {
+            .pd-2{
+                --bs-nav-link-padding-y: 3px;
+            }
+        }
+    //fa random{
+        @media (max-width: 768px) {
+            .fa-random{
+                //color:red;
+                margin-left:50px;
+            }
+        }
+    
+     //guide label{
+    .guide-wrapper{
+        @media (max-width: 768px) {
+           .guides{
+                background: #fabc3b;
+                padding: 0.2em 0.5em;
+                margin: 0;
+                font-size: 0.8rem;
+                font-weight: bold;
+                list-style: none;
+                text-decoration: none;
+
+                margin: 0;
+                border-radius: 7px;
+                border: none;
+                a {
+                color: #fff;
+                font-weight: bold;
+                label {
+                    margin: 2px 2px;
+                }
+                }
+           }
+        }
+    }
+   
+   
+    //navbar toggler
+    .navbar-toggler{
+        font-size: 10px !important;
+        color:white !important;
     }
     //end global custom used
     //navbar for mobile
@@ -26,6 +83,13 @@
             display: revert !important;
         }
         .nav_wrapper {
+            //flexible-height
+            .flexible-height{
+                @media (max-width: 768px) {
+                    height: 30px !important;
+                }
+            }
+           
 
             //group_items for mobile
             .group_items {
@@ -142,6 +206,12 @@
         .search-mobile-wrapper{
             display: none;
         }
+        .guide-wrapper{
+            display: none;
+        }
+        .random-mobile-wrapper{
+            display: none;
+        }
     }
     //search bar block style for mobile
     @media(max-width: 768px) {
@@ -155,49 +225,53 @@
                             input[type=text]{
                                 padding: 5px;
                                 font-size: 16px;
-                                border: 2px solid #93B874;
+                                border: 1px solid #93B874;
                                 background-color:white;
                                 border-radius: 8px;
-                                width:120px;
-                                height: 30px;
+                                width:60px;
+                                height: 33px;
                                 position:absolute;
-                                top:24px;
-                                right:0;
+                                top:-2px;
+                                right:65;
                                 -webkit-transition: all .5s;
                                 -moz-transition: all .5s;
                                 transition: all .5s;
                             }
                             input[type=text].active{
                                 position:absolute;
-                                width: 100%;
+                               // width: 100%;
+                                width:385px;
                                 padding:0 35px;
                                 color:#000;
                                 font-weight: 700px;
                                 letter-spacing: 2px;
                                 z-index: 1px;
+                                right:-10;
+                            }
+                            input[type=text].active::placeholder{
+                                font-size: 12px;
+                                padding-bottom: 2px;
+                                color:gray;
                             }
                             ::placeholder{
                                 font-size: 12px;
-                                color:gray;
+                                padding-bottom: 2px;
+                                color:white;
                             }
                             .icon{
                                 position: absolute;
                                 width:60px;
                                 height:60px;
-                                // top:0;
-                                // right:0;
-                                top: 5px;
-                                right: -11px;
+                                top: -18px;
+                                right:50px;
                                 color:gray;
                                 transition: all 0.5s 0.3 ease;
                                 i{
                                     position: absolute;
                                     top:50%;
                                     left:50%;
-                                    //transform: translate(-50%,-50%);
                                     transform:translate(-6%, -11%);
                                     cursor: pointer;
-                                   // font-size: 35px;
                                    font-size: 12px;
                                    
                                 }
@@ -209,9 +283,11 @@
                                 transition: all 0.3s ease;
                                 color:gray;
                                 .fa-search{
-                                    display: none;
+                                    left:-253;
+                                    //display: none;
                                 }
                                 .fa-close{
+                                    left:98px;
                                     display: revert;
                                 }
                             }
@@ -221,6 +297,7 @@
             }
         }
     }
+    
     
     .nav_wrapper {
         .logo-wrapper {

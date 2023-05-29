@@ -13,6 +13,49 @@
 .nav_bar_component .border-right-dark {
   border-right: 1px solid #89ac6c;
 }
+.nav_bar_component .mg-bt-10 {
+  margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+  .nav_bar_component .mt-20 {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .nav_bar_component .pd-2 {
+    --bs-nav-link-padding-y: 3px;
+  }
+}
+@media (max-width: 768px) {
+  .nav_bar_component .fa-random {
+    margin-left: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .nav_bar_component .guide-wrapper .guides {
+    background: #fabc3b;
+    padding: 0.2em 0.5em;
+    margin: 0;
+    font-size: 0.8rem;
+    font-weight: bold;
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    border-radius: 7px;
+    border: none;
+  }
+  .nav_bar_component .guide-wrapper .guides a {
+    color: #fff;
+    font-weight: bold;
+  }
+  .nav_bar_component .guide-wrapper .guides a label {
+    margin: 2px 2px;
+  }
+}
+.nav_bar_component .navbar-toggler {
+  font-size: 10px !important;
+  color: white !important;
+}
 @media (max-width: 991px) {
   .nav_bar_component .nav-desktop {
     display: none !important;
@@ -20,6 +63,13 @@
   .nav_bar_component .nav-mobile {
     display: revert !important;
   }
+}
+@media (max-width: 991px) and (max-width: 768px) {
+  .nav_bar_component .nav_wrapper .flexible-height {
+    height: 30px !important;
+  }
+}
+@media (max-width: 991px) {
   .nav_bar_component .nav_wrapper .group_items .group_items_mobile {
     /* Extra large devices (large laptops and desktops, 1200px and up) */
   }
@@ -112,6 +162,12 @@
   .nav_bar_component .search-mobile-wrapper {
     display: none;
   }
+  .nav_bar_component .guide-wrapper {
+    display: none;
+  }
+  .nav_bar_component .random-mobile-wrapper {
+    display: none;
+  }
 }
 @media (max-width: 768px) {
   .nav_bar_component .search-mobile-wrapper .search-container-mobile .wrapper .box {
@@ -120,39 +176,52 @@
   .nav_bar_component .search-mobile-wrapper .search-container-mobile .wrapper .box .search-area input[type=text] {
     padding: 5px;
     font-size: 16px;
-    border: 2px solid #93B874;
+    border: 1px solid #93B874;
     background-color: white;
     border-radius: 8px;
-    width: 120px;
-    height: 30px;
+    width: 60px;
+    height: 33px;
     position: absolute;
-    top: 24px;
-    right: 0;
+    top: -2px;
+    right: 65;
     transition: all 0.5s;
   }
   .nav_bar_component .search-mobile-wrapper .search-container-mobile .wrapper .box .search-area input[type=text].active {
     position: absolute;
-    width: 100%;
+    width: 385px;
     padding: 0 35px;
     color: #000;
     font-weight: 700px;
     letter-spacing: 2px;
     z-index: 1px;
+    right: -10;
+  }
+  .nav_bar_component .search-mobile-wrapper .search-container-mobile .wrapper .box .search-area input[type=text].active::-moz-placeholder {
+    font-size: 12px;
+    padding-bottom: 2px;
+    color: gray;
+  }
+  .nav_bar_component .search-mobile-wrapper .search-container-mobile .wrapper .box .search-area input[type=text].active::placeholder {
+    font-size: 12px;
+    padding-bottom: 2px;
+    color: gray;
   }
   .nav_bar_component .search-mobile-wrapper .search-container-mobile .wrapper .box .search-area ::-moz-placeholder {
     font-size: 12px;
-    color: gray;
+    padding-bottom: 2px;
+    color: white;
   }
   .nav_bar_component .search-mobile-wrapper .search-container-mobile .wrapper .box .search-area ::placeholder {
     font-size: 12px;
-    color: gray;
+    padding-bottom: 2px;
+    color: white;
   }
   .nav_bar_component .search-mobile-wrapper .search-container-mobile .wrapper .box .search-area .icon {
     position: absolute;
     width: 60px;
     height: 60px;
-    top: 5px;
-    right: -11px;
+    top: -18px;
+    right: 50px;
     color: gray;
     transition: all 0.5s 0.3 ease;
   }
@@ -172,9 +241,10 @@
     color: gray;
   }
   .nav_bar_component .search-mobile-wrapper .search-container-mobile .wrapper .box .search-area .icon.active .fa-search {
-    display: none;
+    left: -253;
   }
   .nav_bar_component .search-mobile-wrapper .search-container-mobile .wrapper .box .search-area .icon.active .fa-close {
+    left: 98px;
     display: revert;
   }
 }
