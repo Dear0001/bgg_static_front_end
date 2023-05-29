@@ -4,41 +4,42 @@
     background-color: green;
     .search-container-mobile{
         .wrapper{
-            display: -webkit-flex;
-            display: -moz-flex;
-            display: -ms-flex;
-            display: -o-flex;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             .box{
                 height: 60px;
                 .search-area{
                     position: relative;
                     input[type=text]{
-                        border:0;
-                        padding:0;
+                        padding: 5px;
+                        font-size: 16px;
+                        border: 2px solid #93B874;
+                        background-color:white;
+                        border-radius: 8px;
                         width:100px;
                         height: 60px;
-                        transition: all 0.5 ease;
+                        position:absolute;
+                        right:0;
+                        -webkit-transition: all .5s;
+                        -moz-transition: all .5s;
+                        transition: all .5s;
                     }
                     input[type=text].active{
-                        width: 500px;
+                        width: 100%;
                         padding:0 35px;
-                        transition: .5s;
                         color:#000;
                         font-weight: 700px;
                         letter-spacing: 2px;
                     }
+                    ::placeholder{
+                        font-size: 18px;
+                        color:gray;
+                    }
                     .icon{
-                        background-color: deepskyblue;
                         position: absolute;
                         width:60px;
                         height:60px;
                         top:0;
                         right:0;
-                        color:#fff;
+                        color:gray;
                         transition: all 0.5s 0.3 ease;
                         i{
                             position: absolute;
@@ -54,8 +55,8 @@
                         }
                     }
                     .icon.active{
-                        background-color: yellow;
                         transition: all 0.3s ease;
+                        color:gray;
                         .fa-search{
                             display: none;
                         }

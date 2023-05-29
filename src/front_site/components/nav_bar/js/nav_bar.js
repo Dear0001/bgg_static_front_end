@@ -7,3 +7,13 @@
 //         }
 //     });
 // }); 
+
+
+//drodown animation jquery test
+
+
+ // jquery with for search bar mobile
+ $(".fa").click(function(){
+    $(".icon").toggleClass("active");
+    $("input[type=text]").toggleClass("active");
+})
