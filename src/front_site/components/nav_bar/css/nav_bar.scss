@@ -173,18 +173,6 @@
             }
         }
 
-        //category put background-color unset
-        // .bg-unset {
-        //     background-color: unset !important;
-        // }
-        // .border-unset{
-        //     border:unset !important;
-        // }
-        //dropdown of category
-        // .dropdown-of-category {
-        //     left: -22px !important;
-        // }
-
         .search-bar-wrapper {
             //close search-bar-desktop while mobile and ipad
             @media (max-width: 992px) {
@@ -243,9 +231,9 @@
                 border-left: 1px solid #89ac6c;
             }
             .sub_login {
-                position:absolute;
-                left:-107px !important;
-                top:-1px;
+                // position:absolute;
+                // left:-107px !important;
+                // top:-1px;
                 background-color: #f9f9f9;
                 border: 1px solid #91af79;
                 padding: 10px;
@@ -337,7 +325,6 @@
                 }
                 .dropdown:hover {
                    background-color: #92ad79 !important;
-                 
                    //icon transform while hover
                     .icon-title-wrapper {
                         .icon{
@@ -352,7 +339,6 @@
                     }
                 }
                //transition for dropdown test
-            
                //end transition for dropdown 
 
                 //module dropdown formatter style
@@ -386,10 +372,6 @@
                             font-size: 24px;
                             line-height: 24px;
                         }
-                        // i:hover{
-                        //     font-size:25px;
-                        //     transition: 1s ease-out;
-                        // }
                     }
 
                     h5 {
@@ -398,8 +380,48 @@
                     }
                 }
             }
-
             //support icon while mobile collapse style
+            //specify each dropdown position each item navigations
+            .dropdown-categories{
+                .dropdown-menu {
+                    border:1px solid white !important;
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                    border-radius: 8px !important;
+                    top:90px !important;
+                    left:-19px !important;
+                }
+
+            }
+            .dropdown-helpus{
+                .dropdown-menu {
+                    left:-86px !important;
+                }
+
+            }
+            .dropdown-explore{
+                .dropdown-menu {
+                    left:-84px !important;
+                }
+
+            }
+            .dropdown-login{
+                .dropdown-menu {
+                    top:81px;
+                    background-color: unset;
+                    left:-195px !important;
+                }
+
+            }
+            .dropdown-random{
+                .dropdown-menu {
+                    left:-80px !important;
+                }
+
+            }
+            .dropdown-explore{
+
+            }
+           
         }
     }
 }

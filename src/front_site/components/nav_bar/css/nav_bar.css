@@ -182,9 +182,6 @@
   border-left: 1px solid #89ac6c;
 }
 .nav_bar_component .nav_wrapper .group_items .sub_login {
-  position: absolute;
-  left: -107px !important;
-  top: -1px;
   background-color: #f9f9f9;
   border: 1px solid #91af79;
   padding: 10px;
@@ -303,4 +300,25 @@
     font-size: 12px;
     text-transform: uppercase;
   }
+}
+.nav_bar_component .nav_wrapper .group_items .dropdown-categories .dropdown-menu {
+  border: 1px solid white !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 8px !important;
+  top: 90px !important;
+  left: -19px !important;
+}
+.nav_bar_component .nav_wrapper .group_items .dropdown-helpus .dropdown-menu {
+  left: -86px !important;
+}
+.nav_bar_component .nav_wrapper .group_items .dropdown-explore .dropdown-menu {
+  left: -84px !important;
+}
+.nav_bar_component .nav_wrapper .group_items .dropdown-login .dropdown-menu {
+  top: 81px;
+  background-color: unset;
+  left: -195px !important;
+}
+.nav_bar_component .nav_wrapper .group_items .dropdown-random .dropdown-menu {
+  left: -80px !important;
 }/*# sourceMappingURL=nav_bar.css.map */
