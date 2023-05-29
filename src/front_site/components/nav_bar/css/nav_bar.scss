@@ -22,19 +22,19 @@
         margin-bottom:10px;
     }
     //margin-botton{
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
         .mt-20{
             margin-bottom: 50px;
         }
     }
      //padding 2px{
-        @media (max-width: 768px) {
+        @media (max-width: 767px) {
             .pd-2{
                 --bs-nav-link-padding-y: 3px;
             }
         }
     //fa random{
-        @media (max-width: 768px) {
+        @media (max-width: 767px) {
             .fa-random{
                 //color:red;
                 margin-left:50px;
@@ -43,7 +43,7 @@
     
      //guide label{
     .guide-wrapper{
-        @media (max-width: 768px) {
+        @media (max-width: 767px) {
            .guides{
                 background: #fabc3b;
                 padding: 0.2em 0.5em;
@@ -70,8 +70,14 @@
    
     //navbar toggler
     .navbar-toggler{
-        font-size: 10px !important;
-        color:white !important;
+        @media (max-width: 767px) {
+            font-size: 10px !important;
+            color:white !important;
+        }
+        @media (min-width: 768px) and (max-width:992px) {
+            font-size: 13px !important;
+            color:white !important;
+        }
     }
     //end global custom used
     //navbar for mobile
@@ -85,7 +91,7 @@
         .nav_wrapper {
             //flexible-height
             .flexible-height{
-                @media (max-width: 768px) {
+                @media (max-width: 767px) {
                     height: 30px !important;
                 }
             }
@@ -160,7 +166,13 @@
                 @media (max-width: 992px) {
                     .navbar-collapse {
                         position: fixed;
-                        top: 40px;
+                        @media (max-width: 767px){
+                            top: 30px;
+                        }
+                        @media (min-width: 768px) and (max-width:992px){
+                            top: 77px;
+                        }
+                       
                         left: 0;
                         padding-left: 15px;
                         padding-right: 15px;
@@ -200,6 +212,18 @@
         .nav-mobile {
             display: none !important;
         }
+        .random-mobile-wrapper{
+            display: none;
+        }
+        .search-ipad-wrapper{
+            display: none;
+        }
+    }
+     //close search ipad
+     @media(max-width: 767px) {
+        .search-ipad-wrapper{
+            display: none;
+        }
     }
     //close moible search for ipade and desktop
     @media(min-width: 768px) {
@@ -209,12 +233,70 @@
         .guide-wrapper{
             display: none;
         }
-        .random-mobile-wrapper{
-            display: none;
+       
+    }
+    //random for mobile and ipad style
+    .random-mobile-wrapper{
+        //ipad working
+        @media(min-width: 768px) and (max-width:992px){
+            margin-left: 20px;
+            padding-top: 8px;
+            .mobile-random{
+                i{
+                    font-size: 25px;
+                    color:blue;
+                }
+            }
+
+        }
+        //mobile working
+        @media(max-width: 767px){
+            padding-top: 3px;
+            .mobile-random{
+                i{
+                    font-size: 20px;
+                    color:red;
+                }
+            }
+
+        }
+        
+    }
+    //search bar for ipad
+    @media(min-width: 768px) and (max-width:992px) {
+        .search-container-ipad{
+            top:7px;
+            position: relative;
+            form{
+                background-color: unset;
+            }
+            input[type=text]{
+                padding: 5px;
+                margin-top: 8px;
+                font-size: 16px;
+                border: 2px solid #93B874;
+                background-color:#B3CE9C;
+                border-radius: 8px;
+               
+            }
+            input:focus{
+                color:white;
+                outline: none;
+            }
+            ::placeholder{
+                font-size: 1.25rem;
+                color:white;
+            }
+            i{
+                position: absolute;
+                left: 160px;
+                top: 20px;
+                color: white;
+            }
         }
     }
     //search bar block style for mobile
-    @media(max-width: 768px) {
+    @media(max-width: 767px) {
         .search-mobile-wrapper{
             .search-container-mobile{
                 .wrapper{
@@ -311,12 +393,13 @@
             //for ipad
             @media (min-width: 768px) And (max-width:992px) {
                 img {
+                    margin-left: 137px;
                     width: 173px;
                     height: auto;
                 }
             }
             //for mobile
-            @media (max-width: 768px) {
+            @media (max-width: 767px) {
                 img {
                     width: 100px;
                     height: auto;
