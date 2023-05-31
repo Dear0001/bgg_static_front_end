@@ -11,7 +11,7 @@
   top: 0;
   width: 100%;
 }
-@media screen and (max-width: 975px) {
+@media screen and (max-width: 910px) {
   .content .navbar-wrap {
     width: 100%;
     height: 40px;
@@ -23,7 +23,7 @@
   position: relative;
   left: 0;
 }
-@media screen and (min-width: 975px) {
+@media screen and (min-width: 910px) {
   .content .navbar-wrap .repon_toggle-menu {
     display: none;
   }
@@ -91,7 +91,7 @@
   width: 100%;
   display: flex;
 }
-@media screen and (max-width: 975px) {
+@media screen and (max-width: 910px) {
   .content .navbar-wrap .conponent {
     display: none;
   }
@@ -422,11 +422,11 @@
 .content .navbar-wrap .guides {
   position: absolute;
   left: auto;
-  left: 11%;
+  left: 9%;
   top: 0;
   margin: 6px 10px;
 }
-@media screen and (min-width: 391px) {
+@media screen and (min-width: 768px) {
   .content .navbar-wrap .guides {
     display: none;
   }
@@ -450,12 +450,12 @@
 .content .navbar-wrap .guides li a label {
   margin: 2px 2px;
 }
-@media screen and (min-width: 975px) {
+@media screen and (min-width: 910px) {
   .content .navbar-wrap .logo-respon {
     display: none;
   }
 }
-@media screen and (max-width: 975px) {
+@media screen and (max-width: 910px) {
   .content .navbar-wrap .logo-respon {
     display: flex;
     justify-content: center;
@@ -480,12 +480,12 @@
   top: 0;
   margin: 5px 5px;
 }
-@media screen and (min-width: 975px) {
+@media screen and (min-width: 910px) {
   .content .navbar-wrap .search-ipad {
     display: none;
   }
 }
-@media screen and (max-width: 975px) {
+@media screen and (max-width: 910px) {
   .content .navbar-wrap .search-ipad .wrap-search {
     display: flex;
     justify-content: center;
@@ -517,45 +517,104 @@
     font-size: 17px;
   }
 }
-@media screen and (max-width: 391px) {
+@media screen and (max-width: 768px) {
   .content .navbar-wrap .search-ipad {
     display: none;
   }
 }
-.content .navbar-wrap .phone-search {
-  padding: 0;
-  margin: auto !important;
-  float: right;
-  position: absolute;
-  top: 0;
-  right: 40px;
-}
-@media screen and (min-width: 391px) {
-  .content .navbar-wrap .phone-search {
+@media screen and (min-width: 768px) {
+  .content .navbar-wrap .search-mobile-wrapper {
     display: none;
   }
 }
-@media screen and (max-width: 391px) {
-  .content .navbar-wrap .phone-search .wrap-search2 {
-    width: 50px;
-    height: auto !important;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-    border-radius: 4px;
-    margin: 8px 10px;
+@media screen and (max-width: 768px) {
+  .content .navbar-wrap .search-mobile-wrapper .search-container-mobile .wrapper .box {
+    height: 40px;
   }
-  .content .navbar-wrap .phone-search .wrap-search2 #search-ph {
-    width: 20px;
+  .content .navbar-wrap .search-mobile-wrapper .search-container-mobile .wrapper .box .search-area {
+    background-color: black;
+  }
+  .content .navbar-wrap .search-mobile-wrapper .search-container-mobile .wrapper .box .search-area input[type=text] {
     padding: 5px;
-    font-size: 10px;
-    background: none;
-    outline: none;
-    border: hidden;
+    font-size: 16px;
+    border: 1px solid #93b874;
+    background-color: #fff;
+    border-radius: 5px;
+    width: 60px;
+    height: 33px;
+    position: absolute;
+    transition: all 0.2s;
   }
-  .content .navbar-wrap .phone-search .wrap-search2 i {
-    padding: 4px;
+  .content .navbar-wrap .search-mobile-wrapper .search-container-mobile .wrapper .box .search-area input[type=text].active {
+    position: absolute;
+    float: right;
+    width: 380px;
+    padding: 0 31px;
+    font-weight: bold;
+    z-index: 1px;
+    margin-right: 5px;
+    outline: none;
+  }
+  .content .navbar-wrap .search-mobile-wrapper .search-container-mobile .wrapper .box .search-area input {
+    position: absolute;
+    right: 0px;
+    margin-right: 55px;
+  }
+  .content .navbar-wrap .search-mobile-wrapper .search-container-mobile .wrapper .box .search-area input[type=text].active::-moz-placeholder {
+    font-size: 15px;
+    padding-bottom: 2px;
+    color: gray;
+  }
+  .content .navbar-wrap .search-mobile-wrapper .search-container-mobile .wrapper .box .search-area input[type=text].active::placeholder {
+    font-size: 15px;
+    padding-bottom: 2px;
+    color: gray;
+  }
+  .content .navbar-wrap .search-mobile-wrapper .search-container-mobile .wrapper .box .search-area ::-moz-placeholder {
+    font-size: 12px;
+    padding-bottom: 2px;
+    color: white;
+  }
+  .content .navbar-wrap .search-mobile-wrapper .search-container-mobile .wrapper .box .search-area ::placeholder {
+    font-size: 12px;
+    padding-bottom: 2px;
+    color: white;
+  }
+  .content .navbar-wrap .search-mobile-wrapper .search-container-mobile .wrapper .box .search-area .icon {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: -16px;
+    right: 50px;
+    color: gray;
+  }
+  .content .navbar-wrap .search-mobile-wrapper .search-container-mobile .wrapper .box .search-area .icon i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-6%, -11%);
+    cursor: pointer;
+    font-size: 18px;
+  }
+  .content .navbar-wrap .search-mobile-wrapper .search-container-mobile .wrapper .box .search-area .icon .fa-close {
+    display: none;
+  }
+  .content .navbar-wrap .search-mobile-wrapper .search-container-mobile .wrapper .box .search-area .icon.active {
+    transition: all 0.3s ease;
+    color: gray;
+  }
+  .content .navbar-wrap .search-mobile-wrapper .search-container-mobile .wrapper .box .search-area .icon.active .fa-search {
+    position: absolute;
+    left: -265px;
+    top: 30px;
+    transition: all 0.3s ease;
+    color: gray;
+  }
+  .content .navbar-wrap .search-mobile-wrapper .search-container-mobile .wrapper .box .search-area .icon.active .fa-close {
+    position: absolute;
+    top: 50%;
+    left: 80px;
+    display: revert;
   }
 }
 .content .navbar-wrap .random-both {
@@ -565,7 +624,7 @@
   top: 0;
   margin: 10px 15px;
 }
-@media screen and (min-width: 975px) {
+@media screen and (min-width: 910px) {
   .content .navbar-wrap .random-both {
     display: none;
   }

@@ -57,3 +57,15 @@ function ReSetTimer() {
   }
 }
 
+// jquery with for search bar mobile
+$(".fa").click(function () {
+  $(".icon").toggleClass("active");
+  $("input[type=text]").toggleClass("active");
+});
+
+$(".fa-search").click(function () {
+  $(".fa-random").hide();
+});
+$(".fa-close").click(function () {
+  $(".fa-random").show();
+});

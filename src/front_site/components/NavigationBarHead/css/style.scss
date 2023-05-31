@@ -9,12 +9,12 @@
     z-index: 10;
     top: 0;
     width: 100%;
-    @media screen and (max-width: 975px) {
+    @media screen and (max-width: 910px) {
       width: 100%;
       height: 40px;
     }
     .repon_toggle-menu {
-      @media screen and (min-width: 975px) {
+      @media screen and (min-width: 910px) {
         display: none;
       }
       width: 72px;
@@ -77,7 +77,7 @@
       }
     }
     .conponent {
-      @media screen and (max-width: 975px) {
+      @media screen and (max-width: 910px) {
         display: none;
       }
       // background-color: aqua;
@@ -429,12 +429,12 @@
       }
     }
     .guides {
-      @media screen and (min-width: 391px) {
+      @media screen and (min-width: 768px) {
         display: none;
       }
       position: absolute;
       left: auto;
-      left: 11%;
+      left: 9%;
       top: 0;
       margin: 6px 10px;
       li {
@@ -461,10 +461,10 @@
 
     //responsive for for both screen
     .logo-respon {
-      @media screen and (min-width: 975px) {
+      @media screen and (min-width: 910px) {
         display: none;
       }
-      @media screen and (max-width: 975px) {
+      @media screen and (max-width: 910px) {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -484,7 +484,7 @@
 
     //responsive display for screens and tablets min-width from 391px
     .search-ipad {
-      @media screen and (min-width: 975px) {
+      @media screen and (min-width: 910px) {
         display: none;
       }
       position: absolute;
@@ -493,7 +493,7 @@
       top: 0;
       margin: 5px 5px;
 
-      @media screen and (max-width: 975px) {
+      @media screen and (max-width: 910px) {
         .wrap-search {
           display: flex;
           justify-content: center;
@@ -525,52 +525,106 @@
           }
         }
       }
-      @media screen and (max-width: 391px) {
+      @media screen and (max-width: 768px) {
         display: none;
       }
     }
 
-    //responsive for search icon on screen and ( max-width: 390px )
-    .phone-search {
-      @media screen and (min-width: 391px) {
+    //responsive for search icon on screen and ( max-width: 767px )
+    .search-mobile-wrapper {
+      @media screen and (min-width: 768px) {
         display: none;
       }
-      padding: 0;
-      margin: auto !important;
-      float: right;
-      position: absolute;
-      top: 0;
-      right: 40px;
-
-      @media screen and (max-width: 391px) {
-        .wrap-search2 {
-          width: 50px;
-          height: auto !important;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          background-color: #fff;
-          border-radius: 4px;
-          margin: 8px 10px;
-
-          #search-ph {
-            width: 20px;
-            padding: 5px;
-            font-size: 10px;
-            background: none;
-            outline: none;
-            border: hidden;
-          }
-          i {
-            padding: 4px;
+      @media screen and (max-width: 768px) {
+        .search-container-mobile {
+          .wrapper {
+            .box {
+              height: 40px;
+              .search-area {
+                background-color: black;
+                input[type="text"] {
+                  padding: 5px;
+                  font-size: 16px;
+                  border: 1px solid #93b874;
+                  background-color: #fff;
+                  border-radius: 5px;
+                  width: 60px;
+                  height: 33px;
+                  position: absolute;
+                  -webkit-transition: all 0.2s;
+                  -moz-transition: all 0.2s;
+                  transition: all 0.2s;
+                }
+                input[type="text"].active {
+                  position: absolute;
+                  float: right;
+                  width: 380px;
+                  padding: 0 31px;
+                  font-weight: bold;
+                  z-index: 1px;
+                  margin-right: 5px;
+                  outline: none;
+                }
+                input {
+                  position: absolute;
+                  right: 0px;
+                  margin-right: 55px;
+                }
+                input[type="text"].active::placeholder {
+                  font-size: 15px;
+                  padding-bottom: 2px;
+                  color: gray;
+                }
+                ::placeholder {
+                  font-size: 12px;
+                  padding-bottom: 2px;
+                  color: white;
+                }
+                .icon {
+                  position: absolute;
+                  width: 60px;
+                  height: 60px;
+                  top: -16px;
+                  right: 50px;
+                  color: gray;
+                  i {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-6%, -11%);
+                    cursor: pointer;
+                    font-size: 18px;
+                  }
+                  .fa-close {
+                    display: none;
+                  }
+                }
+                .icon.active {
+                  transition: all 0.3s ease;
+                  color: gray;
+                  .fa-search {
+                    position: absolute;
+                    left: -265px;
+                    top: 30px;
+                    transition: all 0.3s ease;
+                    color: gray;
+                  }
+                  .fa-close {
+                    position: absolute;
+                    top: 50%;
+                    left: 80px;
+                    display: revert;
+                  }
+                }
+              }
+            }
           }
         }
       }
     }
-
-    // responsive for search icon on screen and (max-width: 975px-391px)
+    // responsive for search icon on screen and (max-width: 910px-391px)
     .random-both {
-      @media screen and (min-width: 975px) {
+      @media screen and (min-width: 910px) {
         display: none;
       }
       position: absolute;
