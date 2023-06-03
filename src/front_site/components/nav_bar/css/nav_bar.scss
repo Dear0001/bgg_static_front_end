@@ -386,7 +386,7 @@
             //logo image for desktop
             @media (min-width: 992px) {
                 img {
-                    width: 200px;
+                    width: 162px;
                     height: auto;
                 }
             }
@@ -412,7 +412,7 @@
 
             //margin-bottom: 60px;
             img {
-                width: 130px;
+                width: 100px;
                 height: auto;
             }
         }
@@ -448,7 +448,8 @@
                 }
 
                 ::placeholder {
-                    font-size: 28px;
+                    //font-size: 28px;
+                    font-size: 1.25em;
                     color: white;
                 }
 
@@ -463,7 +464,8 @@
                     cursor: pointer;
 
                     .fa-search {
-                        font-size: 30px;
+                        //font-size: 30px;
+                        font-size: 1.25em;
                         color: white;
                     }
                 }
@@ -619,7 +621,8 @@
                     display: none !important;
                 }
                 .dropdown:hover {
-                   background-color: #92ad79 !important;
+                   //background-color: #92ad79 !important;
+                   //background-color: red !important;
                    //icon transform while hover
                     .icon-title-wrapper {
                         .icon{
@@ -633,6 +636,11 @@
                         }
                     }
                 }
+                //only support dropdown hover change background
+                .dropdown-hover-bg:hover{
+                    background-color: #92ad79 !important;
+
+                }
                //transition for dropdown test
                //end transition for dropdown 
 
@@ -644,7 +652,7 @@
 
                     .dropdown-item {
                         color: green;
-                        font-weight: bold;
+                        font-size:1em;
                     }
 
                     .dropdown-item:hover {
@@ -687,9 +695,12 @@
                 }
 
             }
+            .dropdown-categories:hover{
+                background-color: unset;
+            }
             .dropdown-helpus{
                 .dropdown-menu {
-                    left:-86px !important;
+                    left:-124px !important;
                 }
 
             }
