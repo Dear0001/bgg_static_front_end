@@ -583,7 +583,7 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 8px !important;
   top: 90px !important;
-  left: -19px !important;
+  left: -60px !important;
 }
 .nav_bar_component .nav_wrapper .group_items .dropdown-categories:hover {
   background-color: unset;
@@ -593,12 +593,12 @@
 }
 .nav_bar_component .nav_wrapper .group_items .dropdown-explore .dropdown-menu {
   border: unset !important;
-  top: 16px;
+  top: 13px;
   background-color: unset;
   left: -831px !important;
 }
 .nav_bar_component .nav_wrapper .group_items .dropdown-login .dropdown-menu {
-  top: 81px;
+  top: 78px;
   background-color: unset;
   left: -195px !important;
 }
