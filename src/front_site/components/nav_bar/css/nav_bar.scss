@@ -1,5 +1,5 @@
 .nav_bar_component {
-    background-color: #93b874;
+    //background-color: #93b874;
     //global custom used
      //category put background-color unset
      .bg-unset {
@@ -11,6 +11,26 @@
     //dropdown of category
     .dropdown-of-category {
         left: -22px !important;
+    }
+    //sticky navbar
+    .sticky{
+        background-color: #93b874;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%
+    }
+    // hide icon while scroll up
+    .hide_icon{
+        display: none;
+    }
+    // scroll up icon-title-wrapper change
+    .rePrepare{
+        // padding-top:20px;
+        // padding-bottom:20px;
+        //display: flex;
+        //text-align: center;
+        margin-top: 25px;
     }
   
     //border right color

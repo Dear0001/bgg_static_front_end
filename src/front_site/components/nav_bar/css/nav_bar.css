@@ -1,6 +1,3 @@
-.nav_bar_component {
-  background-color: #93b874;
-}
 .nav_bar_component .bg-unset {
   background-color: unset !important;
 }
@@ -9,6 +6,19 @@
 }
 .nav_bar_component .dropdown-of-category {
   left: -22px !important;
+}
+.nav_bar_component .sticky {
+  background-color: #93b874;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.nav_bar_component .hide_icon {
+  display: none;
+}
+.nav_bar_component .rePrepare {
+  margin-top: 25px;
 }
 .nav_bar_component .border-right-dark {
   border-right: 1px solid #89ac6c;
