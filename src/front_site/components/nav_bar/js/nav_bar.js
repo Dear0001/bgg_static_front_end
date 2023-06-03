@@ -1,5 +1,5 @@
 
-//drodown animation jquery test
+// drodown animation jquery test
  // jquery with for search bar mobile
  $(".fa").click(function(){
     $(".icon").toggleClass("active");
@@ -16,14 +16,20 @@ function fadeMenuWrap() {
         $(".icon").removeClass("hide_icon");
         $(".icon").removeClass("sticky");
         $(".icon-title-wrapper").removeClass("rePrepare");
+        $(".category_img").removeClass("hide");
+        $(".category_pro_img").addClass("hide");
     }
     else if (scrollPos > 300) { 
-        $('.nav_wrapper').addClass('sticky')
+        $('.nav_bar_component').addClass('sticky')
         $(".icon").addClass("hide_icon");
         $(".icon-title-wrapper").addClass("rePrepare");
+        $(".category_img").addClass("hide");
+        $(".category_pro_img").removeClass("hide");
     } else { 
-        $('.nav_wrapper').addClass('sticky')
+        $('.nav_bar_component').addClass('sticky')
         $(".icon").addClass("hide_icon");
         $(".icon-title-wrapper").addClass("rePrepare");
+        $(".category_img").addClass("hide");
+        $(".category_pro_img").removeClass("hide");
     } 
 } 
