@@ -1,3 +1,4 @@
+//general sticky class
 .sticky{
     background-color: #93b874;
     position: fixed;
@@ -5,6 +6,47 @@
     left: 0;
     width: 100%
 }
+//all scroll support style all here only with desktop
+@media (min-width: 992px){
+    //all scroll only with desktop
+//for nav_bar scroll support
+.nav_bar_component_scroll{
+    height:52px;
+    // hide class
+    .hide{
+        display: none;
+    }
+   // scroll up icon-title-wrapper change
+   .rePrepare{
+        margin-top: 1px;
+    }
+    //
+    .nav-link{
+        padding-top:0px !important;
+        padding-bottom: 0px !important;
+    }
+    //put margin bottom on logo wikiHow
+    @media (min-width: 992px){
+        .nav_wrapper .logo-wrapper img {
+            width: 162px;
+            height: auto;
+            margin-bottom: 14px;
+        }
+
+    }
+    .category_wrapper{
+        position: relative;
+        .category_pro_img{
+            position: absolute;
+            top:-17px;
+            right:7px;
+        }
+    }
+}
+
+}
+
+//for nav_bar general
 .nav_bar_component {
     background-color: #93b874;
     //global custom used
@@ -12,36 +54,24 @@
      .bg-unset {
         background-color: unset !important;
     }
+ 
+    @media (min-width: 992px){
+        // hide class
+        .hide{
+            display: none;
+        }
+        // hide icon while scroll up
+        .hide_icon{
+            display: none;
+        }
+    }  
     .border-unset{
         border:unset !important;
     }
-    //hide class
-    .hide{
-        display: none;
-    }
+    
     //dropdown of category
     .dropdown-of-category {
         left: -22px !important;
-    }
-    //sticky navbar
-    // .sticky{
-    //     background-color: #93b874;
-    //     position: fixed;
-    //     top: 0;
-    //     left: 0;
-    //     width: 100%
-    // }
-    // hide icon while scroll up
-    .hide_icon{
-        display: none;
-    }
-    // scroll up icon-title-wrapper change
-    .rePrepare{
-        // padding-top:20px;
-        // padding-bottom:20px;
-        //display: flex;
-        //text-align: center;
-        margin-top: 20px;
     }
   
     //border right color
@@ -71,7 +101,6 @@
                 margin-left:50px;
             }
         }
-    
      //guide label{
     .guide-wrapper{
         @media (max-width: 767px) {
