@@ -689,7 +689,7 @@
   left: -831px !important;
 }
 .nav_bar_component .nav_wrapper .group_items .dropdown-explore .scrolled {
-  top: 10px;
+  top: -41px !important;
 }
 .nav_bar_component .nav_wrapper .group_items .dropdown-login .dropdown-menu {
   top: 78px;
