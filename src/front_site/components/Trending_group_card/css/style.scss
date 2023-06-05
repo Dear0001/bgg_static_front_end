@@ -2,47 +2,56 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  width: 100%;
   .container {
-    max-width: 1040px;
-    margin: 0 auto;
-    max-height: 100vh;
     .row {
-      padding-top: 50px;
-      margin-left: 18px;
-      margin-right: 18px;
-      .block-card {
-        padding: 0;
-        margin-top: 10px;
+      padding-bottom: 10px;
+      .check {
+        border: 1px solid #6f8461;
+        border-radius: 7px;
+        background: #ffffff url(../image/check-expert.png) 2px center / 11px
+          no-repeat;
+        font-size: 8px;
+        padding: 0 5px 0 15px;
+        display: inline;
+        position: absolute;
+        line-height: 17px;
+        left: 5px;
+        top: 5px;
+        color: #6f8461;
+        z-index: 2;
       }
       h3 {
-        padding-top: 40px;
-        padding-left: 0;
         padding-bottom: 10px;
-        margin: 0;
+        padding-top: 30px;
       }
-    }
-    .card {
-      margin: 0;
-      // margin-top: 10px;
-      height: 232px;
-      width: 155px;
-      border-radius: 8px;
-      img {
-        width: 151px;
+      .card {
+        // width: 100%;
+        p {
+          font-size: 16px;
+          font-weight: bold;
+          letter-spacing: 1px;
+        }
       }
-      p {
-        font-size: 15px;
-        font-weight: bold;
-      }
-    }
-    .card:active,
-    .card:hover {
-      border: 3px solid #598832;
-      transform: scale(1);
-      p {
-        color: #598832;
-        font-size: 15px;
+      // @media screen and (max-width: 992px){
+      //   .card{
+      //     width: 100%;
+      //   }
+      // }
+      .card:hover {
+        border: 3px solid #6f8461;
+        transform: scale(1);
+        .check {
+          transform: scale(1.2);
+          position: absolute;
+          line-height: 18px;
+          left: 8px;
+          top: 8px;
+        }
+        p {
+          font-size: 16px;
+          font-weight: 500;
+          color: #6c964f;
+        }
       }
     }
   }
