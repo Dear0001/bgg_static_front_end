@@ -1,9 +1,4 @@
-body {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  .container {
-    .row {
+   .wrap-card{
       padding-bottom: 10px;
       .check {
         border: 1px solid #6f8461;
@@ -25,34 +20,24 @@ body {
         padding-top: 30px;
       }
       .card {
-        // width: 100%;
         p {
           font-size: 16px;
           font-weight: bold;
           letter-spacing: 1px;
         }
       }
-      // @media screen and (max-width: 992px){
-      //   .card{
-      //     width: 100%;
-      //   }
-      // }
       .card:hover {
         border: 3px solid #6f8461;
-        transform: scale(1);
+        //transform: scale(1);
         .check {
-          transform: scale(1.2);
-          position: absolute;
-          line-height: 18px;
-          left: 8px;
-          top: 8px;
+         // transform: scale(1.2);
+         // position: absolute;
+         // line-height: 18px;
+         // left: 8px;
+         // top: 8px;
         }
         p {
-          font-size: 16px;
-          font-weight: 500;
           color: #6c964f;
         }
       }
     }
-  }
-}
