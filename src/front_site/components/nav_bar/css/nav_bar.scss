@@ -9,7 +9,7 @@
 //all scroll support style all here only with desktop
 @media (min-width: 992px){
     //all scroll only with desktop
-//for nav_bar scroll support
+    //for nav_bar scroll support
 .nav_bar_component_scroll{
     height:52px;
     // hide class
@@ -50,7 +50,7 @@
                     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
                     border-radius: 8px !important;
                     top:-10px;
-                    left:-60px !important;
+                    left:-60px;
                 }
 
             }
@@ -114,9 +114,9 @@
     }
     
     //dropdown of category
-    .dropdown-of-category {
-        left: -22px !important;
-    }
+    // .dropdown-of-category {
+    //     left: -22px !important;
+    // }
   
     //border right color
     .border-right-dark{
@@ -796,8 +796,13 @@
                     border:1px solid white !important;
                     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
                     border-radius: 8px !important;
-                    top:89px !important;
-                    left:-60px !important;
+                    top:89px;
+                    left:-40px;
+                }
+                 //style support while scrolled
+                 .scrolled{
+                    top: 30px;
+                    left: -168px !important;
                 }
 
             }
@@ -808,6 +813,10 @@
                 .dropdown-menu {
                     left:-124px !important;
                 }
+                 //style support while scrolled
+                 .scrolled{
+                    top:31px;
+                }
 
             }
             .dropdown-explore{
@@ -817,6 +826,10 @@
                     background-color: unset;
                     left:-831px !important;
                 }
+                //style support while scrolled
+                .scrolled{
+                    top:10px;
+                }
             }
             .dropdown-login{
                 .dropdown-menu {
@@ -824,11 +837,21 @@
                     background-color: unset;
                     left:-195px !important;
                 }
+                //style support while scrolled
+                 //style support while scrolled
+                 .scrolled{
+                    top: 23px;
+                }
+
 
             }
             .dropdown-random{
                 .dropdown-menu {
                     left:-80px !important;
+                }
+                 //style support while scrolled
+                 .scrolled{
+                    top:31px;
                 }
 
             }
