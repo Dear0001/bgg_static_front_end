@@ -1,0 +1,85 @@
+main {
+  background-color: #e6eee0;
+  padding-top: 30px;
+  padding-bottom: 25px;
+  .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h3 {
+      text-align: center;
+      font-weight: 500;
+    }
+    a {
+      text-align: center;
+      margin-top: 8px;
+      margin-bottom: 65px;
+      list-style: none;
+      font-size: 20px;
+      color: #85a46b;
+      font-weight: 400;
+    }
+  }
+  .card {
+    background-color: #c6d9b9;
+    max-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 576px) {
+      margin-bottom: 50px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .wrap-text {
+      position: relative;
+      top: -40px;
+    }
+    img {
+      position: relative;
+      top: -47px;
+      border-radius: 50%;
+      width: 95px;
+      border-radius: 47px;
+    }
+    span {
+      position: relative;
+      top: -30px;
+      color: #6e8a57;
+      font-size: 15px;
+      font-weight: bold;
+    }
+  }
+  .text {
+    font-size: 23px;
+    font-weight: 500;
+    padding: 8px 20px;
+    margin-bottom: 0;
+    @media screen and (max-width: 576px) {
+      font-size: 15px;
+      padding: 5px 28px;
+    }
+  }
+  .text-2 {
+    margin-top: 5px;
+    margin-bottom: 0;
+    padding-left: 15px;
+    font-size: 18px;
+    font-weight: 300;
+    @media screen and (max-width: 576px) {
+      font-size: 15px;
+      padding: 5px 28px;
+    }
+  }
+  .text-3 {
+    @media screen and (max-width: 576px) {
+      font-size: 15px;
+      padding: 5px 28px;
+    }
+    margin-top: 0px;
+    margin-left: 27px;
+    font-size: 16px;
+    font-weight: 300;
+  }
+}

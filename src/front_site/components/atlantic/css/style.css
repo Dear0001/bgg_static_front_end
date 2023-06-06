@@ -1,0 +1,92 @@
+main {
+  background-color: #e6eee0;
+  padding-top: 30px;
+  padding-bottom: 25px;
+}
+main .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main .title h3 {
+  text-align: center;
+  font-weight: 500;
+}
+main .title a {
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 65px;
+  list-style: none;
+  font-size: 20px;
+  color: #85a46b;
+  font-weight: 400;
+}
+main .card {
+  background-color: #c6d9b9;
+  max-height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 576px) {
+  main .card {
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+main .card .wrap-text {
+  position: relative;
+  top: -40px;
+}
+main .card img {
+  position: relative;
+  top: -47px;
+  border-radius: 50%;
+  width: 95px;
+  border-radius: 47px;
+}
+main .card span {
+  position: relative;
+  top: -30px;
+  color: #6e8a57;
+  font-size: 15px;
+  font-weight: bold;
+}
+main .text {
+  font-size: 23px;
+  font-weight: 500;
+  padding: 8px 20px;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 576px) {
+  main .text {
+    font-size: 15px;
+    padding: 5px 28px;
+  }
+}
+main .text-2 {
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding-left: 15px;
+  font-size: 18px;
+  font-weight: 300;
+}
+@media screen and (max-width: 576px) {
+  main .text-2 {
+    font-size: 15px;
+    padding: 5px 28px;
+  }
+}
+main .text-3 {
+  margin-top: 0px;
+  margin-left: 27px;
+  font-size: 16px;
+  font-weight: 300;
+}
+@media screen and (max-width: 576px) {
+  main .text-3 {
+    font-size: 15px;
+    padding: 5px 28px;
+  }
+}/*# sourceMappingURL=style.css.map */
