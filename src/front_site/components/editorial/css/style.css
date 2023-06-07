@@ -10,11 +10,13 @@ main {
     font-size: 24px;
   }
   main .alticle {
-    padding-top: 8%;
+    padding-top: 10%;
+    justify-content: center;
   }
   main .alticle .text-icon {
     display: flex;
     flex-direction: row;
+    align-items: center;
   }
   main .alticle .text-icon .icon img {
     width: 56px;
@@ -27,11 +29,12 @@ main {
     display: none;
   }
   main .editorial {
-    width: 500px;
+    width: 100%;
     background-color: #94b778;
     border-radius: 30px;
     display: flex;
     justify-content: center;
+    align-items: center;
   }
   main .editorial a {
     text-align: center;
@@ -60,14 +63,16 @@ main .editorial a:hover {
   main .alticle .text-icon {
     display: flex;
     flex-direction: row;
+    justify-content: center;
   }
   main .alticle .text-icon .icon img {
+    padding-top: 5px;
     width: 56px;
     height: 53px;
   }
   main .alticle .editorial {
     display: flex;
-    width: 450px;
+    width: 100%;
     background-color: #94b778;
     border-radius: 30px;
     justify-content: center;
@@ -85,7 +90,7 @@ main .editorial a:hover {
   }
   main .editorial {
     display: flex;
-    width: 355px;
+    width: 100%;
     background-color: #94b778;
     border-radius: 30px;
     justify-content: center;
@@ -95,7 +100,7 @@ main .editorial a:hover {
     text-decoration: none;
     color: #fbfbfa;
     font-weight: bold;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     padding: 2px 2px;
   }
 }
@@ -131,16 +136,15 @@ main .editorial a:hover {
     height: 56px;
   }
   main .alticle .text-icon .text {
-    padding-left: 10px;
-    text-align: center;
+    padding-left: 8px;
     font-size: 18px;
     font-weight: 400;
   }
   main .alticle .editorial-mobile {
-    width: 350px;
+    width: 100%;
     background-color: #94b778;
     border-radius: 30px;
-    margin: 8px 30px;
+    margin: 8px 5px;
     display: flex;
     justify-content: center;
   }
