@@ -1,7 +1,8 @@
-.wrap-card {
+.container .away {
+  padding-top: 10px;
   padding-bottom: 10px;
 }
-.wrap-card .check {
+.container .check {
   border: 1px solid #6f8461;
   border-radius: 7px;
   background: #ffffff url(../image/check-expert.png) 2px center/11px no-repeat;
@@ -15,18 +16,56 @@
   color: #6f8461;
   z-index: 2;
 }
-.wrap-card h3 {
-  padding-bottom: 10px;
-  padding-top: 30px;
+.container .card-hover:hover {
+  border: 3px solid #89ac6c;
 }
-.wrap-card .card p {
+.container .card-hover:hover img {
+  scale: 1;
+}
+.container .card-hover:hover .card-text {
   font-size: 16px;
-  font-weight: bold;
-  letter-spacing: 1px;
+  scale: 1;
+  color: #89ac6c;
 }
-.wrap-card .card:hover {
-  border: 3px solid #6f8461;
+.container .card-hover:hover .check {
+  scale: 1.1;
 }
-.wrap-card .card:hover p {
-  color: #6c964f;
+
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+  .container .cards-wrap {
+    padding-top: 10px;
+  }
+  .container .check {
+    border: 1px solid #6f8461;
+    border-radius: 7px;
+    background: #ffffff url(../image/check-expert.png) 2px center/11px no-repeat;
+    font-size: 8px;
+    padding: 0 5px 0 15px;
+    display: inline;
+    position: absolute;
+    line-height: 17px;
+    left: 5px;
+    top: 5px;
+    color: #6f8461;
+    z-index: 2;
+  }
+}
+@media only screen and (max-width: 768px) and (min-width: 576px) {
+  .container .cards-wrap {
+    padding-top: 10px;
+  }
+  .container .check {
+    border: 1px solid #6f8461;
+    border-radius: 7px;
+    background: #ffffff url(../image/check-expert.png) 2px center/11px no-repeat;
+    font-size: 8px;
+    padding: 0 5px 0 15px;
+    display: inline;
+    position: absolute;
+    line-height: 17px;
+    left: 5px;
+    top: 5px;
+    color: #6f8461;
+    z-index: 2;
+  }
 }/*# sourceMappingURL=style.css.map */
