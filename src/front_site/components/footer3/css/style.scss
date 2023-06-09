@@ -1,0 +1,290 @@
+main {
+  background-color: #93b874;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  //responsive search icon ipad 820px down
+  @media only screen and (min-width: 992px) {
+    .search-ipad {
+      margin: 5px 5px;
+      .wrap-search {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 405px;
+        height: 55px;
+        background-color: #fff;
+        border-radius: 8px;
+        #search-ip {
+          width: 90%;
+          outline: none;
+          padding: 5px;
+          border: hidden;
+        }
+        input:focus {
+          color: black;
+          padding-left: 10px;
+        }
+        ::-webkit-input-placeholder {
+          /* Edge */
+          color: rgb(140, 137, 137);
+          font-size: 20px;
+        }
+        i {
+          padding-right: 5px;
+          color: black;
+          font-size: 18px;
+        }
+      }
+    }
+    .group-icon {
+      padding-top: 50px;
+      a {
+        text-decoration: none;
+        img {
+          width: 35px;
+        }
+      }
+    }
+    .group-icon {
+      .follow-us {
+        @media (min-width: 768px) {
+          display: none;
+        }
+
+        @media only screen and (max-width: 728px) {
+          font-size: 16px;
+          font-weight: bold;
+          color: #0001;
+        }
+      }
+    }
+    .text-icon {
+      display: flex;
+      .icon {
+        img {
+          width: 50px;
+        }
+      }
+      .text-head {
+        h3 {
+          font-weight: 300;
+        }
+      }
+    }
+    .text-p {
+      font-size: 18px;
+      color: #fff;
+    }
+    article {
+      padding-left: 60px;
+    }
+
+    .email {
+      .wrap-email {
+        padding-bottom: 10px;
+        input {
+          padding: 3px;
+          width: 226px;
+          border-radius: 5px;
+          border: none;
+        }
+        input:focus {
+          padding-left: 5px;
+        }
+        input.active {
+          border: 4px solid black;
+        }
+        ::-webkit-input-placeholder {
+          /* Edge */
+          color: rgb(140, 137, 137);
+          font-size: 18px;
+          padding-left: 5px;
+        }
+      }
+      button {
+        background-color: rgb(249, 249, 133);
+        padding: 3px;
+        width: 226px;
+        border-radius: 5px;
+        border: none;
+      }
+      p {
+        font-size: 16px;
+        color: #fff;
+      }
+    }
+    .group-icon-ipad {
+      display: none;
+    }
+    .categoties {
+      padding-bottom: 10px;
+    }
+    @media only screen and (max-width: 992px) {
+      .group-icon {
+        a {
+          display: none;
+        }
+      }
+    }
+    .row {
+      .categoties {
+        font-size: 17px;
+        a {
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 992px) {
+    hr {
+      visibility: hidden;
+    }
+    header {
+      img {
+        width: 215px;
+      }
+    }
+
+    .search-ipad {
+      margin: 5px 5px;
+      .wrap-search {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 405px;
+        height: 40px;
+        background-color: #fff;
+        border-radius: 8px;
+        #search-ip {
+          width: 90%;
+          outline: none;
+          padding: 5px;
+          border: hidden;
+        }
+        input:focus {
+          color: black;
+          padding-left: 10px;
+        }
+        ::-webkit-input-placeholder {
+          /* Edge */
+          color: rgb(140, 137, 137);
+          font-size: 20px;
+        }
+        i {
+          padding-right: 5px;
+          color: black;
+          font-size: 18px;
+        }
+      }
+    }
+    #second-row {
+      padding-left: 10px;
+    }
+    .group-icon-ipad {
+      padding-top: 50px;
+      a {
+        text-decoration: none;
+        img {
+          width: 35px;
+        }
+      }
+    }
+    .group-icon-ipad {
+      .follow-us {
+        @media (min-width: 768px) {
+          display: none;
+        }
+
+        @media only screen and (max-width: 728px) {
+          font-size: 16px;
+          font-weight: bold;
+          color: #0001;
+        }
+      }
+    }
+    .wrap-row {
+      padding-top: 35px;
+      border-left: 1px solid green;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      .text-icon {
+        display: flex;
+        .icon {
+          img {
+            width: 50px;
+          }
+        }
+        .text-head {
+          h3 {
+            font-weight: 300;
+          }
+        }
+      }
+      .text-p {
+        font-size: 18px;
+        color: #fff;
+      }
+
+      .email {
+        .wrap-email {
+          padding-bottom: 10px;
+          input {
+            padding: 2px;
+            width: 236px;
+            border-radius: 10px;
+            border: none;
+          }
+          input:focus {
+            padding-left: 5px;
+          }
+          input.active {
+            border: 4px solid black;
+          }
+          ::-webkit-input-placeholder {
+            /* Edge */
+            color: rgb(140, 137, 137);
+            font-size: 18px;
+            padding-left: 5px;
+          }
+        }
+        button {
+          background-color: rgb(249, 249, 133);
+          padding: 2px;
+          width: 236px;
+          border-radius: 10px;
+          border: none;
+        }
+        p {
+          font-size: 16px;
+          color: #fff;
+        }
+      }
+      .categoties {
+        padding-bottom: 10px;
+      }
+    }
+    @media only screen and (max-width: 992px) {
+      .group-icon {
+        a {
+          display: none;
+        }
+      }
+    }
+    .row {
+      .categoties {
+        font-size: 17px;
+        a {
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+
+    article {
+      padding-left: 60px;
+    }
+  }
+}

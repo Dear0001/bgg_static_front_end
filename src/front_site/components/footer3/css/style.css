@@ -1,0 +1,281 @@
+main {
+  background-color: #93b874;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+@media only screen and (min-width: 992px) {
+  main .search-ipad {
+    margin: 5px 5px;
+  }
+  main .search-ipad .wrap-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 405px;
+    height: 55px;
+    background-color: #fff;
+    border-radius: 8px;
+  }
+  main .search-ipad .wrap-search #search-ip {
+    width: 90%;
+    outline: none;
+    padding: 5px;
+    border: hidden;
+  }
+  main .search-ipad .wrap-search input:focus {
+    color: black;
+    padding-left: 10px;
+  }
+  main .search-ipad .wrap-search ::-webkit-input-placeholder {
+    /* Edge */
+    color: rgb(140, 137, 137);
+    font-size: 20px;
+  }
+  main .search-ipad .wrap-search i {
+    padding-right: 5px;
+    color: black;
+    font-size: 18px;
+  }
+  main .group-icon {
+    padding-top: 50px;
+  }
+  main .group-icon a {
+    text-decoration: none;
+  }
+  main .group-icon a img {
+    width: 35px;
+  }
+}
+@media only screen and (min-width: 992px) and (min-width: 768px) {
+  main .group-icon .follow-us {
+    display: none;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 728px) {
+  main .group-icon .follow-us {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.0666666667);
+  }
+}
+@media only screen and (min-width: 992px) {
+  main .text-icon {
+    display: flex;
+  }
+  main .text-icon .icon img {
+    width: 50px;
+  }
+  main .text-icon .text-head h3 {
+    font-weight: 300;
+  }
+}
+@media only screen and (min-width: 992px) {
+  main .text-p {
+    font-size: 18px;
+    color: #fff;
+  }
+}
+@media only screen and (min-width: 992px) {
+  main article {
+    padding-left: 60px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  main .email .wrap-email {
+    padding-bottom: 10px;
+  }
+  main .email .wrap-email input {
+    padding: 3px;
+    width: 226px;
+    border-radius: 5px;
+    border: none;
+  }
+  main .email .wrap-email input:focus {
+    padding-left: 5px;
+  }
+  main .email .wrap-email input.active {
+    border: 4px solid black;
+  }
+  main .email .wrap-email ::-webkit-input-placeholder {
+    /* Edge */
+    color: rgb(140, 137, 137);
+    font-size: 18px;
+    padding-left: 5px;
+  }
+  main .email button {
+    background-color: rgb(249, 249, 133);
+    padding: 3px;
+    width: 226px;
+    border-radius: 5px;
+    border: none;
+  }
+  main .email p {
+    font-size: 16px;
+    color: #fff;
+  }
+}
+@media only screen and (min-width: 992px) {
+  main .group-icon-ipad {
+    display: none;
+  }
+}
+@media only screen and (min-width: 992px) {
+  main .categoties {
+    padding-bottom: 10px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 992px) {
+  main .group-icon a {
+    display: none;
+  }
+}
+@media only screen and (min-width: 992px) {
+  main .row .categoties {
+    font-size: 17px;
+  }
+  main .row .categoties a {
+    text-decoration: none;
+    color: white;
+  }
+}
+@media only screen and (max-width: 992px) {
+  main hr {
+    visibility: hidden;
+  }
+  main header img {
+    width: 215px;
+  }
+  main .search-ipad {
+    margin: 5px 5px;
+  }
+  main .search-ipad .wrap-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 405px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 8px;
+  }
+  main .search-ipad .wrap-search #search-ip {
+    width: 90%;
+    outline: none;
+    padding: 5px;
+    border: hidden;
+  }
+  main .search-ipad .wrap-search input:focus {
+    color: black;
+    padding-left: 10px;
+  }
+  main .search-ipad .wrap-search ::-webkit-input-placeholder {
+    /* Edge */
+    color: rgb(140, 137, 137);
+    font-size: 20px;
+  }
+  main .search-ipad .wrap-search i {
+    padding-right: 5px;
+    color: black;
+    font-size: 18px;
+  }
+  main #second-row {
+    padding-left: 10px;
+  }
+  main .group-icon-ipad {
+    padding-top: 50px;
+  }
+  main .group-icon-ipad a {
+    text-decoration: none;
+  }
+  main .group-icon-ipad a img {
+    width: 35px;
+  }
+}
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+  main .group-icon-ipad .follow-us {
+    display: none;
+  }
+}
+@media only screen and (max-width: 992px) and (max-width: 728px) {
+  main .group-icon-ipad .follow-us {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.0666666667);
+  }
+}
+@media only screen and (max-width: 992px) {
+  main .wrap-row {
+    padding-top: 35px;
+    border-left: 1px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  main .wrap-row .text-icon {
+    display: flex;
+  }
+  main .wrap-row .text-icon .icon img {
+    width: 50px;
+  }
+  main .wrap-row .text-icon .text-head h3 {
+    font-weight: 300;
+  }
+  main .wrap-row .text-p {
+    font-size: 18px;
+    color: #fff;
+  }
+  main .wrap-row .email .wrap-email {
+    padding-bottom: 10px;
+  }
+  main .wrap-row .email .wrap-email input {
+    padding: 2px;
+    width: 236px;
+    border-radius: 10px;
+    border: none;
+  }
+  main .wrap-row .email .wrap-email input:focus {
+    padding-left: 5px;
+  }
+  main .wrap-row .email .wrap-email input.active {
+    border: 4px solid black;
+  }
+  main .wrap-row .email .wrap-email ::-webkit-input-placeholder {
+    /* Edge */
+    color: rgb(140, 137, 137);
+    font-size: 18px;
+    padding-left: 5px;
+  }
+  main .wrap-row .email button {
+    background-color: rgb(249, 249, 133);
+    padding: 2px;
+    width: 236px;
+    border-radius: 10px;
+    border: none;
+  }
+  main .wrap-row .email p {
+    font-size: 16px;
+    color: #fff;
+  }
+  main .wrap-row .categoties {
+    padding-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 992px) and (max-width: 992px) {
+  main .group-icon a {
+    display: none;
+  }
+}
+@media only screen and (max-width: 992px) {
+  main .row .categoties {
+    font-size: 17px;
+  }
+  main .row .categoties a {
+    text-decoration: none;
+    color: white;
+  }
+}
+@media only screen and (max-width: 992px) {
+  main article {
+    padding-left: 60px;
+  }
+}/*# sourceMappingURL=style.css.map */
