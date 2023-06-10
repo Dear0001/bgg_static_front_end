@@ -82,12 +82,32 @@
   color: #444f45;
   text-decoration: none;
 }
-.main-sidebar-wrapper .sub-scribe-wrapper {
+.main-sidebar-wrapper .sub-scribe-wrapper .card {
   margin-top: 10px;
+  background-color: #e8efe1;
+  text-align: center;
+  border-radius: 7px;
+  padding: 15px 0 20px 0;
 }
 .main-sidebar-wrapper .sub-scribe-wrapper .card .card-img-top {
   display: flex;
   width: 64px;
   height: auto;
   text-align: center;
+}
+.main-sidebar-wrapper .support-wikihow-wrapper {
+  margin-top: 10px;
+}
+.main-sidebar-wrapper .support-wikihow-wrapper .card {
+  background-color: #FFF6CD;
+  border-radius: 7px;
+  padding: 15px 15px 20px 15px;
+  text-align: center;
+}
+.main-sidebar-wrapper .support-wikihow-wrapper .card .card-img-top {
+  display: flex;
+  height: auto;
+  text-align: center;
+  width: 200px;
+  margin-top: -15px;
 }/*# sourceMappingURL=style.css.map */
