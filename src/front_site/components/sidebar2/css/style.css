@@ -1,0 +1,93 @@
+.main-sidebar-wrapper .side-bar-wrapper {
+  padding: 0;
+}
+.main-sidebar-wrapper .side-bar-wrapper ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+.main-sidebar-wrapper .side-bar-wrapper ul li {
+  border: 1px solid #e6e6e6;
+  border-radius: 7px;
+  list-style: none;
+  font-size: 14px;
+  vertical-align: middle;
+  display: table;
+  width: 100%;
+  height: 32px;
+  margin-bottom: 2px;
+  overflow: hidden;
+}
+.main-sidebar-wrapper .side-bar-wrapper ul li a {
+  line-height: 32px;
+  color: #444f45;
+  text-decoration: none;
+}
+.main-sidebar-wrapper .side-bar-wrapper ul li a img {
+  float: left;
+  width: 32px;
+  background-color: #94B778;
+  padding: 5px;
+}
+.main-sidebar-wrapper .side-bar-wrapper ul li a span {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  margin-left: 10px;
+}
+.main-sidebar-wrapper .lng-bar-wrapper .bg-color {
+  background-color: #F3F3F3;
+}
+.main-sidebar-wrapper .lng-bar-wrapper .title-language {
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 0px;
+  margin: 0px;
+}
+.main-sidebar-wrapper .lng-bar-wrapper .b-r-8 {
+  border-radius: 8px;
+}
+.main-sidebar-wrapper .lng-bar-wrapper .p-left-34 {
+  padding-left: 34px;
+}
+.main-sidebar-wrapper .lng-bar-wrapper .p-t-10 {
+  padding-top: 10px;
+}
+.main-sidebar-wrapper .lng-bar-wrapper .p-bt-10 {
+  padding-bottom: 10px;
+}
+.main-sidebar-wrapper .lng-bar-wrapper ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  justify-content: center;
+}
+.main-sidebar-wrapper .lng-bar-wrapper ul li {
+  text-decoration: none;
+}
+.main-sidebar-wrapper .lng-bar-wrapper ul li a {
+  text-align: left;
+  font-size: 11px;
+  color: #444f45;
+  text-decoration: none;
+}
+.main-sidebar-wrapper .sub-scribe-wrapper {
+  margin-top: 10px;
+}
+.main-sidebar-wrapper .sub-scribe-wrapper .card .card-img-top {
+  display: flex;
+  width: 64px;
+  height: auto;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
