@@ -12,7 +12,7 @@ main {
     justify-content: center;
     align-items: center;
     max-width: 405px;
-    height: 55px;
+    height: 52px;
     background-color: #fff;
     border-radius: 8px;
   }
@@ -40,6 +40,7 @@ main {
     padding-top: 50px;
   }
   main .group-icon a {
+    padding-left: 10px;
     text-decoration: none;
   }
   main .group-icon a img {
@@ -55,11 +56,12 @@ main {
     font-weight: 300;
   }
   main .text-p {
+    width: 236px;
     font-size: 18px;
     color: #fff;
   }
   main article {
-    padding-left: 60px;
+    padding-left: 100px;
   }
   main .email .wrap-email {
     padding-bottom: 10px;
@@ -90,6 +92,7 @@ main {
     border: none;
   }
   main .email p {
+    width: 236px;
     font-size: 16px;
     color: #fff;
   }
@@ -99,17 +102,12 @@ main {
   main .categoties {
     padding-bottom: 10px;
   }
-}
-@media only screen and (min-width: 992px) and (max-width: 992px) {
-  main .group-icon a {
-    display: none;
-  }
-}
-@media only screen and (min-width: 992px) {
   main .row .categoties {
-    font-size: 17px;
+    font-size: 16px;
   }
   main .row .categoties a {
+    display: block;
+    padding-bottom: 5px;
     text-decoration: none;
     color: white;
   }
@@ -157,16 +155,17 @@ main {
     padding-left: 10px;
   }
   main .group-icon-ipad {
-    padding-top: 50px;
+    padding-top: 25px;
   }
   main .group-icon-ipad a {
+    padding-left: 5px;
     text-decoration: none;
   }
   main .group-icon-ipad a img {
     width: 35px;
   }
   main .wrap-row {
-    padding-top: 35px;
+    padding-top: 55px;
     border-left: 1px solid green;
     display: flex;
     justify-content: center;
@@ -183,6 +182,7 @@ main {
     font-weight: 300;
   }
   main .wrap-row .text-p {
+    width: 236px;
     font-size: 18px;
     color: #fff;
   }
@@ -215,6 +215,7 @@ main {
     border: none;
   }
   main .wrap-row .email p {
+    width: 236px;
     font-size: 16px;
     color: #fff;
   }
@@ -225,27 +226,20 @@ main {
   }
 }
 @media only screen and (max-width: 992px) and (min-width: 729px) {
-  main .row .categoties {
-    font-size: 17px;
+  main .categoties {
+    margin: 10px 250x;
+    width: 100%;
   }
-  main .row .categoties a {
+  main .categoties a {
+    padding-bottom: 5px;
     text-decoration: none;
-    color: white;
+    color: #fff;
+    display: block;
   }
 }
 @media only screen and (max-width: 992px) and (min-width: 729px) {
   main article {
     padding-left: 60px;
-  }
-}
-@media screen and (max-width: 729px) {
-  main .container {
-    display: none;
-  }
-}
-@media screen and (min-width: 729px) {
-  main .content {
-    display: none;
   }
 }
 @media only screen and (max-width: 729px) {
@@ -283,12 +277,11 @@ main {
     width: 236px;
     border-radius: 10px;
     border: none;
+    outline: none;
   }
   main .email .wrap-email input:focus {
     padding-left: 5px;
-  }
-  main .email .wrap-email input.active {
-    border: 4px solid black;
+    border: 1px solid black;
   }
   main .email .wrap-email ::-webkit-input-placeholder {
     /* Edge */
@@ -308,6 +301,9 @@ main {
     width: 236px;
     font-size: 16px;
     color: #fff;
+  }
+  main .search-ipad {
+    padding-bottom: 10px;
   }
   main .search-ipad .wrap-search {
     margin: 0 auto;
@@ -340,9 +336,10 @@ main {
     font-size: 18px;
   }
   main .group-icon-ipad {
-    padding-top: 50px;
+    padding-top: 20px;
   }
   main .group-icon-ipad a {
+    padding-left: 5px;
     text-decoration: none;
   }
   main .group-icon-ipad a img {
@@ -360,8 +357,19 @@ main {
     width: 100%;
   }
   main wrap-conte .categoties a {
+    padding-bottom: 5px;
     text-decoration: none;
     color: #fff;
     display: block;
+  }
+}
+@media screen and (max-width: 729px) {
+  main .container {
+    display: none;
+  }
+}
+@media screen and (min-width: 729px) {
+  main .content {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
