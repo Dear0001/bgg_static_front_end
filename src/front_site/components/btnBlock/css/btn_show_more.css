@@ -1,0 +1,9 @@
+.component_show_more_btn .btn_show_more {
+  width: 100%;
+  border-color: green;
+  background-color: unset;
+  color: green;
+  padding: 10px 10px 10px 10px;
+  border-radius: 8px;
+  font-weight: bold;
+}/*# sourceMappingURL=btn_show_more.css.map */
