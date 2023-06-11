@@ -18,24 +18,24 @@
     max-height:52px;
     // hide class
     .hide{
-        transition: all 0.2s;
+        transition: all 0.3s;
         display: none;
     }
    // scroll up icon-title-wrapper change
    .rePrepare{
-        transition: all 0.2s;
+        transition: all 0.3s;
         margin-top: 1px;
     }
     //
     .nav-link{
-        transition: all 0.2s;
+        transition: all 0.3s;
         padding-top:0px !important;
         padding-bottom: 0px !important;
     }
     //put margin bottom on logo wikiHow
     @media (min-width: 992px){
         .nav_wrapper .logo-wrapper img {
-            transition: all 0.1s;
+            transition: all 0.3s;
             width: 162px;
             height: auto;
             margin-bottom: 14px;
@@ -733,7 +733,9 @@
                     display: block;
                     color: #4e634e !important;
                    // background-color: #2C3C2C !important;
-                 
+                    margin-top: 0;
+                    opacity: 2;
+                    max-height: 1000px;
                 }
 
                 //put no dropdown icon
@@ -766,6 +768,12 @@
 
                 //module dropdown formatter style
                 .dropdown-menu {
+                    transition: all 2s;
+                    max-height: 0;
+                    display: block;
+                    overflow: hidden;
+                    margin-top: 0;
+                    opacity: 0;
                     left: -87px !important;
                     border-radius: unset;
                     border: 1px solid green;
@@ -811,7 +819,7 @@
                     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
                     border-radius: 8px !important;
                     top:89px;
-                    left:-40px;
+                    left:-33px !important;
                 }
                  //style support while scrolled
                  .scrolled{
