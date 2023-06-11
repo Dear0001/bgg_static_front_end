@@ -1,0 +1,154 @@
+.main-sidebar-wrapper{
+    //style for component side bar
+    .side-bar-wrapper{
+        padding:0;
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font: inherit;
+            font-size: 100%;
+            vertical-align: baseline;
+            li{
+                border: 1px solid #e6e6e6;
+                border-radius: 7px;
+                list-style: none;
+                font-size: 14px;
+                vertical-align: middle;
+                display: table;
+                width: 100%;
+                height: 32px;
+                margin-bottom: 2px;
+                overflow: hidden;
+                a{
+                    line-height: 32px;
+                    color: #444f45;
+                    text-decoration: none;
+                    img{
+                        float: left;
+                        width: 32px;
+                        background-color: #94B778;
+                        padding: 5px;
+                    }
+                    span{
+                        margin: 0;
+                        padding: 0;
+                        border: 0;
+                        font: inherit;
+                        font-size: 100%;
+                        vertical-align: baseline;
+                        margin-left: 10px;
+                    }
+                }
+               
+            }
+        }
+    }
+    //style for component side bar language
+    .lng-bar-wrapper{
+        .bg-color{
+            background-color: #F3F3F3;
+        }
+         .title-language{
+            font-size: 1.2em;
+            font-weight: bold;
+            padding:0px;
+            margin:0px;
+         }
+         .b-r-8{
+            border-radius: 8px;
+         }
+         .p-left-34{
+            padding-left:34px;
+         }
+         .p-t-10{
+            padding-top: 10px;
+         }
+         .p-bt-10{
+            padding-bottom: 10px;
+         }
+         ul{
+           list-style: none;
+           margin: 0;
+           padding: 0;
+           border: 0;
+           font: inherit;
+           font-size: 100%;
+           vertical-align: baseline;
+           justify-content: center;
+            li{
+                text-decoration: none;
+                a{
+                    text-align: left;
+                    font-size: 11px;
+                    color: #444f45;
+                    text-decoration: none;
+                }
+            }
+         }
+     }
+     //style for subScribe Wrapper
+     .sub-scribe-wrapper{
+       
+        .card{
+            margin-top: 10px;
+            background-color: #e8efe1;
+            text-align: center;
+            border-radius: 7px;
+            padding: 15px 0 20px 0;
+            .card-img-top{
+                display: flex;
+                width: 64px;
+                height: auto;
+                text-align: center;
+            }
+            .card-body{
+                .card-title{
+                    font-size: 20px;
+                    line-height: 21px;
+                    text-align: center;
+                    color: #444F45;
+                    padding: 0;
+                }
+                .card-text{
+                    font-size: 16px;
+                    line-height: 21px;
+                }
+
+            }
+        }
+     }
+      //style for support WikiHow
+      .support-wikihow-wrapper{
+        margin-top: 15px;
+        .card{
+            background-color: #FFF6CD;
+            border-radius: 7px;
+            padding: 15px 15px 20px 15px;
+            text-align: center;
+            .card-img-top{
+                display: flex;
+                height: auto;
+                text-align: center;
+                width: 200px;
+                margin-top: -25px;
+            }
+            .card-body{
+                .card-title{
+                    font-size: 20px;
+                    margin: 10px 25px 0 25px;
+                    line-height: 21px;
+                    text-align: center;
+                    color: #444F45;
+                    padding: 0;
+                }
+                .card-text{
+                    font-size: 16px;
+                    line-height: 21px;
+                }
+
+            }
+        }
+     }
+}
