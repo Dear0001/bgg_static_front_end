@@ -4,30 +4,38 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%
+    width: 100%;
+    max-height:100px;
+    transition: all 0.1s;
 }
 //all scroll support style all here only with desktop
 @media (min-width: 992px){
     //all scroll only with desktop
     //for nav_bar scroll support
 .nav_bar_component_scroll{
-    height:52px;
+    transition: all 0.1s;
+    display: block;
+    max-height:52px;
     // hide class
     .hide{
+        transition: all 0.2s;
         display: none;
     }
    // scroll up icon-title-wrapper change
    .rePrepare{
+        transition: all 0.2s;
         margin-top: 1px;
     }
     //
     .nav-link{
+        transition: all 0.2s;
         padding-top:0px !important;
         padding-bottom: 0px !important;
     }
     //put margin bottom on logo wikiHow
     @media (min-width: 992px){
         .nav_wrapper .logo-wrapper img {
+            transition: all 0.1s;
             width: 162px;
             height: auto;
             margin-bottom: 14px;
@@ -102,10 +110,12 @@
     @media (min-width: 992px){
         // hide class
         .hide{
+            transition: all 0.2s;
             display: none;
         }
         // hide icon while scroll up
         .hide_icon{
+            transition: all 0.2s;
             display: none;
         }
     }  
@@ -651,12 +661,16 @@
                   }
                 }
               }
+            // .explore-wrapper{
+            //     position: relative;
+            // }
             .explore-menu {
                 box-sizing: border-box;
                 max-width: 1050px;
                 padding: 20px;
                 border: 1px solid #91af79;
-                background-color: transparent !important;
+                //background-color: transparent !important;
+                background-color: white;
                 position: absolute;
                 top: 72px;
                 overflow-y: scroll;
