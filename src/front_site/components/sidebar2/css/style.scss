@@ -115,6 +115,30 @@
                     font-size: 16px;
                     line-height: 21px;
                 }
+                .mt-1{
+                    margin-top: 1px !important;
+                }
+                .btn-input-email{
+                    background-color: white;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                    margin: auto;
+                    margin-bottom: 10px;
+                    width: 76%;
+                    text-align: center;
+                }
+                input:focus{
+                    border: 2px solid black;
+                }
+                .btn-sign-up{
+                    width: 76%;
+                    text-align: center;
+                    padding: 4px;
+                    border-radius: 7px;
+                    border: 1px solid #94B778;
+                    color: #94B778;
+                    font-weight: bold;
+                }
 
             }
         }
@@ -146,6 +170,17 @@
                 .card-text{
                     font-size: 16px;
                     line-height: 21px;
+                }
+                .btn-let-do-this{
+                    color: #668051;
+                    border: 1px solid #668051;
+                    background-color: #fff;
+                    border-radius: 7px;
+                    text-align: center;
+                    display: block;
+                    margin: 0 31px;
+                    padding: 4px 0;
+                    font-weight: bold;
                 }
 
             }
