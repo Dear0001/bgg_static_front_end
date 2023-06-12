@@ -1,0 +1,97 @@
+main {
+  box-sizing: border-box;
+  .row {
+    background-color: rgb(232, 229, 229);
+  }
+  .text-head {
+    margin-bottom: 0;
+    padding: 5px;
+    font-size: 0.9rem;
+  }
+  .logo {
+    padding: 22px 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 195px;
+    }
+  }
+  .first-text {
+    margin-top: 8px;
+    margin-bottom: 2px;
+    font-size: 0.65rem;
+    font-weight: bold;
+  }
+  h4 {
+    font-size: 1.085rem;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  .second-text {
+    font-size: 0.8125rem;
+    font-weight: 300;
+  }
+  .btn {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 5px;
+    a {
+      padding: 4px 6px;
+      border-radius: 8px;
+      background-color: rgb(239, 239, 67);
+      list-style: none;
+      text-decoration: none;
+      color: #000655;
+      font-size: 0.9rem;
+      font-weight: bold;
+    }
+    a:active,
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+  //all the content center
+  @media only screen and (max-width: 992px) {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  //for tablet
+  @media only screen and (max-width: 992px) and (min-width: 768px) {
+    width: 65%;
+    .first-text {
+      text-align: left;
+    }
+    h4 {
+      text-align: left;
+      font-size: 1.5rem;
+    }
+    .second-text {
+      text-align: left;
+      font-size: 1.17rem;
+    }
+  }
+  //for mobile phone
+  @media only screen and (max-width: 768px) {
+    .text-head {
+      padding: 5px 15px;
+    }
+    .first-text {
+      text-align: left;
+      padding: 5px 15px;
+      font-size: 0.8rem;
+    }
+    h4 {
+      padding: 5px 15px;
+      text-align: left;
+      font-size: 1.5rem;
+    }
+    .second-text {
+      padding: 5px 15px;
+      text-align: left;
+      font-size: 1.075rem;
+    }
+  }
+}

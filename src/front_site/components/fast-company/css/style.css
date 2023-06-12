@@ -1,0 +1,98 @@
+main {
+  box-sizing: border-box;
+}
+main .row {
+  background-color: rgb(232, 229, 229);
+}
+main .text-head {
+  margin-bottom: 0;
+  padding: 5px;
+  font-size: 0.9rem;
+}
+main .logo {
+  padding: 22px 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .logo img {
+  width: 195px;
+}
+main .first-text {
+  margin-top: 8px;
+  margin-bottom: 2px;
+  font-size: 0.65rem;
+  font-weight: bold;
+}
+main h4 {
+  font-size: 1.085rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+main .second-text {
+  font-size: 0.8125rem;
+  font-weight: 300;
+}
+main .btn {
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-bottom: 5px;
+}
+main .btn a {
+  padding: 4px 6px;
+  border-radius: 8px;
+  background-color: rgb(239, 239, 67);
+  list-style: none;
+  text-decoration: none;
+  color: #000655;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+main .btn a:active,
+main .btn a:hover {
+  text-decoration: underline;
+}
+@media only screen and (max-width: 992px) {
+  main {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+  main {
+    width: 65%;
+  }
+  main .first-text {
+    text-align: left;
+  }
+  main h4 {
+    text-align: left;
+    font-size: 1.5rem;
+  }
+  main .second-text {
+    text-align: left;
+    font-size: 1.17rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  main .text-head {
+    padding: 5px 15px;
+  }
+  main .first-text {
+    text-align: left;
+    padding: 5px 15px;
+    font-size: 0.8rem;
+  }
+  main h4 {
+    padding: 5px 15px;
+    text-align: left;
+    font-size: 1.5rem;
+  }
+  main .second-text {
+    padding: 5px 15px;
+    text-align: left;
+    font-size: 1.075rem;
+  }
+}/*# sourceMappingURL=style.css.map */
