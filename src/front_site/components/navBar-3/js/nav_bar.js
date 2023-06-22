@@ -1,9 +1,9 @@
 // drodown animation jquery test
 // jquery with for search bar mobile
 $(".fa").click(function () {
-    $(".icon").toggleClass("active");
-    $("input[type=text]").toggleClass("active");
-  });
+  $(".icon").toggleClass("active");
+  $("input[type=text]").toggleClass("active");
+});
 //scroll to the top hide icon
 jQuery(document).ready(function () {
   fadeMenuWrap();
@@ -41,3 +41,10 @@ function fadeMenuWrap() {
     $(".dropdown-menu").addClass("scrolled");
   }
 }
+//hide icon random when click icon search
+$(".fa-search").click(function () {
+  $(".fa-random").hide();
+});
+$(".fa-close").click(function () {
+  $(".fa-random").show();
+});

@@ -700,14 +700,12 @@
               color: gray;
 
               .fa-search {
-                @media screen and (max-width: 390px) and (min-width: 205px) {
-                  // position: absolute;
-                  // left: -253px;
-                  // top: 30px;
-                  // transition: all 0.3s ease;
-                  // color: gray;
-                  display: none;
-                }
+                position: absolute;
+                left: -253px;
+                top: 30px;
+                transition: all 0.3s ease;
+                color: gray;
+                // display: none;
               }
               .fa-close {
                 position: absolute;

@@ -552,13 +552,13 @@
     transition: all 0.3s ease;
     color: gray;
   }
-}
-@media screen and (max-width: 768px) and (max-width: 390px) and (min-width: 205px) {
   .nav_bar_component .search-container-mobile .wrapper .box .search-area .icon.active .fa-search {
-    display: none;
+    position: absolute;
+    left: -253px;
+    top: 30px;
+    transition: all 0.3s ease;
+    color: gray;
   }
-}
-@media screen and (max-width: 768px) {
   .nav_bar_component .search-container-mobile .wrapper .box .search-area .icon.active .fa-close {
     position: absolute;
     top: 50%;
