@@ -39,14 +39,37 @@
         transition: all 0.1s;
         width: 162px;
         height: auto;
-        margin-bottom: 14px;
+        margin-top: 10px;
+      }
+    }
+    //search desktop when scrolled
+    .search-bar-wrapper .search-container-desk-top {
+      position: relative;
+      input[type="text"] {
+        position: absolute;
+        top: -35px;
+      }
+      button {
+        position: absolute;
+        top: -30px;
+        left: 280px;
+        padding: 6px 28px !important;
+        i{
+          font-size: 15px;
+        }
+      }
+    }
+    .icon-title-wrapper{
+      // position: relative;
+      h5{
+        padding-top: 13px !important;
       }
     }
     .category_wrapper {
       position: relative;
       .category_pro_img {
         position: absolute;
-        top: -28px;
+        top: -15px;
         right: 7px;
       }
     }
@@ -117,13 +140,13 @@
   //category put background-color unset
   .group_items {
     @media only screen and (min-width: 992px) {
-      max-width: 1050px;
+      // max-width: 1050px;
       max-height: 72px;
       margin: 0 auto;
       display: flex;
     }
     .search-container-desk-top {
-      width: 360px;
+      width: 400px;
     }
     .logo-wrapper {
       width: 165px;
@@ -141,7 +164,7 @@
       position: absolute;
       top: 75px;
       left: auto;
-      // background-color: #fff !important;
+      background-color: #fff !important;
       border-left: 1px solid #89ac6c;
     }
     .dropdown-menu {
@@ -154,16 +177,18 @@
     // }
     .explore-wrapper {
       position: absolute;
-      // width: 1050px;
+      width: 1150px !important;
+      height: 1150px !important;
       top: 75px;
       padding-bottom: 30px;
+      margin-left: -92px !important;
     }
 
     .wrap-li {
       position: absolute;
       float: right;
       right: -93%;
-      max-width: 525px;
+      // // max-width: 525px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -271,13 +296,15 @@
     @media (max-width: 767px) {
       font-size: 10px !important;
       color: white !important;
+      margin: 5px 4px;
     }
     @media (min-width: 768px) and (max-width: 992px) {
       position: relative;
-      left: -30px !important;
-      bottom: 9px !important;
+      left: -40px !important;
+      bottom: 13px !important;
       font-size: 13px !important;
       color: white !important;
+      margin: 8px 10px !important;
     }
   }
   //end global custom used
@@ -432,7 +459,7 @@
             .navbar-collapse.show {
               left: 0;
               transition: left 300ms ease-in-out;
-              top: 40p;
+              top: 40px;
               width: 400px;
             }
 
@@ -478,7 +505,7 @@
     @media (min-width: 768px) and (max-width: 992px) {
       position: relative;
       bottom: 6px;
-      margin-right: -45px !important;
+      margin-right: -35px !important;
       margin-left: 261px;
       .mobile-random {
         i {
@@ -700,12 +727,12 @@
               color: gray;
 
               .fa-search {
-                position: absolute;
-                left: -253px;
-                top: 30px;
-                transition: all 0.3s ease;
-                color: gray;
-                // display: none;
+                  position: absolute;
+                  left: -253px;
+                  top: 30px;
+                  transition: all 0.3s ease;
+                  color: gray;
+                  // display: none !important;
               }
               .fa-close {
                 position: absolute;
@@ -726,16 +753,17 @@
       //logo image for desktop
       @media (min-width: 992px) {
         img {
-          width: 162px;
+          width: 173px;
           height: auto;
+          padding-right: 15px;
         }
       }
       //for ipad
       @media (min-width: 768px) And (max-width: 992px) {
         img {
           position: relative;
-          bottom: 7px !important;
-          margin-left: 200px;
+          left: 100%;
+          bottom: 8px;
           width: 167px;
           height: auto;
         }
@@ -779,7 +807,7 @@
           border-right: unset;
           border-bottom: 2px solid white;
           background-color: unset;
-          width: 258px;
+          width: 278px;
         }
 
         input:focus {
@@ -805,7 +833,7 @@
 
           .fa-search {
             //font-size: 30px;
-            font-size: 1.25em;
+            font-size: 1.258em;
             color: white;
           }
         }
@@ -1046,7 +1074,7 @@
         }
         //style support while scrolled
         .scrolled {
-          top: 20px !important;
+          top: 30px !important;
           left: -168px !important;
         }
       }
@@ -1059,7 +1087,7 @@
         }
         //style support while scrolled
         .scrolled {
-          top: 30px;
+          top: 45px;
         }
       }
       .dropdown-explore {
@@ -1071,7 +1099,7 @@
         }
         //style support while scrolled
         .scrolled {
-          top: -41px !important;
+          top: -26px !important;
         }
       }
       .dropdown-login {
@@ -1082,7 +1110,7 @@
         }
         //style support while scrolled
         .scrolled {
-          top: 33px;
+          top: 49px;
         }
       }
       .dropdown-random {

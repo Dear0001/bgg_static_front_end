@@ -19,9 +19,11 @@ function fadeMenuWrap() {
     $(".category_img").removeClass("hide");
     $(".category_pro_img").addClass("hide");
     $(".nav_bar_component").removeClass("nav_bar_component_scroll");
+    $(".search-container-desk-top").removeClass("search-container-desk-top_scroll");
     //dropdown scroll support
     $(".dropdown-menu").removeClass("scrolled");
   } else if (scrollPos > 0) {
+    $(".search-container-desk-top").addClass("search-container-desk-top_scroll");
     $(".nav_bar_component").addClass("nav_bar_component_scroll");
     // $('.nav_bar_component').addClass('sticky')
     $(".icon").addClass("hide_icon");

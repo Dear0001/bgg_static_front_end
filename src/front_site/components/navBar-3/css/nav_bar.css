@@ -33,7 +33,30 @@
     transition: all 0.1s;
     width: 162px;
     height: auto;
-    margin-bottom: 14px;
+    margin-top: 10px;
+  }
+}
+@media (min-width: 992px) {
+  .nav_bar_component_scroll .search-bar-wrapper .search-container-desk-top {
+    position: relative;
+  }
+  .nav_bar_component_scroll .search-bar-wrapper .search-container-desk-top input[type=text] {
+    position: absolute;
+    top: -35px;
+  }
+  .nav_bar_component_scroll .search-bar-wrapper .search-container-desk-top button {
+    position: absolute;
+    top: -30px;
+    left: 280px;
+    padding: 6px 28px !important;
+  }
+  .nav_bar_component_scroll .search-bar-wrapper .search-container-desk-top button i {
+    font-size: 15px;
+  }
+}
+@media (min-width: 992px) {
+  .nav_bar_component_scroll .icon-title-wrapper h5 {
+    padding-top: 13px !important;
   }
 }
 @media (min-width: 992px) {
@@ -42,7 +65,7 @@
   }
   .nav_bar_component_scroll .category_wrapper .category_pro_img {
     position: absolute;
-    top: -28px;
+    top: -15px;
     right: 7px;
   }
 }
@@ -111,14 +134,13 @@
 }
 @media only screen and (min-width: 992px) {
   .nav_bar_component .group_items {
-    max-width: 1050px;
     max-height: 72px;
     margin: 0 auto;
     display: flex;
   }
 }
 .nav_bar_component .group_items .search-container-desk-top {
-  width: 360px;
+  width: 400px;
 }
 .nav_bar_component .group_items .logo-wrapper {
   width: 165px;
@@ -136,6 +158,7 @@
   position: absolute;
   top: 75px;
   left: auto;
+  background-color: #fff !important;
   border-left: 1px solid #89ac6c;
 }
 .nav_bar_component .group_items .dropdown-menu {
@@ -144,14 +167,16 @@
 }
 .nav_bar_component .group_items .explore-wrapper {
   position: absolute;
+  width: 1150px !important;
+  height: 1150px !important;
   top: 75px;
   padding-bottom: 30px;
+  margin-left: -92px !important;
 }
 .nav_bar_component .group_items .wrap-li {
   position: absolute;
   float: right;
   right: -93%;
-  max-width: 525px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -241,15 +266,17 @@
   .nav_bar_component .navbar-toggler {
     font-size: 10px !important;
     color: white !important;
+    margin: 5px 4px;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .nav_bar_component .navbar-toggler {
     position: relative;
-    left: -30px !important;
-    bottom: 9px !important;
+    left: -40px !important;
+    bottom: 13px !important;
     font-size: 13px !important;
     color: white !important;
+    margin: 8px 10px !important;
   }
 }
 @media (max-width: 991px) {
@@ -387,7 +414,7 @@
   .nav_bar_component .nav_wrapper .group_items .group_items_mobile .navbar-collapse.show {
     left: 0;
     transition: left 300ms ease-in-out;
-    top: 40p;
+    top: 40px;
     width: 400px;
   }
 }
@@ -424,7 +451,7 @@
   .nav_bar_component .random-mobile-wrapper {
     position: relative;
     bottom: 6px;
-    margin-right: -45px !important;
+    margin-right: -35px !important;
     margin-left: 261px;
   }
   .nav_bar_component .random-mobile-wrapper .mobile-random i {
@@ -568,15 +595,16 @@
 }
 @media (min-width: 992px) {
   .nav_bar_component .nav_wrapper .logo-wrapper img {
-    width: 162px;
+    width: 173px;
     height: auto;
+    padding-right: 15px;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .nav_bar_component .nav_wrapper .logo-wrapper img {
     position: relative;
-    bottom: 7px !important;
-    margin-left: 200px;
+    left: 100%;
+    bottom: 8px;
     width: 167px;
     height: auto;
   }
@@ -608,7 +636,7 @@
   border-right: unset;
   border-bottom: 2px solid white;
   background-color: unset;
-  width: 258px;
+  width: 278px;
 }
 .nav_bar_component .nav_wrapper .search-bar-wrapper .search-container-desk-top input:focus {
   color: white;
@@ -633,7 +661,7 @@
   cursor: pointer;
 }
 .nav_bar_component .nav_wrapper .search-bar-wrapper .search-container-desk-top button .fa-search {
-  font-size: 1.25em;
+  font-size: 1.258em;
   color: white;
 }
 .nav_bar_component .nav_wrapper .group_items {
@@ -826,7 +854,7 @@
   left: -33px !important;
 }
 .nav_bar_component .nav_wrapper .group_items .dropdown-categories .scrolled {
-  top: 20px !important;
+  top: 30px !important;
   left: -168px !important;
 }
 .nav_bar_component .nav_wrapper .group_items .dropdown-categories:hover {
@@ -836,7 +864,7 @@
   left: -124px !important;
 }
 .nav_bar_component .nav_wrapper .group_items .dropdown-helpus .scrolled {
-  top: 30px;
+  top: 45px;
 }
 .nav_bar_component .nav_wrapper .group_items .dropdown-explore .dropdown-menu {
   border: unset !important;
@@ -845,7 +873,7 @@
   left: -831px !important;
 }
 .nav_bar_component .nav_wrapper .group_items .dropdown-explore .scrolled {
-  top: -41px !important;
+  top: -26px !important;
 }
 .nav_bar_component .nav_wrapper .group_items .dropdown-login .dropdown-menu {
   top: 76px;
@@ -853,7 +881,7 @@
   left: -195px !important;
 }
 .nav_bar_component .nav_wrapper .group_items .dropdown-login .scrolled {
-  top: 33px;
+  top: 49px;
 }
 .nav_bar_component .nav_wrapper .group_items .dropdown-random .dropdown-menu {
   left: -80px !important;
