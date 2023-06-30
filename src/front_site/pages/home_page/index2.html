@@ -1,0 +1,2119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>BGG</title>
+        <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+      />
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+      <link rel="stylesheet" href="style/css.css">
+      <link rel="stylesheet" href="../../components/navBar-3/css/nav_bar.css">
+      <link rel="stylesheet" href="../../components/sub-Navbar/css/sub-navbar.css">
+      <link rel="stylesheet" href="../../components/Trending_group_card/css/style.css">
+      <link rel="stylesheet" href="../../components/editorial/css/style.css">
+      <link rel="stylesheet" href="../../components/fast-company/css/style.css">
+      <link rel="stylesheet" href="../../components/sidebar2/css/style.css">
+      <link rel="stylesheet" href="../../components/atlantic/css/style.css">
+      <link rel="stylesheet" href="../../components/footer3/css/style.css">
+</head>
+<body>
+    <div class="contatiner">
+        <div class="row">
+            <div class="col-lg-12">
+                <!-- navbar -->
+                <div class="nav_bar_component sticky">
+                    <div class="container" style="position: relative;">
+                      <!-- start component navbar -->
+                      <div class="nav_wrapper">
+                        <div class="group_items flexible-height">
+                          <!-- <nav class="navbar navbar-expand-lg navbar-light p-0"> -->
+                            <nav class="navbar navbar-expand-lg navbar-light p-0 itens-wrap-dt">
+                            <!-- button icon -->
+                            <div class="row mt-20">
+                              <div class="col-4">
+                                <!--  -->
+                                <button
+                                  class="navbar-toggler"
+                                  type="button"
+                                  data-toggle="collapse"
+                                  data-target="#navbarSupportedContent"
+                                  aria-controls="navbarSupportedContent"
+                                  aria-expanded="false"
+                                  aria-label="Toggle navigation"
+                                  >
+                                  <span class="navbar-toggler-icon"></span>
+                                </button>
+                              </div>
+                            </div>
+                            <!-- guide for mobile -->
+                            <div class="guide-wrapper mt-20">
+                              <ul class="navbar-nav pd-2">
+                                <li class="nav-item">
+                                  <a class="nav-link">
+                                    <label class="Guides">Guides</label>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                            <!-- logo wrapper -->
+                            <div class="logo-wrapper mt-20">
+                              <ul class="navbar-nav pd-2">
+                                <li class="nav-item ">
+                                  <a class="nav-link flexible-margin-bottom">
+                                    <img src="../../components/navBar-3/img/wikihow_logo.png" alt="" />
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                             <!-- search for ipad -->
+                             <div class="search-ipad-wrapper">
+                              <ul class="navbar-nav pd-2">
+                                <li class="nav-item">
+                                  <a class="nav-link flexible-margin-bottom">
+                                    <div class="search-container-ipad">
+                                      <form action="/action_page.php">
+                                          <input type="text" placeholder="todo anything..." name="search">
+                                          <i class="fa fa-search errspan"></i>
+                                      </form>
+                                    </div>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                            <!-- search for mobile -->
+                            <div class="search-mobile-wrapper">
+                              <ul class="navbar-nav pd-2">
+                                <li class="nav-item">
+                                  <a class="nav-link flexible-margin-bottom">
+                                    <div class="search-container-mobile">
+                                      <div class="wrapper">   
+                                          <div class="box">
+                                              <div class="search-area">
+                                                  <input style="top: 4px" type="text" placeholder="todo anything ...">
+                                                  <div class="icon"><i class="fa fa-search errspan"></i><i class="fa fa-close"></i></div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                    </div>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                            <!-- Random For Mobile -->
+                            <div class="random-mobile-wrapper">
+                              <ul class="navbar-nav">
+                                <li class="nav-item">
+                                  <a class="nav-link">
+                                    <div class="mobile-random">
+                                      <i class="fa fa-random" aria-hidden="true" class="rd"></i>
+                                    </div>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                            <!-- Search Bar Block-->
+                            <div class="search-bar-wrapper">
+                              <ul class="navbar-nav ">
+                                <li class="nav-item">
+                                  <a class="nav-link">
+                                    <div class="search-container-desk-top">
+                                      <form>
+                                        <input
+                                          type="text"
+                                          placeholder="todo anything..."
+                                          name="search"
+                                        />
+                                        <button type="submit">
+                                          <i class="fa fa-search" ></i>
+                                        </button>
+                                      </form>
+                                    </div>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                            <!-- nav items for desktop  -->
+                            <div class="collapse navbar-collapse nav-desktop">
+                              <ul class="navbar-nav ms-10 wrap-li">
+                                <li
+                                  class="nav-item dropdown bg-unset category-dropdown-unset dropdown-categories"
+                                >
+                                  <a
+                                    class="nav-link dropdown-toggle"
+                                    href="#"
+                                    id="navbarDropdown"
+                                    role="button"
+                                    data-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                  >
+                                    <div class="icon-title-wrapper mt-2">
+                                      <div class="category_wrapper">
+                                        <img class="category_img" src="../../components/navBar-3/img/category_icon_v2.png" />
+                                        <img class="category_pro_img" src="../../components/navBar-3/img/category_pro.png">
+                                      </div>
+                                    </div>
+                                  </a>
+                                  <div class="dropdown-menu dropdown-of-category drop-cate" aria-labelledby="navbarDropdown" style="top: 74px">
+                                    <a class="dropdown-item" href="#">Courses</a>
+                                    <a class="dropdown-item" href="#">Guides</a>
+                                    <a class="dropdown-item" href="#">Techs Help bro</a>
+                                    <a class="dropdown-item" href="#">Expert Videos</a>
+                                    <a class="dropdown-item" href="#">About wikiHow Pro</a>
+                                    <a class="dropdown-item" href="#">Coupon</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Quiz</a>
+                                  </div>
+                                </li>
+                                <li class="nav-item dropdown dropdown-hover-bg action-li dropdown-helpus ">
+                                  <a
+                                    class="nav-link dropdown-toggle"
+                                    href="#"
+                                    id="navbarDropdown"
+                                    role="button"
+                                    data-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                  >
+                                    <div class="icon-title-wrapper">
+                                      <div class="icon">
+                                        <i
+                                          class="fa fa-info-circle"
+                                          aria-hidden="true"
+                                          id="random"
+                                        ></i>
+                                      </div>
+                                      <h5 class="title-head" style="margin-bottom: 0px;
+                                      ">Help Us</h5 class="title-head">
+                                    </div>
+                                  </a>
+                                  <div class="dropdown-menu dropdown_help" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Support wikiHow</a>
+                                    <a class="dropdown-item" href="#">Community Dashboard</a>
+                                    <a class="dropdown-item" href="#">Wite an Article</a>
+                                    <a class="dropdown-item" href="#">Request a New Article</a>
+                                    <a class="dropdown-item" href="#">More Ideas</a>
+                                  </div>
+                                </li>
+                                <li class="nav-item dropdown dropdown-hover-bg action-li dropdown-explore">
+                                  <a
+                                    class="nav-link dropdown-toggle"
+                                    href="#"
+                                    id="navbarDropdown"
+                                    role="button"
+                                    data-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                  >
+                                    <div class="icon-title-wrapper">
+                                      <div class="icon">
+                                        <i
+                                          class="fa fa-podcast"
+                                          aria-hidden="true"
+                                          id="random"
+                                        ></i>
+                                      </div>
+                                      <h5 class="title-head">Explore</h5 class="title-head">
+                                    </div>
+                                  </a>
+                                  <div class="dropdown-menu explore-wrapper" style="
+                                  top: 0px;
+                                  padding-top: 0px;
+                              " aria-labelledby="navbarDropdown">
+                                    <div class="explore-menu">
+                                      <div class="explore_menu_line">
+                                        <a href="#" class="menuitem">Coupons</a>
+                                        <a href="#" class="menuitem">Tech Help Pro</a>
+                                        <a href="#" class="menuitem">Random Article</a>
+                                        <a href="#" class="menuitem">About Us</a>
+                                      </div>
+                                      <div class="explore_menu_line">
+                                        <a href="#" class="menuitem">Quizzes</a>
+                                        <a href="#" class="menuitem">Contribute</a>
+                                        <a href="#" class="menuitem">Train Your Brain Game</a>
+                                        <a href="#" class="menuitem">Improve Your English</a>
+                                      </div>
+                                      <hr />
+                                      <div class="explore_menu_line main_name_line">
+                                        <a href="#" class="menuitem">Popular Categories</a>
+                                      </div>
+                                      <div class="explore_menu_line little-menu">
+                                        <div class="menuitem">
+                                          <a href="#" class="menu_item_sub">Arts and Entertainment</a>
+                                          <a href="#" class="menu_item_sub component">Artwork</a>
+                                          <a href="#" class="menu_item_sub component">Artwork</a>
+                                          <a href="#" class="menu_item_sub component">Artwork</a>
+                                        </div>
+                                        <div class="menuitem">
+                                          <a href="#" class="menu_item_sub">Computers and Electronics</a>
+                                          <a href="#" class="menu_item_sub component">Artwork</a>
+                                          <a href="#" class="menu_item_sub component">Artwork</a>
+                                          <a href="#" class="menu_item_sub component">Artwork</a>
+                                        </div>
+                                        <div class="menuitem">
+                                          <a href="#" class="menu_item_sub">Health</a>
+                                          <a href="#" class="menu_item_sub component">Artwork</a>
+                                          <a href="#" class="menu_item_sub component">Artwork</a>
+                                          <a href="#" class="menu_item_sub component">Artwork</a>
+                                        </div>
+                                        <div class="menuitem">
+                                          <a href="#" class="menu_item_sub">Relationships</a>
+                                          <a href="#" class="menu_item_sub component">Artwork</a>
+                                          <a href="#" class="menu_item_sub component">Artwork</a>
+                                          <a href="#" class="menu_item_sub component">Artwork</a>
+                                        </div>
+                                      </div>
+                                      <div class="explore_menu_line little-menu">
+                                        <div class="menuitem">
+                                          <a href="#" class="menu_item_sub">Hobbies and Crafts</a>
+                                          <a href="#" class="menu_item_sub component">Crafts</a>
+                                          <a href="#" class="menu_item_sub component">Drawing</a>
+                                          <a href="#" class="menu_item_sub component">Games</a>
+                                        </div>
+                                        <div class="menuitem">
+                                          <a href="#" class="menu_item_sub">Education & Communication</a>
+                                          <a href="#" class="menu_item_sub component">Communication Skills</a>
+                                          <a href="#" class="menu_item_sub component">Personal Development</a>
+                                          <a href="#" class="menu_item_sub component">Studying</a>
+                                        </div>
+                                        <div class="menuitem">
+                                          <a href="#" class="menu_item_sub">Personal Care and Style</a>
+                                          <a href="#" class="menu_item_sub component">Fashion</a>
+                                          <a href="#" class="menu_item_sub component">Hair Care</a>
+                                          <a href="#" class="menu_item_sub component">Personal Hygiene</a>
+                                        </div>
+                                        <div class="menuitem">
+                                          <a href="#" class="menu_item_sub"> Youth</a>
+                                          <a href="#" class="menu_item_sub component">Personal Care</a>
+                                          <a href="#" class="menu_item_sub component">School Stuff</a>
+                                          <a href="#" class="menu_item_sub component">Dating</a>
+                                        </div>
+                                      </div>
+                                      <hr />
+                                      <div class="explore_menu_line main_name_line">
+                                        <a href="#" class="menuitem">All Categories</a>
+                                      </div>
+                                      <div class="explore_menu_line main_name_line">
+                                        <a href="#" class="menuitem top_cat">Arts and Entertainment</a>
+                                        <a href="#" class="menuitem top_cat">Finance and Business</a>
+                                        <a href="#" class="menuitem top_cat">Home and Garden</a>
+                                        <a href="#" class="menuitem top_cat">Relationship Quizzes</a>
+                                      </div>
+                                      <div class="explore_menu_line main_name_line">
+                                        <a href="#" class="menuitem top_cat">Cars & Other Vehicles</a>
+                                        <a href="#" class="menuitem top_cat">Food and Entertaining</a>
+                                        <a href="#" class="menuitem top_cat">Personal Care and Style</a>
+                                        <a href="#" class="menuitem top_cat">Sports and Fitness</a>
+                                      </div>
+                                      <div class="explore_menu_line main_name_line">
+                                        <a href="#" class="menuitem top_cat">Computers and Electronics</a>
+                                        <a href="#" class="menuitem top_cat">Health</a>
+                                        <a href="#" class="menuitem top_cat">Pets and Animals</a>
+                                        <a href="#" class="menuitem top_cat">Travel</a>
+                                      </div>
+                                      <div class="explore_menu_line main_name_line">
+                                        <a href="#" class="menuitem top_cat">Education & Communication</a>
+                                        <a href="#" class="menuitem top_cat">Hobbies and Crafts</a>
+                                        <a href="#" class="menuitem top_cat">Philosophy and Religion</a>
+                                        <a href="#" class="menuitem top_cat">Work World</a>
+                                      </div>
+                                      <div class="explore_menu_line main_name_line">
+                                        <a href="#" class="menuitem top_cat">Family Life</a>
+                                        <a href="#" class="menuitem top_cat">Holidays and Traditionst</a>
+                                        <a href="#" class="menuitem top_cat">Relationships</a>
+                                        <a href="#" class="menuitem top_cat">Youth</a>
+                                      </div>
+                                      
+                                  </div>
+                                </li>
+                                <li class="nav-item dropdown dropdown-hover-bg action-li dropdown-login">
+                                  <a
+                                    class="nav-link dropdown-toggle"
+                                    href="#"
+                                    id="navbarDropdown"
+                                    role="button"
+                                    data-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                  >
+                                    <div class="icon-title-wrapper">
+                                      <div class="icon">
+                                        <i
+                                          class="fa fa-user"
+                                          aria-hidden="true"
+                                          id="random"
+                                        ></i>
+                                      </div>
+                                      <h5 class="title-head">Login</h5>
+                                    </div>
+                                  </a>
+                                  <div class="dropdown-menu dropdown_login" aria-labelledby="navbarDropdown">
+                                    <div class="sub_login">
+                                      <div>
+                                      <span>Log in</span>
+                                    </div>
+                                      <div class="login_info" id="fb-icon">
+                                        <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                                        <h3>Facebook</h3>
+                                      </div>
+                                      <div class="login_info" id="google-icon">
+                                        <i class="fa fa-google" aria-hidden="true"></i>
+                                        <h3>Goggle</h3>
+                                      </div>
+                                      <div class="login_info" id="wiki-icon">
+                                        <i class="fa fa-user" aria-hidden="true"></i>
+                                        <h3>wikiHow Account</h3>
+                                      </div>
+                                      <p>No account yet? <a href="#">Create an account</a></p>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="nav-item dropdown dropdown-hover-bg action-li border-right-dark dropdown-random">
+                                  <a
+                                    class="nav-link dropdown-toggle"
+                                    href="#"
+                                    id="navbarDropdown"
+                                    role="button"
+                                    data-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                  >
+                                    <div class="icon-title-wrapper">
+                                      <div class="icon">
+                                        <i
+                                        class="fa fa-podcast"
+                                        aria-hidden="true"
+                                        id="random"> 
+                                        </i>
+                                      </div>
+                                      <h5 class="title-head">Random</h5 class="title-head">
+                                    </div>
+                                  </a>
+                                  <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Login</a>
+                                  </div> -->
+                                </li>
+                              </ul>
+                            </div>
+                            
+                            <div class="group_items_mobile nav-mobile">
+                              <!-- nav items for mobile  -->
+                              <div
+                                class="collapse navbar-collapse pre-scrollable"
+                                id="navbarSupportedContent">
+                                <ul class="navbar-nav ms-auto">
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                      <div class="icon-title-wrapper">
+                                        <div class="icon">
+                                          <i
+                                            class="fa fa-home"
+                                            aria-hidden="true"
+                                            id="home"
+                                          ></i>
+                                        </div>
+                                        <h5 class="title-head">Home</h5 class="title-head">
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                      <div class="icon-title-wrapper">
+                                        <div class="icon">
+                                          <i
+                                            class="fa fa-podcast"
+                                            aria-hidden="true"
+                                            id="random"
+                                          ></i>
+                                        </div>
+                                        <h5 class="title-head">Random</h5 class="title-head">
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                      <div class="icon-title-wrapper">
+                                        <div class="icon">
+                                          <i
+                                            class="fa fa-podcast"
+                                            aria-hidden="true"
+                                            id="random"
+                                          ></i>
+                                        </div>
+                                        <h5 class="title-head">Browser Articles</h5 class="title-head">
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <div class="learnNew">
+                                    <h4>Learn Something New</h4>
+                                  </div>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                      <div class="icon-title-wrapper">
+                                        <div class="icon">
+                                          <i
+                                            class="fa fa-podcast"
+                                            aria-hidden="true"
+                                            id="random"
+                                          ></i>
+                                        </div>
+                                        <h5 class="title-head">Guides</h5 class="title-head">
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                      <div class="icon-title-wrapper">
+                                        <div class="icon">
+                                          <i
+                                            class="fa fa-podcast"
+                                            aria-hidden="true"
+                                            id="random"
+                                          ></i>
+                                        </div>
+                                        <h5 class="title-head">Courses</h5 class="title-head">
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                      <div class="icon-title-wrapper">
+                                        <div class="icon">
+                                          <i
+                                            class="fa fa-podcast"
+                                            aria-hidden="true"
+                                            id="random"
+                                          ></i>
+                                        </div>
+                                        <h5 class="title-head">Quizzes</h5 class="title-head">
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <div class="learnNew">
+                                    <h4>Play Games</h4>
+                                  </div>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                      <div class="icon-title-wrapper">
+                                        <div class="icon">
+                                          <i
+                                            class="fa fa-podcast"
+                                            aria-hidden="true"
+                                            id="random"
+                                          ></i>
+                                        </div>
+                                        <h5 class="title-head">This Or That</h5 class="title-head">
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                      <div class="icon-title-wrapper">
+                                        <div class="icon">
+                                          <i
+                                            class="fa fa-podcast"
+                                            aria-hidden="true"
+                                            id="random"
+                                          ></i>
+                                        </div>
+                                        <h5 class="title-head">Train Your Brain</h5 class="title-head">
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <div class="learnNew">
+                                    <h4>Explore More</h4>
+                                  </div>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                      <div class="icon-title-wrapper">
+                                        <div class="icon">
+                                          <i
+                                            class="fa fa-podcast"
+                                            aria-hidden="true"
+                                            id="random"
+                                          ></i>
+                                        </div>
+                                        <h5 class="title-head">Support wihiHow</h5 class="title-head">
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                      <div class="icon-title-wrapper">
+                                        <div class="icon">
+                                          <i
+                                            class="fa fa-podcast"
+                                            aria-hidden="true"
+                                            id="random"
+                                          ></i>
+                                        </div>
+                                        <h5 class="title-head">About wikiHow</h5 class="title-head">
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item dropdown">
+                                    <a
+                                      class="nav-link dropdown-toggle"
+                                      href="#"
+                                      id="navbarDropdown"
+                                      role="button"
+                                      data-toggle="dropdown"
+                                      aria-haspopup="true"
+                                      aria-expanded="false"
+                                    >
+                                      <div class="icon-title-wrapper">
+                                        <div class="icon">
+                                          <i
+                                            class="fa fa-user"
+                                            aria-hidden="true"
+                                            id="random"
+                                          ></i>
+                                        </div>
+                                        <h5 class="title-head">Coupons</h5 class="title-head">
+                                      </div>
+                                    </a>
+                                    <div
+                                      class="dropdown-menu pre-scrollable"
+                                      aria-labelledby="navbarDropdown"
+                                    >
+                                      <a class="dropdown-item" href="#">H&M Coupons</a>
+                                      <a class="dropdown-item" href="#">Hotwire Promo Codes</a>
+                                      <a class="dropdown-item" href="#">StubHub Discount Codes</a>
+                                      <a class="dropdown-item" href="#">H&M Coupons</a>
+                                      <a class="dropdown-item" href="#">Hotwire Promo Codes</a>
+                                      <a class="dropdown-item" href="#">StubHub Discount Codes</a>
+                                      <a class="dropdown-item" href="#">H&M Coupons</a>
+                                      <a class="dropdown-item" href="#">Hotwire Promo Codes</a>
+                                      <a class="dropdown-item" href="#">StubHub Discount Codes</a>
+                                      <a class="dropdown-item" href="#">H&M Coupons</a>
+                                      <a class="dropdown-item" href="#">Hotwire Promo Codes</a>
+                                      <a class="dropdown-item" href="#">StubHub Discount Codes</a>
+                                      <a class="dropdown-item" href="#">H&M Coupons</a>
+                                      <a class="dropdown-item" href="#">Hotwire Promo Codes</a>
+                                      <a class="dropdown-item" href="#">StubHub Discount Codes</a>
+                                      <a class="dropdown-item" href="#">H&M Coupons</a>
+                                      <a class="dropdown-item" href="#">Hotwire Promo Codes</a>
+                                      <a class="dropdown-item" href="#">StubHub Discount Codes</a>
+                                      <a class="dropdown-item" href="#">H&M Coupons</a>
+                                      <a class="dropdown-item" href="#">Hotwire Promo Codes</a>
+                                      <a class="dropdown-item" href="#">StubHub Discount Codes</a>
+                                      <a class="dropdown-item" href="#">H&M Coupons</a>
+                                      <a class="dropdown-item" href="#">Hotwire Promo Codes</a>
+                                      <a class="dropdown-item" href="#">StubHub Discount Codes</a>
+                                      <a class="dropdown-item" href="#">StubHub Discount Codes</a>
+                                    </div>
+                                  </li>
+                                  <div class="login-or-signin">
+                                    <h4><a href="#">Log in / Sign in</a></h4>
+                                  </div>
+                                  <a href="#">Terms of Use</a>
+                                </ul>
+                              </div>
+                            </div>
+                          </nav>
+                        </div>
+                      </div>
+                      <!-- end component navbar -->
+                    </div>
+                </div>
+                <!-- sub-navbar -->
+                <main>
+                    <div class="container cnt-wraper">
+                      <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                          <h3>
+                            Welcome to wikiHow, the most trusted how-to site on the internet.
+                          </h3>
+                          <p>What will you learn on wikiHow today?</p>
+                          <div class="search">
+                            <div class="search-ipad">
+                              <form class="wrap-search">
+                                <i class="fa fa-search" aria-hiiden="true"></i>
+                                <input
+                                  type="text"
+                                  id="search-ip"
+                                  name="search"
+                                  required
+                                  autofocus
+                                  placeholder="to do anything..."
+                                  x-webkit-speech
+                                />
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                          <div class="image">
+                            <img src="../../components/sub-Navbar/image/books2.webp" alt="book" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mobile-wrap">
+                      <div class="content">
+                        <h1 style="margin-bottom: 25px">
+                          Welcome to wikiHow, the most trusted how-to site on the internet.
+                        </h1>
+                        <p>
+                          What will you learn on wikiHow today?
+                        </p>
+                      </div>
+                      <picture>
+                        <img src="../../components/sub-Navbar/image/books2.webp" />
+                      </picture>
+                    </div>
+                    <div class="container-lfuide">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="search">
+                            <div class="search-phone">
+                              <form class="wrap-search">
+                                <i class="fa fa-search" aria-hiiden="true"></i>
+                                <input
+                                  type="text"
+                                  id="search-ip"
+                                  name="search"
+                                  required
+                                  autofocus
+                                  placeholder="to do anything..."
+                                  x-webkit-speech
+                                />
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </main>
+                <!-- trending card -->
+                <article>
+                    <div class="container">
+                        <div class="row away">
+                        <h3>Expert Co-Authored Articles</h3>
+                        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
+                            <div class="cards-wrap">
+                            <div class="card card-hover" style="width: 100%">
+                                <div class="check">Expert</div>
+                                <img
+                                src="https://www.wikihow.com/images/thumb/c/cb/Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg/-crop-375-250-333px-nowatermark-Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg.webp"
+                                class="card-img-top"
+                                alt="..."
+                                />
+                                <div class="card-body">
+                                <p class="card-text">
+                                    How to Get over a Breakup when You Still Love Each Other: 11
+                                    Things to Do
+                                </p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
+                            <div class="cards-wrap">
+                            <div class="card card-hover" style="width: 100%">
+                                <div class="check">Expert</div>
+                                <img
+                                src="https://www.wikihow.com/images/thumb/c/cb/Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg/-crop-375-250-333px-nowatermark-Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg.webp"
+                                class="card-img-top"
+                                alt="..."
+                                />
+                                <div class="card-body">
+                                <p class="card-text">
+                                    How to Get over a Breakup when You Still Love Each Other: 11
+                                    Things to Do
+                                </p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
+                            <div class="cards-wrap">
+                            <div class="card card-hover" style="width: 100%">
+                                <div class="check">Expert</div>
+                                <img
+                                src="https://www.wikihow.com/images/thumb/c/cb/Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg/-crop-375-250-333px-nowatermark-Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg.webp"
+                                class="card-img-top"
+                                alt="..."
+                                />
+                                <div class="card-body">
+                                <p class="card-text">
+                                    How to Get over a Breakup when You Still Love Each Other: 11
+                                    Things to Do
+                                </p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
+                            <div class="cards-wrap">
+                            <div class="card card-hover" style="width: 100%">
+                                <div class="check">Expert</div>
+                                <img
+                                src="https://www.wikihow.com/images/thumb/c/cb/Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg/-crop-375-250-333px-nowatermark-Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg.webp"
+                                class="card-img-top"
+                                alt="..."
+                                />
+                                <div class="card-body">
+                                <p class="card-text">
+                                    How to Get over a Breakup when You Still Love Each Other: 11
+                                    Things to Do
+                                </p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
+                            <div class="cards-wrap">
+                            <div class="card card-hover" style="width: 100%">
+                                <div class="check">Expert</div>
+                                <img
+                                src="https://www.wikihow.com/images/thumb/c/cb/Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg/-crop-375-250-333px-nowatermark-Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg.webp"
+                                class="card-img-top"
+                                alt="..."
+                                />
+                                <div class="card-body">
+                                <p class="card-text">
+                                    How to Get over a Breakup when You Still Love Each Other: 11
+                                    Things to Do
+                                </p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
+                            <div class="cards-wrap">
+                            <div class="card card-hover" style="width: 100%">
+                                <div class="check">Expert</div>
+                                <img
+                                src="https://www.wikihow.com/images/thumb/c/cb/Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg/-crop-375-250-333px-nowatermark-Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg.webp"
+                                class="card-img-top"
+                                alt="..."
+                                />
+                                <div class="card-body">
+                                <p class="card-text">
+                                    How to Get over a Breakup when You Still Love Each Other: 11
+                                    Things to Do
+                                </p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="row away">
+                        <h3>Trending How-To Articles</h3>
+                        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
+                            <div class="cards-wrap">
+                            <div class="card card-hover" style="width: 100%">
+                                <div class="check">Expert</div>
+                                <img
+                                src="https://www.wikihow.com/images/thumb/c/cb/Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg/-crop-375-250-333px-nowatermark-Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg.webp"
+                                class="card-img-top"
+                                alt="..."
+                                />
+                                <div class="card-body">
+                                <p class="card-text">
+                                    How to Get over a Breakup when You Still Love Each Other: 11
+                                    Things to Do
+                                </p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
+                            <div class="cards-wrap">
+                            <div class="card card-hover" style="width: 100%">
+                                <div class="check">Expert</div>
+                                <img
+                                src="https://www.wikihow.com/images/thumb/c/cb/Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg/-crop-375-250-333px-nowatermark-Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg.webp"
+                                class="card-img-top"
+                                alt="..."
+                                />
+                                <div class="card-body">
+                                <p class="card-text">
+                                    How to Get over a Breakup when You Still Love Each Other: 11
+                                    Things to Do
+                                </p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
+                            <div class="cards-wrap">
+                            <div class="card card-hover" style="width: 100%">
+                                <div class="check">Expert</div>
+                                <img
+                                src="https://www.wikihow.com/images/thumb/c/cb/Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg/-crop-375-250-333px-nowatermark-Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg.webp"
+                                class="card-img-top"
+                                alt="..."
+                                />
+                                <div class="card-body">
+                                <p class="card-text">
+                                    How to Get over a Breakup when You Still Love Each Other: 11
+                                    Things to Do
+                                </p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
+                            <div class="cards-wrap">
+                            <div class="card card-hover" style="width: 100%">
+                                <div class="check">Expert</div>
+                                <img
+                                src="https://www.wikihow.com/images/thumb/c/cb/Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg/-crop-375-250-333px-nowatermark-Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg.webp"
+                                class="card-img-top"
+                                alt="..."
+                                />
+                                <div class="card-body">
+                                <p class="card-text">
+                                    How to Get over a Breakup when You Still Love Each Other: 11
+                                    Things to Do
+                                </p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
+                            <div class="cards-wrap">
+                            <div class="card card-hover" style="width: 100%">
+                                <div class="check">Expert</div>
+                                <img
+                                src="https://www.wikihow.com/images/thumb/c/cb/Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg/-crop-375-250-333px-nowatermark-Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg.webp"
+                                class="card-img-top"
+                                alt="..."
+                                />
+                                <div class="card-body">
+                                <p class="card-text">
+                                    How to Get over a Breakup when You Still Love Each Other: 11
+                                    Things to Do
+                                </p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
+                            <div class="cards-wrap">
+                            <div class="card card-hover" style="width: 100%">
+                                <div class="check">Expert</div>
+                                <img
+                                src="https://www.wikihow.com/images/thumb/c/cb/Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg/-crop-375-250-333px-nowatermark-Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg.webp"
+                                class="card-img-top"
+                                alt="..."
+                                />
+                                <div class="card-body">
+                                <p class="card-text">
+                                    How to Get over a Breakup when You Still Love Each Other: 11
+                                    Things to Do
+                                </p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="row away">
+                        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
+                            <div class="cards-wrap">
+                            <div class="card card-hover" style="width: 100%">
+                                <div class="check">Expert</div>
+                                <img
+                                src="https://www.wikihow.com/images/thumb/c/cb/Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg/-crop-375-250-333px-nowatermark-Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg.webp"
+                                class="card-img-top"
+                                alt="..."
+                                />
+                                <div class="card-body">
+                                <p class="card-text">
+                                    How to Get over a Breakup when You Still Love Each Other: 11
+                                    Things to Do
+                                </p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
+                            <div class="cards-wrap">
+                            <div class="card card-hover" style="width: 100%">
+                                <div class="check">Expert</div>
+                                <img
+                                src="https://www.wikihow.com/images/thumb/c/cb/Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg/-crop-375-250-333px-nowatermark-Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg.webp"
+                                class="card-img-top"
+                                alt="..."
+                                />
+                                <div class="card-body">
+                                <p class="card-text">
+                                    How to Get over a Breakup when You Still Love Each Other: 11
+                                    Things to Do
+                                </p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
+                            <div class="cards-wrap">
+                            <div class="card card-hover" style="width: 100%">
+                                <div class="check">Expert</div>
+                                <img
+                                src="https://www.wikihow.com/images/thumb/c/cb/Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg/-crop-375-250-333px-nowatermark-Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg.webp"
+                                class="card-img-top"
+                                alt="..."
+                                />
+                                <div class="card-body">
+                                <p class="card-text">
+                                    How to Get over a Breakup when You Still Love Each Other: 11
+                                    Things to Do
+                                </p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
+                            <div class="cards-wrap">
+                            <div class="card card-hover" style="width: 100%">
+                                <div class="check">Expert</div>
+                                <img
+                                src="https://www.wikihow.com/images/thumb/c/cb/Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg/-crop-375-250-333px-nowatermark-Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg.webp"
+                                class="card-img-top"
+                                alt="..."
+                                />
+                                <div class="card-body">
+                                <p class="card-text">
+                                    How to Get over a Breakup when You Still Love Each Other: 11
+                                    Things to Do
+                                </p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
+                            <div class="cards-wrap">
+                            <div class="card card-hover" style="width: 100%">
+                                <div class="check">Expert</div>
+                                <img
+                                src="https://www.wikihow.com/images/thumb/c/cb/Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg/-crop-375-250-333px-nowatermark-Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg.webp"
+                                class="card-img-top"
+                                alt="..."
+                                />
+                                <div class="card-body">
+                                <p class="card-text">
+                                    How to Get over a Breakup when You Still Love Each Other: 11
+                                    Things to Do
+                                </p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
+                            <div class="cards-wrap">
+                            <div class="card card-hover" style="width: 100%">
+                                <div class="check">Expert</div>
+                                <img
+                                src="https://www.wikihow.com/images/thumb/c/cb/Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg/-crop-375-250-333px-nowatermark-Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg.webp"
+                                class="card-img-top"
+                                alt="..."
+                                />
+                                <div class="card-body">
+                                <p class="card-text">
+                                    How to Get over a Breakup when You Still Love Each Other: 11
+                                    Things to Do
+                                </p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- editial -->
+                <main>
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-6 colo-lg-6 top-title">
+                          <div class="title mt-4">
+                            <h4 sub-title>
+                              wikiHow is an award-winning website where trusted research and
+                              expert knowledge come together.
+                            </h4>
+                            <p>
+                              Since 2005, wikiHow has helped billions of people learn how to
+                              solve problems large and small. We work with credentialed
+                              experts, a team of trained researchers, and a devoted community
+                              to create the most reliable, comprehensive and delightful how-to
+                              content on the Internet.
+                            </p>
+                          </div>
+              
+                          <div class="editorial mt-4 mb-4">
+                            <a href="#">Read about our editorial process</a>
+                          </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 colo-lg-6 alticle">
+                          <div class="text-icon">
+                            <div class="icon">
+                              <img
+                                src="https://www.wikihow.com/extensions/wikihow/homepage/images/writers.png"
+                                alt=""
+                              />
+                            </div>
+                            <div class="text">
+                              <h5 class="Authoritative">Authoritative</h5>
+                              <p>
+                                90,000 academically
+                                researched articles
+                              </p>
+                            </div>
+                          </div>
+                          <div class="text-icon">
+                            <div class="icon">
+                              <img
+                                src="https://www.wikihow.com/extensions/wikihow/homepage/images/expert.png"
+                                alt=""
+                              />
+                            </div>
+                            <div class="text">
+                              <h5>Trustworthy</h5>
+                              <p>
+                                1000+ expert coauthors across 50,00 <br>
+                                articles
+                              </p>
+                            </div>
+                          </div>
+                          <div class="editorial-mobile mt-4 mb-4">
+                            <a href="#">Read about our editorial process</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </main>
+                <!-- article two -->
+                <main>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-8 bg-primary">
+                      <div class="row">
+                        <div class="clo-lg-12">
+                          <main>
+                            <div class="container">
+                              <div class="col-lg-12">
+                                <div class="row" style="background-color: red; color: #fff">
+                                  <div class="col-lg-12">
+                                    <p class="text-head">
+                                      Fast Company's 2023 World Changing Ideas Honoree
+                                    </p>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-lg-4">
+                                    <div class="logo">
+                                      <img src="../../components/fast-company/image/logo-re-bg.png" alt="logo" />
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-8">
+                                    <p class="first-text">
+                                      wikiHow and United Nations Verified present
+                                    </p>
+                                    <h4>How to Spot and Counter Fake Information Online</h4>
+                                    <p class="second-text">
+                                      Fake news, misinformation, disinformation — you hear a lot about
+                                      these terms these days. But what can you do about them? Take our
+                                      free courses to find out.
+                                    </p>
+                                    <button class="btn"><a href="#">Take Our Free Course</a></button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </main>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <aside>
+                        <div class="main-sidebar-wrapper">
+                            <div class="container">
+                                    <div class="row justify-content-left">
+                                        <div class="col-lg-12">
+                                            <!-- blog sidebar -->
+                                            <div class="side-bar-wrapper p-0">
+                                                <div class="row">
+                                                    <div class="col-10 p-0">
+                                                        <ul>
+                                                            <li>
+                                                                <a class="item" href="#"><img src="../../components/sidebar2img/arts_and_entertainment.svg"><span>Arts and Entertaintment</span></a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="item" href="#"><img src="../../components/sidebar2/img/arts_and_entertainment.svg"><span>Arts and Entertaintment</span></a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="item" href="#"><img src="../../components/sidebar2/img/arts_and_entertainment.svg"><span>Arts and Entertaintment</span></a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="item" href="#"><img src="../../components/sidebar2/img/arts_and_entertainment.svg"><span>Arts and Entertaintment</span></a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="item" href="#"><img src="../../components/sidebar2/img/arts_and_entertainment.svg"><span>Arts and Entertaintment</span></a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="item" href="#"><img src="../../components/sidebar2/img/arts_and_entertainment.svg"><span>Arts and Entertaintment</span></a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="item" href="#"><img src="../../components/sidebar2/img/arts_and_entertainment.svg"><span>Arts and Entertaintment</span></a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="item" href="#"><img src="../../components/sidebar2/img/arts_and_entertainment.svg"><span>Arts and Entertaintment</span></a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="item" href="#"><img src="../../components/sidebar2/img/arts_and_entertainment.svg"><span>Arts and Entertaintment</span></a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="item" href="#"><img src="../../components/sidebar2/img/arts_and_entertainment.svg"><span>Arts and Entertaintment</span></a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="item" href="#"><img src="../../components/sidebar2/img/arts_and_entertainment.svg"><span>Arts and Entertaintment</span></a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="item" href="#"><img src="../../components/sidebar2/img/arts_and_entertainment.svg"><span>Arts and Entertaintment</span></a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="item" href="#"><img src="../../components/sidebar2/img/arts_and_entertainment.svg"><span>Arts and Entertaintment</span></a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="item" href="#"><img src="../../components/sidebar2/img/arts_and_entertainment.svg"><span>Arts and Entertaintment</span></a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="item" href="#"><img src="../../components/sidebar2/img/arts_and_entertainment.svg"><span>Arts and Entertaintment</span></a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="item" href="#"><img src="../../components/sidebar2/img/arts_and_entertainment.svg"><span>Arts and Entertaintment</span></a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="item" href="#"><img src="../../components/sidebar2/img/arts_and_entertainment.svg"><span>Arts and Entertaintment</span></a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="item" href="#"><img src="../../components/sidebar2/img/arts_and_entertainment.svg"><span>Arts and Entertaintment</span></a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="item" href="#"><img src="../../components/sidebar2/img/arts_and_entertainment.svg"><span>Arts and Entertaintment</span></a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="item" href="#"><img src="../../components/sidebar2/img/arts_and_entertainment.svg"><span>Arts and Entertaintment</span></a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- end blog sidebar -->
+                                            <div class="lng-bar-wrapper">
+                                                <div class="row">
+                                                    <div class="col-12 title mt-4 p-0">
+                                                        <h5 class="title-language">Wiki How Arounnd The World</h5>
+                                                    </div>
+                                                    <div class="col-10 bg-color p-left-34 b-r-8 p-t-10 p-bt-10">
+                                                        <div class="row justify-content-center">
+                                                            <div class="col-4">
+                                                                <ul>
+                                                                    <li><a href="#">English</a></li>
+                                                                    <li><a href="#">English</a></li>
+                                                                    <li><a href="#">English</a></li>
+                                                                    <li><a href="#">English</a></li>
+                                                                    <li><a href="#">English</a></li>
+                                                                    <li><a href="#">English</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-4">
+                                                                <ul>
+                                                                    <li><a href="#">English</a></li>
+                                                                    <li><a href="#">English</a></li>
+                                                                    <li><a href="#">English</a></li>
+                                                                    <li><a href="#">English</a></li>
+                                                                    <li><a href="#">English</a></li>
+                                                                    <li><a href="#">English</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-4">
+                                                                <ul>
+                                                                    <li><a href="#">English</a></li>
+                                                                    <li><a href="#">English</a></li>
+                                                                    <li><a href="#">English</a></li>
+                                                                    <li><a href="#">English</a></li>
+                                                                    <li><a href="#">English</a></li>
+                                                                    <li><a href="#">English</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                            <!-- blog subScribe -->
+                                            <div class="sub-scribe-wrapper p-0">
+                                                <div class="row p-0">
+                                                    <div class="col-12 p-0">
+                                                        <div class="card " style="width: 23rem;">
+                                                            <img class="card-img-top center-block mx-auto" src="../../components/sidebar2/img/newsletter.png" alt="Card image cap">
+                                                            <div class="card-body text-center">
+                                                            <h5 class="card-title">Subscribe to wikiHow's Newsletter</h5>
+                                                            <p class="card-text">Helpful how-to’s delivered to your inbox every week!.</p>
+                                                            <input type="email" href="#" class="btn btn-input-email btn-light" placeholder="Enter your email" onfocus="this.placeholder = ''"
+                                                            onblur="this.placeholder = 'Enter your email'"><br>
+                                                            <a href="#" class="btn btn-sign-up mt-1">Sign me up!</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- end blog subScribe -->
+                                            <!-- support WikiHow -->
+                                            <div class="support-wikihow-wrapper p-0">
+                                                <div class="row p-0">
+                                                    <div class="col-12 p-0">
+                                                        <div class="card " style="width: 23rem;">
+                                                            <img class="card-img-top center-block mx-auto" src="../../components/sidebar2/img/contribute.svg" alt="Card image cap">
+                                                            <div class="card-body text-center">
+                                                            <h5 class="card-title">Support wikiHow’s Mission</h5>
+                                                            <p class="card-text">Millions of readers rely on wikiHow every single day. Your support helps us accomplish our mission: enabling every person in the world to learn how to do anything.</p>
+                                                            <a href="#" class="btn btn-let-do-this">Let todo this!</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- end support WikiHow -->
+                                        </div>
+                                    </div>
+                            </div>   
+                        </div>
+                    </aside>
+                    </div>
+                  </div>
+                </div>
+              </main>
+                <!-- atlantic -->
+                <main>
+                  <div class="container pt-10">
+                    <!-- <div class="row">
+                      
+                    </div> -->
+                    <div class="row">
+                      <div class="title">
+                        <h3 class="title-head">
+                          We make learning easy with helpful, <br />
+                          approachable instructions. People agree.
+                        </h3>
+                        <a href="#">Read our story.</a>
+                      </div>
+                      <div class="col-xs-12 col-sm-4 col-md-4">
+                        <div class="card" style="width: 100%">
+                          <img
+                            src="https://www.wikihow.com/extensions/wikihow/homepage/images/atlantic.png"
+                            class="card-img-top"
+                            alt="..."
+                          />
+                          <span>The Atlantic</span>
+                          <div class="card-body wrap-text">
+                            <p class="text">
+                              <i
+                                >"wikiHow may be the largest commercial platform in
+                                existence that hasn’t been accused of exploiting its
+                                users."</i
+                              >
+                            </p>
+                            <p class="text-2">- Kaitlyn Tiffany</p>
+                            <p class="text-3">Technology Writer, The Atlantic</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-sm-4 col-md-4">
+                        <div class="card" style="width: 100%">
+                          <img
+                            src="https://www.wikihow.com/extensions/wikihow/homepage/images/vice.png"
+                            class="card-img-top"
+                            alt="..."
+                          />
+                          <span>Vice</span>
+                          <div class="card-body wrap-text">
+                            <p class="text
+                        ">
+                              <i
+                                >"I've been yelling for a while about how wikiHow is doing
+                                the best consistent service journalism on the web right
+                                now."</i
+                              >
+                            </p>
+                            <p class="text-2">- Rachel Miller</p>
+                            <p class="text-3 mid"
+                        ">Deputy Editor, Vice</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-sm-4 col-md-4">
+                        <div class="card" style="width: 100%">
+                          <img
+                            src="https://www.wikihow.com/extensions/wikihow/homepage/images/motherjones.png"
+                            class="card-img-top"
+                            alt="..."
+                          />
+                          <span>Mother Jones</span>
+                          <div class="card-body wrap-text">
+                            <p class="text">
+                              <i
+                                >"wikiHow is the ultimate pandemic hero because it’s
+                                utilitarian, earnest...and willing to laugh at itself."</i
+                              >
+                            </p>
+                            <p class="text-2">- Laura Thompson</p>
+                            <p class="text-3">Editorial Fellow, Mother Jones</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </main>
+                <!-- trending card -->
+                <article>
+                  <div class="container">
+                      <div class="row away">
+                      <h3>Feather Video</h3>
+                      <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
+                          <div class="cards-wrap">
+                          <div class="card card-hover" style="width: 100%">
+                              <div class="check">Expert</div>
+                              <img
+                              src="https://www.wikihow.com/images/thumb/c/cb/Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg/-crop-375-250-333px-nowatermark-Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg.webp"
+                              class="card-img-top"
+                              alt="..."
+                              />
+                              <div class="card-body">
+                              <p class="card-text">
+                                  How to Get over a Breakup when You Still Love Each Other: 11
+                                  Things to Do
+                              </p>
+                              </div>
+                          </div>
+                          </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
+                          <div class="cards-wrap">
+                          <div class="card card-hover" style="width: 100%">
+                              <div class="check">Expert</div>
+                              <img
+                              src="https://www.wikihow.com/images/thumb/c/cb/Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg/-crop-375-250-333px-nowatermark-Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg.webp"
+                              class="card-img-top"
+                              alt="..."
+                              />
+                              <div class="card-body">
+                              <p class="card-text">
+                                  How to Get over a Breakup when You Still Love Each Other: 11
+                                  Things to Do
+                              </p>
+                              </div>
+                          </div>
+                          </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
+                          <div class="cards-wrap">
+                          <div class="card card-hover" style="width: 100%">
+                              <div class="check">Expert</div>
+                              <img
+                              src="https://www.wikihow.com/images/thumb/c/cb/Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg/-crop-375-250-333px-nowatermark-Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg.webp"
+                              class="card-img-top"
+                              alt="..."
+                              />
+                              <div class="card-body">
+                              <p class="card-text">
+                                  How to Get over a Breakup when You Still Love Each Other: 11
+                                  Things to Do
+                              </p>
+                              </div>
+                          </div>
+                          </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
+                          <div class="cards-wrap">
+                          <div class="card card-hover" style="width: 100%">
+                              <div class="check">Expert</div>
+                              <img
+                              src="https://www.wikihow.com/images/thumb/c/cb/Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg/-crop-375-250-333px-nowatermark-Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg.webp"
+                              class="card-img-top"
+                              alt="..."
+                              />
+                              <div class="card-body">
+                              <p class="card-text">
+                                  How to Get over a Breakup when You Still Love Each Other: 11
+                                  Things to Do
+                              </p>
+                              </div>
+                          </div>
+                          </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
+                          <div class="cards-wrap">
+                          <div class="card card-hover" style="width: 100%">
+                              <div class="check">Expert</div>
+                              <img
+                              src="https://www.wikihow.com/images/thumb/c/cb/Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg/-crop-375-250-333px-nowatermark-Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg.webp"
+                              class="card-img-top"
+                              alt="..."
+                              />
+                              <div class="card-body">
+                              <p class="card-text">
+                                  How to Get over a Breakup when You Still Love Each Other: 11
+                                  Things to Do
+                              </p>
+                              </div>
+                          </div>
+                          </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
+                          <div class="cards-wrap">
+                          <div class="card card-hover" style="width: 100%">
+                              <div class="check">Expert</div>
+                              <img
+                              src="https://www.wikihow.com/images/thumb/c/cb/Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg/-crop-375-250-333px-nowatermark-Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg.webp"
+                              class="card-img-top"
+                              alt="..."
+                              />
+                              <div class="card-body">
+                              <p class="card-text">
+                                  How to Get over a Breakup when You Still Love Each Other: 11
+                                  Things to Do
+                              </p>
+                              </div>
+                          </div>
+                          </div>
+                      </div>
+                      </div>
+                      <div class="row away">
+                      <h3>Expert Quizzes</h3>
+                      <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
+                          <div class="cards-wrap">
+                          <div class="card card-hover" style="width: 100%">
+                              <div class="check">Expert</div>
+                              <img
+                              src="https://www.wikihow.com/images/thumb/c/cb/Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg/-crop-375-250-333px-nowatermark-Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg.webp"
+                              class="card-img-top"
+                              alt="..."
+                              />
+                              <div class="card-body">
+                              <p class="card-text">
+                                  How to Get over a Breakup when You Still Love Each Other: 11
+                                  Things to Do
+                              </p>
+                              </div>
+                          </div>
+                          </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
+                          <div class="cards-wrap">
+                          <div class="card card-hover" style="width: 100%">
+                              <div class="check">Expert</div>
+                              <img
+                              src="https://www.wikihow.com/images/thumb/c/cb/Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg/-crop-375-250-333px-nowatermark-Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg.webp"
+                              class="card-img-top"
+                              alt="..."
+                              />
+                              <div class="card-body">
+                              <p class="card-text">
+                                  How to Get over a Breakup when You Still Love Each Other: 11
+                                  Things to Do
+                              </p>
+                              </div>
+                          </div>
+                          </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
+                          <div class="cards-wrap">
+                          <div class="card card-hover" style="width: 100%">
+                              <div class="check">Expert</div>
+                              <img
+                              src="https://www.wikihow.com/images/thumb/c/cb/Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg/-crop-375-250-333px-nowatermark-Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg.webp"
+                              class="card-img-top"
+                              alt="..."
+                              />
+                              <div class="card-body">
+                              <p class="card-text">
+                                  How to Get over a Breakup when You Still Love Each Other: 11
+                                  Things to Do
+                              </p>
+                              </div>
+                          </div>
+                          </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
+                          <div class="cards-wrap">
+                          <div class="card card-hover" style="width: 100%">
+                              <div class="check">Expert</div>
+                              <img
+                              src="https://www.wikihow.com/images/thumb/c/cb/Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg/-crop-375-250-333px-nowatermark-Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg.webp"
+                              class="card-img-top"
+                              alt="..."
+                              />
+                              <div class="card-body">
+                              <p class="card-text">
+                                  How to Get over a Breakup when You Still Love Each Other: 11
+                                  Things to Do
+                              </p>
+                              </div>
+                          </div>
+                          </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
+                          <div class="cards-wrap">
+                          <div class="card card-hover" style="width: 100%">
+                              <div class="check">Expert</div>
+                              <img
+                              src="https://www.wikihow.com/images/thumb/c/cb/Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg/-crop-375-250-333px-nowatermark-Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg.webp"
+                              class="card-img-top"
+                              alt="..."
+                              />
+                              <div class="card-body">
+                              <p class="card-text">
+                                  How to Get over a Breakup when You Still Love Each Other: 11
+                                  Things to Do
+                              </p>
+                              </div>
+                          </div>
+                          </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
+                          <div class="cards-wrap">
+                          <div class="card card-hover" style="width: 100%">
+                              <div class="check">Expert</div>
+                              <img
+                              src="https://www.wikihow.com/images/thumb/c/cb/Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg/-crop-375-250-333px-nowatermark-Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg.webp"
+                              class="card-img-top"
+                              alt="..."
+                              />
+                              <div class="card-body">
+                              <p class="card-text">
+                                  How to Get over a Breakup when You Still Love Each Other: 11
+                                  Things to Do
+                              </p>
+                              </div>
+                          </div>
+                          </div>
+                      </div>
+                      </div>
+                      <div class="row away">
+                        <h3>Expert Interviews</h3>
+                      <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
+                          <div class="cards-wrap">
+                          <div class="card card-hover" style="width: 100%">
+                              <div class="check">Expert</div>
+                              <img
+                              src="https://www.wikihow.com/images/thumb/c/cb/Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg/-crop-375-250-333px-nowatermark-Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg.webp"
+                              class="card-img-top"
+                              alt="..."
+                              />
+                              <div class="card-body">
+                              <p class="card-text">
+                                  How to Get over a Breakup when You Still Love Each Other: 11
+                                  Things to Do
+                              </p>
+                              </div>
+                          </div>
+                          </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
+                          <div class="cards-wrap">
+                          <div class="card card-hover" style="width: 100%">
+                              <div class="check">Expert</div>
+                              <img
+                              src="https://www.wikihow.com/images/thumb/c/cb/Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg/-crop-375-250-333px-nowatermark-Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg.webp"
+                              class="card-img-top"
+                              alt="..."
+                              />
+                              <div class="card-body">
+                              <p class="card-text">
+                                  How to Get over a Breakup when You Still Love Each Other: 11
+                                  Things to Do
+                              </p>
+                              </div>
+                          </div>
+                          </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
+                          <div class="cards-wrap">
+                          <div class="card card-hover" style="width: 100%">
+                              <div class="check">Expert</div>
+                              <img
+                              src="https://www.wikihow.com/images/thumb/c/cb/Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg/-crop-375-250-333px-nowatermark-Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg.webp"
+                              class="card-img-top"
+                              alt="..."
+                              />
+                              <div class="card-body">
+                              <p class="card-text">
+                                  How to Get over a Breakup when You Still Love Each Other: 11
+                                  Things to Do
+                              </p>
+                              </div>
+                          </div>
+                          </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
+                          <div class="cards-wrap">
+                          <div class="card card-hover" style="width: 100%">
+                              <div class="check">Expert</div>
+                              <img
+                              src="https://www.wikihow.com/images/thumb/c/cb/Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg/-crop-375-250-333px-nowatermark-Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg.webp"
+                              class="card-img-top"
+                              alt="..."
+                              />
+                              <div class="card-body">
+                              <p class="card-text">
+                                  How to Get over a Breakup when You Still Love Each Other: 11
+                                  Things to Do
+                              </p>
+                              </div>
+                          </div>
+                          </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
+                          <div class="cards-wrap">
+                          <div class="card card-hover" style="width: 100%">
+                              <div class="check">Expert</div>
+                              <img
+                              src="https://www.wikihow.com/images/thumb/c/cb/Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg/-crop-375-250-333px-nowatermark-Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg.webp"
+                              class="card-img-top"
+                              alt="..."
+                              />
+                              <div class="card-body">
+                              <p class="card-text">
+                                  How to Get over a Breakup when You Still Love Each Other: 11
+                                  Things to Do
+                              </p>
+                              </div>
+                          </div>
+                          </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
+                          <div class="cards-wrap">
+                          <div class="card card-hover" style="width: 100%">
+                              <div class="check">Expert</div>
+                              <img
+                              src="https://www.wikihow.com/images/thumb/c/cb/Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg/-crop-375-250-333px-nowatermark-Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg.webp"
+                              class="card-img-top"
+                              alt="..."
+                              />
+                              <div class="card-body">
+                              <p class="card-text">
+                                  How to Get over a Breakup when You Still Love Each Other: 11
+                                  Things to Do
+                              </p>
+                              </div>
+                          </div>
+                          </div>
+                      </div>
+                      </div>
+                      <div class="row away">
+                        <h3>New Articles</h3>
+                      <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
+                          <div class="cards-wrap">
+                          <div class="card card-hover" style="width: 100%">
+                              <div class="check">Expert</div>
+                              <img
+                              src="https://www.wikihow.com/images/thumb/c/cb/Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg/-crop-375-250-333px-nowatermark-Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg.webp"
+                              class="card-img-top"
+                              alt="..."
+                              />
+                              <div class="card-body">
+                              <p class="card-text">
+                                  How to Get over a Breakup when You Still Love Each Other: 11
+                                  Things to Do
+                              </p>
+                              </div>
+                          </div>
+                          </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
+                          <div class="cards-wrap">
+                          <div class="card card-hover" style="width: 100%">
+                              <div class="check">Expert</div>
+                              <img
+                              src="https://www.wikihow.com/images/thumb/c/cb/Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg/-crop-375-250-333px-nowatermark-Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg.webp"
+                              class="card-img-top"
+                              alt="..."
+                              />
+                              <div class="card-body">
+                              <p class="card-text">
+                                  How to Get over a Breakup when You Still Love Each Other: 11
+                                  Things to Do
+                              </p>
+                              </div>
+                          </div>
+                          </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
+                          <div class="cards-wrap">
+                          <div class="card card-hover" style="width: 100%">
+                              <div class="check">Expert</div>
+                              <img
+                              src="https://www.wikihow.com/images/thumb/c/cb/Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg/-crop-375-250-333px-nowatermark-Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg.webp"
+                              class="card-img-top"
+                              alt="..."
+                              />
+                              <div class="card-body">
+                              <p class="card-text">
+                                  How to Get over a Breakup when You Still Love Each Other: 11
+                                  Things to Do
+                              </p>
+                              </div>
+                          </div>
+                          </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
+                          <div class="cards-wrap">
+                          <div class="card card-hover" style="width: 100%">
+                              <div class="check">Expert</div>
+                              <img
+                              src="https://www.wikihow.com/images/thumb/c/cb/Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg/-crop-375-250-333px-nowatermark-Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg.webp"
+                              class="card-img-top"
+                              alt="..."
+                              />
+                              <div class="card-body">
+                              <p class="card-text">
+                                  How to Get over a Breakup when You Still Love Each Other: 11
+                                  Things to Do
+                              </p>
+                              </div>
+                          </div>
+                          </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
+                          <div class="cards-wrap">
+                          <div class="card card-hover" style="width: 100%">
+                              <div class="check">Expert</div>
+                              <img
+                              src="https://www.wikihow.com/images/thumb/c/cb/Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg/-crop-375-250-333px-nowatermark-Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg.webp"
+                              class="card-img-top"
+                              alt="..."
+                              />
+                              <div class="card-body">
+                              <p class="card-text">
+                                  How to Get over a Breakup when You Still Love Each Other: 11
+                                  Things to Do
+                              </p>
+                              </div>
+                          </div>
+                          </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
+                          <div class="cards-wrap">
+                          <div class="card card-hover" style="width: 100%">
+                              <div class="check">Expert</div>
+                              <img
+                              src="https://www.wikihow.com/images/thumb/c/cb/Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg/-crop-375-250-333px-nowatermark-Get-over-a-Breakup-when-You-Still-Love-Each-Other-Step-11.jpg.webp"
+                              class="card-img-top"
+                              alt="..."
+                              />
+                              <div class="card-body">
+                              <p class="card-text">
+                                  How to Get over a Breakup when You Still Love Each Other: 11
+                                  Things to Do
+                              </p>
+                              </div>
+                          </div>
+                          </div>
+                      </div>
+                      </div>
+                  </div>
+              </article>
+                <!-- footer -->
+                <footer>
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-8">
+                          <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                              <header>
+                                <img src="../../components/footer3/image/wikihow_logo.png" alt="logo" />
+                              </header>
+                            </div>
+                          </div>
+                          <hr />
+                          <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-7">
+                              <div class="search">
+                                <!-- responsive search bar for ipad-->
+                                <div class="search-ipad">
+                                  <form class="wrap-search">
+                                    <input
+                                      type="text"
+                                      id="search-ip"
+                                      name="search"
+                                      required
+                                      autofocus
+                                      placeholder="to do anything..."
+                                      x-webkit-speech
+                                    />
+                                    <i class="fa fa-search" aria-hiiden="true"></i>
+                                  </form>
+                                </div>
+                              </div>
+              
+                              <div class="group-icon">
+                                <a href="#" class="icon"
+                                  ><img src="../../components/footer3/image/pinterest-removebg-preview.png" alt="icon"
+                                /></a>
+                                <a href="#" class="icon"
+                                  ><img src="../../components/footer3/image/fb-removebg-preview.png" alt="icon"
+                                /></a>
+                                <a href="#" class="icon"
+                                  ><img src="../../components/footer3/image/twiter-removebg-preview.png" alt="icon"
+                                /></a>
+                                <a href="#" class="icon"
+                                  ><img src="../../components/footer3/image/youtube-removebg-preview.png" alt="icon"
+                                /></a>
+                                <a href="#" class="icon"
+                                  ><img src="../../components/footer3/image/fb-removebg-preview.png" alt="icon"
+                                /></a>
+                                <a href="#" class="icon"
+                                  ><img src="../../components/footer3/image/twiter-removebg-preview.png" alt="icon"
+                                /></a>
+                                <a href="#" class="icon"
+                                  ><img src="../../components/footer3/image/youtube-removebg-preview.png" alt="icon"
+                                /></a>
+                              </div>
+                            </div>
+              
+                            <div class="col-md-12 col-lg-5">
+                              <div class="row">
+                                <div class="col-md-6 col-lg-6">
+                                  <div class="categoties" id="first-row">
+                                    <a href="#">Home</a>
+                                    <a href="#">About wikiHow</a>
+                                    <a href="#">Experts</a>
+                                    <a href="#">Jobs</a>
+                                    <a href="#">Contact Us</a>
+                                  </div>
+                                </div>
+                                <div class="col-md-6 col-lg-6">
+                                  <div class="categoties" id="second-row">
+                                    <a href="#">Site Map</a>
+                                    <a href="#">Terms of Use</a>
+                                    <a href="#">Privacy Policy</a>
+                                    <a href="#">Contribute</a>
+                                  </div>
+                                </div>
+                                <div class="group-icon-ipad" ">
+                                  <a href="#" class="icon"
+                                    ><img src="../../components/footer3/image/pinterest-removebg-preview.png" alt="icon"
+                                  /></a>
+                                  <a href="#" class="icon"
+                                    ><img src="../../components/footer3/image/fb-removebg-preview.png" alt="icon"
+                                  /></a>
+                                  <a href="#" class="icon"
+                                    ><img src="../../components/footer3/image/twiter-removebg-preview.png" alt="icon"
+                                  /></a>
+                                  <a href="#" class="icon"
+                                    ><img src="../../components/footer3/image/youtube-removebg-preview.png" alt="icon"
+                                  /></a>
+                                  <a href="#" class="icon"
+                                    ><img src="../../components/footer3/image/fb-removebg-preview.png" alt="icon"
+                                  /></a>
+                                  <a href="#" class="icon"
+                                    ><img src="../../components/footer3/image/twiter-removebg-preview.png" alt="icon"
+                                  /></a>
+                                  <a href="#" class="icon"
+                                    ><img src="../../components/footer3/image/youtube-removebg-preview.png" alt="icon"
+                                  /></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                          <div class="wrap-row">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <article>
+                                  <div class="text-icon">
+                                    <div class="icon">
+                                      <img src="../../components/footer3/image/icon-footer.png" alt="" />
+                                    </div>
+                                    <div class="text-head">
+                                      <h5>wikiHow Newletter</h5>
+                                    </div>
+                                  </div>
+                                  <div class="text-p">
+                                    <p>Helpful how-tos delivered to your inbox every week!</p>
+                                  </div>
+                                  <div class="email">
+                                    <!-- responsive search bar for ipad-->
+                                    <div class="email-user">
+                                      <form class="wrap-email">
+                                        <input
+                                          type="text"
+                                          id="email-ip"
+                                          name="email"
+                                          required
+                                          autofocus
+                                          placeholder="Enter your email"
+                                          x-webkit-speech
+                                        />
+                                      </form>
+                                      <button>Sign me up!</button>
+                                      <p below-btn>
+                                        By signing up you are agreeing to receive emails
+                                        according to our privacy policy.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                </article>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- for mobile phone -->
+                    <div class="container-fluid ">
+                      <!-- logo header for mobile -->
+                      <div class="content">
+                      <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-4">
+                          <header>
+                            <img src="../../components/footer3/image/wikihow_logo.png" alt="logo" />
+                          </header>
+                        </div>
+                      </div>
+                      <hr />
+                      <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="wrap-row">
+                          <div class="row">
+                            <div class="col-md-12">
+                              <article>
+                                <div class="text-icon">
+                                  <div class="icon">
+                                    <img src="../../components/footer3/image/icon-footer.png" alt="" />
+                                  </div>
+                                  <div class="text-head">
+                                    <h5>wikiHow Newletter</h5>
+                                  </div>
+                                </div>
+                                <div class="text-p">
+                                  <p>Helpful how-tos delivered to your inbox every week!</p>
+                                </div>
+                                <div class="email">
+                                  <!-- responsive search bar for ipad-->
+                                  <div class="email-user">
+                                    <form class="wrap-email">
+                                      <input
+                                        type="text"
+                                        id="email-ip"
+                                        name="email"
+                                        required
+                                        autofocus
+                                        placeholder="Enter your email"
+                                        x-webkit-speech
+                                      />
+                                    </form>
+                                    <button>Sign me up!</button>
+                                    <p below-btn>
+                                      By signing up you are agreeing to receive emails
+                                      according to our privacy policy.
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                              </article>
+                            </div>
+                          </div>
+                        </div>
+                        <hr>
+                        <div class="search">
+                          <div class="search-ipad">
+                            <form class="wrap-search">
+                              <input
+                                type="text"
+                                id="search-ip"
+                                name="search"
+                                required
+                                autofocus
+                                placeholder="to do anything..."
+                                x-webkit-speech
+                              />
+                              <i class="fa fa-search" aria-hiiden="true"></i>
+                            </form>
+                          </div>
+                        </div>
+                        <div class="col-md-12 col-lg-4">
+                          <div class="row">
+                            <wrap-conte>
+                            <div class="col-md-4 col-lg-6">
+                              <div class="categoties" id="first-row">
+                                <a href="#">Home</a>
+                                <a href="#">About wikiHow</a>
+                                <a href="#">Experts</a>
+                                <a href="#">Jobs</a>
+                                <a href="#">Contact Us</a>
+                              </div>
+                            </div>
+                            <div class="col-md-4 col-lg-6">
+                              <div class="categoties" id="second-row">
+                                <a href="#">Site Map</a>
+                                <a href="#">Terms of Use</a>
+                                <a href="#">Privacy Policy</a>
+                                <a href="#">Contribute</a>
+                              </div>
+                            </div>
+                          </wrap-conte>
+                            <div class="group-icon-ipad" ">
+                              <p class="follow-us">Follow Us</p>
+                              <a href="#" class="icon"
+                                ><img src="../../components/footer3/image/pinterest-removebg-preview.png" alt="icon"
+                              /></a>
+                              <a href="#" class="icon"
+                                ><img src="../../components/footer3/image/fb-removebg-preview.png" alt="icon"
+                              /></a>
+                              <a href="#" class="icon"
+                                ><img src="../../components/footer3/image/twiter-removebg-preview.png" alt="icon"
+                              /></a>
+                              <a href="#" class="icon"
+                                ><img src="../../components/footer3/image/youtube-removebg-preview.png" alt="icon"
+                              /></a>
+                              <a href="#" class="icon"
+                                ><img src="../../components/footer3/image/fb-removebg-preview.png" alt="icon"
+                              /></a>
+                              <a href="#" class="icon"
+                                ><img src="../../components/footer3/image/twiter-removebg-preview.png" alt="icon"
+                              /></a>
+                              <a href="#" class="icon"
+                                ><img src="../../components/footer3/image/youtube-removebg-preview.png" alt="icon"
+                              /></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </footer>
+            </div>
+        </div>
+    </div>
+
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
+  ></script>
+  <script src="../../components/navBar-3/js/nav_bar.js"></script>
+  <!-- script for jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</body>
+</html>
