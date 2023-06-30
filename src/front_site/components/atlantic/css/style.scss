@@ -24,9 +24,10 @@ main {
     background-color: #c6d9b9;
     max-height: 600px;
     display: flex;
+    height: 400px;
     justify-content: center;
     align-items: center;
-    @media screen and (max-width: 576px) {
+    @media (max-width: 576px) {
       margin-bottom: 50px;
       margin-left: auto;
       margin-right: auto;
@@ -56,6 +57,11 @@ main {
     font-weight: 500;
     padding: 8px 20px;
     margin-bottom: 0;
+    @media (max-width: 992px) and (min-width: 767px) {
+      font-size: 16px;
+      margin: 0;
+      padding: 0;
+    }
     @media screen and (max-width: 576px) {
       font-size: 15px;
       padding: 5px 28px;
