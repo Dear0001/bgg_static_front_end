@@ -1,14 +1,15 @@
 main {
+  box-sizing: border-box;
   background-color: #e6eee0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main {
     background-color: #fff;
     margin: 0;
     padding: 0;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .cnt-wraper {
     display: none;
   }
@@ -66,7 +67,7 @@ main {
     width: 571px;
   }
 }
-@media only screen and (max-width: 992px) and (min-width: 768px) {
+@media only screen and (max-width: 992px) and (min-width: 767px) {
   main .cnt-wraper {
     padding-top: 50px;
     height: 327px;
@@ -114,13 +115,14 @@ main {
     font-size: 27px;
   }
   main .cnt-wraper .image {
+    padding-top: 25px;
     padding-left: 0;
   }
   main .cnt-wraper .image img {
-    width: 361px;
+    width: 331px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   main .mobile-wrap {
     display: none;
   }
@@ -128,7 +130,7 @@ main {
     display: none;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   main .mobile-wrap {
     position: relative;
     border-top: none;

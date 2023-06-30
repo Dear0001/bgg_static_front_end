@@ -1,12 +1,13 @@
 main {
+  box-sizing: border-box;
   background-color: #e6eee0;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     background-color: #fff;
     margin: 0;
     padding: 0;
   }
   .cnt-wraper {
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       display: none;
     }
     //desktop
@@ -63,7 +64,7 @@ main {
       }
     }
     //ipad
-    @media only screen and (max-width: 992px) and (min-width: 768px) {
+    @media only screen and (max-width: 992px) and (min-width: 767px) {
       padding-top: 50px;
       height: 327px;
       h3 {
@@ -110,14 +111,15 @@ main {
       }
 
       .image {
+        padding-top: 25px;
         padding-left: 0;
         img {
-          width: 361px;
+          width: 331px;
         }
       }
     }
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 767px) {
     .mobile-wrap {
       display: none;
     }
@@ -126,7 +128,7 @@ main {
     }
   }
   //for mobile phone
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 767px) {
     .mobile-wrap {
       position: relative;
       border-top: none;
