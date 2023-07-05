@@ -2,15 +2,19 @@ footer {
   background-color: #93b874;
   padding-top: 35px;
   padding-bottom: 35px;
+
   //for desktop
   @media only screen and (min-width: 992px) {
+    #aside{
+      margin-left: 70px;
+    }
     .search-ipad {
       margin: 5px 5px;
       .wrap-search {
         display: flex;
         justify-content: center;
         align-items: center;
-        max-width: 405px;
+        max-width: 455px;
         height: 52px;
         background-color: #fff;
         border-radius: 8px;
@@ -39,10 +43,10 @@ footer {
     .group-icon {
       padding-top: 50px;
       a {
-        padding-left: 10px;
+        padding-left: 8px;
         text-decoration: none;
         img {
-          width: 35px;
+          width: 50px;
         }
       }
     }
@@ -50,12 +54,12 @@ footer {
       display: flex;
       .icon {
         img {
-          width: 50px;
+          width: 35px;
         }
       }
       .text-head {
         h3 {
-          font-weight: 300;
+          font-weight: 200;
         }
       }
     }
@@ -64,9 +68,9 @@ footer {
       font-size: 18px;
       color: #fff;
     }
-    article {
-      padding-left: 100px;
-    }
+    // article {
+    //   padding-left: 100px;
+    // }
 
     .email {
       .wrap-email {
@@ -106,12 +110,12 @@ footer {
     .group-icon-ipad {
       display: none;
     }
-    .categoties {
-      padding-bottom: 10px;
-    }
+    // .categoties {
+    //   padding-bottom: 10px;
+    // }
     .row {
       .categoties {
-        font-size: 16px;
+        font-size: 18px;
         a {
           display: block;
           padding-bottom: 5px;
@@ -177,8 +181,11 @@ footer {
         }
       }
     }
+    // #aside{
+    //   margin-left: 65px;
+    // }
     .wrap-row {
-      padding-top: 55px;
+      padding-top: 60px;
       border-left: 1px solid green;
       display: flex;
       justify-content: center;
