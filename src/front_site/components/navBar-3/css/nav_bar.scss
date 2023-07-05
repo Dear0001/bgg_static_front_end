@@ -47,13 +47,13 @@
       position: relative;
       input[type="text"] {
         position: absolute;
-        top: -35px;
+        top: -32px;
       }
       button {
         position: absolute;
-        top: -30px;
-        left: 280px;
-        padding: 6px 28px !important;
+        top: -29px;
+        left: 320px;
+        padding: 6px 25px !important;
         i{
           font-size: 15px;
         }
@@ -146,7 +146,7 @@
       display: flex;
     }
     .search-container-desk-top {
-      width: 400px;
+      width: 455px;
     }
     .logo-wrapper {
       width: 165px;
@@ -753,9 +753,8 @@
       //logo image for desktop
       @media (min-width: 992px) {
         img {
-          width: 173px;
+          width: 178px;
           height: auto;
-          padding-right: 15px;
         }
       }
       //for ipad
@@ -792,8 +791,8 @@
           display: none !important;
         }
       }
-
       .search-container-desk-top {
+        margin-left: 20px !important;
         form {
           background-color: unset;
         }
@@ -807,7 +806,7 @@
           border-right: unset;
           border-bottom: 2px solid white;
           background-color: unset;
-          width: 278px;
+          width: 318px;
         }
 
         input:focus {

@@ -1,44 +1,44 @@
-main {
+#aside-left {
   box-sizing: border-box;
 }
-main .row {
+#aside-left .row {
   background-color: rgb(232, 229, 229);
 }
-main .text-head {
+#aside-left .text-head {
   margin-bottom: 0;
   padding: 5px;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
 }
-main .logo {
+#aside-left .logo {
   padding: 22px 2px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-main .logo img {
+#aside-left .logo img {
   width: 195px;
 }
-main .first-text {
+#aside-left .first-text {
   margin-top: 8px;
   margin-bottom: 2px;
   font-size: 0.65rem;
   font-weight: bold;
 }
-main h4 {
-  font-size: 1.085rem;
+#aside-left h4 {
+  font-size: 1.355rem;
   font-weight: bold;
   margin-bottom: 0;
 }
-main .second-text {
-  font-size: 0.8125rem;
+#aside-left .second-text {
+  font-size: 1.04rem;
   font-weight: 300;
 }
-main .btn {
+#aside-left .btn {
   margin-top: 0px;
   margin-left: 0px;
   margin-bottom: 5px;
 }
-main .btn a {
+#aside-left .btn a {
   padding: 4px 6px;
   border-radius: 8px;
   background-color: rgb(239, 239, 67);
@@ -48,12 +48,12 @@ main .btn a {
   font-size: 0.9rem;
   font-weight: bold;
 }
-main .btn a:active,
-main .btn a:hover {
+#aside-left .btn a:active,
+#aside-left .btn a:hover {
   text-decoration: underline;
 }
 @media only screen and (max-width: 992px) {
-  main {
+  #aside-left {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -61,36 +61,36 @@ main .btn a:hover {
   }
 }
 @media only screen and (max-width: 992px) and (min-width: 768px) {
-  main {
+  #aside-left {
     width: 65%;
   }
-  main .first-text {
+  #aside-left .first-text {
     text-align: left;
   }
-  main h4 {
+  #aside-left h4 {
     text-align: left;
     font-size: 1.5rem;
   }
-  main .second-text {
+  #aside-left .second-text {
     text-align: left;
     font-size: 1.17rem;
   }
 }
 @media only screen and (max-width: 768px) {
-  main .text-head {
+  #aside-left .text-head {
     padding: 5px 15px;
   }
-  main .first-text {
+  #aside-left .first-text {
     text-align: left;
     padding: 5px 15px;
     font-size: 0.8rem;
   }
-  main h4 {
+  #aside-left h4 {
     padding: 5px 15px;
     text-align: left;
     font-size: 1.5rem;
   }
-  main .second-text {
+  #aside-left .second-text {
     padding: 5px 15px;
     text-align: left;
     font-size: 1.075rem;

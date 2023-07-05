@@ -1,3 +1,6 @@
+.container {
+  opacity: 1;
+}
 .container .away {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -14,7 +17,6 @@
   left: 5px;
   top: 5px;
   color: #6f8461;
-  z-index: 2;
 }
 .container .card-hover:hover {
   border: 3px solid #89ac6c;
@@ -47,7 +49,6 @@
     left: 5px;
     top: 5px;
     color: #6f8461;
-    z-index: 2;
   }
 }
 @media only screen and (max-width: 768px) and (min-width: 576px) {
@@ -66,6 +67,5 @@
     left: 5px;
     top: 5px;
     color: #6f8461;
-    z-index: 2;
   }
 }/*# sourceMappingURL=style.css.map */

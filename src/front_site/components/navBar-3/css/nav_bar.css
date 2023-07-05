@@ -42,13 +42,13 @@
   }
   .nav_bar_component_scroll .search-bar-wrapper .search-container-desk-top input[type=text] {
     position: absolute;
-    top: -35px;
+    top: -32px;
   }
   .nav_bar_component_scroll .search-bar-wrapper .search-container-desk-top button {
     position: absolute;
-    top: -30px;
-    left: 280px;
-    padding: 6px 28px !important;
+    top: -29px;
+    left: 320px;
+    padding: 6px 25px !important;
   }
   .nav_bar_component_scroll .search-bar-wrapper .search-container-desk-top button i {
     font-size: 15px;
@@ -140,7 +140,7 @@
   }
 }
 .nav_bar_component .group_items .search-container-desk-top {
-  width: 400px;
+  width: 455px;
 }
 .nav_bar_component .group_items .logo-wrapper {
   width: 165px;
@@ -595,9 +595,8 @@
 }
 @media (min-width: 992px) {
   .nav_bar_component .nav_wrapper .logo-wrapper img {
-    width: 173px;
+    width: 178px;
     height: auto;
-    padding-right: 15px;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
@@ -624,6 +623,9 @@
     display: none !important;
   }
 }
+.nav_bar_component .nav_wrapper .search-bar-wrapper .search-container-desk-top {
+  margin-left: 20px !important;
+}
 .nav_bar_component .nav_wrapper .search-bar-wrapper .search-container-desk-top form {
   background-color: unset;
 }
@@ -636,7 +638,7 @@
   border-right: unset;
   border-bottom: 2px solid white;
   background-color: unset;
-  width: 278px;
+  width: 318px;
 }
 .nav_bar_component .nav_wrapper .search-bar-wrapper .search-container-desk-top input:focus {
   color: white;

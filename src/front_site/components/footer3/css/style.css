@@ -1,13 +1,13 @@
-main {
+footer {
   background-color: #93b874;
   padding-top: 35px;
   padding-bottom: 35px;
 }
 @media only screen and (min-width: 992px) {
-  main .search-ipad {
+  footer .search-ipad {
     margin: 5px 5px;
   }
-  main .search-ipad .wrap-search {
+  footer .search-ipad .wrap-search {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,96 +16,96 @@ main {
     background-color: #fff;
     border-radius: 8px;
   }
-  main .search-ipad .wrap-search #search-ip {
+  footer .search-ipad .wrap-search #search-ip {
     width: 90%;
     outline: none;
     padding: 5px;
     border: hidden;
   }
-  main .search-ipad .wrap-search input:focus {
+  footer .search-ipad .wrap-search input:focus {
     color: black;
     padding-left: 10px;
   }
-  main .search-ipad .wrap-search ::-webkit-input-placeholder {
+  footer .search-ipad .wrap-search ::-webkit-input-placeholder {
     /* Edge */
     color: rgb(140, 137, 137);
     font-size: 20px;
   }
-  main .search-ipad .wrap-search i {
+  footer .search-ipad .wrap-search i {
     padding-right: 5px;
     color: black;
     font-size: 18px;
   }
-  main .group-icon {
+  footer .group-icon {
     padding-top: 50px;
   }
-  main .group-icon a {
+  footer .group-icon a {
     padding-left: 10px;
     text-decoration: none;
   }
-  main .group-icon a img {
+  footer .group-icon a img {
     width: 35px;
   }
-  main .text-icon {
+  footer .text-icon {
     display: flex;
   }
-  main .text-icon .icon img {
+  footer .text-icon .icon img {
     width: 50px;
   }
-  main .text-icon .text-head h3 {
+  footer .text-icon .text-head h3 {
     font-weight: 300;
   }
-  main .text-p {
+  footer .text-p {
     width: 236px;
     font-size: 18px;
     color: #fff;
   }
-  main article {
+  footer article {
     padding-left: 100px;
   }
-  main .email .wrap-email {
+  footer .email .wrap-email {
     padding-bottom: 10px;
   }
-  main .email .wrap-email input {
+  footer .email .wrap-email input {
     padding: 3px;
     width: 226px;
     border-radius: 5px;
     border: none;
   }
-  main .email .wrap-email input:focus {
+  footer .email .wrap-email input:focus {
     padding-left: 5px;
   }
-  main .email .wrap-email input.active {
+  footer .email .wrap-email input.active {
     border: 4px solid black;
   }
-  main .email .wrap-email ::-webkit-input-placeholder {
+  footer .email .wrap-email ::-webkit-input-placeholder {
     /* Edge */
     color: rgb(140, 137, 137);
     font-size: 18px;
     padding-left: 5px;
   }
-  main .email button {
+  footer .email button {
     background-color: rgb(249, 249, 133);
     padding: 3px;
     width: 226px;
     border-radius: 5px;
     border: none;
   }
-  main .email p {
+  footer .email p {
     width: 236px;
     font-size: 16px;
     color: #fff;
   }
-  main .group-icon-ipad {
+  footer .group-icon-ipad {
     display: none;
   }
-  main .categoties {
+  footer .categoties {
     padding-bottom: 10px;
   }
-  main .row .categoties {
+  footer .row .categoties {
     font-size: 16px;
   }
-  main .row .categoties a {
+  footer .row .categoties a {
     display: block;
     padding-bottom: 5px;
     text-decoration: none;
@@ -113,16 +113,16 @@ main {
   }
 }
 @media only screen and (max-width: 992px) and (min-width: 729px) {
-  main hr {
+  footer hr {
     visibility: hidden;
   }
-  main header img {
+  footer header img {
     width: 215px;
   }
-  main .search-ipad {
+  footer .search-ipad {
     margin: 5px 5px;
   }
-  main .search-ipad .wrap-search {
+  footer .search-ipad .wrap-search {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -131,40 +131,40 @@ main {
     background-color: #fff;
     border-radius: 8px;
   }
-  main .search-ipad .wrap-search #search-ip {
+  footer .search-ipad .wrap-search #search-ip {
     width: 90%;
     outline: none;
     padding: 5px;
     border: hidden;
   }
-  main .search-ipad .wrap-search input:focus {
+  footer .search-ipad .wrap-search input:focus {
     color: black;
     padding-left: 10px;
   }
-  main .search-ipad .wrap-search ::-webkit-input-placeholder {
+  footer .search-ipad .wrap-search ::-webkit-input-placeholder {
     /* Edge */
     color: rgb(140, 137, 137);
     font-size: 20px;
   }
-  main .search-ipad .wrap-search i {
+  footer .search-ipad .wrap-search i {
     padding-right: 5px;
     color: black;
     font-size: 18px;
   }
-  main #second-row {
+  footer #second-row {
     padding-left: 10px;
   }
-  main .group-icon-ipad {
+  footer .group-icon-ipad {
     padding-top: 25px;
   }
-  main .group-icon-ipad a {
+  footer .group-icon-ipad a {
     padding-left: 5px;
     text-decoration: none;
   }
-  main .group-icon-ipad a img {
+  footer .group-icon-ipad a img {
     width: 35px;
   }
-  main .wrap-row {
+  footer .wrap-row {
     padding-top: 55px;
     border-left: 1px solid green;
     display: flex;
@@ -172,65 +172,65 @@ main {
     align-items: center;
     text-align: center;
   }
-  main .wrap-row .text-icon {
+  footer .wrap-row .text-icon {
     display: flex;
   }
-  main .wrap-row .text-icon .icon img {
+  footer .wrap-row .text-icon .icon img {
     width: 50px;
   }
-  main .wrap-row .text-icon .text-head h3 {
+  footer .wrap-row .text-icon .text-head h3 {
     font-weight: 300;
   }
-  main .wrap-row .text-p {
+  footer .wrap-row .text-p {
     width: 236px;
     font-size: 18px;
     color: #fff;
   }
-  main .wrap-row .email .wrap-email {
+  footer .wrap-row .email .wrap-email {
     padding-bottom: 10px;
   }
-  main .wrap-row .email .wrap-email input {
+  footer .wrap-row .email .wrap-email input {
     padding: 2px;
     width: 236px;
     border-radius: 10px;
     border: none;
   }
-  main .wrap-row .email .wrap-email input:focus {
+  footer .wrap-row .email .wrap-email input:focus {
     padding-left: 5px;
   }
-  main .wrap-row .email .wrap-email input.active {
+  footer .wrap-row .email .wrap-email input.active {
     border: 4px solid black;
   }
-  main .wrap-row .email .wrap-email ::-webkit-input-placeholder {
+  footer .wrap-row .email .wrap-email ::-webkit-input-placeholder {
     /* Edge */
     color: rgb(140, 137, 137);
     font-size: 18px;
     padding-left: 5px;
   }
-  main .wrap-row .email button {
+  footer .wrap-row .email button {
     background-color: rgb(249, 249, 133);
     padding: 2px;
     width: 236px;
     border-radius: 10px;
     border: none;
   }
-  main .wrap-row .email p {
+  footer .wrap-row .email p {
     width: 236px;
     font-size: 16px;
     color: #fff;
   }
 }
 @media only screen and (max-width: 992px) and (min-width: 729px) and (max-width: 992px) {
-  main .group-icon a {
+  footer .group-icon a {
     display: none;
   }
 }
 @media only screen and (max-width: 992px) and (min-width: 729px) {
-  main .categoties {
+  footer .categoties {
     margin: 10px 250x;
     width: 100%;
   }
-  main .categoties a {
+  footer .categoties a {
     padding-bottom: 5px;
     text-decoration: none;
     color: #fff;
@@ -238,74 +238,74 @@ main {
   }
 }
 @media only screen and (max-width: 992px) and (min-width: 729px) {
-  main article {
+  footer article {
     padding-left: 60px;
   }
 }
 @media only screen and (max-width: 729px) {
-  main .container-fluid {
+  footer .container-fluid {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
   }
-  main .container-fluid .content {
+  footer .container-fluid .content {
     margin: 0 auto;
   }
-  main header img {
+  footer header img {
     width: 155px;
   }
-  main .text-icon {
+  footer .text-icon {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
   }
-  main .text-icon .icon img {
+  footer .text-icon .icon img {
     width: 50px;
   }
-  main .text-p {
+  footer .text-p {
     margin: 0 auto;
     width: 236px;
     color: #fff;
   }
-  main .email .wrap-email {
+  footer .email .wrap-email {
     padding-bottom: 10px;
   }
-  main .email .wrap-email input {
+  footer .email .wrap-email input {
     padding: 2px;
     width: 236px;
     border-radius: 10px;
     border: none;
     outline: none;
   }
-  main .email .wrap-email input:focus {
+  footer .email .wrap-email input:focus {
     padding-left: 5px;
     border: 1px solid black;
   }
-  main .email .wrap-email ::-webkit-input-placeholder {
+  footer .email .wrap-email ::-webkit-input-placeholder {
     /* Edge */
     color: rgb(140, 137, 137);
     font-size: 18px;
     padding-left: 5px;
   }
-  main .email button {
+  footer .email button {
     background-color: rgb(249, 249, 133);
     padding: 2px;
     width: 236px;
     border-radius: 10px;
     border: none;
   }
-  main .email p {
+  footer .email p {
     margin: 0 auto;
     width: 236px;
     font-size: 16px;
     color: #fff;
   }
-  main .search-ipad {
+  footer .search-ipad {
     padding-bottom: 10px;
   }
-  main .search-ipad .wrap-search {
+  footer .search-ipad .wrap-search {
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -315,48 +315,48 @@ main {
     background-color: #fff;
     border-radius: 8px;
   }
-  main .search-ipad .wrap-search #search-ip {
+  footer .search-ipad .wrap-search #search-ip {
     width: 90%;
     outline: none;
     padding: 5px;
     border: hidden;
   }
-  main .search-ipad .wrap-search input:focus {
+  footer .search-ipad .wrap-search input:focus {
     color: black;
     padding-left: 10px;
   }
-  main .search-ipad .wrap-search ::-webkit-input-placeholder {
+  footer .search-ipad .wrap-search ::-webkit-input-placeholder {
     /* Edge */
     color: rgb(140, 137, 137);
     font-size: 20px;
   }
-  main .search-ipad .wrap-search i {
+  footer .search-ipad .wrap-search i {
     padding-right: 5px;
     color: black;
     font-size: 18px;
   }
-  main .group-icon-ipad {
+  footer .group-icon-ipad {
     padding-top: 20px;
   }
-  main .group-icon-ipad a {
+  footer .group-icon-ipad a {
     padding-left: 5px;
     text-decoration: none;
   }
-  main .group-icon-ipad a img {
+  footer .group-icon-ipad a img {
     width: 35px;
   }
-  main wrap-conte {
+  footer wrap-conte {
     width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     text-align: left;
   }
-  main wrap-conte .categoties {
+  footer wrap-conte .categoties {
     margin: 10px 30px;
     width: 100%;
   }
-  main wrap-conte .categoties a {
+  footer wrap-conte .categoties a {
     padding-bottom: 5px;
     text-decoration: none;
     color: #fff;
@@ -364,12 +364,12 @@ main {
   }
 }
 @media screen and (max-width: 729px) {
-  main .container {
+  footer .container {
     display: none;
   }
 }
 @media screen and (min-width: 729px) {
-  main .content {
+  footer .content {
     display: none;
   }
 }/*# sourceMappingURL=style.css.map */
