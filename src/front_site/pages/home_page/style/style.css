@@ -21,4 +21,19 @@
     .last-row{
         display: none !important;
     }
+    .card-text{
+        font-size: .8rem;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .ipad{
+        display: none !important;
+    }
+}
+.sticky{
+    z-index: 1;
+}
+.sub-title-card{
+    font-size: 18px !important;
+    font-weight: bold !important;
 }
