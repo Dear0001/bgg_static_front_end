@@ -1,0 +1,166 @@
+body {
+  background-color: #f3f3f3;
+}
+
+a {
+  display: flex;
+  float: right;
+  text-decoration: none;
+  color: rgb(71, 71, 71);
+}
+a span:hover,
+a span:visited {
+  text-decoration: underline;
+}
+
+span {
+  padding-left: 5px;
+}
+
+h1 {
+  margin-bottom: -10px;
+}
+
+#row-2 {
+  border-right: 2px solid rgb(194, 194, 194);
+}
+
+form {
+  /* Hide the default checkbox */
+  /* Creating a custom checkbox
+  based on demand */
+  /* Specify the background color to be
+  shown when checkbox is checked */
+  /* Checkmark to be shown in checkbox */
+  /* It is not be shown when not checked */
+  /* Display checkmark when checked */
+}
+form .form-control {
+  width: 90%;
+  padding: 10px;
+  border: 2px solid #97ba78;
+  border-radius: 0;
+}
+form .form-control:focus,
+form .form-controll:active {
+  border: 2px solid #93b874;
+}
+form .check {
+  display: flex;
+  padding-top: 10px;
+}
+form .main {
+  display: block;
+  position: relative;
+  padding-left: 45px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 20px;
+}
+form input[type=checkbox] {
+  visibility: hidden;
+}
+form .geekmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border: 2px solid #93b874;
+  background-color: rgba(156, 144, 144, 0);
+}
+form .main input:checked ~ .geekmark {
+  background-color: #93b874;
+}
+form .geekmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+form .main input:checked ~ .geekmark:after {
+  display: block;
+}
+form .main .geekmark:after {
+  left: 8px;
+  bottom: 5px;
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 4px 4px 0;
+  transform: rotate(45deg);
+}
+form .login_or {
+  position: relative;
+  float: right;
+  right: -20px;
+  top: -75px;
+  background-color: #fff;
+  color: rgb(194, 194, 194);
+}
+
+.btn {
+  background-color: #97ba78;
+  width: 90%;
+  color: white;
+  border-color: #97ba78;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.sub_login {
+  display: block;
+  padding-top: 15px;
+}
+.sub_login .login_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  width: 100% !important;
+  height: 58px !important;
+  margin-top: 10px;
+}
+.sub_login .login_info img {
+  width: 60px;
+  margin-left: 5px;
+}
+.sub_login #fb-icon {
+  background-color: #365494;
+  border: solid 1px #365494;
+  border-radius: 5px;
+}
+.sub_login #fb-icon h3 {
+  margin-right: 60px;
+}
+.sub_login #google-icon {
+  background-color: #3f82f7;
+  border: solid 1px #3f82f7;
+  border-radius: 5px;
+}
+.sub_login #google-icon h3 {
+  margin-right: 75px;
+}
+.sub_login #google-icon img {
+  width: 110px;
+}
+.sub_login #wiki-icon {
+  background-color: #93b874;
+  border: 1px solid #93b874;
+  border-radius: 5px;
+}
+.sub_login #wiki-icon h3 {
+  margin-right: 30px;
+}
+
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+  .login_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    width: 100% !important;
+    height: 58px !important;
+  }
+}/*# sourceMappingURL=style.css.map */
