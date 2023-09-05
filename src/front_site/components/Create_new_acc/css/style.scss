@@ -100,6 +100,11 @@ shown when checkbox is checked */
     color: rgb(194, 194, 194);
   }
 }
+@media screen and (min-width: 992px){
+  .sub_login{
+    padding-left: 35px;
+  }
+}
 
 .btn {
   background-color: #97ba78;
@@ -164,5 +169,81 @@ shown when checkbox is checked */
     color: #fff;
     width: 100% !important;
     height: 58px !important;
+  }
+  .sub_login{
+    padding-left: 35px;
+  }
+  
+}
+@media screen and (min-width: 768px){
+  #hidden_head{
+    display: none;
+  }
+  #show-mobile{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    .hide_head{
+      display: none;
+    }
+    .signup{
+      position: relative;
+      top: 0;
+      float: left;
+      border: 1px solid rgb(180, 180, 180);
+      width: 50%;
+      border-left: none;
+      padding: 5px;
+      label{
+        margin: 0 auto;
+      }
+    }
+    .login{
+      position: relative;
+      top: 0;
+      float: left;
+      border: 1px solid rgb(180, 180, 180);
+      width: 50%;
+      border-right: none;
+      padding: 5px;
+      label{
+        margin: 0 auto;
+      }
+    }
+    .login_or {
+      display: none !important;
+    }
+    #row-2{
+      border-right: none !important;
+      
+    }
+    .row-mobile{
+      border-bottom: 2px solid rgb(194, 194, 194) !important;
+      padding-top: 0px;
+      padding-bottom: 15px;
+    }
+    .login_info{
+      margin-bottom: 10px;
+    }
+    .login_or_mobile {
+      position: relative;
+      float: right;
+      right: 200px;
+      top: -15px;
+      background-color: #fff;
+      color: rgb(194, 194, 194);
+    }
+    .form-control{
+      width: 100%;
+    }
+    .btn{
+      width: 100%;
+    }
+    .hide-mobile{
+      display: none;
+    }
   }
 }

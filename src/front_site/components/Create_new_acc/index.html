@@ -21,15 +21,46 @@
   </head>
   <body>
     <div class="container">
-        <div class="row p-5 bg-white mb-5">
-            <div class="col-lg-12">
+        <div class="row p-5 bg-white mb-4 hide_head">
+            <div class="col-lg-12 col-md-12">
                 <h1>Create new accout</h1>
                 <a>Already have an account? <span>Log in </span></a>
             </div>
         </div>
+        <div class="row bg-white hidden_head" id="hidden_head">
+            <div class="col-lg-12 col-md-6">
+                <a class="signup" href="#"><label> Sign Up
+                  <i class="fa Facebook"></i>
+                </label></a>
+                <a class="login" href="#"><label>Log In
+                  <i class="fa Facebook"></i>
+                </label></a>
+            </div>
+        </div>
+       
 
         <div class="row bg-white p-5">
-          <div class="col-lg-7" id="row-2">
+
+          <div class="col-lg-5 col-md-5 text-center text-muted show-moblie" id="show-mobile">
+            <h4>Sign up with</h4>
+            <div class="sub_login">
+              <div class="login_info" id="fb-icon">
+               <img src="image/fb.png" alt="">
+                <h3>Facebook</h3>
+              </div>
+              <div class="login_info" id="google-icon">
+                <img src="image/google.png" alt="">
+                <h3>Goggle</h3>
+              </div>
+            </div>
+            <div class="row-mobile"></div>
+            <div class="login_or_mobile">
+or</div>
+          </div>
+          
+          
+          <div class="col-lg-7 col-md-7" id="row-2">
+            
             <h4 class="text-center text-muted">Create an account</h4>
             <form action="/create-account" method="post">
               <div class="mb-3">
@@ -72,7 +103,7 @@
               </p>
             </form>
           </div>
-          <div class="col-lg-5 text-center text-muted">
+          <div class="col-lg-5 col-md-5 text-center text-muted hide-mobile">
             <h4>Sign up with</h4>
             <div class="sub_login">
               <div class="login_info" id="fb-icon">
