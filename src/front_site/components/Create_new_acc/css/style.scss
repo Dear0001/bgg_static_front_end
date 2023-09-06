@@ -1,0 +1,249 @@
+body {
+  background-color: #f3f3f3;
+}
+a {
+  display: flex;
+  float: right;
+  text-decoration: none;
+  color: rgb(71, 71, 71);
+  span:hover,
+  span:visited {
+    text-decoration: underline;
+  }
+}
+span {
+  padding-left: 5px;
+}
+h1 {
+  margin-bottom: -10px;
+}
+#row-2 {
+  border-right: 2px solid rgb(194, 194, 194);
+}
+form {
+  .form-control {
+    width: 90%;
+    padding: 10px;
+    border: 2px solid #97ba78;
+    border-radius: 0;
+  }
+  .form-control:focus,
+  .form-controll:active {
+    border: 2px solid #93b874;
+  }
+  .check {
+    display: flex;
+    padding-top: 10px;
+  }
+  .main {
+    display: block;
+    position: relative;
+    padding-left: 45px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+  /* Hide the default checkbox */
+  input[type="checkbox"] {
+    visibility: hidden;
+  }
+
+  /* Creating a custom checkbox
+based on demand */
+  .geekmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border: 2px solid #93b874;
+    background-color: #9c909000;
+  }
+
+  /* Specify the background color to be
+shown when checkbox is checked */
+  .main input:checked ~ .geekmark {
+    background-color: #93b874;
+  }
+
+  /* Checkmark to be shown in checkbox */
+  /* It is not be shown when not checked */
+  .geekmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  /* Display checkmark when checked */
+  .main input:checked ~ .geekmark:after {
+    display: block;
+  }
+  .main .geekmark:after {
+    left: 8px;
+    bottom: 5px;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 4px 4px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .login_or {
+    position: relative;
+    float: right;
+    right: -20px;
+    top: -75px;
+    background-color: #fff;
+    color: rgb(194, 194, 194);
+  }
+}
+@media screen and (min-width: 992px){
+  .sub_login{
+    padding-left: 35px;
+  }
+}
+
+.btn {
+  background-color: #97ba78;
+  width: 90%;
+  color: white;
+  border-color: #97ba78;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.sub_login {
+  display: block;
+  // padding-left: 25px;
+  padding-top: 15px;
+  .login_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    width: 100% !important;
+    height: 58px !important;
+    margin-top: 10px;
+    img {
+      width: 60px;
+      margin-left: 5px;
+    }
+  }
+  #fb-icon {
+    background-color: #365494;
+    border: solid 1px #365494;
+    border-radius: 5px;
+    h3 {
+      margin-right: 60px;
+    }
+  }
+  #google-icon {
+    background-color: #3f82f7;
+    border: solid 1px #3f82f7;
+    border-radius: 5px;
+    h3 {
+      margin-right: 75px;
+    }
+    img {
+      width: 110px;
+    }
+  }
+  #wiki-icon {
+    background-color: #93b874;
+    border: 1px solid #93b874;
+    border-radius: 5px;
+    h3 {
+      margin-right: 30px;
+    }
+  }
+}
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+  .login_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    width: 100% !important;
+    height: 58px !important;
+  }
+  .sub_login{
+    padding-left: 35px;
+  }
+  
+}
+@media screen and (min-width: 768px){
+  #hidden_head{
+    display: none;
+  }
+  #show-mobile{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    .hide_head{
+      display: none;
+    }
+    .signup{
+      position: relative;
+      top: 0;
+      float: left;
+      border: 1px solid rgb(180, 180, 180);
+      width: 50%;
+      border-left: none;
+      padding: 5px;
+      label{
+        margin: 0 auto;
+      }
+    }
+    .login{
+      position: relative;
+      top: 0;
+      float: left;
+      border: 1px solid rgb(180, 180, 180);
+      width: 50%;
+      border-right: none;
+      padding: 5px;
+      label{
+        margin: 0 auto;
+      }
+    }
+    .login_or {
+      display: none !important;
+    }
+    #row-2{
+      border-right: none !important;
+      
+    }
+    .row-mobile{
+      border-bottom: 2px solid rgb(194, 194, 194) !important;
+      padding-top: 0px;
+      padding-bottom: 15px;
+    }
+    .login_info{
+      margin-bottom: 10px;
+    }
+    .login_or_mobile {
+      position: relative;
+      float: right;
+      right: 200px;
+      top: -15px;
+      background-color: #fff;
+      color: rgb(194, 194, 194);
+    }
+    .form-control{
+      width: 100%;
+    }
+    .btn{
+      width: 100%;
+    }
+    .hide-mobile{
+      display: none;
+    }
+  }
+}
