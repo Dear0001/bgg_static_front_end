@@ -11,6 +11,7 @@ a {
 a span:hover,
 a span:visited {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 span {
@@ -25,6 +26,10 @@ h1 {
   border-right: 2px solid rgb(194, 194, 194);
 }
 
+.ttext_main {
+  width: 200px !important;
+}
+
 form {
   /* Hide the default checkbox */
   /* Creating a custom checkbox
@@ -36,7 +41,7 @@ form {
   /* Display checkmark when checked */
 }
 form .form-control {
-  width: 90%;
+  width: 94%;
   padding: 10px;
   border: 2px solid #97ba78;
   border-radius: 0;
@@ -80,6 +85,9 @@ form .geekmark:after {
 form .main input:checked ~ .geekmark:after {
   display: block;
 }
+form .block_1 {
+  margin-left: 10px !important;
+}
 form .main .geekmark:after {
   left: 8px;
   bottom: 5px;
@@ -105,7 +113,7 @@ form .login_or {
 }
 .btn {
   background-color: #97ba78;
-  width: 90%;
+  width: 94%;
   color: white;
   border-color: #97ba78;
   padding: 10px 20px;
@@ -118,7 +126,7 @@ form .login_or {
 }
 .sub_login .login_info {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   text-align: center;
   color: #fff;
@@ -128,34 +136,23 @@ form .login_or {
 }
 .sub_login .login_info img {
   width: 60px;
-  margin-left: 5px;
+  margin-left: -20px;
+  margin-right: 20px;
 }
 .sub_login #fb-icon {
   background-color: #365494;
   border: solid 1px #365494;
   border-radius: 5px;
 }
-.sub_login #fb-icon h3 {
-  margin-right: 60px;
-}
 .sub_login #google-icon {
   background-color: #3f82f7;
   border: solid 1px #3f82f7;
   border-radius: 5px;
 }
-.sub_login #google-icon h3 {
-  margin-right: 75px;
-}
 .sub_login #google-icon img {
-  width: 110px;
-}
-.sub_login #wiki-icon {
-  background-color: #93b874;
-  border: 1px solid #93b874;
-  border-radius: 5px;
-}
-.sub_login #wiki-icon h3 {
-  margin-right: 30px;
+  margin-left: -20px;
+  margin-right: 20px;
+  width: 90px;
 }
 
 @media only screen and (max-width: 992px) and (min-width: 768px) {
@@ -225,7 +222,7 @@ form .login_or {
   .container .login_or_mobile {
     position: relative;
     float: right;
-    right: 200px;
+    right: 50%;
     top: -15px;
     background-color: #fff;
     color: rgb(194, 194, 194);
@@ -239,4 +236,39 @@ form .login_or {
   .container .hide-mobile {
     display: none;
   }
+}
+.submit_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+.submit_btn span {
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+}
+.submit_btn #btn-2 {
+  width: 50%;
+  background-color: #FFCF5A;
+}
+.submit_btn #btn-2:hover, .submit_btn #btn-3:visited {
+  width: 70%;
+  background-color: #FFA00A;
+  transition: all 0.5s ease-out;
+}
+
+ul {
+  list-style-type: none;
+}
+ul li {
+  background: url(../image/check.png) 0 0/18px no-repeat;
+  background-position: left;
+  margin-bottom: 20px;
+  line-height: 18px;
+  color: #545454;
+  padding-left: 28px;
+  font-size: 1.1em;
+  font-size: 17px;
 }/*# sourceMappingURL=style.css.map */
