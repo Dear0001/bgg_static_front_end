@@ -262,7 +262,7 @@ form .login_or {
 ul {
   list-style-type: none;
 }
-ul li {
+ul .image-check {
   background: url(../image/check.png) 0 0/18px no-repeat;
   background-position: left;
   margin-bottom: 20px;
