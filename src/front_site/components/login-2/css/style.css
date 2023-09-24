@@ -56,16 +56,6 @@ body a {
   color: dodgerblue;
 }
 
-form {
-  /* Hide the default checkbox */
-  /* Creating a custom checkbox
-  based on demand */
-  /* Specify the background color to be
-  shown when checkbox is checked */
-  /* Checkmark to be shown in checkbox */
-  /* It is not be shown when not checked */
-  /* Display checkmark when checked */
-}
 form .form-control {
   width: 94%;
   padding: 10px;
@@ -155,3 +145,22 @@ form .main .geekmark:after {
   background-color: yellow;
   border-radius: 7px;
 }/*# sourceMappingURL=style.css.map */
+
+.article-text{
+  position: absolute;
+  color: white;
+  bottom:-10%;
+}
+.article-text:hover{
+  background-color: white;
+  color: dodgerblue;
+}
+.btn-text{
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (max-width: 992px){
+  .aside-container{
+      display: none;
+  }
+}

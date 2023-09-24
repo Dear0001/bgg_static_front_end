@@ -159,3 +159,21 @@ form {
         border-radius: 7px;
     }
 }
+.article-text{
+  position: absolute;
+  color: white;
+  bottom:-10%;
+}
+.article-text:hover{
+  background-color: white;
+  color: dodgerblue;
+}
+.btn-text{
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (max-width: 992px){
+  .aside-container{
+      display: none;
+  }
+}
