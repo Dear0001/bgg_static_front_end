@@ -1,0 +1,18 @@
+.article-text{
+    position: absolute;
+    color: white;
+    bottom:-10%;
+}
+.article-text:hover{
+    background-color: white;
+    color: dodgerblue;
+}
+.btn-text{
+    display: flex;
+    flex-direction: column;
+}
+@media only screen and (max-width: 768px){
+    .aside-container{
+        display: none;
+    }
+}

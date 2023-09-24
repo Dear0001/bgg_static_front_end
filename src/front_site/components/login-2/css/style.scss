@@ -1,0 +1,161 @@
+
+body{
+    background-color: lightgray;
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+}
+.btn {
+    background-color: #97ba78;
+    width: 94%;
+    color: white;
+    border-color: #97ba78;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+.heading-text  {
+    position: relative;
+    display: flex;
+    align-items: center;
+    p{
+        position: absolute;
+        right: 0;
+        top: 75%;
+        a{
+            text-decoration: none;
+            color: inherit;
+            &:hover {
+                text-decoration: underline;
+                color: rgb(113, 246, 18);
+            }
+        }
+        
+    }
+}
+.btn-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.btn-aside-wrap{
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+    .btn-aside{
+        padding: 13px 35px;
+        background-color: aliceblue;
+        box-shadow: 0 0 5px lightgray;
+        &:hover{
+            box-shadow: 0 0 5px dodgerblue;
+            color: dodgerblue;
+        }
+    }
+}
+
+form {
+    .form-control {
+      width: 94%;
+      padding: 10px;
+      border: 2px solid #97ba78;
+      border-radius: 0;
+    }
+    .form-control:focus,
+    .form-controll:active {
+      border: 2px solid #93b874;
+    }
+    .check {
+      display: flex;
+      padding-top: 10px;
+    }
+    .main {
+      display: block;
+      position: relative;
+      padding-left: 45px;
+      margin-bottom: 15px;
+      cursor: pointer;
+      font-size: 20px;
+    }
+    input{
+        margin: 20px 0;
+    }
+    /* Hide the default checkbox */
+    input[type="checkbox"] {
+      visibility: hidden;
+    }
+    .main{
+        display: flex;
+    }
+    /* Creating a custom checkbox
+  based on demand */
+    .geekmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 25px;
+      width: 25px;
+      border: 2px solid #93b874;
+      background-color: #9c909000;
+    }
+  
+    /* Specify the background color to be
+  shown when checkbox is checked */
+    .main input:checked ~ .geekmark {
+      background-color: #93b874;
+    }
+  
+    /* Checkmark to be shown in checkbox */
+    /* It is not be shown when not checked */
+    .geekmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+  
+    /* Display checkmark when checked */
+    .main input:checked ~ .geekmark:after {
+      display: block;
+    }
+    .block_1{
+      margin-left: 10px !important;
+    }
+    .main .geekmark:after {
+      left: 8px;
+      bottom: 5px;
+      width: 6px;
+      height: 12px;
+      border: solid white;
+      border-width: 0 4px 4px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+}
+
+.wrapper-login :last-child{
+    margin-top: 15px;
+}
+.group-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+}
+.text-on-img{
+    position: absolute;
+    bottom: 15%;
+    color: white;
+    padding: 8px 10px;
+    backdrop-filter: invert(30%);
+}
+.card-body{
+    .card-link{
+        padding: 6px 15px;
+        background-color: yellow;
+        border-radius: 7px;
+    }
+}
