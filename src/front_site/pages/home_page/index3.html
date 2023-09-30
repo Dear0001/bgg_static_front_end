@@ -24,6 +24,8 @@
     <link rel="stylesheet" href="../../components/atlantic/css/style.css">
     <link rel="stylesheet" href="../../components/footer3/css/style.css">
     <link rel="stylesheet" href="../../components/section-cards/css/style.css">
+    <link rel="stylesheet" href="../../components/wiki-acc/css/style.css">
+    <link rel="stylesheet" href="../register_page/css/register_page.css">
     <title>Document</title>
   </head>
   <body>
@@ -176,7 +178,65 @@
                                 <a class="dropdown-item" href="#">About wikiHow Pro</a>
                                 <a class="dropdown-item" href="#">Coupon</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Quiz</a>
+                                <a class="dropdown-item" href="#" id="myBtn">Sign In</a>
+                                <!-- The Modal -->
+                                  <!-- Trigger/Open The Modal -->
+
+                                <!-- The Modal -->
+                                <div id="myModal" class="modal">
+
+                                  <!-- Modal content -->
+                                      <div class="form-wiki modal-content">
+                                        <div class="navabr-form">
+                                            <button type="button" class="btn btn-outline close">Concel</button>
+                                            <p class="login-with">Log in with</p>
+                                            <a href="../register_page/index.html" type="button" class="btn btn-outline">Create an account</a>
+                                        </div>
+                                        <div class="body-wrapper">
+                                            <div class="row">
+                                                <div class="col-lg-6 p-5 mb-5 line-horiz">
+                                                    <a href="#" class="btn-block bg-primary">
+                                                        <div class="icon-fb">
+                                                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAjVBMVEX///8IZv8AYf9pl/8AV//09/8AXv8AY/+mvP88fP/7/v8Aav9yoP8AW/8AXf8AWf/g6v/K2f/a5v/L3f+Jr/8ldP+pw/+ErP/Q4P+zyv9/qP/o8f/W4P/q8/9Nhf85ef8gcP9IgP9Xjf+bt/9akv+/0/9PiP+kwP+/1f+xy/+RtP94o/9fj/8Ybf9qm/9hqLssAAADpElEQVR4nO3c/1PaMBjHcYiQCDXpFyxS2UBWoTqG//+fN+XmeW69maQNz5Pe5/2jHl5el5JyaXA0QgghhBBCCCGEEEIIIYQQQgghhBBCCKFLNl1nRfEtP1cU2Xo6px5Rb31fVLcvm+1DoqRO9bnUqPFDuftxc1vlxZR6gJ3K68dESCOFUmr8udefiNdfGalOm+NyFeGMzrP6oFMpxl/2SjVpOltSj9itrJ5Z6T6SL9Rjdml/EPLvq/KrxA31qO2rSu00e7EJ92XqOn1RCYuD9vJFI6zdVpfohOud9vXFIczH3hMYh3DpfIOITNikXXwRCK87AtkLm0lHIHdhLrsCmQuzcadFJgLhrsttIgbhXYcbfRTCVR9A1sI+rlHWwmUvU8hYOC+7r6O8hT1NIWNh0s8U8hVWPU0hX+GspylkK1yZnoBshcde7oWMhX3dKvgKF32tM2yF971dpFyFW7+LVAlpdPqR1tpMWD6ZWXtszggzUZtj/fy0KLJzq9Xqaf/c1BW1pq2l671CmeSqWlMP26EXt7ehMrsqsme9J6e3oSz31AN2ber0NkxZLiX/z+luaCJ7Tn/OZaHRMQJd7vfmnnqwXh2shWpGPVa/7D92ywX1WL2aJrZA8Ug9Vr8y6yk0OfVY/SpsHzipknqonuW2t0N5Rz1Uz6y32dI415nRqLG9SifUI/Xtp6VQbalH6tudpZDp/oRFtjuJsqYeqW83lkL9TD1S32yF0S6loytbYUE9Ut9shZOYtp4+ZS2M9hsVtkI9eKGEkG0QQsg/CCHkH4QQ8s9ayP+5b3PdVrOz3PNWdevrP0f78E0Z2Zb9c5mvS69IhdZPYPyT10MX6qehCw3tehteqMqhC8UvUuAlhMTP38ILNfFpqfBCSbxpHF54+j5wIflxm+BCQX2oL7jQNIMXUp+3CS6UxAvNBdZSYmBwoTgMXShvhy6kP8oQWjjJhi4ck2/GBRaqDTUwtFAcqYGhhZL6M1twIYMzU6FXGurPbKGFaku+lAYWcviqQlgh/We20ELqfbbwQsHgcGZYYUK/0IySt3/l/G/WhtZXvyeo99ne2s1aO9kC21/+py2HL9TMW3M4Qdv+B97/Dt9wRhhC/kEIIf8ghJB/EELIPwgh5B+EEPIPQgj5ByGE/IMQQv5BCCH/IISQfxBCyD8IIeQfhBDyD0II+QchhPyDEEL+QQgh/yCEkH8QQsg/CCHkH4QQ8g9CCPkHIYT8gxBC/kF4SeFvjSdQECUnB9MAAAAASUVORK5CYII=" alt="Facebook">
+                                                        </div>
+                                                        <p class="text-center fb-text">Facebook</p>
+                                                    </a>
+                                                    <a href="#" class="btn-block bg-primary">
+                                                        <div class="icon-fb">
+                                                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAjVBMVEX///8IZv8AYf9pl/8AV//09/8AXv8AY/+mvP88fP/7/v8Aav9yoP8AW/8AXf8AWf/g6v/K2f/a5v/L3f+Jr/8ldP+pw/+ErP/Q4P+zyv9/qP/o8f/W4P/q8/9Nhf85ef8gcP9IgP9Xjf+bt/9akv+/0/9PiP+kwP+/1f+xy/+RtP94o/9fj/8Ybf9qm/9hqLssAAADpElEQVR4nO3c/1PaMBjHcYiQCDXpFyxS2UBWoTqG//+fN+XmeW69maQNz5Pe5/2jHl5el5JyaXA0QgghhBBCCCGEEEIIIYQQQgghhBBCCKFLNl1nRfEtP1cU2Xo6px5Rb31fVLcvm+1DoqRO9bnUqPFDuftxc1vlxZR6gJ3K68dESCOFUmr8udefiNdfGalOm+NyFeGMzrP6oFMpxl/2SjVpOltSj9itrJ5Z6T6SL9Rjdml/EPLvq/KrxA31qO2rSu00e7EJ92XqOn1RCYuD9vJFI6zdVpfohOud9vXFIczH3hMYh3DpfIOITNikXXwRCK87AtkLm0lHIHdhLrsCmQuzcadFJgLhrsttIgbhXYcbfRTCVR9A1sI+rlHWwmUvU8hYOC+7r6O8hT1NIWNh0s8U8hVWPU0hX+GspylkK1yZnoBshcde7oWMhX3dKvgKF32tM2yF971dpFyFW7+LVAlpdPqR1tpMWD6ZWXtszggzUZtj/fy0KLJzq9Xqaf/c1BW1pq2l671CmeSqWlMP26EXt7ehMrsqsme9J6e3oSz31AN2ber0NkxZLiX/z+luaCJ7Tn/OZaHRMQJd7vfmnnqwXh2shWpGPVa/7D92ywX1WL2aJrZA8Ug9Vr8y6yk0OfVY/SpsHzipknqonuW2t0N5Rz1Uz6y32dI415nRqLG9SifUI/Xtp6VQbalH6tudpZDp/oRFtjuJsqYeqW83lkL9TD1S32yF0S6loytbYUE9Ut9shZOYtp4+ZS2M9hsVtkI9eKGEkG0QQsg/CCHkH4QQ8s9ayP+5b3PdVrOz3PNWdevrP0f78E0Z2Zb9c5mvS69IhdZPYPyT10MX6qehCw3tehteqMqhC8UvUuAlhMTP38ILNfFpqfBCSbxpHF54+j5wIflxm+BCQX2oL7jQNIMXUp+3CS6UxAvNBdZSYmBwoTgMXShvhy6kP8oQWjjJhi4ck2/GBRaqDTUwtFAcqYGhhZL6M1twIYMzU6FXGurPbKGFaku+lAYWcviqQlgh/We20ELqfbbwQsHgcGZYYUK/0IySt3/l/G/WhtZXvyeo99ne2s1aO9kC21/+py2HL9TMW3M4Qdv+B97/Dt9wRhhC/kEIIf8ghJB/EELIPwgh5B+EEPIPQgj5ByGE/IMQQv5BCCH/IISQfxBCyD8IIeQfhBDyD0II+QchhPyDEEL+QQgh/yCEkH8QQsg/CCHkH4QQ8g9CCPkHIYT8gxBC/kF4SeFvjSdQECUnB9MAAAAASUVORK5CYII=" alt="Facebook">
+                                                        </div>
+                                                        <p class="text-center fb-text">Facebook</p>
+                                                    </a>
+                                                    <div class="login_or">
+                                                        or
+                                                      </div>
+                                                </div>
+                                                
+                                                <div class="col-lg-6 p-5">
+                                                    <form action="form" class="group-form">
+                                                        <div class="mb-3">
+                                                            <input type="text" class="form-control" id="username" name="username" required placeholder="Username">
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <input type="password" class="form-control" id="password" name="password" required placeholder="Password">
+                                                            <div class="check-box">
+                                                              <label class="main"><span class="text_main">Remember me</span>
+                                                                <input type="checkbox">
+                                                                <span class="geekmark"></span>
+                                                            </label>
+                                                          </div>
+                                                          </div>
+                                                          <div class="btn-text">
+                                                            <button type="submit" class="btn btn-primary">Create Account</button>
+                                                            <a href="#" class="forgot-pass">Forgot your password?</a>
+                                                          </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                                  <!-- pop up -->
                               </div>
                             </li>
                             <li class="nav-item dropdown dropdown-hover-bg action-li dropdown-helpus ">
@@ -2698,6 +2758,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="./js/nav_bar.js"></script>
+    <script src="../../components/wiki-acc/JavaScript/js.js"></script>
     <!-- script for jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="../../components/navBar-3/js/nav_bar.js"></script>
