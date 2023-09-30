@@ -20,9 +20,16 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="form-wiki">
+    <!-- Trigger/Open The Modal -->
+<button id="myBtn">Open Modal</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+      <div class="form-wiki modal-content">
         <div class="navabr-form">
-            <button type="button" class="btn btn-outline">Concel</button>
+            <button type="button" class="btn btn-outline close">Concel</button>
             <p class="login-with">Log in with</p>
             <a href="#" type="button" class="btn btn-outline">Create an account</a>
         </div>
@@ -53,8 +60,9 @@
                         </div>
                         <div class="mb-3">
                             <input type="password" class="form-control" id="password" name="password" required placeholder="Password">
-                            <div class="check">
-                              <label class="main"><span class="text_main">Remember me</span>
+                            <div class="check-box">
+                              <label class="main">
+                                <span class="text_main">Remember me</span>
                                 <input type="checkbox">
                                 <span class="geekmark"></span>
                             </label>
@@ -69,5 +77,8 @@
             </div>
         </div>
     </div>
+  </div>
+    
   </body>
+  <script src="JavaScript/js.js"></script>
   </html>
