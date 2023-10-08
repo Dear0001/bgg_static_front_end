@@ -1,0 +1,96 @@
+body {
+  background-color: lightgray;
+}
+
+a {
+  text-decoration: none;
+  color: #307530;
+}
+
+.detail-article {
+  padding: 10px 30px;
+  background-color: white;
+}
+.detail-article .heading-detail h3 {
+  font-size: 43px;
+  font-weight: bold;
+}
+.detail-article .heading-detail .download {
+  display: flex;
+}
+.detail-article .heading-detail .download .pdf {
+  display: flex;
+  margin-left: 4rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  -webkit-backdrop-filter: invert(2%);
+          backdrop-filter: invert(2%);
+  padding: 5px 15px;
+  border-radius: 10px;
+}
+.detail-article .heading-detail .download .pdf .icon-pdf {
+  margin-right: 7px;
+}
+.detail-article .heading-detail .download .pdf .icon-pdf img {
+  width: 30px;
+}
+.detail-article .References-detail {
+  font-size: 19px;
+}
+.detail-article .References-detail .name-rfn {
+  color: #307530;
+}
+.detail-article .ul-detail {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+.detail-article .ul-detail .li-detail a {
+  font-size: 19px;
+  margin-right: 10px;
+  padding: 0 10px 0 0;
+}
+.detail-article .ul-detail .li-detail a:hover {
+  text-decoration: underline;
+  color: #307530;
+}
+.detail-article .ul-detail .li-detail::after, .detail-article .ul-detail .li-detail a {
+  border-right: 2px solid lightgray;
+  margin: 2px 2px 4px 0;
+}
+.detail-article .ul-detail .li-detail::after, .detail-article .ul-detail .li-detail a:last-child {
+  border-right: none !important;
+}
+
+.things-detail {
+  background-color: white;
+  border-radius: 7px;
+}
+.things-detail .header-things {
+  overflow: hidden;
+  box-shadow: 0 1px #ffe8e8;
+  border: 1px solid lightgray;
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+}
+.things-detail .header-things .empty-color {
+  overflow: hidden;
+  width: 5%;
+  background-color: #3dc83d;
+}
+.things-detail .header-things p {
+  padding: 15px 5px 0 0;
+  width: 80%;
+  font-size: 1.8rem !important;
+  font-weight: bold;
+}
+.things-detail .ul-things {
+  padding: 30px 70px;
+}
+.things-detail .ul-things .li-things {
+  font-size: 18px;
+  margin-bottom: 15px;
+}/*# sourceMappingURL=style.css.map */

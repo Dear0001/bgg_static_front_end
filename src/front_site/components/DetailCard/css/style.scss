@@ -1,0 +1,100 @@
+body{
+    background-color: lightgray;
+}
+a{
+    text-decoration: none;
+    color: #307530;
+    
+}
+   
+
+.detail-article{
+    padding: 10px 30px;
+    background-color: white;
+    .heading-detail{
+        h3{
+            font-size: 43px;
+            font-weight: bold;
+        }
+        .download{
+            display: flex;
+            .pdf{
+                display: flex;
+                margin-left: 4rem;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                backdrop-filter: invert(2%);
+                padding: 5px 15px;
+                border-radius: 10px;
+                .icon-pdf{
+                    margin-right: 7px;
+                    img{
+                        width: 30px;
+                    }
+                }
+            }
+        }
+    }
+    .References-detail{
+        font-size: 19px;
+      .name-rfn{
+        color: #307530;
+      }  
+    }
+    .ul-detail{
+        list-style-type: none;
+        display: flex;
+        padding: 0;
+        margin: 0;
+        .li-detail{
+            a{
+                font-size: 19px;
+                margin-right: 10px;
+                padding: 0 10px 0 0;
+                &:hover{
+                    text-decoration: underline;
+                    color: #307530;
+                }
+            }
+            &::after,a{
+                border-right: 2px solid lightgray;
+                margin: 2px 2px 4px 0;
+            }
+            &::after, a:last-child{
+                border-right: none !important;
+            }
+        }
+    }
+}
+.things-detail{
+    background-color: white;
+    border-radius: 7px;
+    .header-things{
+        overflow: hidden;
+        box-shadow: 0 1px #ffe8e8;
+        border: 1px solid lightgray;
+        
+        width: 100%;
+        display: flex;
+        gap: 2rem;
+        .empty-color{
+            overflow: hidden;
+            width: 5%;
+            background-color: #3dc83d;
+        }
+        p{
+            padding: 15px 5px 0 0;
+            width: 80%;
+            font-size: 1.8rem !important    ;
+            font-weight: bold;
+        }
+    }
+    .ul-things{
+        padding: 30px 70px;
+        .li-things{
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+    }
+}
