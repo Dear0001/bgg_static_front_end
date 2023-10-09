@@ -7,18 +7,14 @@ a {
   color: #307530;
 }
 
-.detail-article {
-  padding: 10px 30px;
-  background-color: white;
+img {
+  width: 100%;
 }
-.detail-article .heading-detail h3 {
-  font-size: 43px;
-  font-weight: bold;
-}
-.detail-article .heading-detail .download {
+
+.download {
   display: flex;
 }
-.detail-article .heading-detail .download .pdf {
+.download .pdf {
   display: flex;
   margin-left: 4rem;
   justify-content: center;
@@ -26,14 +22,32 @@ a {
   text-align: center;
   -webkit-backdrop-filter: invert(2%);
           backdrop-filter: invert(2%);
-  padding: 5px 15px;
+  padding: 5px 20px;
   border-radius: 10px;
 }
-.detail-article .heading-detail .download .pdf .icon-pdf {
+.download .pdf .icon-pdf {
   margin-right: 7px;
 }
-.detail-article .heading-detail .download .pdf .icon-pdf img {
+.download .pdf .icon-pdf img {
   width: 30px;
+}
+
+.step-num {
+  display: flex;
+  content: ".";
+}
+.step-num::after {
+  font-size: 65px;
+  font-weight: bold;
+}
+
+.detail-article {
+  padding: 10px 30px;
+  background-color: white;
+}
+.detail-article .heading-detail h3 {
+  font-size: 43px;
+  font-weight: bold;
 }
 .detail-article .References-detail {
   font-size: 19px;
@@ -93,4 +107,69 @@ a {
 .things-detail .ul-things .li-things {
   font-size: 18px;
   margin-bottom: 15px;
+}
+
+.Best-detail {
+  background-color: white;
+  border-radius: 7px;
+}
+.Best-detail .header-Best {
+  overflow: hidden;
+  box-shadow: 0 1px #ffe8e8;
+  border: 1px solid lightgray;
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+}
+.Best-detail .header-Best .empty-color {
+  overflow: hidden;
+  width: 5%;
+  background-color: #3dc83d;
+}
+.Best-detail .header-Best .Best-text {
+  padding: 15px 5px 0 0;
+  font-size: 1.8rem !important;
+  font-weight: bold;
+}
+.Best-detail .header-Best .right-best {
+  margin-left: 100px;
+}
+.Best-detail .best-wrapper {
+  padding: 15px 37px;
+}
+.Best-detail .best-wrapper .step-num, .Best-detail .best-wrapper .step-best {
+  display: inline;
+}
+.Best-detail .best-wrapper .step-best {
+  position: relative;
+  margin-left: 10px;
+}
+.Best-detail .best-wrapper .step-best .walking {
+  position: absolute;
+  top: -40px;
+  font-size: 23px;
+  font-weight: 700;
+}
+.Best-detail .best-wrapper .step-best .step-p {
+  display: inline;
+  font-size: 20px;
+}
+.Best-detail .best-wrapper .step-best .step-ul {
+  margin-left: 25px;
+}
+.Best-detail .best-wrapper .step-best .step-li {
+  font-size: 20px;
+}
+.Best-detail .step-num::after {
+  content: "1";
+}
+.Best-detail .num-two::after {
+  content: "2";
+}
+.Best-detail .num-three::after {
+  content: "3";
+}
+.Best-detail .step-href:hover {
+  color: #3dc83d;
+  text-decoration: underline;
 }/*# sourceMappingURL=style.css.map */
