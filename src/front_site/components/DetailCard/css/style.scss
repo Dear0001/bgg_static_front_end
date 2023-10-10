@@ -6,7 +6,7 @@ a{
     color: #307530;
     
 }
-// globle styling
+// globle style
 img{
     width: 100%;
 }
@@ -29,7 +29,7 @@ img{
         }
     }
 }
-// globle styling
+
 .step-num{
     display: flex;
     content: '.';
@@ -38,6 +38,7 @@ img{
         font-weight: bold;
     }
 }
+// ended globle style
 .detail-article{
     padding: 10px 30px;
     background-color: white;
@@ -78,6 +79,7 @@ img{
         }
     }
 }
+//
 .things-detail{
     background-color: white;
     border-radius: 7px;
@@ -182,4 +184,65 @@ img{
         color: #3dc83d;
         text-decoration: underline;
     }
+}
+
+
+//aside
+
+.aside{
+    background-color: #f1fff1;
+    padding: 8px;
+    border-radius: 7px 7px 0 0;
+    display: flex;
+    .verify{
+        position: relative;
+        img{
+            position: absolute;
+            width: 25px;
+            bottom: 0;
+            margin-left: 60px;
+        }
+    }
+    .img-expert{
+        overflow: hidden;
+        img{
+            width: 82px;
+        }
+    }
+    .heading-expert{
+        margin-left: 15px;
+        & :nth-child(1),& :last-child {
+            font-size: 15px;
+            margin: 0;
+        }
+        & :nth-child(2){
+            margin: 0;
+            font-size: 28px;
+            color: rgb(48, 48, 48);
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+.aside-two{
+    display: flex;
+    background-color: white;
+    box-shadow: 0 1px #ffe8e8;
+    border: 1px solid #e9e9e9;
+    padding: 7px 10px;
+
+    .view-expert {
+        margin: 7px 25px;
+        .heading-v{
+            margin: 0;
+            font-size: 14px;
+        }
+        .values{
+            font-size: 20px;
+            font-weight: 600;
+            margin: 0;
+        }
+    }
+
 }
