@@ -1,3 +1,4 @@
+
 body {
   background-color: lightgray;
 }
@@ -6,9 +7,8 @@ body a {
   color: inherit;
 }
 
-.btn {
+.btn-login-page {
   background-color: #97ba78;
-  width: 94%;
   color: white;
   border-color: #97ba78;
   padding: 10px 20px;
@@ -62,7 +62,9 @@ form .form-control {
   border: 2px solid #97ba78;
   border-radius: 0;
 }
-form .form-control:focus,
+form .form-control:focus {
+  border: 2px solid #93b874;
+}
 form .form-controll:active {
   border: 2px solid #93b874;
 }
@@ -77,38 +79,13 @@ form .main {
   margin-bottom: 15px;
   cursor: pointer;
   font-size: 20px;
-}
-form input {
-  margin: 20px 0;
-}
-form input[type=checkbox] {
-  visibility: hidden;
-}
-form .main {
   display: flex;
-}
-form .geekmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 25px;
-  width: 25px;
-  border: 2px solid #93b874;
-  background-color: rgba(156, 144, 144, 0);
 }
 form .main input:checked ~ .geekmark {
   background-color: #93b874;
 }
-form .geekmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
 form .main input:checked ~ .geekmark:after {
   display: block;
-}
-form .block_1 {
-  margin-left: 10px !important;
 }
 form .main .geekmark:after {
   left: 8px;
@@ -119,8 +96,31 @@ form .main .geekmark:after {
   border-width: 0 4px 4px 0;
   transform: rotate(45deg);
 }
+form input {
+  margin: 20px 0;
+}
+form input[type=checkbox] {
+  visibility: hidden;
+}
+form .geekmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border: 2px solid #93b874;
+  background-color: rgba(156, 144, 144, 0);
+}
+form .geekmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+form .block_1 {
+  margin-left: 10px !important;
+}
 
-.wrapper-login :last-child {
+.wrapper-login:last-child {
   margin-top: 15px;
 }
 
@@ -137,30 +137,32 @@ form .main .geekmark:after {
   color: white;
   padding: 8px 10px;
   -webkit-backdrop-filter: invert(30%);
-          backdrop-filter: invert(30%);
+  backdrop-filter: invert(30%);
 }
 
 .card-body .card-link {
   padding: 6px 15px;
   background-color: yellow;
   border-radius: 7px;
-}/*# sourceMappingURL=style.css.map */
+}
 
-.article-text{
+.article-text {
   position: absolute;
   color: white;
-  bottom:-10%;
+  bottom: -10%;
 }
-.article-text:hover{
+.article-text:hover {
   background-color: white;
   color: dodgerblue;
 }
-.btn-text{
+
+.btn-text {
   display: flex;
   flex-direction: column;
 }
-@media only screen and (max-width: 992px){
-  .aside-container{
-      display: none;
+
+@media only screen and (max-width: 992px) {
+  .aside-container {
+    display: none;
   }
-}
+}/*# sourceMappingURL=style.css.map */

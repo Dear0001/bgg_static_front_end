@@ -3,96 +3,95 @@ footer {
   padding-top: 35px;
   padding-bottom: 35px;
 }
+
 @media only screen and (min-width: 992px) {
-  footer #aside {
-    margin-left: 70px;
+  footer .footer-aside {
+    margin-left: 70px !important;
   }
   footer .search-ipad {
-    margin: 5px 5px;
+    margin: 5px 5px !important;
   }
   footer .search-ipad .wrap-search {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 455px;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    max-width: 455px !important;
     height: 52px;
     background-color: #fff;
     border-radius: 8px;
   }
-  footer .search-ipad .wrap-search #search-ip {
-    width: 90%;
+  footer .search-ipad .wrap-search .search-ip {
+    width: 90% !important;
     outline: none;
-    padding: 5px;
+    padding: 5px !important;
     border: hidden;
   }
   footer .search-ipad .wrap-search input:focus {
     color: black;
-    padding-left: 10px;
+    padding-left: 10px !important;
   }
-  footer .search-ipad .wrap-search ::-webkit-input-placeholder {
-    /* Edge */
+  footer .search-ipad .wrap-search::-webkit-input-placeholder {
     color: rgb(140, 137, 137);
     font-size: 20px;
   }
   footer .search-ipad .wrap-search i {
-    padding-right: 5px;
+    padding-right: 5px !important;
     color: black;
     font-size: 18px;
   }
   footer .group-icon {
-    padding-top: 50px;
+    padding-top: 50px !important;
   }
   footer .group-icon a {
-    padding-left: 8px;
+    padding-left: 8px !important;
     text-decoration: none;
   }
   footer .group-icon a img {
     width: 50px;
   }
   footer .text-icon {
-    display: flex;
+    display: flex !important;
   }
-  footer .text-icon .icon img {
+  footer .text-icon .footer-icon img {
     width: 35px;
   }
   footer .text-icon .text-head h3 {
     font-weight: 200;
   }
   footer .text-p {
-    width: 236px;
+    width: 236px !important;
     font-size: 18px;
     color: #fff;
   }
   footer .email .wrap-email {
-    padding-bottom: 10px;
+    padding-bottom: 10px !important;
   }
   footer .email .wrap-email input {
-    padding: 3px;
-    width: 226px;
-    border-radius: 5px;
+    padding: 3px !important;
+    width: 226px !important;
+    border-radius: 5px !important;
     border: none;
   }
   footer .email .wrap-email input:focus {
-    padding-left: 5px;
+    padding-left: 5px !important;
   }
   footer .email .wrap-email input.active {
     border: 4px solid black;
   }
-  footer .email .wrap-email ::-webkit-input-placeholder {
-    /* Edge */
+  footer .email .wrap-email::-webkit-input-placeholder {
     color: rgb(140, 137, 137);
     font-size: 18px;
-    padding-left: 5px;
+    padding-left: 5px !important;
   }
   footer .email button {
     background-color: rgb(249, 249, 133);
-    padding: 3px;
-    width: 226px;
+    padding: 3px !important;
+    width: 226px !important;
     border-radius: 5px;
     border: none;
   }
   footer .email p {
-    width: 236px;
+    width: 236px !important;
     font-size: 16px;
     color: #fff;
   }
@@ -103,8 +102,8 @@ footer {
     font-size: 18px;
   }
   footer .row .categoties a {
-    display: block;
-    padding-bottom: 5px;
+    display: block !important;
+    padding-bottom: 5px !important;
     text-decoration: none;
     color: white;
   }
@@ -120,101 +119,112 @@ footer {
     margin: 5px 5px;
   }
   footer .search-ipad .wrap-search {
-    display: flex;
+    display: flex !important;
     justify-content: center;
     align-items: center;
-    max-width: 405px;
+    max-width: 405px !important;
     height: 40px;
     background-color: #fff;
     border-radius: 8px;
   }
-  footer .search-ipad .wrap-search #search-ip {
-    width: 90%;
+  footer .search-ipad .wrap-search .search-ip {
+    width: 90% !important;
     outline: none;
     padding: 5px;
     border: hidden;
   }
   footer .search-ipad .wrap-search input:focus {
     color: black;
-    padding-left: 10px;
+    padding-left: 10px !important;
   }
-  footer .search-ipad .wrap-search ::-webkit-input-placeholder {
-    /* Edge */
+  footer .search-ipad .wrap-search::-webkit-input-placeholder {
     color: rgb(140, 137, 137);
     font-size: 20px;
   }
   footer .search-ipad .wrap-search i {
-    padding-right: 5px;
+    padding-right: 5px !important;
     color: black;
     font-size: 18px;
   }
-  footer #second-row {
-    padding-left: 10px;
+  footer .second-row {
+    padding-left: 10px !important;
   }
   footer .group-icon-ipad {
-    padding-top: 25px;
+    padding-top: 25px !important;
   }
   footer .group-icon-ipad a {
-    padding-left: 5px;
+    padding-left: 5px !important;
     text-decoration: none;
   }
   footer .group-icon-ipad a img {
     width: 35px;
   }
   footer .wrap-row {
-    padding-top: 60px;
+    padding-top: 60px !important;
     border-left: 1px solid green;
-    display: flex;
+    display: flex !important;
     justify-content: center;
     align-items: center;
     text-align: center;
   }
   footer .wrap-row .text-icon {
-    display: flex;
+    display: flex !important;
   }
-  footer .wrap-row .text-icon .icon img {
+  footer .wrap-row .text-icon .footer-icon img {
     width: 50px;
   }
   footer .wrap-row .text-icon .text-head h3 {
     font-weight: 300;
   }
   footer .wrap-row .text-p {
-    width: 236px;
+    width: 236px !important;
     font-size: 18px;
     color: #fff;
   }
   footer .wrap-row .email .wrap-email {
-    padding-bottom: 10px;
+    padding-bottom: 10px !important;
   }
   footer .wrap-row .email .wrap-email input {
-    padding: 2px;
-    width: 236px;
-    border-radius: 10px;
+    padding: 2px !important;
+    width: 236px !important;
+    border-radius: 10px !important;
     border: none;
   }
   footer .wrap-row .email .wrap-email input:focus {
-    padding-left: 5px;
+    padding-left: 5px !important;
   }
   footer .wrap-row .email .wrap-email input.active {
     border: 4px solid black;
   }
-  footer .wrap-row .email .wrap-email ::-webkit-input-placeholder {
-    /* Edge */
+  footer .wrap-row .email .wrap-email::-webkit-input-placeholder {
     color: rgb(140, 137, 137);
     font-size: 18px;
-    padding-left: 5px;
+    padding-left: 5px !important;
   }
   footer .wrap-row .email button {
     background-color: rgb(249, 249, 133);
-    padding: 2px;
-    width: 236px;
+    padding: 2px !important;
+    width: 236px !important;
     border-radius: 10px;
     border: none;
   }
   footer .wrap-row .email p {
-    width: 236px;
+    width: 236px !important;
     font-size: 16px;
     color: #fff;
+  }
+  footer .categoties {
+    margin: 10px 250px;
+    width: 100%;
+  }
+  footer .categoties a {
+    padding-bottom: 5px !important;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+  }
+  footer .article {
+    padding-left: 60px !important;
   }
 }
 @media only screen and (max-width: 992px) and (min-width: 729px) and (max-width: 992px) {
@@ -222,80 +232,62 @@ footer {
     display: none;
   }
 }
-@media only screen and (max-width: 992px) and (min-width: 729px) {
-  footer .categoties {
-    margin: 10px 250x;
-    width: 100%;
-  }
-  footer .categoties a {
-    padding-bottom: 5px;
-    text-decoration: none;
-    color: #fff;
-    display: block;
-  }
-}
-@media only screen and (max-width: 992px) and (min-width: 729px) {
-  footer article {
-    padding-left: 60px;
-  }
-}
 @media only screen and (max-width: 729px) {
   footer .container-fluid {
-    display: flex;
+    display: flex !important;
     justify-content: center;
     align-items: center;
     text-align: center;
   }
   footer .container-fluid .content {
-    margin: 0 auto;
+    margin: 0 auto !important;
   }
   footer header img {
     width: 155px;
   }
   footer .text-icon {
-    display: flex;
+    display: flex !important;
     justify-content: center;
     align-items: center;
     text-align: center;
   }
-  footer .text-icon .icon img {
+  footer .text-icon .footer-icon img {
     width: 50px;
   }
   footer .text-p {
-    margin: 0 auto;
-    width: 236px;
+    margin: 0 auto !important;
+    width: 236px !important;
     color: #fff;
   }
   footer .email .wrap-email {
     padding-bottom: 10px;
   }
   footer .email .wrap-email input {
-    padding: 2px;
-    width: 236px;
+    padding: 2px !important;
+    width: 236px !important;
     border-radius: 10px;
     border: none;
     outline: none;
   }
   footer .email .wrap-email input:focus {
-    padding-left: 5px;
+    padding-left: 5px !important;
     border: 1px solid black;
   }
-  footer .email .wrap-email ::-webkit-input-placeholder {
-    /* Edge */
+  footer .email .wrap-email::-webkit-input-placeholder {
     color: rgb(140, 137, 137);
     font-size: 18px;
-    padding-left: 5px;
+    padding-left: 5px !important;
   }
   footer .email button {
     background-color: rgb(249, 249, 133);
-    padding: 2px;
-    width: 236px;
+    padding: 2px !important;
+    width: 236px !important;
     border-radius: 10px;
     border: none;
   }
   footer .email p {
-    margin: 0 auto;
-    width: 236px;
+    margin: 0 auto !important;
+    width: 236px !important;
     font-size: 16px;
     color: #fff;
   }
@@ -303,8 +295,8 @@ footer {
     padding-bottom: 10px;
   }
   footer .search-ipad .wrap-search {
-    margin: 0 auto;
-    display: flex;
+    margin: 0 auto !important;
+    display: flex !important;
     justify-content: center;
     align-items: center;
     max-width: 405px;
@@ -312,8 +304,8 @@ footer {
     background-color: #fff;
     border-radius: 8px;
   }
-  footer .search-ipad .wrap-search #search-ip {
-    width: 90%;
+  footer .search-ipad .wrap-search .search-ip {
+    width: 90% !important;
     outline: none;
     padding: 5px;
     border: hidden;
@@ -322,8 +314,7 @@ footer {
     color: black;
     padding-left: 10px;
   }
-  footer .search-ipad .wrap-search ::-webkit-input-placeholder {
-    /* Edge */
+  footer .search-ipad .wrap-search::-webkit-input-placeholder {
     color: rgb(140, 137, 137);
     font-size: 20px;
   }
@@ -336,25 +327,25 @@ footer {
     padding-top: 20px;
   }
   footer .group-icon-ipad a {
-    padding-left: 5px;
+    padding-left: 5px !important;
     text-decoration: none;
   }
   footer .group-icon-ipad a img {
     width: 35px;
   }
-  footer wrap-conte {
+  footer .wrap-content {
     width: 100%;
-    margin: 0 auto;
-    display: flex;
+    margin: 0 auto !important;
+    display: flex !important;
     justify-content: center;
     text-align: left;
   }
-  footer wrap-conte .categoties {
+  footer .wrap-content .categoties {
     margin: 10px 30px;
     width: 100%;
   }
-  footer wrap-conte .categoties a {
-    padding-bottom: 5px;
+  footer .wrap-content .categoties a {
+    padding-bottom: 5px !important;
     text-decoration: none;
     color: #fff;
     display: block;

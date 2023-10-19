@@ -19,218 +19,222 @@
     <link rel="stylesheet" href="../Create_new_acc/css/style.css">
     <link rel="stylesheet" href="../login-2/css/style.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
   </head>
   <body>
-    <div class="container">
-      <div class="row">
-      <div class="col-lg-8">
-        <div class="row p-3 bg-white mb-2 hide_head">
-            <div class="col-lg-12 col-md-12">
-                <h1>Log In</h1>
-                <a href="#">Don't have a login? <span>Create an account</span></a>
+    <!-- <section class="create__new_account"> -->
+      <div class="container">
+        <div class="row">
+        <div class="col-lg-8">
+          <div class="row p-3 bg-white mb-2 hide_head">
+              <div class="col-lg-12 col-md-12">
+                <div class="col-lg-12 col-md-12">
+                  <div class="wrapper_create_acc">
+                    <h1>Log In</h1>
+                    <a href="#">Don't have a login? <span class="login_txt">Create an account </span></a>
+                  </div>
+              </div>
+              </div>
+          </div>
+          <div class="row bg-white hidden_head" id="hidden_head">
+              <div class="col-lg-12 col-md-6">
+                  <a class="signup" href="#">
+                    <span class="signup-txt"> Sign Up
+                    <i class="fa Facebook"></i>
+                  </span>
+                </a>
+                  <a class="signup login" href="#">
+                    <span class="signup-txt">Log In
+                    <i class="fa Facebook"></i>
+                  </span>
+                </a>
+              </div>
+          </div>
+      
+          <div class="row bg-white p-5">
+            <div class="col-lg-4 col-md-4 text-center text-muted show-moblie" id="show-mobile">
+              <h4>Sign up with</h4>
+              <div class="sub_login">
+                <div class="login_info fb-icon">
+                <img src="image/fb.png" alt="">
+                  <h3>Facebook</h3>
+                </div>
+                <div class="login_info google-icon">
+                  <img src="image/google.png" alt="">
+                  <h3>Goggle</h3>
+                </div>
+              </div>
+              <div class="row-mobile"></div>
+              <div class="login_or_mobile">
+      or</div>
             </div>
+      
+      
+            <div class="col-lg-8 col-md-8" id="row-2">
+      
+              <h4 class="text-center text-muted">Create an account</h4>
+              <form action="/create-account" method="post">
+                <div class="mb-3">
+                  <!-- <label for="username" class="form-label">Username</label> -->
+                  <input type="text" class="form-control" id="username" name="username" required placeholder="Username">
+      
+                </div>
+                <div class="login_or">
+                  or
+                </div>
+                <div class="mb-3">
+                  <!-- <label for="password" class="form-label">Password</label> -->
+                  <input type="password" class="form-control" id="password" name="password" required placeholder="Password">
+                  <div class="check">
+                    <label class="main"><span class="text_main">Remember me</span>
+                      <input type="checkbox">
+                      <span class="geekmark"></span>
+                  </label>
+                </div>
+                </div>
+                <div class="btn-text">
+                  <button type="submit" class="btn-login-page btn-primary">Create Account</button>
+                  <a href="#" class="forgot-pass">Forgot your password?</a>
+                  <p>You must have cookies enabled to log in to wikiHow.
+                  </p>
+                </div>
+              </form>
+            </div>
+            <div class="col-lg-4 col-md-4 text-center text-muted hide-mobile">
+              <h4>Sign up with</h4>
+              <div class="sub_login">
+                <div class="login_info fb-icon">
+                <img src="image/fb.png" alt="">
+                  <h3>Facebook</h3>
+                </div>
+                <div class="login_info google-icon">
+                  <img src="image/google.png" alt="">
+                  <h3>Goggle</h3>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="row bg-white hidden_head" id="hidden_head">
-            <div class="col-lg-12 col-md-6">
-                <a class="signup" href="#"><label> Sign Up
-                  <i class="fa Facebook"></i>
-                </label></a>
-                <a class="login" href="#"><label>Log In
-                  <i class="fa Facebook"></i>
-                </label></a>
+      
+        <div class="col-lg-4">
+            <div class="aside-container">
+              <div class="btn-container bg-white p-4 mb-2">
+                <div class="btn-aside-wrap bg-white">
+                  <a href="#" class="btn-aside">Random Article</a>
+                  <a href="#" class="btn-aside">Random Article</a>
+                </div>
+              </div>
+              <!-- block cards -->
+              <div class="btn-aside-wrap bg-white p-3 mb-2">
+                <h4 class="quiz">Quizes</h4>
+                <div class="group-cards">
+      
+                    <div class="col-lg-6 p-1">
+                      <div class="card">
+                        <img class="card-img-top" src="https://www.wikihow.com/images/thumb/4/4e/Empath.png/-crop-127-140-127px-Empath.png.webp" alt="Card image cap">
+                        <p class="text-on-img">Am I a Narcissis or an empath Quiz</p>
+                        <div class="card-body">
+                          <a href="#" class="card-link">Take Quiz</a>
+                        </div>
+                      </div>
+                  </div>
+      
+                    <div class="col-lg-6 p-1">
+                      <div class="card">
+                        <img class="card-img-top" src="https://www.wikihow.com/images/thumb/4/4e/Empath.png/-crop-127-140-127px-Empath.png.webp" alt="Card image cap">
+                        <p class="text-on-img">Am I a Narcissis or an empath Quiz</p>
+                        <div class="card-body">
+                          <a href="#" class="card-link">Take Quiz</a>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="group-cards">
+      
+                    <div class="col-lg-6 p-1">
+                      <div class="card">
+                        <img class="card-img-top" src="https://www.wikihow.com/images/thumb/4/4e/Empath.png/-crop-127-140-127px-Empath.png.webp" alt="Card image cap">
+                        <p class="text-on-img">Am I a Narcissis or an empath Quiz</p>
+                        <div class="card-body">
+                          <a href="#" class="card-link">Take Quiz</a>
+                        </div>
+                      </div>
+                  </div>
+      
+                    <div class="col-lg-6 p-1">
+                      <div class="card">
+                        <img class="card-img-top" src="https://www.wikihow.com/images/thumb/4/4e/Empath.png/-crop-127-140-127px-Empath.png.webp" alt="Card image cap">
+                        <p class="text-on-img">Am I a Narcissis or an empath Quiz</p>
+                        <div class="card-body">
+                          <a href="#" class="card-link">Take Quiz</a>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="group-cards">
+      
+                    <div class="col-lg-6 p-1">
+                      <div class="card">
+                        <img class="card-img-top" src="https://www.wikihow.com/images/thumb/4/4e/Empath.png/-crop-127-140-127px-Empath.png.webp" alt="Card image cap">
+                        <p class="text-on-img">Am I a Narcissis or an empath Quiz</p>
+                        <div class="card-body">
+                          <a href="#" class="card-link">Take Quiz</a>
+                        </div>
+                      </div>
+                  </div>
+      
+                    <div class="col-lg-6 p-1">
+                      <div class="card">
+                        <img class="card-img-top" src="https://www.wikihow.com/images/thumb/4/4e/Empath.png/-crop-127-140-127px-Empath.png.webp" alt="Card image cap">
+                        <p class="text-on-img">Am I a Narcissis or an empath Quiz</p>
+                        <div class="card-body">
+                          <a href="#" class="card-link">Take Quiz</a>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <!-- block two -->
+              <div class="article-container bg-white p-3">
+                  <!-- <a href="#" class="btn-aside">Random Article</a>
+                  <a href="#" class="btn-aside">Random Article</a> -->
+                  <h4>Featured Articles</h4>
+                  <div class="group-cards">
+      
+                    <div class="col-lg-6 p-1">
+                      <div class="card">
+                        <img class="card-img-top" src="https://www.wikihow.com/images/thumb/4/4e/Empath.png/-crop-127-140-127px-Empath.png.webp" alt="Card image cap">
+                        <p class="text-on-img article-text">Am I a Narcissis or an empath Quiz</p>
+                      </div>
+                  </div>
+      
+                    <div class="col-lg-6 p-1">
+                      <div class="card">
+                        <img class="card-img-top" src="https://www.wikihow.com/images/thumb/4/4e/Empath.png/-crop-127-140-127px-Empath.png.webp" alt="Card image cap">
+                        <p class="text-on-img article-text">Am I a Narcissis or an empath Quiz</p>
+                      </div>
+                  </div>
+                </div>
+                  <div class="group-cards">
+      
+                    <div class="col-lg-6 p-1">
+                      <div class="card">
+                        <img class="card-img-top" src="https://www.wikihow.com/images/thumb/4/4e/Empath.png/-crop-127-140-127px-Empath.png.webp" alt="Card image cap">
+                        <p class="text-on-img article-text">Am I a Narcissis or an empath Quiz</p>
+                      </div>
+                  </div>
+      
+                    <div class="col-lg-6 p-1">
+                      <div class="card">
+                        <img class="card-img-top" src="https://www.wikihow.com/images/thumb/4/4e/Empath.png/-crop-127-140-127px-Empath.png.webp" alt="Card image cap">
+                        <p class="text-on-img article-text">Am I a Narcissis or an empath Quiz</p>
+                      </div>
+                  </div>
+                </div>
+              </div>
             </div>
-        </div>
-       
-
-        <div class="row bg-white p-5">
-
-          <div class="col-lg-4 col-md-4 text-center text-muted show-moblie" id="show-mobile">
-            <h4>Log in with</h4>
-            <div class="sub_login">
-              <div class="login_info" id="fb-icon">
-               <img src="image/fb.png" alt="">
-                <h3>Facebook</h3>
-              </div>
-              <div class="login_info" id="google-icon">
-                <img src="image/google.png" alt="">
-                <h3>Goggle</h3>
-              </div>
-            </div>
-            <div class="row-mobile"></div>
-            <div class="login_or_mobile">
-or</div>
-          </div>
-          
-          
-          <div class="col-lg-8 col-md-8" id="row-2">
-            
-            <h4 class="text-center text-muted">Create an account</h4>
-            <form action="/create-account" method="post">
-              <div class="mb-3">
-                <!-- <label for="username" class="form-label">Username</label> -->
-                <input type="text" class="form-control" id="username" name="username" required placeholder="Username">
-                
-              </div>
-              <div class="login_or">
-                or
-              </div>
-              <div class="mb-3">
-                <!-- <label for="password" class="form-label">Password</label> -->
-                <input type="password" class="form-control" id="password" name="password" required placeholder="Password">
-                <div class="check">
-                  <label class="main"><span class="text_main">Remember me</span>
-                    <input type="checkbox">
-                    <span class="geekmark"></span>
-                </label>
-              </div>
-              </div>
-              <div class="btn-text">
-                <button type="submit" class="btn btn-primary">Create Account</button>
-                <a href="#" class="forgot-pass">Forgot your password?</a>
-                <p>You must have cookies enabled to log in to wikiHow.
-                </p>
-              </div class="btn-text">
-            </form>
-          </div>
-          <div class="col-lg-4 col-md-4 text-center text-muted hide-mobile">
-            <h4>Sign up with</h4>
-            <div class="sub_login">
-              <div class="login_info" id="fb-icon">
-               <img  src="image/fb.png" alt="">
-                <h5>Facebook</h5>
-              </div>
-              <div class="login_info" id="google-icon">
-                <img  src="image/google.png" alt="">
-                <h5>Goggle</h5>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
-    
-      <div class="col-lg-4">
-          <div class="aside-container">
-            <div class="btn-container bg-white p-4 mb-2">
-              <div class="btn-aside-wrap bg-white">
-                <a href="#" class="btn-aside">Random Article</a>
-                <a href="#" class="btn-aside">Random Article</a>
-              </div>
-            </div>
-
-            <!-- block cards -->
-            <div class="btn-aside-wrap bg-white p-3 mb-2">
-              <h4 class="quiz">Quizes</h4>
-              <div class="group-cards">
-                
-                  <div class="col-lg-6 p-1">
-                    <div class="card">
-                      <img class="card-img-top" src="https://www.wikihow.com/images/thumb/4/4e/Empath.png/-crop-127-140-127px-Empath.png.webp" alt="Card image cap">
-                      <p class="text-on-img">Am I a Narcissis or an empath Quiz</p>
-                      <div class="card-body">
-                        <a href="#" class="card-link">Take Quiz</a>
-                      </div>
-                    </div>
-                </div>
-                
-                  <div class="col-lg-6 p-1">
-                    <div class="card">
-                      <img class="card-img-top" src="https://www.wikihow.com/images/thumb/4/4e/Empath.png/-crop-127-140-127px-Empath.png.webp" alt="Card image cap">
-                      <p class="text-on-img">Am I a Narcissis or an empath Quiz</p>
-                      <div class="card-body">
-                        <a href="#" class="card-link">Take Quiz</a>
-                      </div>
-                    </div>
-                </div>
-              </div>
-              <div class="group-cards">
-                
-                  <div class="col-lg-6 p-1">
-                    <div class="card">
-                      <img class="card-img-top" src="https://www.wikihow.com/images/thumb/4/4e/Empath.png/-crop-127-140-127px-Empath.png.webp" alt="Card image cap">
-                      <p class="text-on-img">Am I a Narcissis or an empath Quiz</p>
-                      <div class="card-body">
-                        <a href="#" class="card-link">Take Quiz</a>
-                      </div>
-                    </div>
-                </div>
-                
-                  <div class="col-lg-6 p-1">
-                    <div class="card">
-                      <img class="card-img-top" src="https://www.wikihow.com/images/thumb/4/4e/Empath.png/-crop-127-140-127px-Empath.png.webp" alt="Card image cap">
-                      <p class="text-on-img">Am I a Narcissis or an empath Quiz</p>
-                      <div class="card-body">
-                        <a href="#" class="card-link">Take Quiz</a>
-                      </div>
-                    </div>
-                </div>
-              </div>
-              <div class="group-cards">
-                
-                  <div class="col-lg-6 p-1">
-                    <div class="card">
-                      <img class="card-img-top" src="https://www.wikihow.com/images/thumb/4/4e/Empath.png/-crop-127-140-127px-Empath.png.webp" alt="Card image cap">
-                      <p class="text-on-img">Am I a Narcissis or an empath Quiz</p>
-                      <div class="card-body">
-                        <a href="#" class="card-link">Take Quiz</a>
-                      </div>
-                    </div>
-                </div>
-                
-                  <div class="col-lg-6 p-1">
-                    <div class="card">
-                      <img class="card-img-top" src="https://www.wikihow.com/images/thumb/4/4e/Empath.png/-crop-127-140-127px-Empath.png.webp" alt="Card image cap">
-                      <p class="text-on-img">Am I a Narcissis or an empath Quiz</p>
-                      <div class="card-body">
-                        <a href="#" class="card-link">Take Quiz</a>
-                      </div>
-                    </div>
-                </div>
-              </div>
-
-            </div>
-
-            <!-- block two -->
-            <div class="article-container bg-white p-3">
-                <!-- <a href="#" class="btn-aside">Random Article</a>
-                <a href="#" class="btn-aside">Random Article</a> -->
-                <h4>Featured Articles</h4>
-                <div class="group-cards">
-                
-                  <div class="col-lg-6 p-1">
-                    <div class="card">
-                      <img class="card-img-top" src="https://www.wikihow.com/images/thumb/4/4e/Empath.png/-crop-127-140-127px-Empath.png.webp" alt="Card image cap">
-                      <p class="text-on-img article-text">Am I a Narcissis or an empath Quiz</p>
-                    </div>
-                </div>
-                
-                  <div class="col-lg-6 p-1">
-                    <div class="card">
-                      <img class="card-img-top" src="https://www.wikihow.com/images/thumb/4/4e/Empath.png/-crop-127-140-127px-Empath.png.webp" alt="Card image cap">
-                      <p class="text-on-img article-text">Am I a Narcissis or an empath Quiz</p>
-                    </div>
-                </div>
-              </div>
-                <div class="group-cards">
-                
-                  <div class="col-lg-6 p-1">
-                    <div class="card">
-                      <img class="card-img-top" src="https://www.wikihow.com/images/thumb/4/4e/Empath.png/-crop-127-140-127px-Empath.png.webp" alt="Card image cap">
-                      <p class="text-on-img article-text">Am I a Narcissis or an empath Quiz</p>
-                    </div>
-                </div>
-                
-                  <div class="col-lg-6 p-1">
-                    <div class="card">
-                      <img class="card-img-top" src="https://www.wikihow.com/images/thumb/4/4e/Empath.png/-crop-127-140-127px-Empath.png.webp" alt="Card image cap">
-                      <p class="text-on-img article-text">Am I a Narcissis or an empath Quiz</p>
-                    </div>
-                </div>
-              </div>
-            </div>
-          </div>
       </div>
-    </div>
-    </div>
+    <!-- </section> -->
   </body>
   </html>

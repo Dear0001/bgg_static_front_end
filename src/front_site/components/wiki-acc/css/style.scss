@@ -1,176 +1,19 @@
-.form-wiki{
-    width: 800px;
-    margin: 0 auto;
-    border: 2px solid rgb(63, 207, 63);
-    .login-with{
-        margin-top: 10px;
-    }
-    .line-horiz{
-        border-right: 2px solid lightgray;
-    }
-    a{
-        text-decoration: none;
-        color: inherit;
-    }
-    .btn{
-        padding: 10px 20px;
-        background: none;
-        outline: none;
-    }
-    .login_or {
-        position: relative;
-        float: right;
-        right: -60px;
-        top: -20%;
-        background-color: #fff;
-        color: rgb(194, 194, 194);
-      }
-    // padding: 10px;
-    .btn-block{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: dodgerblue;
-        padding: 5px 7px;
-        border-radius: 8px;
-        margin-bottom: 10px;
-        .icon-fb{
-            max-width: 45px;
-            > img{
-                width: 100%;
-                overflow: hidden;
-            }
-        }
-        .fb-text{
-            font-size: 20px;
-            color: white;
-            margin-right: 30%;
-        }
-    }
-}
-.navabr-form{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    background-color: lightgreen;
-    .btn:hover{
-        background-color: rgb(60, 173, 98);
-    }
-    
-}
-form {
-    .form-control {
-      border: 2px solid #97ba78;
-      border-radius: 0;
-    }
-    .form-control:focus,
-    .form-controll:active {
-      border: 2px solid #93b874;
-    }
-    .check {
-      display: flex;
-      padding-top: 10px;
-    }
-    .main {
-      display: block;
-      position: relative;
-      padding-left: 45px;
-
-      cursor: pointer;
-      font-size: 20px;
-    }
-    input{
-        margin: 10px 0;
-    }
-    /* Hide the default checkbox */
-    input[type="checkbox"] {
-      visibility: hidden;
-    }
-    .main{
-        display: flex;
-    }
-    /* Creating a custom checkbox
-  based on demand */
-    .geekmark {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 25px;
-      width: 25px;
-      border: 2px solid #93b874;
-      background-color: #9c909000;
-    }
-  
-    /* Specify the background color to be
-  shown when checkbox is checked */
-    .main input:checked ~ .geekmark {
-      background-color: #93b874;
-    }
-  
-    /* Checkmark to be shown in checkbox */
-    /* It is not be shown when not checked */
-    .geekmark:after {
-      content: "";
-      position: absolute;
-      display: none;
-    }
-  
-    /* Display checkmark when checked */
-    .main input:checked ~ .geekmark:after {
-      display: block;
-    }
-    .block_1{
-      margin-left: 10px !important;
-    }
-    .main .geekmark:after {
-      left: 8px;
-      bottom: 5px;
-      width: 6px;
-      height: 12px;
-      border: solid white;
-      border-width: 0 4px 4px 0;
-      -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-      transform: rotate(45deg);
-    }
-    .btn-text{
-        display: flex;
-        flex-direction: column;
-        .btn-primary{
-            background-color: #93b874;
-            outline: none;
-            border: none;
-        }
-    }
-
-}
+$color_1: inherit;
+$color_2: rgb(194, 194, 194);
+$color_3: white;
+$background-color_1: #fff;
+$background-color_2: dodgerblue;
+$background-color_3: lightgreen;
+$background-color_4: rgb(60, 173, 98);
+$background-color_5: rgba(156, 144, 144, 0);
+$background-color_6: #93b874;
+$background-color_7: rgb(0, 0, 0);
+$background-color_8: rgba(0, 0, 0, 0.4);
+$background-color_9: #fefefe;
 
 /* popup */
 /* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
 /* Modal Content */
-.modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  /* padding: 20px; */
-  border: 2px solid #93b874;
-  width: 45%;
-}
-
 /* The Close Button */
 /* .close {
   color: #aaaaaa;
@@ -178,9 +21,177 @@ form {
   font-size: 28px;
   font-weight: bold;
 } */
+/*# sourceMappingURL=style.css.map */
+.form-wiki {
+	width: 800px;
+	margin: 0 auto;
+	border: 2px solid rgb(63, 207, 63);
+	.close {
+		&:hover {
+			text-decoration: none;
+			cursor: pointer;
+		}
+		&:focus {
+			text-decoration: none;
+			cursor: pointer;
+		}
+	}
+	.login-with {
+		margin-top: 10px !important;
+	}
+	.line-horiz {
+		border-right: 2px solid lightgray !important;
+	}
+	a {
+		text-decoration: none;
+		color: $color_1;
+	}
+	.btn-concel {
+		padding: 10px 20px !important;
+		background: none !important;
+		outline: none;
+	}
+	.login_or {
+		position: relative;
+		float: right;
+		right: -60px;
+		top: -20%;
+		background-color: $background-color_1;
+		color: $color_2;
+	}
+	.btn-block {
+		display: flex !important;
+		justify-content: space-between;
+		align-items: center;
+		background-color: $background-color_2;
+		padding: 5px 7px;
+		border-radius: 8px;
+		margin-bottom: 10px;
+		.icon-fb {
+			max-width: 45px !important;
+			>img {
+				width: 100%;
+				overflow: hidden;
+			}
+		}
+		.fb-text {
+			font-size: 20px;
+			color: $color_3;
+			margin-right: 30%;
+		}
+	}
 
-.close:hover,
-.close:focus {
-  text-decoration: none;
-  cursor: pointer;
+	.navabr-form {
+		display: flex !important;
+		justify-content: space-between;
+		align-items: center;
+		text-align: center;
+		background-color: $background-color_3;
+		.btn {
+			&:hover {
+				background-color: $background-color_4;
+			}
+		}
+	}
+	form {
+		.form-control {
+			border: 2px solid #97ba78;
+			border-radius: 0;
+			&:focus {
+				border: 2px solid #93b874;
+			}
+		}
+		.form-controll {
+			&:active {
+				border: 2px solid #93b874;
+			}
+		}
+		.check {
+			display: flex !important;
+			padding-top: 10px;
+		}
+		.main {
+			display: block;
+			position: relative;
+			padding-left: 45px;
+			cursor: pointer;
+			font-size: 20px;
+			display: flex !important;
+			input {
+				&:checked {
+					~ {
+						.geekmark {
+							background-color: $background-color_6;
+							&:after {
+								display: block;
+							}
+						}
+					}
+				}
+			}
+			.geekmark {
+				&:after {
+					left: 8px;
+					bottom: 5px;
+					width: 6px;
+					height: 12px;
+					border: solid white;
+					border-width: 0 4px 4px 0;
+					transform: rotate(45deg);
+				}
+			}
+		}
+		input {
+			margin: 10px 0;
+		}
+		input[type=checkbox] {
+			visibility: hidden;
+		}
+		.geekmark {
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 25px;
+			width: 25px;
+			border: 2px solid #93b874;
+			background-color: $background-color_5;
+			&:after {
+				content: "";
+				position: absolute;
+				display: none;
+			}
+		}
+		.block_1 {
+			margin-left: 10px !important;
+		}
+		.btn-text {
+			display: flex !important;
+			flex-direction: column;
+			.btn-primary {
+				background-color: $background-color_6;
+				outline: none;
+				border: none;
+			}
+		}
+	}
 }
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 100px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: $background-color_7;
+	background-color: $background-color_8;
+}
+.modal-content {
+	background-color: $background-color_9;
+	margin: auto;
+	border: 2px solid #93b874;
+	width: 45%;
+}
+

@@ -1,34 +1,42 @@
-#edit-main {
+
+.edit-main {
   background-color: #e6eee0;
 }
+.edit-main .editorial a:active {
+  text-decoration: underline;
+}
+.edit-main .editorial a:hover {
+  text-decoration: underline;
+}
+
 @media only screen and (min-width: 992px) {
-  #edit-main .title h4 {
+  .edit-main .title h4 {
     font-size: 2rem;
     font-weight: 500;
   }
-  #edit-main .title p {
+  .edit-main .title p {
     font-size: 24px;
   }
-  #edit-main .alticle {
+  .edit-main .alticle {
     padding-top: 10%;
     justify-content: center;
   }
-  #edit-main .alticle .text-icon {
+  .edit-main .alticle .text-icon {
     display: flex;
     flex-direction: row;
     align-items: center;
   }
-  #edit-main .alticle .text-icon .icon img {
+  .edit-main .alticle .text-icon .icon img {
     width: 56px;
     height: 53px;
   }
-  #edit-main .alticle .text-icon .text {
+  .edit-main .alticle .text-icon .text {
     padding-left: 24px;
   }
-  #edit-main .alticle .editorial-mobile {
+  .edit-main .alticle .editorial-mobile {
     display: none;
   }
-  #edit-main .editorial {
+  .edit-main .editorial {
     width: 100%;
     background-color: #94b778;
     border-radius: 30px;
@@ -36,7 +44,7 @@
     justify-content: center;
     align-items: center;
   }
-  #edit-main .editorial a {
+  .edit-main .editorial a {
     text-align: center;
     text-decoration: none;
     color: #fbfbfa;
@@ -45,39 +53,35 @@
     padding: 5px 20px;
   }
 }
-#edit-main .editorial a:active,
-#edit-main .editorial a:hover {
-  text-decoration: underline;
-}
 @media only screen and (max-width: 992px) and (min-width: 576px) {
-  #edit-main .title h4 {
+  .edit-main .title h4 {
     font-size: 1.2rem;
     font-weight: 500;
   }
-  #edit-main .title p {
+  .edit-main .title p {
     font-size: 15px;
   }
-  #edit-main .alticle {
+  .edit-main .alticle {
     padding-top: 12%;
   }
-  #edit-main .alticle .text-icon {
+  .edit-main .alticle .text-icon {
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
-  #edit-main .alticle .text-icon .icon img {
+  .edit-main .alticle .text-icon .icon img {
     padding-top: 5px;
     width: 56px;
     height: 53px;
   }
-  #edit-main .alticle .editorial {
+  .edit-main .alticle .editorial {
     display: flex;
     width: 100%;
     background-color: #94b778;
     border-radius: 30px;
     justify-content: center;
   }
-  #edit-main .alticle .editorial a {
+  .edit-main .alticle .editorial a {
     text-align: center;
     text-decoration: none;
     color: #fbfbfa;
@@ -85,17 +89,17 @@
     font-size: 1.8rem;
     padding: 5px 20px;
   }
-  #edit-main .alticle .editorial-mobile {
+  .edit-main .alticle .editorial-mobile {
     display: none;
   }
-  #edit-main .editorial {
+  .edit-main .editorial {
     display: flex;
     width: 100%;
     background-color: #94b778;
     border-radius: 30px;
     justify-content: center;
   }
-  #edit-main .editorial a {
+  .edit-main .editorial a {
     text-align: center;
     text-decoration: none;
     color: #fbfbfa;
@@ -105,42 +109,42 @@
   }
 }
 @media only screen and (max-width: 574px) {
-  #edit-main .title {
+  .edit-main .title {
     margin-bottom: 15px;
   }
-  #edit-main .title h4 {
+  .edit-main .title h4 {
     text-align: center;
     font-size: 1.8rem;
     font-weight: 500;
   }
-  #edit-main .title p {
+  .edit-main .title p {
     text-align: center;
     font-weight: 400;
     font-size: 1.5rem;
   }
-  #edit-main .alticle {
+  .edit-main .alticle {
     padding-top: 5%;
     margin: 8px px;
   }
-  #edit-main .alticle .text-icon {
+  .edit-main .alticle .text-icon {
     margin-bottom: 10px;
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
-  #edit-main .alticle .text-icon .icon {
+  .edit-main .alticle .text-icon .icon {
     align-items: center;
   }
-  #edit-main .alticle .text-icon .icon img {
+  .edit-main .alticle .text-icon .icon img {
     width: 56px;
     height: 56px;
   }
-  #edit-main .alticle .text-icon .text {
+  .edit-main .alticle .text-icon .text {
     padding-left: 8px;
     font-size: 18px;
     font-weight: 400;
   }
-  #edit-main .alticle .editorial-mobile {
+  .edit-main .alticle .editorial-mobile {
     width: 100%;
     background-color: #94b778;
     border-radius: 30px;
@@ -148,7 +152,7 @@
     display: flex;
     justify-content: center;
   }
-  #edit-main .alticle .editorial-mobile a {
+  .edit-main .alticle .editorial-mobile a {
     align-items: center;
     text-align: center;
     text-decoration: none;
@@ -157,7 +161,7 @@
     font-size: 1.3rem;
     padding: 3px 5px;
   }
-  #edit-main .editorial {
+  .edit-main .editorial {
     display: none;
   }
 }/*# sourceMappingURL=style.css.map */

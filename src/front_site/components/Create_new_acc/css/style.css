@@ -2,23 +2,24 @@ body {
   background-color: #f3f3f3;
 }
 
-a {
+.wrapper_create_acc a {
   display: flex;
   float: right;
   text-decoration: none;
   color: rgb(71, 71, 71);
 }
-a span:hover,
-a span:visited {
+.wrapper_create_acc a .login_txt:hover {
   text-decoration: underline;
   cursor: pointer;
 }
-
-span {
+.wrapper_create_acc a .login_txt:visited {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.wrapper_create_acc .login_txt {
   padding-left: 5px;
 }
-
-h1 {
+.wrapper_create_acc h1 {
   margin-bottom: -10px;
 }
 
@@ -26,19 +27,12 @@ h1 {
   border-right: 2px solid rgb(194, 194, 194);
 }
 
-.ttext_main {
+.text_main {
   width: 200px !important;
 }
 
 form {
-  /* Hide the default checkbox */
-  /* Creating a custom checkbox
-  based on demand */
-  /* Specify the background color to be
-  shown when checkbox is checked */
-  /* Checkmark to be shown in checkbox */
-  /* It is not be shown when not checked */
-  /* Display checkmark when checked */
+  z-index: inherit;
 }
 form .form-control {
   width: 94%;
@@ -46,7 +40,9 @@ form .form-control {
   border: 2px solid #97ba78;
   border-radius: 0;
 }
-form .form-control:focus,
+form .form-control:focus {
+  border: 2px solid #93b874;
+}
 form .form-controll:active {
   border: 2px solid #93b874;
 }
@@ -62,6 +58,21 @@ form .main {
   cursor: pointer;
   font-size: 20px;
 }
+form .main input:checked ~ .geekmark {
+  background-color: #93b874;
+}
+form .main input:checked ~ .geekmark:after {
+  display: block;
+}
+form .main .geekmark:after {
+  left: 8px;
+  bottom: 5px;
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 4px 4px 0;
+  transform: rotate(45deg);
+}
 form input[type=checkbox] {
   visibility: hidden;
 }
@@ -74,28 +85,13 @@ form .geekmark {
   border: 2px solid #93b874;
   background-color: rgba(156, 144, 144, 0);
 }
-form .main input:checked ~ .geekmark {
-  background-color: #93b874;
-}
 form .geekmark:after {
   content: "";
   position: absolute;
   display: none;
 }
-form .main input:checked ~ .geekmark:after {
-  display: block;
-}
 form .block_1 {
   margin-left: 10px !important;
-}
-form .main .geekmark:after {
-  left: 8px;
-  bottom: 5px;
-  width: 6px;
-  height: 12px;
-  border: solid white;
-  border-width: 0 4px 4px 0;
-  transform: rotate(45deg);
 }
 form .login_or {
   position: relative;
@@ -106,12 +102,7 @@ form .login_or {
   color: rgb(194, 194, 194);
 }
 
-@media screen and (min-width: 992px) {
-  .sub_login {
-    padding-left: 35px;
-  }
-}
-.btn {
+.btn__create {
   background-color: #97ba78;
   width: 94%;
   color: white;
@@ -139,22 +130,75 @@ form .login_or {
   margin-left: -20px;
   margin-right: 20px;
 }
-.sub_login #fb-icon {
+.sub_login .fb-icon {
   background-color: #365494;
   border: solid 1px #365494;
   border-radius: 5px;
 }
-.sub_login #google-icon {
+.sub_login .google-icon {
   background-color: #3f82f7;
   border: solid 1px #3f82f7;
   border-radius: 5px;
 }
-.sub_login #google-icon img {
+.sub_login .google-icon img {
   margin-left: -20px;
   margin-right: 20px;
   width: 90px;
 }
 
+.aside-new-acc .btn__create {
+  background-color: #97ba78;
+  width: 94%;
+  color: white;
+  border-color: #97ba78;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.aside-new-acc .submit_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+.aside-new-acc .submit_btn span {
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+}
+.aside-new-acc .submit_btn #btn-2 {
+  width: 50%;
+  background-color: #FFCF5A;
+}
+.aside-new-acc .submit_btn #btn-2:hover {
+  width: 70%;
+  background-color: #FFA00A;
+  transition: all 0.5s ease-out;
+}
+.aside-new-acc .submit_btn #btn-3:visited {
+  width: 70%;
+  background-color: #FFA00A;
+  transition: all 0.5s ease-out;
+}
+.aside-new-acc ul {
+  list-style-type: none;
+}
+.aside-new-acc ul .image-check {
+  background: url(../image/check.png) 0 0/18px no-repeat;
+  background-position: left;
+  margin-bottom: 20px;
+  line-height: 18px;
+  color: #545454;
+  padding-left: 28px;
+  font-size: 1.1em;
+  font-size: 17px;
+}
+
+@media screen and (min-width: 992px) {
+  .sub_login {
+    padding-left: 35px;
+  }
+}
 @media only screen and (max-width: 992px) and (min-width: 768px) {
   .login_info {
     display: flex;
@@ -190,19 +234,7 @@ form .login_or {
     border-left: none;
     padding: 5px;
   }
-  .container .signup label {
-    margin: 0 auto;
-  }
-  .container .login {
-    position: relative;
-    top: 0;
-    float: left;
-    border: 1px solid rgb(180, 180, 180);
-    width: 50%;
-    border-right: none;
-    padding: 5px;
-  }
-  .container .login label {
+  .container .signup .signup-txt {
     margin: 0 auto;
   }
   .container .login_or {
@@ -230,45 +262,10 @@ form .login_or {
   .container .form-control {
     width: 100%;
   }
-  .container .btn {
+  .container .btn__create {
     width: 100%;
   }
   .container .hide-mobile {
     display: none;
   }
-}
-.submit_btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 20px;
-}
-.submit_btn span {
-  color: white;
-  font-weight: 700;
-  font-size: 20px;
-}
-.submit_btn #btn-2 {
-  width: 50%;
-  background-color: #FFCF5A;
-}
-.submit_btn #btn-2:hover, .submit_btn #btn-3:visited {
-  width: 70%;
-  background-color: #FFA00A;
-  transition: all 0.5s ease-out;
-}
-
-ul {
-  list-style-type: none;
-}
-ul .image-check {
-  background: url(../image/check.png) 0 0/18px no-repeat;
-  background-position: left;
-  margin-bottom: 20px;
-  line-height: 18px;
-  color: #545454;
-  padding-left: 28px;
-  font-size: 1.1em;
-  font-size: 17px;
 }/*# sourceMappingURL=style.css.map */

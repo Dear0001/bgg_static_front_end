@@ -1,18 +1,18 @@
-#atlantic-main {
+.atlantic-main {
   background-color: #e6eee0;
   padding-top: 30px;
   padding-bottom: 25px;
 }
-#atlantic-main .title {
+.atlantic-main .title {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-#atlantic-main .title h3 {
+.atlantic-main .title h3 {
   text-align: center;
   font-weight: 500;
 }
-#atlantic-main .title a {
+.atlantic-main .title a {
   text-align: center;
   margin-top: 8px;
   margin-bottom: 65px;
@@ -21,7 +21,7 @@
   color: #85a46b;
   font-weight: 400;
 }
-#atlantic-main .card {
+.atlantic-main .card {
   background-color: #c6d9b9;
   max-height: 600px;
   display: flex;
@@ -29,71 +29,68 @@
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 576px) {
-  #atlantic-main .card {
-    margin-bottom: 50px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-#atlantic-main .card .wrap-text {
+.atlantic-main .card .wrap-text {
   position: relative;
   top: -40px;
 }
-#atlantic-main .card img {
+.atlantic-main .card img {
   position: relative;
   top: -47px;
   border-radius: 50%;
   width: 95px;
   border-radius: 47px;
 }
-#atlantic-main .card span {
+.atlantic-main .card span {
   position: relative;
   top: -30px;
   color: #6e8a57;
   font-size: 15px;
   font-weight: bold;
 }
-#atlantic-main .text {
+.atlantic-main .text {
   font-size: 23px;
   font-weight: 500;
   padding: 8px 20px;
   margin-bottom: 0;
 }
-@media (max-width: 992px) and (min-width: 767px) {
-  #atlantic-main .text {
-    font-size: 16px;
-    margin: 0;
-    padding: 0;
-  }
-}
-@media screen and (max-width: 576px) {
-  #atlantic-main .text {
-    font-size: 15px;
-    padding: 5px 28px;
-  }
-}
-#atlantic-main .text-2 {
+.atlantic-main .text-2 {
   margin-top: 5px;
   margin-bottom: 0;
   padding-left: 15px;
   font-size: 18px;
   font-weight: 300;
 }
-@media screen and (max-width: 576px) {
-  #atlantic-main .text-2 {
-    font-size: 15px;
-    padding: 5px 28px;
-  }
-}
-#atlantic-main .text-3 {
+.atlantic-main .text-3 {
   margin-top: 0px;
   margin-left: 27px;
   font-size: 16px;
   font-weight: 300;
 }
+
+@media (max-width: 576px) {
+  .atlantic-main .card {
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 992px) and (min-width: 767px) {
+  .atlantic-main .text {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+  }
+}
 @media screen and (max-width: 576px) {
-  #atlantic-main .text-3 {
+  .atlantic-main .text {
+    font-size: 15px;
+    padding: 5px 28px;
+  }
+  .atlantic-main .text-2 {
+    font-size: 15px;
+    padding: 5px 28px;
+  }
+  .atlantic-main .text-3 {
     font-size: 15px;
     padding: 5px 28px;
   }

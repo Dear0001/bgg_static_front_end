@@ -1,34 +1,35 @@
-#sub-main {
+.sub-main {
   box-sizing: border-box;
   background-color: #e6eee0;
 }
+
 @media screen and (max-width: 767px) {
-  #sub-main {
+  .sub-main {
     background-color: #fff;
     margin: 0;
     padding: 0;
   }
 }
 @media (max-width: 767px) {
-  #sub-main .cnt-wraper {
+  .sub-main .cnt-wraper {
     display: none;
   }
 }
 @media only screen and (min-width: 992px) {
-  #sub-main .cnt-wraper {
+  .sub-main .cnt-wraper {
     padding-top: 50px;
     height: 485px;
   }
-  #sub-main .cnt-wraper h3 {
+  .sub-main .cnt-wraper h3 {
     font-size: 3.2rem;
   }
-  #sub-main .cnt-wraper p {
+  .sub-main .cnt-wraper p {
     font-size: 1.5rem;
   }
-  #sub-main .cnt-wraper .search-ipad {
+  .sub-main .cnt-wraper .search-ipad {
     margin: 5px 5px;
   }
-  #sub-main .cnt-wraper .search-ipad .wrap-search {
+  .sub-main .cnt-wraper .search-ipad .wrap-search {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,50 +39,49 @@
     background-color: #fff;
     border-radius: 10px;
   }
-  #sub-main .cnt-wraper .search-ipad .wrap-search #search-ip {
+  .sub-main .cnt-wraper .search-ipad .wrap-search .search-ip {
     width: 90%;
     height: 95%;
     border-radius: 10px;
     outline: none;
     border: hidden;
   }
-  #sub-main .cnt-wraper .search-ipad .wrap-search ::-webkit-input-placeholder {
-    /* Edge */
+  .sub-main .cnt-wraper .search-ipad .wrap-search::-webkit-input-placeholder {
     color: rgb(140, 137, 137);
     font-size: 30px;
   }
-  #sub-main .cnt-wraper .search-ipad .wrap-search input:focus {
+  .sub-main .cnt-wraper .search-ipad .wrap-search input:focus {
     color: rgb(140, 137, 137);
     padding-left: 10px;
     font-size: 30px;
   }
-  #sub-main .cnt-wraper .search-ipad .wrap-search i {
+  .sub-main .cnt-wraper .search-ipad .wrap-search i {
     padding-right: 5px;
     color: rgb(124, 121, 121);
     font-size: 35px;
   }
-  #sub-main .cnt-wraper .image {
+  .sub-main .cnt-wraper .image {
     padding-left: 0;
   }
-  #sub-main .cnt-wraper .image img {
+  .sub-main .cnt-wraper .image img {
     width: 571px;
   }
 }
 @media only screen and (max-width: 992px) and (min-width: 767px) {
-  #sub-main .cnt-wraper {
+  .sub-main .cnt-wraper {
     padding-top: 50px;
     height: 327px;
   }
-  #sub-main .cnt-wraper h3 {
+  .sub-main .cnt-wraper h3 {
     font-size: 1.8rem;
   }
-  #sub-main .cnt-wraper p {
-    font-size: 1.025 rem;
+  .sub-main .cnt-wraper p {
+    font-size: 1.025rem;
   }
-  #sub-main .cnt-wraper .search-ipad {
+  .sub-main .cnt-wraper .search-ipad {
     margin: 5px 5px;
   }
-  #sub-main .cnt-wraper .search-ipad .wrap-search {
+  .sub-main .cnt-wraper .search-ipad .wrap-search {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,47 +91,46 @@
     background-color: #fff;
     border-radius: 10px;
   }
-  #sub-main .cnt-wraper .search-ipad .wrap-search #search-ip {
+  .sub-main .cnt-wraper .search-ipad .wrap-search .search-ip {
     width: 90%;
     height: 95%;
     border-radius: 10px;
     outline: none;
     border: hidden;
   }
-  #sub-main .cnt-wraper .search-ipad .wrap-search ::-webkit-input-placeholder {
-    /* Edge */
+  .sub-main .cnt-wraper .search-ipad .wrap-search::-webkit-input-placeholder {
     color: rgb(140, 137, 137);
     font-size: 23px;
   }
-  #sub-main .cnt-wraper .search-ipad .wrap-search input:focus {
+  .sub-main .cnt-wraper .search-ipad .wrap-search input:focus {
     color: rgb(140, 137, 137);
     padding-left: 10px;
     font-size: 23px;
   }
-  #sub-main .cnt-wraper .search-ipad .wrap-search i {
+  .sub-main .cnt-wraper .search-ipad .wrap-search i {
     padding-right: 5px;
     color: rgb(124, 121, 121);
     padding-left: 5px;
     font-size: 27px;
   }
-  #sub-main .cnt-wraper .image {
+  .sub-main .cnt-wraper .image {
     padding-top: 25px;
     padding-left: 0;
   }
-  #sub-main .cnt-wraper .image img {
+  .sub-main .cnt-wraper .image img {
     width: 331px;
   }
 }
 @media screen and (min-width: 767px) {
-  #sub-main .mobile-wrap {
+  .sub-main .mobile-wrap {
     display: none;
   }
-  #sub-main .search-phone {
+  .sub-main .search-phone {
     display: none;
   }
 }
 @media only screen and (max-width: 767px) {
-  #sub-main .mobile-wrap {
+  .sub-main .mobile-wrap {
     position: relative;
     border-top: none;
     width: 100%;
@@ -140,21 +139,21 @@
     padding-left: 15px;
     padding-right: 15px;
   }
-  #sub-main .mobile-wrap picture {
+  .sub-main .mobile-wrap picture {
     float: right;
     margin-top: 0;
     max-width: 276px;
   }
-  #sub-main .mobile-wrap picture img {
+  .sub-main .mobile-wrap picture img {
     margin-top: 0;
     margin: 5px 5px;
     width: 186px;
   }
-  #sub-main .mobile-wrap .content {
+  .sub-main .mobile-wrap .content {
     margin-top: 15px;
     padding-left: 0;
   }
-  #sub-main .mobile-wrap .content h1 {
+  .sub-main .mobile-wrap .content h1 {
     font-size: 26px;
     line-height: normal;
     margin-bottom: 25px;
@@ -163,25 +162,25 @@
     font-weight: bold;
     text-align: left;
   }
-  #sub-main .mobile-wrap .content p {
+  .sub-main .mobile-wrap .content p {
     margin-bottom: -35px;
     text-align: left;
     width: 198px;
     color: #444f45;
     font-size: 20px;
   }
-  #sub-main .search {
+  .sub-main .search {
     background-color: #8abf62;
     width: 100%;
     max-height: 75px;
     display: flex;
     padding: 6px 5px;
   }
-  #sub-main .search-phone {
+  .sub-main .search-phone {
     margin: 0 auto;
     width: 95%;
   }
-  #sub-main .search-phone .wrap-search {
+  .sub-main .search-phone .wrap-search {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -190,7 +189,7 @@
     background-color: #fff;
     border-radius: 10px;
   }
-  #sub-main .search-phone .wrap-search #search-ip {
+  .sub-main .search-phone .wrap-search .search-ip {
     margin: 10px 5px;
     width: 100%;
     height: 90%;
@@ -198,16 +197,15 @@
     outline: none;
     border: hidden;
   }
-  #sub-main .search-phone .wrap-search ::-webkit-input-placeholder {
-    /* Edge */
+  .sub-main .search-phone .wrap-search::-webkit-input-placeholder {
     color: rgb(140, 137, 137);
     font-size: 23px;
   }
-  #sub-main .search-phone .wrap-search input:focus {
+  .sub-main .search-phone .wrap-search input:focus {
     color: rgb(140, 137, 137);
     font-size: 23px;
   }
-  #sub-main .search-phone .wrap-search i {
+  .sub-main .search-phone .wrap-search i {
     color: rgb(124, 121, 121);
     padding-left: 5px;
     font-size: 27px;

@@ -1,21 +1,40 @@
+/* popup */
+/* The Modal (background) */
+/* Modal Content */
+/* The Close Button */
+/* .close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+} */
+
 .form-wiki {
   width: 800px;
   margin: 0 auto;
   border: 2px solid rgb(63, 207, 63);
 }
+.form-wiki .close:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+.form-wiki .close:focus {
+  text-decoration: none;
+  cursor: pointer;
+}
 .form-wiki .login-with {
-  margin-top: 10px;
+  margin-top: 10px !important;
 }
 .form-wiki .line-horiz {
-  border-right: 2px solid lightgray;
+  border-right: 2px solid lightgray !important;
 }
 .form-wiki a {
   text-decoration: none;
   color: inherit;
 }
-.form-wiki .btn {
-  padding: 10px 20px;
-  background: none;
+.form-wiki .btn-concel {
+  padding: 10px 20px !important;
+  background: none !important;
   outline: none;
 }
 .form-wiki .login_or {
@@ -27,7 +46,7 @@
   color: rgb(194, 194, 194);
 }
 .form-wiki .btn-block {
-  display: flex;
+  display: flex !important;
   justify-content: space-between;
   align-items: center;
   background-color: dodgerblue;
@@ -36,7 +55,7 @@
   margin-bottom: 10px;
 }
 .form-wiki .btn-block .icon-fb {
-  max-width: 45px;
+  max-width: 45px !important;
 }
 .form-wiki .btn-block .icon-fb > img {
   width: 100%;
@@ -47,80 +66,45 @@
   color: white;
   margin-right: 30%;
 }
-
-.navabr-form {
-  display: flex;
+.form-wiki .navabr-form {
+  display: flex !important;
   justify-content: space-between;
   align-items: center;
   text-align: center;
   background-color: lightgreen;
 }
-.navabr-form .btn:hover {
+.form-wiki .navabr-form .btn:hover {
   background-color: rgb(60, 173, 98);
 }
-
-form {
-  /* Hide the default checkbox */
-  /* Creating a custom checkbox
-  based on demand */
-  /* Specify the background color to be
-  shown when checkbox is checked */
-  /* Checkmark to be shown in checkbox */
-  /* It is not be shown when not checked */
-  /* Display checkmark when checked */
-}
-form .form-control {
+.form-wiki form .form-control {
   border: 2px solid #97ba78;
   border-radius: 0;
 }
-form .form-control:focus,
-form .form-controll:active {
+.form-wiki form .form-control:focus {
   border: 2px solid #93b874;
 }
-form .check {
-  display: flex;
+.form-wiki form .form-controll:active {
+  border: 2px solid #93b874;
+}
+.form-wiki form .check {
+  display: flex !important;
   padding-top: 10px;
 }
-form .main {
+.form-wiki form .main {
   display: block;
   position: relative;
   padding-left: 45px;
   cursor: pointer;
   font-size: 20px;
+  display: flex !important;
 }
-form input {
-  margin: 10px 0;
-}
-form input[type=checkbox] {
-  visibility: hidden;
-}
-form .main {
-  display: flex;
-}
-form .geekmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 25px;
-  width: 25px;
-  border: 2px solid #93b874;
-  background-color: rgba(156, 144, 144, 0);
-}
-form .main input:checked ~ .geekmark {
+.form-wiki form .main input:checked ~ .geekmark {
   background-color: #93b874;
 }
-form .geekmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-form .main input:checked ~ .geekmark:after {
+.form-wiki form .main input:checked ~ .geekmark:after {
   display: block;
 }
-form .block_1 {
-  margin-left: 10px !important;
-}
-form .main .geekmark:after {
+.form-wiki form .main .geekmark:after {
   left: 8px;
   bottom: 5px;
   width: 6px;
@@ -129,50 +113,56 @@ form .main .geekmark:after {
   border-width: 0 4px 4px 0;
   transform: rotate(45deg);
 }
-form .btn-text {
-  display: flex;
+.form-wiki form input {
+  margin: 10px 0;
+}
+.form-wiki form input[type=checkbox] {
+  visibility: hidden;
+}
+.form-wiki form .geekmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border: 2px solid #93b874;
+  background-color: rgba(156, 144, 144, 0);
+}
+.form-wiki form .geekmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.form-wiki form .block_1 {
+  margin-left: 10px !important;
+}
+.form-wiki form .btn-text {
+  display: flex !important;
   flex-direction: column;
 }
-form .btn-text .btn-primary {
+.form-wiki form .btn-text .btn-primary {
   background-color: #93b874;
   outline: none;
   border: none;
 }
 
-/* popup */
-/* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
-/* Modal Content */
 .modal-content {
   background-color: #fefefe;
   margin: auto;
-  /* padding: 20px; */
   border: 2px solid #93b874;
   width: 45%;
-}
-
-/* The Close Button */
-/* .close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-} */
-.close:hover,
-.close:focus {
-  text-decoration: none;
-  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

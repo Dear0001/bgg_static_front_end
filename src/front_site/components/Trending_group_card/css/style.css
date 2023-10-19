@@ -5,7 +5,7 @@
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.container .check {
+.container .check__exspert {
   border: 1px solid #6f8461;
   border-radius: 7px;
   background: #ffffff url(../image/check-expert.png) 2px center/11px no-repeat;
@@ -22,22 +22,22 @@
   border: 3px solid #89ac6c;
 }
 .container .card-hover:hover img {
-  scale: 1;
+  transform: scale(1);
 }
 .container .card-hover:hover .card-text {
   font-size: 16px;
-  scale: 1;
+  transform: scale(1);
   color: #89ac6c;
 }
-.container .card-hover:hover .check {
-  scale: 1.1;
+.container .card-hover:hover .check__exspert {
+  transform: scale(1.1);
 }
 
 @media only screen and (max-width: 992px) and (min-width: 768px) {
   .container .cards-wrap {
     padding-top: 10px;
   }
-  .container .check {
+  .container .check__exspert {
     border: 1px solid #6f8461;
     border-radius: 7px;
     background: #ffffff url(../image/check-expert.png) 2px center/11px no-repeat;
@@ -55,7 +55,7 @@
   .container .cards-wrap {
     padding-top: 10px;
   }
-  .container .check {
+  .container .check__exspert {
     border: 1px solid #6f8461;
     border-radius: 7px;
     background: #ffffff url(../image/check-expert.png) 2px center/11px no-repeat;

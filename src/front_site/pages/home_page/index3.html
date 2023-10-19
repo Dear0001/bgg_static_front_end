@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -26,7 +27,6 @@
     <link rel="stylesheet" href="../../components/section-cards/css/style.css">
     <link rel="stylesheet" href="../../components/wiki-acc/css/style.css">
     <link rel="stylesheet" href="../register_page/css/register_page.css">
-    <title>Document</title>
   </head>
   <body>
     <div class="container-fluid">
@@ -34,7 +34,7 @@
       <div class="row">
         <div class="col-lg-12">
             <!-- navbar -->
-            <head>
+            <header>
               <div class="nav_bar_component sticky">
                 <div class="container" style="position: relative;">
                   <!-- start component navbar -->
@@ -66,7 +66,7 @@
                           <ul class="navbar-nav pd-2">
                             <li class="nav-item">
                               <a class="nav-link">
-                                <label class="Guides">Guides</label>
+                                <span class="Guides">Guides</span>
                               </a>
                             </li>
                           </ul>
@@ -121,7 +121,7 @@
                             <li class="nav-item">
                               <a class="nav-link">
                                 <div class="mobile-random">
-                                  <i class="fa fa-random" aria-hidden="true" class="rd"></i>
+                                  <i class="fa fa-random"></i>
                                 </div>
                               </a>
                             </li>
@@ -165,8 +165,8 @@
                               >
                                 <div class="icon-title-wrapper mt-2">
                                   <div class="category_wrapper">
-                                    <img class="category_img" src="../../components/navBar-3/img/category_icon_v2.png" />
-                                    <img class="category_pro_img" src="../../components/navBar-3/img/category_pro.png">
+                                    <img class="category_img" src="../../components/navBar-3/img/category_icon_v2.png" alt="#"/>
+                                    <img class="category_pro_img" src="../../components/navBar-3/img/category_pro.png" alt="#">
                                   </div>
                                 </div>
                               </a>
@@ -178,65 +178,62 @@
                                 <a class="dropdown-item" href="#">About wikiHow Pro</a>
                                 <a class="dropdown-item" href="#">Coupon</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#" id="myBtn">Sign In</a>
+                                <a class="dropdown-item" id="myBtn" href="#">Quiz</a>
                                 <!-- The Modal -->
-                                  <!-- Trigger/Open The Modal -->
+                              <div id="myModal" class="modal">
 
-                                <!-- The Modal -->
-                                <div id="myModal" class="modal">
-
-                                  <!-- Modal content -->
-                                      <div class="form-wiki modal-content">
-                                        <div class="navabr-form">
-                                            <button type="button" class="btn btn-outline close">Concel</button>
-                                            <p class="login-with">Log in with</p>
-                                            <a href="../register_page/index.html" type="button" class="btn btn-outline">Create an account</a>
-                                        </div>
-                                        <div class="body-wrapper">
-                                            <div class="row">
-                                                <div class="col-lg-6 p-5 mb-5 line-horiz">
-                                                    <a href="#" class="btn-block bg-primary">
-                                                        <div class="icon-fb">
-                                                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAjVBMVEX///8IZv8AYf9pl/8AV//09/8AXv8AY/+mvP88fP/7/v8Aav9yoP8AW/8AXf8AWf/g6v/K2f/a5v/L3f+Jr/8ldP+pw/+ErP/Q4P+zyv9/qP/o8f/W4P/q8/9Nhf85ef8gcP9IgP9Xjf+bt/9akv+/0/9PiP+kwP+/1f+xy/+RtP94o/9fj/8Ybf9qm/9hqLssAAADpElEQVR4nO3c/1PaMBjHcYiQCDXpFyxS2UBWoTqG//+fN+XmeW69maQNz5Pe5/2jHl5el5JyaXA0QgghhBBCCCGEEEIIIYQQQgghhBBCCKFLNl1nRfEtP1cU2Xo6px5Rb31fVLcvm+1DoqRO9bnUqPFDuftxc1vlxZR6gJ3K68dESCOFUmr8udefiNdfGalOm+NyFeGMzrP6oFMpxl/2SjVpOltSj9itrJ5Z6T6SL9Rjdml/EPLvq/KrxA31qO2rSu00e7EJ92XqOn1RCYuD9vJFI6zdVpfohOud9vXFIczH3hMYh3DpfIOITNikXXwRCK87AtkLm0lHIHdhLrsCmQuzcadFJgLhrsttIgbhXYcbfRTCVR9A1sI+rlHWwmUvU8hYOC+7r6O8hT1NIWNh0s8U8hVWPU0hX+GspylkK1yZnoBshcde7oWMhX3dKvgKF32tM2yF971dpFyFW7+LVAlpdPqR1tpMWD6ZWXtszggzUZtj/fy0KLJzq9Xqaf/c1BW1pq2l671CmeSqWlMP26EXt7ehMrsqsme9J6e3oSz31AN2ber0NkxZLiX/z+luaCJ7Tn/OZaHRMQJd7vfmnnqwXh2shWpGPVa/7D92ywX1WL2aJrZA8Ug9Vr8y6yk0OfVY/SpsHzipknqonuW2t0N5Rz1Uz6y32dI415nRqLG9SifUI/Xtp6VQbalH6tudpZDp/oRFtjuJsqYeqW83lkL9TD1S32yF0S6loytbYUE9Ut9shZOYtp4+ZS2M9hsVtkI9eKGEkG0QQsg/CCHkH4QQ8s9ayP+5b3PdVrOz3PNWdevrP0f78E0Z2Zb9c5mvS69IhdZPYPyT10MX6qehCw3tehteqMqhC8UvUuAlhMTP38ILNfFpqfBCSbxpHF54+j5wIflxm+BCQX2oL7jQNIMXUp+3CS6UxAvNBdZSYmBwoTgMXShvhy6kP8oQWjjJhi4ck2/GBRaqDTUwtFAcqYGhhZL6M1twIYMzU6FXGurPbKGFaku+lAYWcviqQlgh/We20ELqfbbwQsHgcGZYYUK/0IySt3/l/G/WhtZXvyeo99ne2s1aO9kC21/+py2HL9TMW3M4Qdv+B97/Dt9wRhhC/kEIIf8ghJB/EELIPwgh5B+EEPIPQgj5ByGE/IMQQv5BCCH/IISQfxBCyD8IIeQfhBDyD0II+QchhPyDEEL+QQgh/yCEkH8QQsg/CCHkH4QQ8g9CCPkHIYT8gxBC/kF4SeFvjSdQECUnB9MAAAAASUVORK5CYII=" alt="Facebook">
-                                                        </div>
-                                                        <p class="text-center fb-text">Facebook</p>
-                                                    </a>
-                                                    <a href="#" class="btn-block bg-primary">
-                                                        <div class="icon-fb">
-                                                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAjVBMVEX///8IZv8AYf9pl/8AV//09/8AXv8AY/+mvP88fP/7/v8Aav9yoP8AW/8AXf8AWf/g6v/K2f/a5v/L3f+Jr/8ldP+pw/+ErP/Q4P+zyv9/qP/o8f/W4P/q8/9Nhf85ef8gcP9IgP9Xjf+bt/9akv+/0/9PiP+kwP+/1f+xy/+RtP94o/9fj/8Ybf9qm/9hqLssAAADpElEQVR4nO3c/1PaMBjHcYiQCDXpFyxS2UBWoTqG//+fN+XmeW69maQNz5Pe5/2jHl5el5JyaXA0QgghhBBCCCGEEEIIIYQQQgghhBBCCKFLNl1nRfEtP1cU2Xo6px5Rb31fVLcvm+1DoqRO9bnUqPFDuftxc1vlxZR6gJ3K68dESCOFUmr8udefiNdfGalOm+NyFeGMzrP6oFMpxl/2SjVpOltSj9itrJ5Z6T6SL9Rjdml/EPLvq/KrxA31qO2rSu00e7EJ92XqOn1RCYuD9vJFI6zdVpfohOud9vXFIczH3hMYh3DpfIOITNikXXwRCK87AtkLm0lHIHdhLrsCmQuzcadFJgLhrsttIgbhXYcbfRTCVR9A1sI+rlHWwmUvU8hYOC+7r6O8hT1NIWNh0s8U8hVWPU0hX+GspylkK1yZnoBshcde7oWMhX3dKvgKF32tM2yF971dpFyFW7+LVAlpdPqR1tpMWD6ZWXtszggzUZtj/fy0KLJzq9Xqaf/c1BW1pq2l671CmeSqWlMP26EXt7ehMrsqsme9J6e3oSz31AN2ber0NkxZLiX/z+luaCJ7Tn/OZaHRMQJd7vfmnnqwXh2shWpGPVa/7D92ywX1WL2aJrZA8Ug9Vr8y6yk0OfVY/SpsHzipknqonuW2t0N5Rz1Uz6y32dI415nRqLG9SifUI/Xtp6VQbalH6tudpZDp/oRFtjuJsqYeqW83lkL9TD1S32yF0S6loytbYUE9Ut9shZOYtp4+ZS2M9hsVtkI9eKGEkG0QQsg/CCHkH4QQ8s9ayP+5b3PdVrOz3PNWdevrP0f78E0Z2Zb9c5mvS69IhdZPYPyT10MX6qehCw3tehteqMqhC8UvUuAlhMTP38ILNfFpqfBCSbxpHF54+j5wIflxm+BCQX2oL7jQNIMXUp+3CS6UxAvNBdZSYmBwoTgMXShvhy6kP8oQWjjJhi4ck2/GBRaqDTUwtFAcqYGhhZL6M1twIYMzU6FXGurPbKGFaku+lAYWcviqQlgh/We20ELqfbbwQsHgcGZYYUK/0IySt3/l/G/WhtZXvyeo99ne2s1aO9kC21/+py2HL9TMW3M4Qdv+B97/Dt9wRhhC/kEIIf8ghJB/EELIPwgh5B+EEPIPQgj5ByGE/IMQQv5BCCH/IISQfxBCyD8IIeQfhBDyD0II+QchhPyDEEL+QQgh/yCEkH8QQsg/CCHkH4QQ8g9CCPkHIYT8gxBC/kF4SeFvjSdQECUnB9MAAAAASUVORK5CYII=" alt="Facebook">
-                                                        </div>
-                                                        <p class="text-center fb-text">Facebook</p>
-                                                    </a>
-                                                    <div class="login_or">
-                                                        or
+                                <!-- Modal content -->
+                                    <div class="form-wiki modal-content">
+                                      <div class="navabr-form">
+                                          <button type="button" class="btn btn-outline close">Concel</button>
+                                          <p class="login-with">Log in with</p>
+                                          <a href="../register_page/index.html" class="btn btn-outline">Create an account</a>
+                                      </div>
+                                      <div class="body-wrapper">
+                                          <div class="row">
+                                              <div class="col-lg-6 p-5 mb-5 line-horiz">
+                                                  <a href="#" class="btn-block bg-primary">
+                                                      <div class="icon-fb">
+                                                          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAjVBMVEX///8IZv8AYf9pl/8AV//09/8AXv8AY/+mvP88fP/7/v8Aav9yoP8AW/8AXf8AWf/g6v/K2f/a5v/L3f+Jr/8ldP+pw/+ErP/Q4P+zyv9/qP/o8f/W4P/q8/9Nhf85ef8gcP9IgP9Xjf+bt/9akv+/0/9PiP+kwP+/1f+xy/+RtP94o/9fj/8Ybf9qm/9hqLssAAADpElEQVR4nO3c/1PaMBjHcYiQCDXpFyxS2UBWoTqG//+fN+XmeW69maQNz5Pe5/2jHl5el5JyaXA0QgghhBBCCCGEEEIIIYQQQgghhBBCCKFLNl1nRfEtP1cU2Xo6px5Rb31fVLcvm+1DoqRO9bnUqPFDuftxc1vlxZR6gJ3K68dESCOFUmr8udefiNdfGalOm+NyFeGMzrP6oFMpxl/2SjVpOltSj9itrJ5Z6T6SL9Rjdml/EPLvq/KrxA31qO2rSu00e7EJ92XqOn1RCYuD9vJFI6zdVpfohOud9vXFIczH3hMYh3DpfIOITNikXXwRCK87AtkLm0lHIHdhLrsCmQuzcadFJgLhrsttIgbhXYcbfRTCVR9A1sI+rlHWwmUvU8hYOC+7r6O8hT1NIWNh0s8U8hVWPU0hX+GspylkK1yZnoBshcde7oWMhX3dKvgKF32tM2yF971dpFyFW7+LVAlpdPqR1tpMWD6ZWXtszggzUZtj/fy0KLJzq9Xqaf/c1BW1pq2l671CmeSqWlMP26EXt7ehMrsqsme9J6e3oSz31AN2ber0NkxZLiX/z+luaCJ7Tn/OZaHRMQJd7vfmnnqwXh2shWpGPVa/7D92ywX1WL2aJrZA8Ug9Vr8y6yk0OfVY/SpsHzipknqonuW2t0N5Rz1Uz6y32dI415nRqLG9SifUI/Xtp6VQbalH6tudpZDp/oRFtjuJsqYeqW83lkL9TD1S32yF0S6loytbYUE9Ut9shZOYtp4+ZS2M9hsVtkI9eKGEkG0QQsg/CCHkH4QQ8s9ayP+5b3PdVrOz3PNWdevrP0f78E0Z2Zb9c5mvS69IhdZPYPyT10MX6qehCw3tehteqMqhC8UvUuAlhMTP38ILNfFpqfBCSbxpHF54+j5wIflxm+BCQX2oL7jQNIMXUp+3CS6UxAvNBdZSYmBwoTgMXShvhy6kP8oQWjjJhi4ck2/GBRaqDTUwtFAcqYGhhZL6M1twIYMzU6FXGurPbKGFaku+lAYWcviqQlgh/We20ELqfbbwQsHgcGZYYUK/0IySt3/l/G/WhtZXvyeo99ne2s1aO9kC21/+py2HL9TMW3M4Qdv+B97/Dt9wRhhC/kEIIf8ghJB/EELIPwgh5B+EEPIPQgj5ByGE/IMQQv5BCCH/IISQfxBCyD8IIeQfhBDyD0II+QchhPyDEEL+QQgh/yCEkH8QQsg/CCHkH4QQ8g9CCPkHIYT8gxBC/kF4SeFvjSdQECUnB9MAAAAASUVORK5CYII=" alt="Facebook">
                                                       </div>
-                                                </div>
-                                                
-                                                <div class="col-lg-6 p-5">
-                                                    <form action="form" class="group-form">
-                                                        <div class="mb-3">
-                                                            <input type="text" class="form-control" id="username" name="username" required placeholder="Username">
+                                                      <p class="text-center fb-text">Facebook</p>
+                                                  </a>
+                                                  <a href="#" class="btn-block bg-primary">
+                                                      <div class="icon-fb">
+                                                          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAjVBMVEX///8IZv8AYf9pl/8AV//09/8AXv8AY/+mvP88fP/7/v8Aav9yoP8AW/8AXf8AWf/g6v/K2f/a5v/L3f+Jr/8ldP+pw/+ErP/Q4P+zyv9/qP/o8f/W4P/q8/9Nhf85ef8gcP9IgP9Xjf+bt/9akv+/0/9PiP+kwP+/1f+xy/+RtP94o/9fj/8Ybf9qm/9hqLssAAADpElEQVR4nO3c/1PaMBjHcYiQCDXpFyxS2UBWoTqG//+fN+XmeW69maQNz5Pe5/2jHl5el5JyaXA0QgghhBBCCCGEEEIIIYQQQgghhBBCCKFLNl1nRfEtP1cU2Xo6px5Rb31fVLcvm+1DoqRO9bnUqPFDuftxc1vlxZR6gJ3K68dESCOFUmr8udefiNdfGalOm+NyFeGMzrP6oFMpxl/2SjVpOltSj9itrJ5Z6T6SL9Rjdml/EPLvq/KrxA31qO2rSu00e7EJ92XqOn1RCYuD9vJFI6zdVpfohOud9vXFIczH3hMYh3DpfIOITNikXXwRCK87AtkLm0lHIHdhLrsCmQuzcadFJgLhrsttIgbhXYcbfRTCVR9A1sI+rlHWwmUvU8hYOC+7r6O8hT1NIWNh0s8U8hVWPU0hX+GspylkK1yZnoBshcde7oWMhX3dKvgKF32tM2yF971dpFyFW7+LVAlpdPqR1tpMWD6ZWXtszggzUZtj/fy0KLJzq9Xqaf/c1BW1pq2l671CmeSqWlMP26EXt7ehMrsqsme9J6e3oSz31AN2ber0NkxZLiX/z+luaCJ7Tn/OZaHRMQJd7vfmnnqwXh2shWpGPVa/7D92ywX1WL2aJrZA8Ug9Vr8y6yk0OfVY/SpsHzipknqonuW2t0N5Rz1Uz6y32dI415nRqLG9SifUI/Xtp6VQbalH6tudpZDp/oRFtjuJsqYeqW83lkL9TD1S32yF0S6loytbYUE9Ut9shZOYtp4+ZS2M9hsVtkI9eKGEkG0QQsg/CCHkH4QQ8s9ayP+5b3PdVrOz3PNWdevrP0f78E0Z2Zb9c5mvS69IhdZPYPyT10MX6qehCw3tehteqMqhC8UvUuAlhMTP38ILNfFpqfBCSbxpHF54+j5wIflxm+BCQX2oL7jQNIMXUp+3CS6UxAvNBdZSYmBwoTgMXShvhy6kP8oQWjjJhi4ck2/GBRaqDTUwtFAcqYGhhZL6M1twIYMzU6FXGurPbKGFaku+lAYWcviqQlgh/We20ELqfbbwQsHgcGZYYUK/0IySt3/l/G/WhtZXvyeo99ne2s1aO9kC21/+py2HL9TMW3M4Qdv+B97/Dt9wRhhC/kEIIf8ghJB/EELIPwgh5B+EEPIPQgj5ByGE/IMQQv5BCCH/IISQfxBCyD8IIeQfhBDyD0II+QchhPyDEEL+QQgh/yCEkH8QQsg/CCHkH4QQ8g9CCPkHIYT8gxBC/kF4SeFvjSdQECUnB9MAAAAASUVORK5CYII=" alt="Facebook">
+                                                      </div>
+                                                      <p class="text-center fb-text">Facebook</p>
+                                                  </a>
+                                                  <div class="login_or">
+                                                      or
+                                                    </div>
+                                              </div>
+                                              
+                                              <div class="col-lg-6 p-5">
+                                                  <form action="form" class="group-form">
+                                                      <div class="mb-3">
+                                                          <input type="text" class="form-control" id="username" name="username" required placeholder="Username">
+                                                      </div>
+                                                      <div class="mb-3">
+                                                          <input type="password" class="form-control" id="password" name="password" required placeholder="Password">
+                                                          <div class="check-box">
+                                                            <label class="main">
+                                                              <span class="text_main">Remember me</span>
+                                                              <input type="checkbox">
+                                                              <span class="geekmark"></span>
+                                                          </label>
                                                         </div>
-                                                        <div class="mb-3">
-                                                            <input type="password" class="form-control" id="password" name="password" required placeholder="Password">
-                                                            <div class="check-box">
-                                                              <label class="main"><span class="text_main">Remember me</span>
-                                                                <input type="checkbox">
-                                                                <span class="geekmark"></span>
-                                                            </label>
-                                                          </div>
-                                                          </div>
-                                                          <div class="btn-text">
-                                                            <button type="submit" class="btn btn-primary">Create Account</button>
-                                                            <a href="#" class="forgot-pass">Forgot your password?</a>
-                                                          </div>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                                        </div>
+                                                        <div class="btn-text">
+                                                          <button type="submit" class="btn btn-primary">Create Account</button>
+                                                          <a href="#" class="forgot-pass">Forgot your password?</a>
+                                                        </div>
+                                                  </form>
+                                              </div>
+                                          </div>
+                                      </div>
                                   </div>
-                                  <!-- pop up -->
+                                </div>
                               </div>
                             </li>
                             <li class="nav-item dropdown dropdown-hover-bg action-li dropdown-helpus ">
@@ -694,14 +691,14 @@
                   <!-- end component navbar -->
                 </div>
               </div>
-            </head>
+            </header>
             <!-- EndNavbar -->
         </div>
       </div>
       <div class="row">
         <div class="col-lg-12">
              <!-- subNavbar -->
-             <main id="sub-main" style="padding-top: 60px">
+             <section class="sub-main" style="padding-top: 60px">
               <div class="container cnt-wraper">
                 <div class="row">
                   <div class="col-lg-6 col-md-6">
@@ -712,15 +709,14 @@
                     <div class="search">
                       <div class="search-ipad">
                         <form class="wrap-search">
-                          <i class="fa fa-search" aria-hiiden="true"></i>
+                          <i class="fa fa-search"></i>
                           <input
                             type="text"
-                            id="search-ip"
+                            class="search-ip"
                             name="search"
                             required
                             autofocus
                             placeholder="to do anything..."
-                            x-webkit-speech
                           />
                         </form>
                       </div>
@@ -743,7 +739,7 @@
                   </p>
                 </div>
                 <picture>
-                  <img src="../../components/sub-Navbar/image/books2.webp" />
+                  <img src="../../components/sub-Navbar/image/books2.webp" alt="books2"/>
                 </picture>
               </div>
               <div class="container-lfuide">
@@ -752,15 +748,13 @@
                     <div class="search">
                       <div class="search-phone">
                         <form class="wrap-search">
-                          <i class="fa fa-search" aria-hiiden="true"></i>
+                          <i class="fa fa-search"></i>
                           <input
                             type="text"
-                            id="search-ip"
+                            class="search-ip"
                             name="search"
                             required
-                            autofocus
                             placeholder="to do anything..."
-                            x-webkit-speech
                           />
                         </form>
                       </div>
@@ -768,7 +762,7 @@
                   </div>
                 </div>
               </div>
-            </main>
+            </section>
              <!-- EndSubNavbar -->
         </div>
       </div>
@@ -1116,14 +1110,12 @@
         <div class="col-lg-12">
             <!-- </article> -->
                 <!-- editial -->
-                <main id="edit-main">
-                  <div class="container" style="
-                  margin-bottom: 30px;
-              ">
+                <section class="edit-main">
+                  <div class="container">
                     <div class="row">
                       <div class="col-xs-12 col-sm-6 col-md-6 colo-lg-6 top-title">
                         <div class="title mt-4">
-                          <h4 sub-title>
+                          <h4>
                             wikiHow is an award-winning website where trusted research and
                             expert knowledge come together.
                           </h4>
@@ -1177,7 +1169,7 @@
                       </div>
                     </div>
                   </div>
-              </main>
+                </section>
         </div>
       </div>
       <div class="row">
@@ -1189,7 +1181,7 @@
                 <div class="col-lg-8 col-md-8 col-sm-12">
                   <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12">
-                      <aside id="aside-left">
+                      <aside class="aside-left">
                         <div class="container">
                           <div class="col-lg-12">
                             <div class="row" style="background-color: red; color: #fff">
@@ -1215,7 +1207,7 @@
                                   these terms these days. But what can you do about them? Take our
                                   free courses to find out.
                                 </p>
-                                <button class="btn"><a href="#">Take Our Free Course</a></button>
+                                <button class="btn"><span class="btn-span">Take Our Free Course</span></button>
                               </div>
                             </div>
                           </div>
@@ -1777,64 +1769,64 @@
                                                 <div class="col-lg-12 col-md-12 col-sm-12 p-0">
                                                     <ul>
                                                         <li class="space">
-                                                            <a class="item" href="#"><img src="../../components/sidebar2img/arts_and_entertainment.svg"><span>Arts and Entertaintment</span></a>
+                                                            <a class="item" href="#"><img src="../../components/sidebar2img/arts_and_entertainment.svg" alt="#"><span>Arts and Entertaintment</span></a>
                                                         </li>
                                                         <li class="space">
-                                                            <a class="item" href="#"><img src="../../components/sidebar2/img/arts_and_entertainment.svg"><span>Arts and Entertaintment</span></a>
+                                                            <a class="item" href="#"><img src="../../components/sidebar2/img/arts_and_entertainment.svg" alt="#"><span>Arts and Entertaintment</span></a>
                                                         </li>
                                                         <li class="space">
-                                                            <a class="item" href="#"><img src="../../components/sidebar2/img/arts_and_entertainment.svg"><span>Arts and Entertaintment</span></a>
+                                                            <a class="item" href="#"><img src="../../components/sidebar2/img/arts_and_entertainment.svg" alt="#"><span>Arts and Entertaintment</span></a>
                                                         </li>
                                                         <li class="space">
-                                                            <a class="item" href="#"><img src="../../components/sidebar2/img/arts_and_entertainment.svg"><span>Arts and Entertaintment</span></a>
+                                                            <a class="item" href="#"><img src="../../components/sidebar2/img/arts_and_entertainment.svg" alt="#"><span>Arts and Entertaintment</span></a>
                                                         </li>
                                                         <li class="space">
-                                                            <a class="item" href="#"><img src="../../components/sidebar2/img/arts_and_entertainment.svg"><span>Arts and Entertaintment</span></a>
+                                                            <a class="item" href="#"><img src="../../components/sidebar2/img/arts_and_entertainment.svg" alt="#"><span>Arts and Entertaintment</span></a>
                                                         </li>
                                                         <li class="space">
-                                                            <a class="item" href="#"><img src="../../components/sidebar2/img/arts_and_entertainment.svg"><span>Arts and Entertaintment</span></a>
+                                                            <a class="item" href="#"><img src="../../components/sidebar2/img/arts_and_entertainment.svg" alt="#"><span>Arts and Entertaintment</span></a>
                                                         </li>
                                                         <li class="space">
-                                                            <a class="item" href="#"><img src="../../components/sidebar2/img/arts_and_entertainment.svg"><span>Arts and Entertaintment</span></a>
+                                                            <a class="item" href="#"><img src="../../components/sidebar2/img/arts_and_entertainment.svg" alt="#"><span>Arts and Entertaintment</span></a>
                                                         </li>
                                                         <li class="space">
-                                                            <a class="item" href="#"><img src="../../components/sidebar2/img/arts_and_entertainment.svg"><span>Arts and Entertaintment</span></a>
+                                                            <a class="item" href="#"><img src="../../components/sidebar2/img/arts_and_entertainment.svg" alt="#"><span>Arts and Entertaintment</span></a>
                                                         </li>
                                                         <li class="space">
-                                                            <a class="item" href="#"><img src="../../components/sidebar2/img/arts_and_entertainment.svg"><span>Arts and Entertaintment</span></a>
+                                                            <a class="item" href="#"><img src="../../components/sidebar2/img/arts_and_entertainment.svg" alt="#"><span>Arts and Entertaintment</span></a>
                                                         </li>
                                                         <li class="space">
-                                                            <a class="item" href="#"><img src="../../components/sidebar2/img/arts_and_entertainment.svg"><span>Arts and Entertaintment</span></a>
+                                                            <a class="item" href="#"><img src="../../components/sidebar2/img/arts_and_entertainment.svg" alt="#"><span>Arts and Entertaintment</span></a>
                                                         </li>
                                                         <li class="space">
-                                                            <a class="item" href="#"><img src="../../components/sidebar2/img/arts_and_entertainment.svg"><span>Arts and Entertaintment</span></a>
+                                                            <a class="item" href="#"><img src="../../components/sidebar2/img/arts_and_entertainment.svg" alt="#"><span>Arts and Entertaintment</span></a>
                                                         </li>
                                                         <li class="space">
-                                                            <a class="item" href="#"><img src="../../components/sidebar2/img/arts_and_entertainment.svg"><span>Arts and Entertaintment</span></a>
+                                                            <a class="item" href="#"><img src="../../components/sidebar2/img/arts_and_entertainment.svg" alt="#"><span>Arts and Entertaintment</span></a>
                                                         </li>
                                                         <li class="space">
-                                                            <a class="item" href="#"><img src="../../components/sidebar2/img/arts_and_entertainment.svg"><span>Arts and Entertaintment</span></a>
+                                                            <a class="item" href="#"><img src="../../components/sidebar2/img/arts_and_entertainment.svg" alt="#"><span>Arts and Entertaintment</span></a>
                                                         </li>
                                                         <li class="space">
-                                                            <a class="item" href="#"><img src="../../components/sidebar2/img/arts_and_entertainment.svg"><span>Arts and Entertaintment</span></a>
+                                                            <a class="item" href="#"><img src="../../components/sidebar2/img/arts_and_entertainment.svg" alt="#"><span>Arts and Entertaintment</span></a>
                                                         </li>
                                                         <li class="space">
-                                                            <a class="item" href="#"><img src="../../components/sidebar2/img/arts_and_entertainment.svg"><span>Arts and Entertaintment</span></a>
+                                                            <a class="item" href="#"><img src="../../components/sidebar2/img/arts_and_entertainment.svg" alt="#"><span>Arts and Entertaintment</span></a>
                                                         </li>
                                                         <li class="space">
-                                                            <a class="item" href="#"><img src="../../components/sidebar2/img/arts_and_entertainment.svg"><span>Arts and Entertaintment</span></a>
+                                                            <a class="item" href="#"><img src="../../components/sidebar2/img/arts_and_entertainment.svg" alt="#"><span>Arts and Entertaintment</span></a>
                                                         </li>
                                                         <li class="space">
-                                                            <a class="item" href="#"><img src="../../components/sidebar2/img/arts_and_entertainment.svg"><span>Arts and Entertaintment</span></a>
+                                                            <a class="item" href="#"><img src="../../components/sidebar2/img/arts_and_entertainment.svg" alt="#"><span>Arts and Entertaintment</span></a>
                                                         </li>
                                                         <li class="space">
-                                                            <a class="item" href="#"><img src="../../components/sidebar2/img/arts_and_entertainment.svg"><span>Arts and Entertaintment</span></a>
+                                                            <a class="item" href="#"><img src="../../components/sidebar2/img/arts_and_entertainment.svg" alt="#"><span>Arts and Entertaintment</span></a>
                                                         </li>
                                                         <li class="space">
-                                                            <a class="item" href="#"><img src="../../components/sidebar2/img/arts_and_entertainment.svg"><span>Arts and Entertaintment</span></a>
+                                                            <a class="item" href="#"><img src="../../components/sidebar2/img/arts_and_entertainment.svg" alt="#"><span>Arts and Entertaintment</span></a>
                                                         </li>
                                                         <li class="space">
-                                                            <a class="item" href="#"><img src="../../components/sidebar2/img/arts_and_entertainment.svg"><span>Arts and Entertaintment</span></a>
+                                                            <a class="item" href="#"><img src="../../components/sidebar2/img/arts_and_entertainment.svg" alt="#"><span>Arts and Entertaintment</span></a>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -1931,95 +1923,91 @@
       <div class="row">
         <div class="col-lg-12">
            <!-- atlantic -->
-           <main id="atlantic-main" style="
-                margin-bottom: 0px;
-                margin-top: 20px;
-            ">
-                  <div class="container pt-10">
-                    <!-- <div class="row">
-                      
-                    </div> -->
-                    <div class="row">
-                      <div class="title">
-                        <h3 class="title-head">
-                          We make learning easy with helpful, <br />
-                          approachable instructions. People agree.
-                        </h3>
-                        <a href="#">Read our story.</a>
-                      </div>
-                      <div class="col-xs-12 col-sm-4 col-md-4">
-                        <div class="card" style="width: 100%">
-                          <img
-                            src="https://www.wikihow.com/extensions/wikihow/homepage/images/atlantic.png"
-                            class="card-img-top"
-                            alt="..."
-                          />
-                          <span>The Atlantic</span>
-                          <div class="card-body wrap-text">
-                            <p class="text">
-                              <i
-                                >"wikiHow may be the largest commercial platform in
-                                existence that hasn’t been accused of exploiting its
-                                users."</i
-                              >
-                            </p>
-                            <p class="text-2">- Kaitlyn Tiffany</p>
-                            <p class="text-3">Technology Writer, The Atlantic</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xs-12 col-sm-4 col-md-4">
-                        <div class="card" style="width: 100%">
-                          <img
-                            src="https://www.wikihow.com/extensions/wikihow/homepage/images/vice.png"
-                            class="card-img-top"
-                            alt="..."
-                          />
-                          <span>Vice</span>
-                          <div class="card-body wrap-text">
-                            <p class="text
-                        ">
-                              <i
-                                >"I've been yelling for a while about how wikiHow is doing
-                                the best consistent service journalism on the web right
-                                now."</i
-                              >
-                            </p>
-                            <p class="text-2">- Rachel Miller</p>
-                            <p class="text-3 mid"
-                        ">Deputy Editor, Vice</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xs-12 col-sm-4 col-md-4">
-                        <div class="card" style="width: 100%">
-                          <img
-                            src="https://www.wikihow.com/extensions/wikihow/homepage/images/motherjones.png"
-                            class="card-img-top"
-                            alt="..."
-                          />
-                          <span>Mother Jones</span>
-                          <div class="card-body wrap-text">
-                            <p class="text">
-                              <i
-                                >"wikiHow is the ultimate pandemic hero because it’s
-                                utilitarian, earnest...and willing to laugh at itself."</i
-                              >
-                            </p>
-                            <p class="text-2">- Laura Thompson</p>
-                            <p class="text-3">Editorial Fellow, Mother Jones</p>
-                          </div>
-                        </div>
-                      </div>
+           <section class="atlantic-main">
+            <div class="container">
+              <!-- <div class="row">
+                
+              </div> -->
+              <div class="row">
+                <div class="title">
+                  <h3 class="title-head">
+                    We make learning easy with helpful, <br />
+                    approachable instructions. People agree.
+                  </h3>
+                  <a href="#">Read our story.</a>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                  <div class="card" style="width: 100%">
+                    <img
+                      src="https://www.wikihow.com/extensions/wikihow/homepage/images/atlantic.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <span>The Atlantic</span>
+                    <div class="card-body wrap-text">
+                      <p class="text">
+                        <i
+                          >"wikiHow may be the largest commercial platform in
+                          existence that hasn’t been accused of exploiting its
+                          users."</i
+                        >
+                      </p>
+                      <p class="text-2">- Kaitlyn Tiffany</p>
+                      <p class="text-3">Technology Writer, The Atlantic</p>
                     </div>
                   </div>
-                </main>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                  <div class="card" style="width: 100%">
+                    <img
+                      src="https://www.wikihow.com/extensions/wikihow/homepage/images/vice.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <span>Vice</span>
+                    <div class="card-body wrap-text">
+                      <p class="text
+                  ">
+                        <i
+                          >"I've been yelling for a while about how wikiHow is doing
+                          the best consistent service journalism on the web right
+                          now."</i
+                        >
+                      </p>
+                      <p class="text-2">- Rachel Miller</p>
+                      <p class="text-3 mid">Deputy Editor, Vice</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                  <div class="card" style="width: 100%">
+                    <img
+                      src="https://www.wikihow.com/extensions/wikihow/homepage/images/motherjones.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <span>Mother Jones</span>
+                    <div class="card-body wrap-text">
+                      <p class="text">
+                        <i
+                          >"wikiHow is the ultimate pandemic hero because it’s
+                          utilitarian, earnest...and willing to laugh at itself."</i
+                        >
+                      </p>
+                      <p class="text-2">- Laura Thompson</p>
+                      <p class="text-3">Editorial Fellow, Mother Jones</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-12">
            <!-- trending card -->
-           <article>
+           <section>
             <div class="container">
                 <div class="row away">
                 <h3>Feather Video</h3>
@@ -2466,279 +2454,272 @@
                 </div>
                 </div>
             </div>
-        </article>
+        </section>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-12">
             <!-- footer -->
-            <footer>
-              <div class="container">
-                <div class="row">
-                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-8">
-                    <div class="row">
-                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                        <header>
-                          <img src="../../components/footer3/image/wikihow_logo.png" alt="logo" />
-                        </header>
-                      </div>
-                    </div>
-                    <hr />
-                    <div class="row">
-                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8">
-                        <div class="search">
-                          <!-- responsive search bar for ipad-->
-                          <div class="search-ipad">
-                            <form class="wrap-search">
-                              <input
-                                type="text"
-                                id="search-ip"
-                                name="search"
-                                required
-                                autofocus
-                                placeholder="to do anything..."
-                                x-webkit-speech
-                              />
-                              <i class="fa fa-search" aria-hiiden="true"></i>
-                            </form>
-                          </div>
-                        </div>
-        
-                        <div class="group-icon">
-                          <a href="#" class="icon"
-                            ><img src="../../components/footer3/image/pinterest-removebg-preview.png" alt="icon"
-                          /></a>
-                          <a href="#" class="icon"
-                            ><img src="../../components/footer3/image/fb-removebg-preview.png" alt="icon"
-                          /></a>
-                          <a href="#" class="icon"
-                            ><img src="../../components/footer3/image/twiter-removebg-preview.png" alt="icon"
-                          /></a>
-                          <a href="#" class="icon"
-                            ><img src="../../components/footer3/image/youtube-removebg-preview.png" alt="icon"
-                          /></a>
-                          <a href="#" class="icon"
-                            ><img src="../../components/footer3/image/fb-removebg-preview.png" alt="icon"
-                          /></a>
-                          <a href="#" class="icon"
-                            ><img src="../../components/footer3/image/twiter-removebg-preview.png" alt="icon"
-                          /></a>
-                          <a href="#" class="icon"
-                            ><img src="../../components/footer3/image/youtube-removebg-preview.png" alt="icon"
-                          /></a>
-                        </div>
-                      </div>
-                      <div class="col-md-12 col-lg-4">
-                        <div class="row">
-                          <div class="col-md-6 col-lg-6">
-                            <div class="categoties" id="first-row">
-                              <a href="#">Home</a>
-                              <a href="#">About wikiHow</a>
-                              <a href="#">Experts</a>
-                              <a href="#">Jobs</a>
-                              <a href="#">Contact Us</a>
-                            </div>
-                          </div>
-                          <div class="col-md-6 col-lg-6">
-                            <div class="categoties" id="second-row">
-                              <a href="#">Site Map</a>
-                              <a href="#">Terms of Use</a>
-                              <a href="#">Privacy Policy</a>
-                              <a href="#">Contribute</a>
-                            </div>
-                          </div>
-                          <div class="group-icon-ipad" ">
-                            <a href="#" class="icon"
-                              ><img src="../../components/footer3/image/pinterest-removebg-preview.png" alt="icon"
-                            /></a>
-                            <a href="#" class="icon"
-                              ><img src="../../components/footer3/image/fb-removebg-preview.png" alt="icon"
-                            /></a>
-                            <a href="#" class="icon"
-                              ><img src="../../components/footer3/image/twiter-removebg-preview.png" alt="icon"
-                            /></a>
-                            <a href="#" class="icon"
-                              ><img src="../../components/footer3/image/youtube-removebg-preview.png" alt="icon"
-                            /></a>
-                            <a href="#" class="icon"
-                              ><img src="../../components/footer3/image/fb-removebg-preview.png" alt="icon"
-                            /></a>
-                            <a href="#" class="icon"
-                              ><img src="../../components/footer3/image/twiter-removebg-preview.png" alt="icon"
-                            /></a>
-                            <a href="#" class="icon"
-                              ><img src="../../components/footer3/image/youtube-removebg-preview.png" alt="icon"
-                            /></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3" id="aside">
-                    <div class="wrap-row">
-                      <div class="row">
-                        <div class="col-md-12">
-                          <article>
-                            <div class="text-icon">
-                              <div class="icon">
-                                <img src="../../components/footer3/image/icon-footer.png" alt="" />
-                              </div>
-                              <div class="text-head">
-                                <h4>wikiHow Newletter</h4>
-                              </div>
-                            </div>
-                            <div class="text-p">
-                              <p>Helpful how-tos delivered to your inbox every week!</p>
-                            </div>
-                            <div class="email">
-                              <!-- responsive search bar for ipad-->
-                              <div class="email-user">
-                                <form class="wrap-email">
-                                  <input
-                                    type="text"
-                                    id="email-ip"
-                                    name="email"
-                                    required
-                                    autofocus
-                                    placeholder="Enter your email"
-                                    x-webkit-speech
-                                  />
-                                </form>
-                                <button>Sign me up!</button>
-                                <p below-btn>
-                                  By signing up you are agreeing to receive emails
-                                  according to our privacy policy.
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                          </article>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+      <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-8">
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="header">
+                  <img src="../../components/footer3/image/wikihow_logo.png" alt="logo" />
+                </div>
               </div>
-              <!-- for mobile phone -->
-              <div class="container-fluid ">
-                <!-- logo header for mobile -->
-                <div class="content">
-                <div class="row">
-                  <div class="col-sm-12 col-md-12 col-lg-4">
-                    <header>
-                      <img src="../../components/footer3/image/wikihow_logo.png" alt="logo" />
-                    </header>
+            </div>
+            <hr />
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8">
+                <div class="search">
+                  <!-- responsive search bar for ipad-->
+                  <div class="search-ipad">
+                    <form class="wrap-search">
+                      <input
+                        type="text"
+                        class="search-ip"
+                        name="search"
+                        required
+                        autofocus
+                        placeholder="to do anything..."
+                      />
+                      <i class="fa fa-search" aria-hidden="true"></i>
+                    </form>
                   </div>
                 </div>
-                <hr />
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                  <div class="wrap-row">
-                    <div class="row">
-                      <div class="col-md-12">
-                        <article>
-                          <div class="text-icon">
-                            <div class="icon">
-                              <img src="../../components/footer3/image/icon-footer.png" alt="" />
-                            </div>
-                            <div class="text-head">
-                              <h5>wikiHow Newletter</h5>
-                            </div>
-                          </div>
-                          <div class="text-p">
-                            <p>Helpful how-tos delivered to your inbox every week!</p>
-                          </div>
-                          <div class="email">
-                            <!-- responsive search bar for ipad-->
-                            <div class="email-user">
-                              <form class="wrap-email">
-                                <input
-                                  type="text"
-                                  id="email-ip"
-                                  name="email"
-                                  required
-                                  autofocus
-                                  placeholder="Enter your email"
-                                  x-webkit-speech
-                                />
-                              </form>
-                              <button>Sign me up!</button>
-                              <p below-btn>
-                                By signing up you are agreeing to receive emails
-                                according to our privacy policy.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                        </article>
+
+                <div class="group-icon">
+                  <a href="#" class="footer-icon"
+                    ><img src="../../components/footer3/image/pinterest-removebg-preview.png" alt="icon"
+                  /></a>
+                  <a href="#" class="footer-icon"
+                    ><img src="../../components/footer3/image/fb-removebg-preview.png" alt="icon"
+                  /></a>
+                  <a href="#" class="footer-icon"
+                    ><img src="../../components/footer3/image/twiter-removebg-preview.png" alt="icon"
+                  /></a>
+                  <a href="#" class="footer-icon"
+                    ><img src="../../components/footer3/image/youtube-removebg-preview.png" alt="icon"
+                  /></a>
+                  <a href="#" class="footer-icon"
+                    ><img src="../../components/footer3/image/fb-removebg-preview.png" alt="icon"
+                  /></a>
+                  <a href="#" class="footer-icon"
+                    ><img src="../../components/footer3/image/twiter-removebg-preview.png" alt="icon"
+                  /></a>
+                  <a href="#" class="footer-icon"
+                    ><img src="../../components/footer3/image/youtube-removebg-preview.png" alt="icon"
+                  /></a>
+                </div>
+              </div>
+              <div class="col-md-12 col-lg-4">
+                <div class="row">
+                  <div class="col-md-6 col-lg-6">
+                    <div class="categoties" id="first-row">
+                      <a href="#">Home</a>
+                      <a href="#">About wikiHow</a>
+                      <a href="#">Experts</a>
+                      <a href="#">Jobs</a>
+                      <a href="#">Contact Us</a>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-6">
+                    <div class="categoties second-row">
+                      <a href="#">Site Map</a>
+                      <a href="#">Terms of Use</a>
+                      <a href="#">Privacy Policy</a>
+                      <a href="#">Contribute</a>
+                    </div>
+                  </div>
+                  <div class="group-icon-ipad">
+                    <a href="#" class="footer-icon"
+                      ><img src="../../components/footer3/image/pinterest-removebg-preview.png" alt="icon"
+                    /></a>
+                    <a href="#" class="footer-icon"
+                      ><img src="../../components/footer3/image/fb-removebg-preview.png" alt="icon"
+                    /></a>
+                    <a href="#" class="footer-icon"
+                      ><img src="../../components/footer3/image/twiter-removebg-preview.png" alt="icon"
+                    /></a>
+                    <a href="#" class="footer-icon"
+                      ><img src="../../components/footer3/image/youtube-removebg-preview.png" alt="icon"
+                    /></a>
+                    <a href="#" class="footer-icon"
+                      ><img src="../../components/footer3/image/fb-removebg-preview.png" alt="icon"
+                    /></a>
+                    <a href="#" class="footer-icon"
+                      ><img src="../../components/footer3/image/twiter-removebg-preview.png" alt="icon"
+                    /></a>
+                    <a href="#" class="footer-icon"
+                      ><img src="../../components/footer3/image/youtube-removebg-preview.png" alt="icon"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 aside">
+            <div class="wrap-row">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="article">
+                    <div class="text-icon">
+                      <div class="footer-icon">
+                        <img src="../../components/footer3/image/icon-footer.png" alt="" />
+                      </div>
+                      <div class="text-head">
+                        <h4>wikiHow Newletter</h4>
+                      </div>
+                    </div>
+                    <div class="text-p">
+                      <p>Helpful how-tos delivered to your inbox every week!</p>
+                    </div>
+                    <div class="email">
+                      <!-- responsive search bar for ipad-->
+                      <div class="email-user">
+                        <form class="wrap-email">
+                          <input
+                            type="text"
+                            class="email-ip"
+                            name="email"
+                            required
+                            placeholder="Enter your email"
+                          />
+                        </form>
+                        <button>Sign me up!</button>
+                        <p class="below-btn">
+                          By signing up you are agreeing to receive emails
+                          according to our privacy policy.
+                        </p>
                       </div>
                     </div>
                   </div>
-                  <hr>
-                  <div class="search">
-                    <div class="search-ipad">
-                      <form class="wrap-search">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <!-- for mobile phone -->
+      <div class="container-fluid ">
+        <!-- logo header for mobile -->
+        <div class="content">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-4">
+            <div class="header">
+              <img src="../../components/footer3/image/wikihow_logo.png" alt="logo" />
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="wrap-row">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="the-wrapper">
+                  <div class="text-icon">
+                    <div class="footer-icon">
+                      <img src="../../components/footer3/image/icon-footer.png" alt="" />
+                    </div>
+                    <div class="text-head">
+                      <h5>wikiHow Newletter</h5>
+                    </div>
+                  </div>
+                  <div class="text-p">
+                    <p>Helpful how-tos delivered to your inbox every week!</p>
+                  </div>
+                  <div class="email">
+                    <!-- responsive search bar for ipad-->
+                    <div class="email-user">
+                      <form class="wrap-email">
                         <input
-                          type="text"
-                          id="search-ip"
-                          name="search"
+                          type="email"
+                          
+                          name="email"
                           required
-                          autofocus
-                          placeholder="to do anything..."
-                          x-webkit-speech
+                          placeholder="Enter your email"
                         />
-                        <i class="fa fa-search" aria-hiiden="true"></i>
                       </form>
-                    </div>
-                  </div>
-                  <div class="col-md-12 col-lg-4">
-                    <div class="row">
-                      <wrap-conte>
-                      <div class="col-md-4 col-lg-6">
-                        <div class="categoties" id="first-row">
-                          <a href="#">Home</a>
-                          <a href="#">About wikiHow</a>
-                          <a href="#">Experts</a>
-                          <a href="#">Jobs</a>
-                          <a href="#">Contact Us</a>
-                        </div>
-                      </div>
-                      <div class="col-md-4 col-lg-6">
-                        <div class="categoties" id="second-row">
-                          <a href="#">Site Map</a>
-                          <a href="#">Terms of Use</a>
-                          <a href="#">Privacy Policy</a>
-                          <a href="#">Contribute</a>
-                        </div>
-                      </div>
-                    </wrap-conte>
-                      <div class="group-icon-ipad" ">
-                        <p class="follow-us">Follow Us</p>
-                        <a href="#" class="icon"
-                          ><img src="../../components/footer3/image/pinterest-removebg-preview.png" alt="icon"
-                        /></a>
-                        <a href="#" class="icon"
-                          ><img src="../../components/footer3/image/fb-removebg-preview.png" alt="icon"
-                        /></a>
-                        <a href="#" class="icon"
-                          ><img src="../../components/footer3/image/twiter-removebg-preview.png" alt="icon"
-                        /></a>
-                        <a href="#" class="icon"
-                          ><img src="../../components/footer3/image/youtube-removebg-preview.png" alt="icon"
-                        /></a>
-                        <a href="#" class="icon"
-                          ><img src="../../components/footer3/image/fb-removebg-preview.png" alt="icon"
-                        /></a>
-                        <a href="#" class="icon"
-                          ><img src="../../components/footer3/image/twiter-removebg-preview.png" alt="icon"
-                        /></a>
-                        <a href="#" class="icon"
-                          ><img src="../../components/footer3/image/youtube-removebg-preview.png" alt="icon"
-                        /></a>
-                      </div>
+                      <button>Sign me up!</button>
+                      <p class="below-btn">
+                        By signing up you are agreeing to receive emails
+                        according to our privacy policy.
+                      </p>
                     </div>
                   </div>
                 </div>
+                </div>
               </div>
-            </footer>
+            </div>
+          </div>
+          <hr>
+          <div class="search">
+            <div class="search-ipad">
+              <form class="wrap-search">
+                <input
+                  type="text"
+                  
+                  name="search"
+                  required
+                  placeholder="to do anything..."
+                />
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-4">
+            <div class="row">
+              <div class="wrap-content">
+              <div class="col-md-4 col-lg-6">
+                <div class="categoties">
+                  <a href="#">Home</a>
+                  <a href="#">About wikiHow</a>
+                  <a href="#">Experts</a>
+                  <a href="#">Jobs</a>
+                  <a href="#">Contact Us</a>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-6">
+                <div class="categoties">
+                  <a href="#">Site Map</a>
+                  <a href="#">Terms of Use</a>
+                  <a href="#">Privacy Policy</a>
+                  <a href="#">Contribute</a>
+                </div>
+              </div>
+            </div>
+              <div class="group-icon-ipad">
+                <p class="follow-us">Follow Us</p>
+                <a href="#" class="footer-icon"
+                  ><img src="../../components/footer3/image/pinterest-removebg-preview.png" alt="icon"
+                /></a>
+                <a href="#" class="footer-icon"
+                  ><img src="../../components/footer3/image/fb-removebg-preview.png" alt="icon"
+                /></a>
+                <a href="#" class="footer-icon"
+                  ><img src="../../components/footer3/image/twiter-removebg-preview.png" alt="icon"
+                /></a>
+                <a href="#" class="footer-icon"
+                  ><img src="../../components/footer3/image/youtube-removebg-preview.png" alt="icon"
+                /></a>
+                <a href="#" class="footer-icon"
+                  ><img src="../../components/footer3/image/fb-removebg-preview.png" alt="icon"
+                /></a>
+                <a href="#" class="footer-icon"
+                  ><img src="../../components/footer3/image/twiter-removebg-preview.png" alt="icon"
+                /></a>
+                <a href="#" class="footer-icon"
+                  ><img src="../../components/footer3/image/youtube-removebg-preview.png" alt="icon"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
         </div>
       </div>
     </div>

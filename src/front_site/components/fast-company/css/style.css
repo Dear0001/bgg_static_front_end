@@ -1,44 +1,44 @@
-#aside-left {
+.aside-left {
   box-sizing: border-box;
 }
-#aside-left .row {
+.aside-left .row {
   background-color: rgb(232, 229, 229);
 }
-#aside-left .text-head {
+.aside-left .text-head {
   margin-bottom: 0;
   padding: 5px;
   font-size: 1.2rem;
 }
-#aside-left .logo {
+.aside-left .logo {
   padding: 22px 2px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#aside-left .logo img {
+.aside-left .logo img {
   width: 195px;
 }
-#aside-left .first-text {
+.aside-left .first-text {
   margin-top: 8px;
   margin-bottom: 2px;
   font-size: 0.65rem;
   font-weight: bold;
 }
-#aside-left h4 {
+.aside-left h4 {
   font-size: 1.355rem;
   font-weight: bold;
   margin-bottom: 0;
 }
-#aside-left .second-text {
+.aside-left .second-text {
   font-size: 1.04rem;
   font-weight: 300;
 }
-#aside-left .btn {
+.aside-left .btn {
   margin-top: 0px;
   margin-left: 0px;
   margin-bottom: 5px;
 }
-#aside-left .btn a {
+.aside-left .btn .btn-span {
   padding: 4px 6px;
   border-radius: 8px;
   background-color: rgb(239, 239, 67);
@@ -48,12 +48,15 @@
   font-size: 0.9rem;
   font-weight: bold;
 }
-#aside-left .btn a:active,
-#aside-left .btn a:hover {
+.aside-left .btn .btn-span:active {
   text-decoration: underline;
 }
+.aside-left .btn .btn-span:hover {
+  text-decoration: underline;
+}
+
 @media only screen and (max-width: 992px) {
-  #aside-left {
+  .aside-left {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -61,36 +64,36 @@
   }
 }
 @media only screen and (max-width: 992px) and (min-width: 768px) {
-  #aside-left {
+  .aside-left {
     width: 100%;
   }
-  #aside-left .first-text {
+  .aside-left .first-text {
     text-align: left;
   }
-  #aside-left h4 {
+  .aside-left h4 {
     text-align: left;
     font-size: 1.5rem;
   }
-  #aside-left .second-text {
+  .aside-left .second-text {
     text-align: left;
     font-size: 1.17rem;
   }
 }
 @media only screen and (max-width: 768px) {
-  #aside-left .text-head {
+  .aside-left .text-head {
     padding: 5px 15px;
   }
-  #aside-left .first-text {
+  .aside-left .first-text {
     text-align: left;
     padding: 5px 15px;
     font-size: 0.8rem;
   }
-  #aside-left h4 {
+  .aside-left h4 {
     padding: 5px 15px;
     text-align: left;
     font-size: 1.5rem;
   }
-  #aside-left .second-text {
+  .aside-left .second-text {
     padding: 5px 15px;
     text-align: left;
     font-size: 1.075rem;

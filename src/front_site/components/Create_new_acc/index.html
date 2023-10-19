@@ -20,126 +20,131 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="container">
-      <div class="row">
-      <div class="col-lg-8">
-        <div class="row p-5 bg-white mb-4 hide_head">
-            <div class="col-lg-12 col-md-12">
-                <h1>Create new accout</h1>
-                <a>Already have an account? <span>Log in </span></a>
-            </div>
-        </div>
-        <div class="row bg-white hidden_head" id="hidden_head">
-            <div class="col-lg-12 col-md-6">
-                <a class="signup" href="#"><label> Sign Up
-                  <i class="fa Facebook"></i>
-                </label></a>
-                <a class="login" href="#"><label>Log In
-                  <i class="fa Facebook"></i>
-                </label></a>
-            </div>
-        </div>
-       
-
-        <div class="row bg-white p-5">
-
-          <div class="col-lg-4 col-md-4 text-center text-muted show-moblie" id="show-mobile">
-            <h4>Sign up with</h4>
-            <div class="sub_login">
-              <div class="login_info" id="fb-icon">
-               <img src="image/fb.png" alt="">
-                <h3>Facebook</h3>
+    <section class="create__new_account">
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+              <div class="row p-4 bg-white mb-4 hide_head">
+                  <div class="col-lg-12 col-md-12">
+                      <div class="wrapper_create_acc">
+                        <h1>Create new accout</h1>
+                        <a href="">Already have an account? <span class="login_txt">Log in </span></a>
+                      </div>
+                  </div>
               </div>
-              <div class="login_info" id="google-icon">
-                <img src="image/google.png" alt="">
-                <h3>Goggle</h3>
+              <div class="row bg-white hidden_head" id="hidden_head">
+                  <div class="col-lg-12 col-md-6">
+                      <a class="signup" href="#">
+                        <span class="signup-txt">
+                          Sign Up
+                        <i class="fa Facebook"></i>
+                        </span>
+                    </a>
+                      <a class="signup login" href="#">
+                        <span class="signup-txt">
+                          Log In
+                        <i class="fa Facebook"></i>
+                      </span>
+                    </a>
+                  </div>
               </div>
-            </div>
-            <div class="row-mobile"></div>
-            <div class="login_or_mobile">
-or</div>
-          </div>
-          
-          
-          <div class="col-lg-8 col-md-8" id="row-2">
-            
-            <h4 class="text-center text-muted">Create an account</h4>
-            <form action="/create-account" method="post">
-              <div class="mb-3">
-                <label for="username" class="form-label">Username</label>
-                <input type="text" class="form-control" id="username" name="username" required>
-                <div class="check">
-                <label class="main"><span class="text_main">I would like to use my real name as my display name.</span>
-                  <input type="checkbox">
-                  <span class="geekmark"></span>
-              </label>
-            </div>
-              </div>
-              <div class="login_or">
-                or
-              </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" name="email" required>
-              </div>
-              <div class="mb-3">
-                <label for="password" class="form-label">Password</label>
-                <input type="password" class="form-control" id="password" name="password" required>
-              </div>
-              <div class="mb-3">
-                <label for="confirm_password" class="form-label">Confirm Password</label>
-                <input type="password" class="form-control" id="confirm_password" name="confirm_password" required>
-              </div>
-              <div class="mb-3">
-                <label for="username" class="form-label">Real name(option)</label>
-                <input type="text" class="form-control" id="real-name" name="realname" required>
-                <div class="check">
-                <label class="main">Remember me
-                  <input type="checkbox">
-                  <span class="geekmark"></span>
+              <div class="row bg-white p-5">
+                <div class="col-lg-4 col-md-4 text-center text-muted show-moblie" id="show-mobile">
+                  <h4>Sign up with</h4>
+                  <div class="sub_login">
+                    <div class="login_info fb-icon">
+                    <img src="image/fb.png" alt="">
+                      <h3>Facebook</h3>
+                    </div>
+                    <div class="login_info google-icon">
+                      <img src="image/google.png" alt="">
+                      <h3>Goggle</h3>
+                    </div>
+                  </div>
+                  <div class="row-mobile"></div>
+                  <div class="login_or_mobile">
+                    or</div>
                 </div>
-              </label>
-              </div>
-              <button type="submit" class="btn btn-primary">Create Account</button>
-              <p>By creating an account, you confirm that you are at least 16 years old and agree to wikiHow’s Terms of Use.
-              </p>
-            </form>
-          </div>
-          <div class="col-lg-4 col-md-4 text-center text-muted hide-mobile">
-            <h4>Sign up with</h4>
-            <div class="sub_login">
-              <div class="login_info" id="fb-icon">
-               <img  src="image/fb.png" alt="">
-                <h5>Facebook</h5>
-              </div>
-              <div class="login_info" id="google-icon">
-                <img  src="image/google.png" alt="">
-                <h5>Goggle</h5>
+                <div class="col-lg-8 col-md-8" id="row-2">
+                  <h4 class="text-center text-muted">Create an account</h4>
+                  <form action="/create-account" classs="form-right_create" method="post">
+                    <div class="mb-3">
+                      <label for="username" class="form-label">Username</label>
+                      <input type="text" class="form-control" id="username" name="username" required>
+                      <div class="check">
+                      <label class="main"><span class="text_main">I would like to use my real name as my display name.</span>
+                        <input type="checkbox">
+                        <span class="geekmark"></span>
+                    </label>
+                  </div>
+                    </div>
+                    <div class="login_or">
+                      or
+                    </div>
+                    <div class="mb-3">
+                      <label for="email" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="password" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="password" name="password" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="confirm_password" class="form-label">Confirm Password</label>
+                      <input type="password" class="form-control" id="confirm_password" name="confirm_password" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="username" class="form-label">Real name(option)</label>
+                      <input type="text" class="form-control" id="real-name" name="realname" required>
+                      <div class="check">
+                      <label class="main">Remember me
+                        <input type="checkbox">
+                        <span class="geekmark"></span>
+                      </label>
+                      </div>
+                    </div>
+                    <button type="submit" class="btn__create btn-primary">Create Account</button>
+                    <p>By creating an account, you confirm that you are at least 16 years old and agree to wikiHow’s Terms of Use.
+                    </p>
+                  </form>
+                </div>
+                <div class="col-lg-4 col-md-4 text-center text-muted hide-mobile">
+                  <h4>Sign up with</h4>
+                  <div class="sub_login">
+                    <div class="login_info fb-icon">
+                    <img  src="image/fb.png" alt="">
+                      <h5>Facebook</h5>
+                    </div>
+                    <div class="login_info google-icon">
+                      <img  src="image/google.png" alt="">
+                      <h5>Goggle</h5>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
+        <div class="col-lg-1"></div>
+      
+        <div class="col-lg-3 bg-white p-4" style="height: 680px;">
+            <div class="aside-new-acc">
+              <h4>Love wikiHow?</h4>
+              <p class="text- ">Become a subscribing patron to keep the content flowing as well as unlock exclusive members-only features.</p>
+              <div class="submit_btn">
+                <button type="submit" class="btn__create" id="btn-2"><span>I'm in!</span></button>
+                      </div>
+              <ul>
+                <li class="image-check">Access to extensive library of exclusive courses</li>
+                <li class="image-check">Download PDF versions of wikiHow articles</li>
+                <li class="image-check">Get exclusive access to video interviews with industry experts</li>
+                <li class="image-check">Unlimited access to wikiHow's Skills for Work Program</li>
+                <li class="image-check">Enjoy wikiHow without ads</li>
+                <li class="image-check">Flexibile membership, cancel anytime</li>
+                <li class="image-check">Support wikiHow's awesome educational mission</li>
+              </ul>
+            </div>
         </div>
       </div>
-      <div class="col-lg-1"></div>
-    
-      <div class="col-lg-3 bg-white p-4" style="height: 680px;">
-          <h4>Love wikiHow?</h4>
-          <p class="text- ">Become a subscribing patron to keep the content flowing as well as unlock exclusive members-only features.</p>
-          <div class="submit_btn">
-            <button type="submit" class="btn" id="btn-2"><span>I'm in!</span></button>
-        </div>
-          <ul>
-            <li class="image-check">Access to extensive library of exclusive courses</li>
-            <li class="image-check">Download PDF versions of wikiHow articles</li>
-            <li class="image-check">Get exclusive access to video interviews with industry experts</li>
-            <li class="image-check">Unlimited access to wikiHow's Skills for Work Program</li>
-            <li class="image-check">Enjoy wikiHow without ads</li>
-            <li class="image-check">Flexibile membership, cancel anytime</li>
-            <li class="image-check">Support wikiHow's awesome educational mission</li>
-          </ul>
-        </form>
       </div>
-    </div>
-    </div>
+    </section>
   </body>
   </html>
