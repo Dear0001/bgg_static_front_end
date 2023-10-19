@@ -239,6 +239,9 @@ form {
 	.sub_login {
 		padding-left: 35px;
 	}
+	.aside-new-acc{
+		display: none !important;
+	}
 }
 @media screen and (min-width: 768px) {
 	#hidden_head {
@@ -295,6 +298,9 @@ form {
 		}
 		.hide-mobile {
 			display: none;
+		}
+		.aside-new-acc{
+			display: none !important;
 		}
 	}
 }

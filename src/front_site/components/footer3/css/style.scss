@@ -244,7 +244,7 @@ footer {
 			}
 		}
 		.categoties {
-			margin: 10px 250px;
+			margin: 10px auto;
 			width: 100%;
 			a {
 				padding-bottom: 5px !important;
@@ -344,13 +344,11 @@ footer {
 				height: 40px;
 				background-color: $background-color_2;
 				border-radius: 8px;
-				.search-ip {
-					width: 90% !important;
-					outline: none;
-					padding: 5px;
-					border: hidden;
-				}
 				input {
+					outline: none !important;
+					border: none !important;
+					width: 85%;
+					padding: 5px;
 					&:focus {
 						color: $color_1;
 						padding-left: 10px;
@@ -363,7 +361,7 @@ footer {
 				i {
 					padding-right: 5px;
 					color: $color_1;
-					font-size: 18px;
+					font-size: 20px;
 				}
 			}
 		}

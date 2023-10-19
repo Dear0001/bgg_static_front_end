@@ -212,6 +212,9 @@ form .login_or {
   .sub_login {
     padding-left: 35px;
   }
+  .aside-new-acc {
+    display: none !important;
+  }
 }
 @media screen and (min-width: 768px) {
   #hidden_head {
@@ -267,5 +270,8 @@ form .login_or {
   }
   .container .hide-mobile {
     display: none;
+  }
+  .container .aside-new-acc {
+    display: none !important;
   }
 }/*# sourceMappingURL=style.css.map */
